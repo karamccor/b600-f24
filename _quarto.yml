@@ -40,8 +40,6 @@ website:
         contents:
           - href: project-description.qmd
             text: Description
-          - href: project-tips-resources.qmd
-            text: Tips + resources
 
 format:
   html:
