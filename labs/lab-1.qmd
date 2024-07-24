@@ -72,7 +72,7 @@ To illustrate, let's load a dataset. Enter the following command into the consol
 cdc <- read.csv("https://www2.stat.duke.edu/courses/Spring21/sta102.001/labs/data/cdc_cleaned.csv")
 
 # what it should eventually be once I get the website up
-# cdc <- read.csv("https://bios600-f24.github.io/labs/data/cdc_cleaned.csv")
+# cdc <- read.csv("https://karamccor.github.io/b600-f24/labs/data/cdc_cleaned.csv")
 ```
 
 We've just loaded a dataset named `cdc`. These data come primarily from the Sortable Risk Factors and Health Indicators dataset from the CDC, which omprises demographic and health indices compiled from various federal sources. This dataset is now part of our **environment**, which is displayed on the top half and right side of the RStudio window.
@@ -172,6 +172,4 @@ Over65: % of residents over age 65
 
 Let’s begin with a very simple plot. Run the following code in the console:
 
-**Attribution**
 
-This lab was adapted from STA102 at Duke University (professors Sam Berchuck and Yue Jiang).
