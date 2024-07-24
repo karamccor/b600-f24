@@ -24,7 +24,7 @@ If there is a question that's not appropriate for the public forum, you are welc
 
 ## Academic support
 
-There are times you may need help with the class that is beyond what can be provided by the teaching team. In those instances, I encourage you to visit **The Learning Center**. [The Learning Center](https://learningcenter.unc.edu/) offers free services to all students at UNC. (The website says it's for undergraduates, but graduate students are welcome, too!) Services include individual academic coaching appointments, peer tutoring, STEM coaching groups, and more. The Learning Center services are available free to any UNC student. Contact The Learning Center to schedule an appointment.  Contact [learning_center@unc.edu](mailto:learning_center@unc.edu), 919-962-7710.
+There are times you may need help with the class that is beyond what can be provided by the teaching team. In those instances, I encourage you to visit **The Learning Center**. [The Learning Center](https://learningcenter.unc.edu/) offers free services to all students at UNC. (The website says it's for undergraduates, but graduate students are welcome, too!) Services include individual academic coaching appointments, peer tutoring, STEM coaching groups, and more. The Learning Center services are available free to any UNC student. Contact The Learning Center to schedule an appointment. Contact [learning_center\@unc.edu](mailto:learning_center@unc.edu), 919-962-7710.
 
 ## Mental health and wellness
 
@@ -32,12 +32,9 @@ Student mental health and wellness is of primary importance at UNC, and the univ
 
 -   **UNC Student Wellness**: (919) 962-9355, [studentwellness\@unc.edu](mailto:studentwellness@unc.edu), or [studentwellness.unc.edu](https://studentwellness.unc.edu/),
 
-If your mental health concerns and/or stressful events negatively affect your daily emotional state, academic performance, or ability to participate in your daily activities, Counseling and Psychological Services are available to help you through difficult times. 
+If your mental health concerns and/or stressful events negatively affect your daily emotional state, academic performance, or ability to participate in your daily activities, Counseling and Psychological Services are available to help you through difficult times.
 
 -   **Counseling and Psychological Services**: (919) 966-3658, [caps\@unc.edu](mailto:caps@unc.edu), or [caps.unc.edu](https://caps.unc.edu)
-
-
-
 
 ## **Technology**
 
@@ -46,4 +43,3 @@ Note that we will be using RStudio in this course. RStudio is freely available t
 ## **Course materials costs**
 
 There are no costs associated with this course. All readings are either optional or will come from freely available, open resources (open-source textbooks, journal articles, etc.).
-
