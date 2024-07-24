@@ -4,3 +4,14 @@ tbl-colwidths: [5,10,30,5,5,5,5,5]
 ---
 
 This page contains an outline of the topics, content, and assignments for the semester. Note that this schedule will be updated as the semester progresses, with all changes documented here.
+
+::: column-screen-inset-right
+
+| Week | Date | Topic | Slides | Lab | HW | Exam | Project | 
+|:------:|--------|--------|:------:|:------:|:------:|:------:|:------:|
+|   1  | Tue, Aug 20 | Welcome! + Course Overview |                    [🖥️](/slides/lec-1.html) |                                                                              |     |      |         |
+|   | Tue, Aug 20 | Lab 1: Meet the toolkit    |        |                        [💻](/labs/lab-1.html "Lab 1 Instructions"){aria-label="Lab 1 instructions"}  |  |      |         |
+|      | Thu, Aug 22 | Ch 1: Measurement          | [🖥️](/slides/lec2-measure-ch1-speaker.html "Lecture slides"){aria-label="Lecture 1 slides"} |                                                                              |     |      |         |
+| 2 | Tue, Aug 27 | Lab 2: Exploring data      |              [🖥️](/slides/lab-1.html "Lab slides"){aria-label="Lab 1 slides"}               |               [💻](/labs/lab-1.html "Lab instructions"){aria-label="Lab 1 instructions"}  |     |      |         |
+
+:::
