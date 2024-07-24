@@ -1,12 +1,5 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "BIOS 600: Principles of Statistical Inference",
-    "section": "",
-    "text": "This page contains an outline of the topics, content, and assignments for the semester. Note that this schedule will be updated as the semester progresses, with all changes documented here."
-  },
-  {
     "objectID": "project-description.html",
     "href": "project-description.html",
     "title": "Project description",
@@ -96,5 +89,103 @@
     "title": "Project description",
     "section": "Overall grading",
     "text": "Overall grading\nThe grade breakdown is as follows:\n\n\n\nTotal\n100 pts\n\n\n\n\nTopic ideas\n5 pts\n\n\nProject proposal\n10 pts\n\n\nPeer review\n10 pts\n\n\nWritten report\n40 pts\n\n\nSlides + video presentation\n20 pts\n\n\nReproducibility + organization\n5 pts\n\n\nVideo comments\n5 pts\n\n\nPeer teamwork evaluation\n5 pts\n\n\n\nNote: No late project reports or videos are accepted.\n\nGrading summary\nGrading of the project will take into account the following:\n\nContent - What is the quality of research and/or policy question and relevancy of data to those questions?\nCorrectness - Are statistical procedures carried out and explained correctly?\nWriting and Presentation - What is the quality of the statistical presentation, writing, and explanations?\nCreativity and Critical Thought - Is the project carefully thought out? Are the limitations carefully considered? Does it appear that time and effort went into the planning and implementation of the project?\n\nA general breakdown of scoring is as follows:\n\n90%-100%: Outstanding effort. Student understands how to apply all statistical concepts, can put the results into a cogent argument, can identify weaknesses in the argument, and can clearly communicate the results to others.\n80%-89%: Good effort. Student understands most of the concepts, puts together an adequate argument, identifies some weaknesses of their argument, and communicates most results clearly to others.\n70%-79%: Passing effort. Student has misunderstanding of concepts in several areas, has some trouble putting results together in a cogent argument, and communication of results is sometimes unclear.\n60%-69%: Struggling effort. Student is making some effort, but has misunderstanding of many concepts and is unable to put together a cogent argument. Communication of results is unclear.\nBelow 60%: Student is not making a sufficient effort.\n\n\n\nLate work policy\nThere is no late work accepted on this project. Be sure to turn in your work early to avoid any technological mishaps."
+  },
+  {
+    "objectID": "course-team.html",
+    "href": "course-team.html",
+    "title": "Teaching team",
+    "section": "",
+    "text": "Dr. Kara McCormack (she/her) is a Teaching Assistant Professor at the Department of Biostatistics at UNC-Chapel Hill. Kara’s work focuses on (bio)statistics pedagogy, with an emphasis on equitable learning, reproducibility, and promoting diversity and a sense of community in STEM classrooms.\n\n\n\nOffice hours\nLocation\n\n\n\n\n\nTuesdays 10:00 am - 11:00 am\nMcGavran-Greenberg 3106F\n\n\n\n\nIf these times don’t work for you or you’d like to schedule a one-on-one meeting, you can email me."
+  },
+  {
+    "objectID": "course-team.html#instructor",
+    "href": "course-team.html#instructor",
+    "title": "Teaching team",
+    "section": "",
+    "text": "Dr. Kara McCormack (she/her) is a Teaching Assistant Professor at the Department of Biostatistics at UNC-Chapel Hill. Kara’s work focuses on (bio)statistics pedagogy, with an emphasis on equitable learning, reproducibility, and promoting diversity and a sense of community in STEM classrooms.\n\n\n\nOffice hours\nLocation\n\n\n\n\n\nTuesdays 10:00 am - 11:00 am\nMcGavran-Greenberg 3106F\n\n\n\n\nIf these times don’t work for you or you’d like to schedule a one-on-one meeting, you can email me."
+  },
+  {
+    "objectID": "course-team.html#teaching-assistant",
+    "href": "course-team.html#teaching-assistant",
+    "title": "Teaching team",
+    "section": "Teaching assistant",
+    "text": "Teaching assistant\n\n\n\n\n\n\n\n\n\n\nName\nOffice hours\nLocation\n\n\n\n\n\nTBD\nTBD\nZoom link TBD"
+  },
+  {
+    "objectID": "course-overview.html",
+    "href": "course-overview.html",
+    "title": "STA 210: Regression Analysis",
+    "section": "",
+    "text": "Learn approaches for analyzing multivariate data sets, emphasizing analysis of variance, linear regression, and logistic regression. Learn techniques for checking the appropriateness of proposed models, such as residual analyses and case influence diagnostics, and techniques for selecting models. Gain experience dealing with the challenges that arise in practice through assignments that utilize real-world data. This class emphasizes data analysis over mathematical theory."
+  },
+  {
+    "objectID": "course-support.html",
+    "href": "course-support.html",
+    "title": "Course support",
+    "section": "",
+    "text": "Most of you will need help at some point and we want to make sure you can identify when that is without getting too frustrated and feel comfortable seeking help."
+  },
+  {
+    "objectID": "course-support.html#lectures-and-labs",
+    "href": "course-support.html#lectures-and-labs",
+    "title": "Course support",
+    "section": "Lectures and labs",
+    "text": "Lectures and labs\nIf you have a question during lecture or lab, feel free to ask it! There are likely other students with the same question, so by asking you will create a learning opportunity for everyone."
+  },
+  {
+    "objectID": "course-support.html#office-hours",
+    "href": "course-support.html#office-hours",
+    "title": "Course support",
+    "section": "Office hours",
+    "text": "Office hours\nThe teaching team is here to help you be successful in the course. You are encouraged to attend office hours during the times posted on the home page to ask questions about the course content and assignments. A lot of questions are most effectively answered in-person, so office hours are a valuable resource. I encourage each and every one of you to take advantage of this resource! Make a pledge to stop by office hours at least once during the first three weeks of class. If you truly have no questions to ask, just stop by and say hi and introduce yourself. You can find a list of everyone’s office hours here."
+  },
+  {
+    "objectID": "course-support.html#discussion-forum",
+    "href": "course-support.html#discussion-forum",
+    "title": "Course support",
+    "section": "Discussion forum",
+    "text": "Discussion forum\nHave a question that can’t wait for office hours? Prefer to write out your question in detail rather than asking in person? The online discussion forum is the best venue for these! We will use Ed Discussion as the online discussion forum. There is a chance another student has already asked a similar question, so please check the other posts on Ed Discussion before adding a new question. If you know the answer to a question that is posted, I encourage you to respond!"
+  },
+  {
+    "objectID": "course-support.html#email",
+    "href": "course-support.html#email",
+    "title": "Course support",
+    "section": "Email",
+    "text": "Email\nPlease refrain from emailing any course content questions (those should go Ed Discussion), and only use email for questions about personal matters that may not be appropriate for the public course forum (e.g., illness, accommodations, etc.). For such matters, you may email Dr. Kara McCormack at kmcco@unc.edu.\nIf there is a question that’s not appropriate for the public forum, you are welcome to email me directly. If you email me, please include “BIOS 600” in the subject line. Barring extenuating circumstances, I will respond to BIOS 600 emails within 48 hours Monday - Friday. Response time may be slower for emails sent Friday evening - Sunday."
+  },
+  {
+    "objectID": "course-support.html#academic-support",
+    "href": "course-support.html#academic-support",
+    "title": "Course support",
+    "section": "Academic support",
+    "text": "Academic support\nThere are times you may need help with the class that is beyond what can be provided by the teaching team. In those instances, I encourage you to visit The Learning Center. The Learning Center offers free services to all students at UNC. (The website says it’s for undergraduates, but graduate students are welcome, too!) Services include individual academic coaching appointments, peer tutoring, STEM coaching groups, and more. The Learning Center services are available free to any UNC student. Contact The Learning Center to schedule an appointment. Contact learning_center@unc.edu, 919-962-7710."
+  },
+  {
+    "objectID": "course-support.html#mental-health-and-wellness",
+    "href": "course-support.html#mental-health-and-wellness",
+    "title": "Course support",
+    "section": "Mental health and wellness",
+    "text": "Mental health and wellness\nStudent mental health and wellness is of primary importance at UNC, and the university offers resources to support students in managing daily stress and self-care. UNC offers several resources for students to seek assistance on coursework and to nurture daily habits that support overall well-being, some of which are listed below:\n\nUNC Student Wellness: (919) 962-9355, studentwellness@unc.edu, or studentwellness.unc.edu,\n\nIf your mental health concerns and/or stressful events negatively affect your daily emotional state, academic performance, or ability to participate in your daily activities, Counseling and Psychological Services are available to help you through difficult times.\n\nCounseling and Psychological Services: (919) 966-3658, caps@unc.edu, or caps.unc.edu"
+  },
+  {
+    "objectID": "course-support.html#technology",
+    "href": "course-support.html#technology",
+    "title": "Course support",
+    "section": "Technology",
+    "text": "Technology\nNote that we will be using RStudio in this course. RStudio is freely available to you. As long as you have a functioning computer, you can perform the necessary computing for this course. All software we use is open-source and/or freely available."
+  },
+  {
+    "objectID": "course-support.html#course-materials-costs",
+    "href": "course-support.html#course-materials-costs",
+    "title": "Course support",
+    "section": "Course materials costs",
+    "text": "Course materials costs\nThere are no costs associated with this course. All readings are either optional or will come from freely available, open resources (open-source textbooks, journal articles, etc.)."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "BIOS 600: Principles of Statistical Inference",
+    "section": "",
+    "text": "This page contains an outline of the topics, content, and assignments for the semester. Note that this schedule will be updated as the semester progresses, with all changes documented here."
   }
 ]
