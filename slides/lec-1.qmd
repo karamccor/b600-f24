@@ -165,6 +165,7 @@ All linked from the course website:
 ## What to expect in lab
 
 -   Lab will be Tuesdays from 3:30-4:50, MCG 2306, led by TA
+
 -   Introduction to the lab assignment (\~ 5 - 10 minutes)
 
 -   Work on the lab assignment (individual at first, but will switch to teams in a few weeks.)
@@ -173,13 +174,11 @@ All linked from the course website:
 
 ## Tips
 
--   You do not have to finish the lab in class, they will always be due the following **Friday at 5:00 pm**. 
+-   You do not have to finish the lab in class, they will always be due the following **Friday at 5:00 pm**.
 
-- One work strategy is to get through portions that you think will be most challenging (which initially might be the coding component) during lab when a TA can help you on the spot and leave the narrative writing until later.
+-   One work strategy is to get through portions that you think will be most challenging (which initially might be the coding component) during lab when a TA can help you on the spot and leave the narrative writing until later.
 
 -   When working in teams (later in the semester) do not pressure each other to finish early; use the time wisely to really learn the material and produce a quality report.
-
-
 
 ## Teams
 
