@@ -2,7 +2,6 @@
 title: "Welcome to BIOS 600!"
 subtitle: "BIOS 600 - Fall 2024"
 author: "Dr. Kara McCormack"
-footer:  "[bios600-f24.github.io/website](https://bios600-f24.github.io/website/)"
 logo: "images/logo_600.png"
 format: 
   revealjs: 
@@ -34,7 +33,6 @@ library(countdown)
 -   PhD in Biostatistics from Duke University, 2023
 -   Originally from Austin, TX
 -   Interests: gardening, yoga, cats, and all kinds of art!
-
 :::
 :::
 
@@ -51,12 +49,12 @@ library(countdown)
 
 ## Meet each other
 
-In small groups, share 
+In small groups, share
 
-  - Where you're from
-  - Your year/program
-  - What you hope to get out of this course
-  - Find something that everyone in your group has in common, that isn't necessarily common to the rest of the class.
+-   Where you're from
+-   Your year/program
+-   What you hope to get out of this course
+-   Find something that everyone in your group has in common, that isn't necessarily common to the rest of the class.
 
 # Biostatistics
 
@@ -91,7 +89,7 @@ A process that converts data into useful information, whereby practitioners
 ## Some of what you'll learn
 
 -   Apply descriptive techniques commonly used to summarize public health data.
--   Analyze real-world data to answer research questions in a biomedical setting.
+-   Learn methods to analyze real-world data to answer research questions in a biomedical setting.
 -   Use [Quarto](https://quarto.org/) to write reproducible reports.
 -   Communicate results from statistical analyses to a general audience.
 
@@ -111,11 +109,11 @@ Best practices from the American Statistical Association:
 
 ::: columns
 ::: {.column width="50%"}
-![](images/lec-1/drip.png){fig-alt="Former Harvard stem cell researcher up to 18 retractions" fig-align="center" width="200"}
+![](images/lec-1/drip.png){fig-alt="Former Harvard stem cell researcher up to 18 retractions" fig-align="center" width="500"}
 :::
 
 ::: {.column width="50%"}
-![](images/lec-1/duke.png){width = 200}
+![](images/lec-1/duke.png){fig-alt="Duke agrees to pay $112 million to settle false claims related to scientific misconduct" fig-align="center" width="500"}
 :::
 :::
 
@@ -123,9 +121,10 @@ Best practices from the American Statistical Association:
 
 ## Homepage
 
-[bios600-f24.github.io/website](https://bios600-f24.github.io/website/)
+<https://karamccor.github.io/b600-f24/>
 
 -   All course materials
+-   This link is posted on Canvas. Bookmark it!
 -   Links to Canvas, discussion board, course info, etc.
 -   Let's take a tour!
 
@@ -135,12 +134,12 @@ All linked from the course website:
 
 -   RStudio
     -   Note: The TA will guide you through downloading RStudio later today in the first lab.
--   Discussion forum: \[Ed Discussions\]
--   Assignment submission and feedback: \[Canvas\]
+-   Discussion forum: [Ed Discussions](https://edstem.org/us/join/Xjcr2d)
+-   Assignment submission and feedback: Canvas
 
 ## What have I gotten myself into?
 
--   BIOS 600 is an introduction to biostatistics that:
+-   BIOS 600 is an introduction to "principles of statistical inference" in biostatistics that:
     -   provides a tour of basic statistical methods commonly encountered in public health and biomedical research,
     -   emphasizes understanding of methods, using them to arrive at data-driven decisions, and effective communication of such results.
     -   Utilizes modern software such as RStudio to reproducibly examine and manipulate data to make sound scientific conclusions
@@ -163,6 +162,25 @@ All linked from the course website:
 -   **Project:** Towards end of semester, most work done in teams outside of class
 :::
 
+## What to expect in lab
+
+-   Lab will be Tuesdays from 3:30-4:50, MCG 2306, led by TA
+-   Introduction to the lab assignment (\~ 5 - 10 minutes)
+
+-   Work on the lab assignment (individual at first, but will switch to teams in a few weeks.)
+
+-   Lab instructions posted on the [course website](https://karamccor.github.io/b600-f24/ "BIOS 600 Course website").
+
+## Tips
+
+-   You do not have to finish the lab in class, they will always be due the following **Friday at 5:00 pm**. 
+
+- One work strategy is to get through portions that you think will be most challenging (which initially might be the coding component) during lab when a TA can help you on the spot and leave the narrative writing until later.
+
+-   When working in teams (later in the semester) do not pressure each other to finish early; use the time wisely to really learn the material and produce a quality report.
+
+
+
 ## Teams
 
 -   Team assignment
@@ -178,8 +196,8 @@ All linked from the course website:
 | Category | Percentage |
 |----------|------------|
 | Homework | 30%        |
-| Project  | 15%        |
-| Lab      | 20%        |
+| Project  | 20%        |
+| Lab      | 15%        |
 | Exam 01  | 10%        |
 | Exam 02  | 10%        |
 | Exam 03  | 10%        |
@@ -191,7 +209,7 @@ See the course syllabus (.pdf available on Canvas) for how the final letter grad
 -   Attend office hours
 -   Ask and answer questions on the discussion forum, Ed Discussions
 -   Reserve email for questions on personal matters and/or grades
--   Read the [course support](https://bios600-fa24.github.io/website/course-support.html) page
+-   Read the [course support](https://karamccor.github.io/b600-f24/course-support.html) page
 
 ## Announcements
 
@@ -226,9 +244,9 @@ It is my intent that students from all diverse backgrounds and perspectives be w
 
 -   Only work that is clearly assigned as team work should be completed collaboratively.
 
--   Homeworks must be completed individually. You may **not** directly share answers / code with others, however you are welcome to discuss the problems in general and ask for advice.
+-   Homeworks must be completed **individually**. You may **not** directly share answers / code with others, however you are welcome to discuss the problems in general and ask for advice.
 
--   Exams must be completed individually. You may **not** discuss any aspect of the exam with peers. If you have questions, post as private questions on the course forum, only the teaching team will see and answer.
+-   Exams must be completed **individually**. You may **not** discuss any aspect of the exam with peers. If you have questions, post as private questions on the course forum, only the teaching team will see and answer.
 
 ## Sharing / reusing code policy
 
@@ -236,7 +254,7 @@ It is my intent that students from all diverse backgrounds and perspectives be w
 
 -   Unless explicitly stated otherwise, this course's policy is that you may make use of any online resources (e.g. RStudio Community, StackOverflow, etc.) but you must explicitly cite where you obtained any code you directly use or use as inspiration in your solution(s).
 
--   Any recycled code that is discovered and is not explicitly cited will be treated as plagiarism, regardless of source
+-   Any recycled code that is discovered and is not explicitly cited will be treated as plagiarism, regardless of source.
 
 ## Most importantly!
 
@@ -265,5 +283,5 @@ I want to make sure that you learn everything you were hoping to learn from this
     -   Meet the TA
     -   Download RStudio
     -   Complete the first lab assignment
--   Read the [syllabus](https://bios600-fa24.github.io/website/course-syllabus.html)!
+-   Read the syllabus! (a .pdf version is available on Canvas)
 -   Complete the \[Getting to know you survey\] by Thursday's class!
