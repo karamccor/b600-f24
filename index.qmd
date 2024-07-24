@@ -9,7 +9,46 @@ This page contains an outline of the topics, content, and assignments for the se
 
 | Week | Date | Topic | Slides | Lab | HW | Exam | Project | 
 |:------:|--------|--------|:------:|:------:|:------:|:------:|:------:|
-|   1  | Tue, Aug 20 | Welcome! + Course Overview |     [🖥️](/slides/lec-1.html){aria-label="Lecture 1"} |   |     |      |      |
+|   1  | Tue, Aug 20 | Lecture 1: Welcome! + Course Overview |     [🖥️](/slides/lec-1.html){aria-label="Lecture 1"} |   |     |      |      |
 |                         | Tue, Aug 20 | Lab 1: Meet the toolkit    |                                                                                             |                                   [💻](/labs/lab-1.html "Lab 1 Instructions"){aria-label="Lab 1 instructions"} |  |   |      |         |
+|                         | Thurs, Aug 22 | Lecture 2: The nature of data   |                                                                                             |                                    |  |   |      |         |
+|   2  | Tues, Aug 27 | Lecture 3: Basics of probability   |       |     |  |   |      |     |
+|      | Tues, Aug 27 | Lab 2: Visualizing data with ggplot2    |       |    |  |   |      |     |
+|      | Thurs, Aug 29 | Lecture 4: Conditional probability and Bayes' rule    |     |    |  |   |   |     |
+|   3  | Tues, Sept 3 | No Class/Lab: Well-being day    |     |    |  |   |   |     |
+|      | Thurs, Sept 5 | Lecture 5: Diagnostic testing    |     |    |  |   |   |     |
+|   4  | Tues, Sept 10 | Lecture 6: Discrete distributions   |     |    |  |   |   |     |
+|      | Tues, Sept 10 | Lab 3: Wranging data with dplyr   |     |    |  |   |   |     |
+|      | Thurs, Sept 12 | Lecture 7: Continuous distributions  |     |    |  |   |   |     |
+|   5  | Tues, Sept 17 | Lecture 8: The central limit theorem |     |    |  |   |   |     |
+|      | Tues, Sept 17 | Lab 4: Probability distributions |     |    |  |   |   |     |
+|      | Thurs, Sept 19 | Midterm Review 1: Lectures 1-7 |     |    |  |   |   |     |
+|   6  | Tues, Sept 24 | Midterm Exam 1: Lectures 1-7 |     |    |  |   |   |     |
+|      | Thurs, Sept 26 | Lecture 9: Confidence intervals |     |    |  |   |   |     |
+| 7    | Tues, Oct 1 | Lecture 10: Hypothesis testing |     |    |  |   |   |    |
+|      | Tues, Oct 1 | Lab 5: Code style |     |    |  |   |   |     |
+|      | Thurs, Oct 3 | Lecture 11: Comparing two means |     |    |  |   |   |     |
+| 8    | Tues, Oct 8 | Lecture 12: ANOVA |     |    |  |   |   |     |
+|      | Tues, Oct 8 | Lab 6: Visualizing spatial data |     |    |  |   |   |     |
+|      | Thurs, Oct 10 | Lecture 13: Proportions and categorical variables  |     |    |  |   |   |     |
+|   9  | Tues, Oct 15 | Lecture 14: Non-parametric methods  |     |    |  |   |   |     |
+|   9  | Tues, Oct 15 | Lab 7: Functions and automation (due Tuesday 10/22 by 5pm)   |     |    |  |   |   |     |
+|      | Thurs, Oct 17 | No Class: Fall Break!  |     |    |  |   |   |     |
+| 10   | Tues, Oct 22 | Lec 15: Power and sample size  |     |    |  |   |   |     |
+|     | Tues, Oct 22 | Lab 8: Visualizing text data  |     |    |  |   |   |     |
+|     | Thurs, Oct 24 | Midterm Review 2: Lectures 8-14  |     |    |  |   |   |     |
+|  11 | Tues, Oct 29 | Midterm Exam 2: Lectures 8-14  |     |    |  |   |   |     |
+|     | Tues, Oct 29 | No Lab  |     |    |  |   |   |     |
+|     | Thurs, Oct 31 | Lec 16: Comparing two continuous variables  |     |    |  |   |   |     |
+|   12 | Tues, Nov 5 | Lec 17: Introduction to linear regression  |     |    |  |   |   |     |
+|     | Tues, Nov 5 | Lab 9: Cross-validation  |     |    |  |   |   |     |
+|     | Thurs, Nov 7 | Lec 18: Multiple linear regression |     |    |  |   |   |     |
+| 13  | Tues, Nov 12 | Lec 19: Logistic regression |     |    |  |   |   |     |
+|     | Thurs, Nov 14 | Lec 20: Introduction to survival analysis |     |    |  |   |   |     |
+| 14  | Tues, Nov 19 | Lec 21: Clinical Trials |     |    |  |   |   |     |
+|     | Thurs, Nov 21 | Midterm Review 3: Lectures 15-21  |     |    |  |   |   |     |
+|  15  | Tues, Nov 26 | Final Projects Due by 5pm  |     |    |  |   |   |     |
+|     | Thurs, Nov 28 | No Class: Thanksgiving |     |    |  |   |   |     |
+|  16  | Tues, Dec 3 | Midterm Exam 3: Lectures 15-21 |     |    |  |   |   |     |
 :::
 
