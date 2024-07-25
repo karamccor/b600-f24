@@ -1,0 +1,354 @@
+---
+title: "Lecture 2: Measurement, Ch 1"
+subtitle: "BIOS 600 - Fall 2024"
+author: "Dr. Kara McCormack"
+footer:  "[bios600-fa24.github.io/website](https://bios600-fa24.github.io/website/)"
+logo: "images/logo_600.png"
+format: 
+  revealjs: 
+    theme: slides.scss
+    multiplex: true
+    transition: fade
+    slide-number: true
+editor: visual
+execute:
+  freeze: auto
+---
+
+```{r setup}
+#| include: false
+library(countdown)
+library(tidyverse)
+knitr::opts_chunk$set(
+  fig.width = 6,
+  fig.asp = 0.618,
+  fig.align = "center",
+  out.width = "90%"
+)
+```
+
+# Welcome
+
+## Announcements
+
+-   If you're just joining the class, welcome! Go to the [course website](https://bios600-fa24.github.io/website) and review content you've missed, read the syllabus, and complete the *Getting to know you* survey on Canvas.
+-   Lab 1 is due Friday, at 5pm, on Canvas.
+
+## Outline
+
+-   How are data typically measured and organized?
+-   Types of measurement scales
+-   Data quality
+-   Imprecision and bias
+
+# Organization of data
+
+## Measurement
+
+-   **Measurement** is how we get our data
+-   "the assignment of numbers or codes according to prior-set rules"
+    -   Example: positioning observations along a numerical continuum (e.g. determining a person's age)
+    -   Example: classifying observations into categories (e.g. determining whether someone is positive or negative for HIV antibodies)
+
+## Observation
+
+-   **Observation** refers to the unit upon which measurements are made.
+-   May correspond to people or specimens (or countries, or counties, etc.)
+-   May also correspond to aggregates
+    -   smoking habits of *individual* (in term of "pack-years" for instance), unit of observation = person, vs.
+    -   smoking habits of a *region* (e.g. per capita cigarette consumption), unit of observation = region.
+
+## Observations, variables, and values
+
+-   **Observations** are the units upon which measurements are made
+-   **Variables** are the characteristics being measured
+-   **Values** are realized measurements
+
+## Data table
+
+-   Once data are collected, they are organized to form a data table.
+
+    -   Observations --\> rows
+    -   Variables --\> columns
+    -   Values --\> table cells
+
+## Example: Per capita cigarette consumption {.smaller}
+
+-   Per capita cigarette consumption in 1930 (cig1930) and lung cancer cases per 100,000 in 1950 (lungca) in 11 countries
+
+| Country       | cig1930 | lungca |
+|---------------|:--------|-------:|
+| USA           | 1300    |     20 |
+| Great Britain | 1100    |     46 |
+| Finland       | 1100    |     35 |
+| Switzerland   | 510     |     25 |
+| Canada        | 500     |     15 |
+| Holland       | 490     |     24 |
+
+# Types of measurement scales
+
+## Categorical measurements
+
+::: columns
+::: {.column width="50%"}
+Nominal data
+
+-   named categories without numeric meaning
+-   only two categories: binary or dichotomous
+-   Breast cancer status, blood type, health insurance provider type, etc.
+:::
+
+::: {.column width="50%"}
+Ordinal data
+
+-   Ordered categories, but differences between values not easily measured
+-   Relative comparisons made about differences between levels
+-   Stage of colon cancer, Likert scale, frequency of smoking (often, sometimes, rarely, never), etc.
+:::
+:::
+
+## Numerical data
+
+::: columns
+::: {.column width="50%"}
+Count or rank data
+
+-   discrete counts. Or ranks.
+-   Number of alcoholic drinks consumed in past week, numerical rank of cancers by mortality, etc.
+:::
+
+::: {.column width="50%"}
+Continuous data
+
+-   Measurable quantities where difference between possible values can be arbitrarily small
+-   Data may lie within a range or be unbounded
+-   Birth weight, BMI, ppm ozone, etc.
+:::
+:::
+
+## Identifying data types
+
+![](images/lec-2/tab1.png){width="300"}
+
+# Data quality
+
+## Garbage in, garbage out
+
+-   Sophisticated numerical analysis cannot compensate for poor-quality data.
+-   Statisticians have a saying for this: "garbage in, garbage out".
+-   **Objectivity**: intent to measure things as they are without shaping them to conform to a preconcieved worldview
+
+## Complications
+
+In designing a study, what variable should we use for smoking exposure?
+
+-   Binary variable yes/no?
+-   Ordinal current/former/never smoker?
+-   Discrete number of cigarettes smoked in past week?
+-   Continuous measurement of lifetime pack-years?
+
+In the real world, decisions are made based on sample size, statistical power, likelihood of measurement error, or simply convenience (this happens a lot!)
+
+## Two types of inaccuracies
+
+-   **Imprecision** is the random inability to get the same result upon repetition
+-   **Bias** is a systematic deviation from the truth.
+-   When something is **unbiased**, it is said to be valid.
+
+## Example
+
+![](images/lec-1/bias.png){width="300"}
+
+# Exploratory data analysis (EDA)
+
+## Exploratory data analysis (EDA)
+
+-   Initial data analysis approach that summarizes main characteristics of dataset
+
+-   Often visual or in the form of basic summary statistics
+
+## Data visualization
+
+-   The creation and study of the visual representation of data
+-   Many tools available (R is popular, many systems within R for data visualization)
+-   Creating visualizations helps us see patterns and identify potential data quality issues
+-   We will focus on ggplot2, a component of tidyverse
+
+## ggplot2 in tidyverse
+
+::: columns
+::: {.column width="50%"}
+-   The tidyverse is a group of R packages designed for data science
+-   All tidyverse packages share an underlying design philosophy
+-   Data visualization package in the tidyverse
+-   Inspired by *The Grammar of Graphics* (Wilkinson)
+
+![](images/lec-2/gg.png)
+:::
+
+::: {.column width="50%"}
+![](images/lec-2/ggplot2.png)
+:::
+:::
+
+## What is a Grammar of Graphics?
+
+-   A system allowing for concise description of graphical components
+
+![](images/lec-2/gg.png){width="300"}
+
+## What is a Grammar of Graphics?
+
+A statistical graphic is
+
+-   data (which may be statistically summarized or transformed)
+-   **mapped** to **aesthetic** attributes (color, size, xy-position, etc.)
+-   using **geometries** (points, lines, bars, etc.)
+-   mapped onto a specific **coordinate** and/or **facet** system
+
+## Visualizing CDC data
+
+Let's take a look at some basic visualizations using state-level data collected by CDC. We'll examine the following variables:
+
+-   State (categorical; nominal)
+-   HDI (categorical; ordinal)
+-   Region (categorical; nominal)
+-   Adult obesity % (numerical; continuous)
+-   Adequate aerobic activity % (numerical; continuous)
+
+## Bar charts
+
+```{r}
+cdc <- read.csv("https://www2.stat.duke.edu/courses/Spring21/sta102.001/labs/data/cdc_cleaned.csv")
+
+# write.csv(cdc, "C:/Users/kmcco/OneDrive - University of North Carolina at Chapel Hill/Documents/UNC_Teaching/fall2024/bios600-f24/labs/data/cdc_cleaned.csv")
+```
+
+::: columns
+::: {.column width="50%"}
+```{r fig.height = 8, fig.width = 7, fig.asp=1}
+cdc |>
+  count(Region) |>
+  ggplot(aes(x = Region, y = n)) +
+  geom_bar(stat="identity", fill = "salmon2") +
+  ggtitle("The South has the largest number of states")
+```
+:::
+
+::: {.column width="50%" style="font-size: 70%;"}
+-   Summarizes numerical variable by categories
+-   Visually depict frequency distributions for nominal or ordinal data
+-   Bars represent either frequency or relative frequency by category
+-   Separation between bars (non-continuous data)
+-   May contain error bars to indicate estimate variability
+:::
+:::
+
+## Box plots
+
+::: columns
+::: {.column width="50%"}
+```{r fig.height = 8, fig.width = 7, fig.asp=1}
+cdc |>
+  ggplot(aes(x=HDI, y = Obesity)) +
+  geom_boxplot() +
+  ggtitle("Lower HDIs associated with higher obesity %")
+```
+:::
+
+::: {.column width="50%" style="font-size: 70%;"}
+-   Summarizes numerical variable
+-   Five-number summary: sample minimum, 25th percentile, median, 75th percentile, sample maximum
+-   Outliers
+-   Spread and skew
+-   (More on all these later!)
+:::
+:::
+
+## Histograms
+
+::: columns
+::: {.column width="50%"}
+```{r fig.height = 8, fig.width = 7, fig.asp=1}
+cdc |>
+  ggplot(aes(x=Obesity)) +
+  geom_histogram(color = "deeppink4", 
+                 fill = "goldenrod2",
+                 bins = 20) +
+  ggtitle("Most states have approx. 30% adult obesity")
+```
+:::
+
+::: {.column width="50%" style="font-size: 70%;"}
+-   Summarizes numerical variable
+-   Five-number summary: sample minimum, 25th percentile, median, 75th percentile, sample maximum
+-   Outliers
+-   Spread and skew
+-   (More on all these later!)
+:::
+:::
+
+## Line plots
+
+::: columns
+::: {.column width="50%"}
+```{r fig.height = 8, fig.width = 7, fig.asp=1}
+cdc |>
+  filter(State %in% c("California", "Colorado", "Connecticut", "Delaware")) |>
+  ggplot(aes(x = State, y = InfantMortalityRate, group_by = State)) +
+  geom_line() +
+  geom_point() +
+  ggtitle("Infant mortality rate by State")
+
+```
+:::
+
+::: {.column width="50%" style="font-size: 70%;"}
+-   Summarizes numerical variable (most often used across time)
+-   Each value on x-axis corresponds to only one measurement on y-axis (and vice versa)
+-   Often used to depict change over time and connected with line.
+
+::: {.callout-warning title="Question"}
+Is the plot on the left useful?
+:::
+:::
+:::
+
+## Scatterplots
+
+::: columns
+::: {.column width="50%"}
+```{r fig.height = 8, fig.width = 7, fig.asp=1}
+cdc |>
+  ggplot(aes(x = Exercise, y = Obesity)) +
+  geom_point() + 
+  facet_grid(. ~ HDI) +
+  ggtitle("Adequate aerobic activity associated with lower obesity") +
+  xlab("Adequate aerobic activity (%)")
+
+```
+:::
+
+::: {.column width="50%" style="font-size: 70%;"}
+-   Shows relationship between multiple continuous measurements
+
+-   You can add color, shape, transparency, etc to further differentiate by category
+:::
+:::
+
+## Some best practices
+
+-   Keep it simple
+-   Summarize and highlight
+-   Tell a story with the plot (use "active titles")
+-   If possible, replace text with visuals
+
+## Recap
+
+-   Biostatistics involves a broad range of activities that help us improve the intellectual content of data from biological, biomedical, and public health-related studies; it is more than just a compilation of computational methods.
+
+-   Measurement is assigning numbers or codes according to prior-set rules
+
+-   Data quality: garbage in, garbage out. Imprecision and bias.
+
+-   Exploratory data analysis: initial data analysis that summarizes key aspects of data
