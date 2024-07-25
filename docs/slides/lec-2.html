@@ -586,12 +586,231 @@ Dr.&nbsp;Kara McCormack
 <li>If possible, replace text with visuals</li>
 </ul>
 </section>
+<section id="reminder-the-population-vs.-a-sample" class="slide level2 smaller">
+<h2>Reminder: the population vs.&nbsp;a sample</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<ul>
+<li><p><strong>Population and research question</strong>: Is the PCV13 vaccine effective against community acquired pneumonia in <strong>adults aged 65 or older</strong>?</p></li>
+<li><p>Sample: 84,496 adults 65 years of age or older recruited in a trial between September 2008 and January 2010 and 101 sites throughout the Netherlands.</p></li>
+</ul>
+</div><div class="column" style="width:60%;">
+<p><img data-src="images/lec-2/poly.png"></p>
+</div>
+</div>
+</section>
+<section id="parameters-and-statistics" class="slide level2">
+<h2>Parameters and statistics</h2>
+<p><strong>Statistics</strong></p>
+<ul>
+<li>Attribute of a sample</li>
+<li>Function of the observed values at hand</li>
+<li>Confusingly, both the function and the values
+<ul>
+<li>Example: You take a measurement from a sample of 100 people. The mean measurement of that sample (as a function) is a statistic. The actual realized value of the mean measurement of that sample is also a statistic.</li>
+</ul></li>
+<li>Written in Roman letters</li>
+</ul>
+</section>
+<section id="parameters-and-statistics-1" class="slide level2">
+<h2>Parameters and statistics</h2>
+<p><strong>Parameters</strong></p>
+<ul>
+<li>Attribute of the population of interest</li>
+<li>Not computable directly (unless entire population is perfectly measured)</li>
+<li>Written in Greek letters</li>
+</ul>
+<p>A statistic used to estimate a population parameter is an <strong>estimator</strong></p>
+</section>
+<section id="numerical-summary-statistics" class="slide level2 smaller">
+<h2>Numerical summary statistics</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<ul>
+<li><p>Population <strong>parameter</strong> of interest: vaccine efficacy among all adults aged 65 or older</p></li>
+<li><p>Sample <strong>statistic</strong> collected: proportion of vaccinated adults in the trial who became ill with community-acquired pneumonia</p></li>
+</ul>
+</div><div class="column" style="width:60%;">
+<p><img data-src="images/lec-2/poly.png"></p>
+</div>
+</div>
+</section>
+<section id="mean" class="slide level2 smaller">
+<h2>Mean</h2>
+<ul>
+<li><strong>Sample mean</strong>: the arithmetic average of values in the sample:</li>
+</ul>
+<p><span class="math display">\[\bar{x} = \frac{1}{n}(x_1 + \ldots + x_n) = \frac{1}{n} \sum_{i=1}^n x_i\]</span></p>
+<ul>
+<li><p>Population mean <span class="math inline">\(\mu\)</span> is calculated the same way, but would involve sum over every observation in the population (rarely possible!)</p></li>
+<li><p>The sample mean is a <strong>point estimate</strong> of the population mean</p></li>
+<li><p>Not the exact population mean (unless lucky), but for a representative sample, it’s a pretty good guess</p></li>
+<li><p>As the sample size gets larger, on average <span class="math inline">\(\bar{x}\)</span> gets closer and closer to <span class="math inline">\(\mu\)</span></p></li>
+</ul>
+</section>
+<section id="median" class="slide level2">
+<h2>Median</h2>
+<ul>
+<li><p><strong>Sample median</strong>: the <span class="math inline">\(50^{th}\)</span> <strong>percentile</strong></p></li>
+<li><p>Middle number of observations after being ranked in numerical order</p></li>
+<li><p>For odd number observations, it is the exact middle value; otherwise, it is the arithmetic average of the middle two.</p></li>
+<li><p>Example: What is the median of <span class="math inline">\(\{3, 4, 5, 5, 7, 8, 9, 9\}\)</span> ?</p></li>
+<li><p>More <strong>robust</strong> to extreme values or outliers when compared to the mean.</p></li>
+</ul>
+</section>
+<section id="mode" class="slide level2">
+<h2>Mode</h2>
+<ul>
+<li><strong>Sample mode</strong>: the most frequent value in the dataset</li>
+<li>There does not only have to be one mode (we can have bimodal or trimodal or other <strong>multimodal</strong> distributions)</li>
+<li>Example: What is the mode of <span class="math inline">\(\{1, 2, 3, 4, 4, 5, 5, 5, 7, 9\}\)</span>?</li>
+</ul>
+</section>
+<section id="are-point-estimates-of-location-enough" class="slide level2">
+<h2>Are point estimates of location enough?</h2>
+
+<img data-src="images/lec-2/irma.png" width="700" class="r-stretch"></section>
+<section id="skewness" class="slide level2">
+<h2>Skewness</h2>
+
+<img data-src="lec-2_files/figure-revealjs/unnamed-chunk-8-1.png" width="960" class="r-stretch"><p><strong>Skewed</strong> distributions are not symmetric; they can be right or left skewed depending on which side the “tail” is on.</p>
+</section>
+<section id="minimum-maximum-and-range" class="slide level2">
+<h2>Minimum, maximum, and range</h2>
+<ul>
+<li><p><strong>Sample minimum</strong> and <strong>maximum</strong>: the samlest and largest observations in the dataset</p></li>
+<li><p><strong>Sample range</strong>: the difference between the sample maximum and the sample minimum</p></li>
+</ul>
+</section>
+<section id="quantiles" class="slide level2">
+<h2>Quantiles</h2>
+<ul>
+<li><p>Cutpoints dividing the data into equal-sized groups (tertiles, quartiles, quintiles, percentiles, etc.)</p></li>
+<li><p>First quartile (Q1) and third quartile (Q3) cut off the bottom and top 25%, respectively</p></li>
+<li><p><strong>Interquartile range</strong> (IQR): Q3-Q1; shows the width of the middle 50% of the data</p></li>
+<li><p>The sample minimum, Q1, Q2 (median), Q3, and maximum are sometimes called the <strong>five number summary</strong></p></li>
+</ul>
+</section>
+<section id="outliers" class="slide level2">
+<h2>Outliers</h2>
+<ul>
+<li><p>Observations numerically distant from others (definitions vary)</p></li>
+<li><p>Statistical methods robust to outliers (e.g.&nbsp;the median) can be used if outliers are problematic</p></li>
+<li><p>Should be noted and handled carefully! (e.g.&nbsp;maternal ages of 11 vs 111 in a dataset)</p></li>
+</ul>
+</section>
+<section id="standard-deviation" class="slide level2 smaller">
+<h2>Standard deviation</h2>
+<ul>
+<li><strong>Sample standard deviation</strong>: most common measure of spread, based on deviations around the mean</li>
+</ul>
+<p><span class="math display">\[s = \sqrt{\frac{1}{n-1} \sum_{i=1}^n (x_i - \bar{x})^2}\]</span></p>
+<ul>
+<li><p>Population SD <span class="math inline">\(\sigma\)</span> is calculated the same way, but requires sum over everyone in the population (with <span class="math inline">\(\bar{x}\)</span> replaced by <span class="math inline">\(\mu\)</span>)</p></li>
+<li><p>Same units as original dataset for easier interpretation</p></li>
+<li><p>Often used to express confidence (e.g.&nbsp;a <strong>margin of error</strong> for a poll being around <span class="math inline">\(\pm\)</span> 2 SD of the mean)</p></li>
+<li><p>Squared deviations weight larger deviations more heavily, and so also positive and negative deviations do not cancel out</p></li>
+</ul>
+</section>
+<section id="variance" class="slide level2 smaller">
+<h2>Variance</h2>
+<ul>
+<li><strong>Sample variance</strong>: approximately the average squared deviation from the mean</li>
+</ul>
+<p><span class="math display">\[s^2 = \frac{1}{n-1} \sum_{i=1}^n(x_i - \bar{x})^2\]</span></p>
+<ul>
+<li>Estimate of the population variance <span class="math inline">\(\sigma^2\)</span></li>
+<li>Division by <span class="math inline">\(n-1\)</span> instead of <span class="math inline">\(n\)</span> to avoid bias in small samples
+<ul>
+<li>Don’t worry about that right now, more details in a subsequent statistics class if interested</li>
+</ul></li>
+</ul>
+</section>
+<section id="how-big-are-most-values" class="slide level2">
+<h2>How big are most values?</h2>
+<ul>
+<li>For a distribution of any shape, most of the data are within “average <span class="math inline">\(\pm\)</span> <span class="math inline">\(k\)</span> SDs”</li>
+</ul>
+<div class="callout callout-note callout-titled callout-style-simple">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Chebyshev’s inequality</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li><strong>Chebyshev’s inequality</strong> tells us the proportion of values in the range “average <span class="math inline">\(\pm\)</span> <span class="math inline">\(k\)</span> SDs” is at least <span class="math inline">\(1-\frac{1}{k^2}\)</span></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="chevychevs-bounds" class="slide level2">
+<h2>Chevychev’s bounds</h2>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Default</th>
+<th style="text-align: center;">Left</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">Average <span class="math inline">\(\pm\)</span> 2 SDs</td>
+<td style="text-align: center;">at least <span class="math inline">\(1-\frac{1}{4}\)</span> = 75%</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Average <span class="math inline">\(\pm\)</span> 3 SDs</td>
+<td style="text-align: center;">at least <span class="math inline">\(1-\frac{1}{9}\)</span> = 89%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Average <span class="math inline">\(\pm\)</span> 4 SDs</td>
+<td style="text-align: center;">at least <span class="math inline">\(1-\frac{1}{16}\)</span> = 94%</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Average <span class="math inline">\(\pm\)</span> 5 SDs</td>
+<td style="text-align: center;">at least <span class="math inline">\(1-\frac{1}{25}\)</span> = 96%</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><p>If we know the exact distribution (coming soon), we can often calculate better bounds</p></li>
+<li><p>However, these bounds hold for <em>any</em> distribution (that has a well-defined mean and variance)</p></li>
+</ul>
+</section>
+<section id="why-not-always-use-means-and-sds" class="slide level2 smaller">
+<h2>Why not always use means and SDs?</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="cell">
+<div class="cell-output-display">
+<p><img data-src="lec-2_files/figure-revealjs/unnamed-chunk-9-1.png" width="960"></p>
+</div>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="cell">
+<div class="cell-output-display">
+<p><img data-src="lec-2_files/figure-revealjs/unnamed-chunk-10-1.png" width="960"></p>
+</div>
+</div>
+</div>
+</div>
+<p>These two distributions have the same mean and standard deviation, but are clearly very different!</p>
+<ul>
+<li>Exploratory data analysis can help us visually see differences in two datasets that basic statistics (e.g.&nbsp;mean and sd) might not reveal</li>
+</ul>
+</section>
 <section id="recap" class="slide level2">
 <h2>Recap</h2>
 <ul>
 <li>Exploratory data analysis: initial data analysis that summarizes key aspects of data</li>
 <li>Types of data: categorical, numerical</li>
 <li>Examples of plots: bar charts, box plots, histograms, etc.</li>
+<li>Population vs.&nbsp;sample</li>
+<li>Numerical summary statistics: mean, median, mode</li>
+<li>Quantiles, outliers, standard deviation vs.&nbsp;variance, Chebyshev’s inequality</li>
 </ul>
 
 

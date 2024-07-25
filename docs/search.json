@@ -809,6 +809,125 @@
     "href": "slides/lec-2.html#recap",
     "title": "Lecture 2: The nature of data",
     "section": "Recap",
-    "text": "Recap\n\nExploratory data analysis: initial data analysis that summarizes key aspects of data\nTypes of data: categorical, numerical\nExamples of plots: bar charts, box plots, histograms, etc."
+    "text": "Recap\n\nExploratory data analysis: initial data analysis that summarizes key aspects of data\nTypes of data: categorical, numerical\nExamples of plots: bar charts, box plots, histograms, etc.\nPopulation vs. sample\nNumerical summary statistics: mean, median, mode\nQuantiles, outliers, standard deviation vs. variance, Chebyshev’s inequality"
+  },
+  {
+    "objectID": "slides/lec-2.html#reminder-the-population-vs.-a-sample",
+    "href": "slides/lec-2.html#reminder-the-population-vs.-a-sample",
+    "title": "Lecture 2: The nature of data",
+    "section": "Reminder: the population vs. a sample",
+    "text": "Reminder: the population vs. a sample\n\n\n\nPopulation and research question: Is the PCV13 vaccine effective against community acquired pneumonia in adults aged 65 or older?\nSample: 84,496 adults 65 years of age or older recruited in a trial between September 2008 and January 2010 and 101 sites throughout the Netherlands."
+  },
+  {
+    "objectID": "slides/lec-2.html#parameters-and-statistics",
+    "href": "slides/lec-2.html#parameters-and-statistics",
+    "title": "Lecture 2: The nature of data",
+    "section": "Parameters and statistics",
+    "text": "Parameters and statistics\nStatistics\n\nAttribute of a sample\nFunction of the observed values at hand\nConfusingly, both the function and the values\n\nExample: You take a measurement from a sample of 100 people. The mean measurement of that sample (as a function) is a statistic. The actual realized value of the mean measurement of that sample is also a statistic.\n\nWritten in Roman letters"
+  },
+  {
+    "objectID": "slides/lec-2.html#numerical-summary-statistics",
+    "href": "slides/lec-2.html#numerical-summary-statistics",
+    "title": "Lecture 2: The nature of data",
+    "section": "Numerical summary statistics",
+    "text": "Numerical summary statistics\n\n\n\nPopulation parameter of interest: vaccine efficacy among all adults aged 65 or older\nSample statistic collected: proportion of vaccinated adults in the trial who became ill with community-acquired pneumonia"
+  },
+  {
+    "objectID": "slides/lec-2.html#mean",
+    "href": "slides/lec-2.html#mean",
+    "title": "Lecture 2: The nature of data",
+    "section": "Mean",
+    "text": "Mean\n\nSample mean: the arithmetic average of values in the sample:\n\n\\[\\bar{x} = \\frac{1}{n}(x_1 + \\ldots + x_n) = \\frac{1}{n} \\sum_{i=1}^n x_i\\]\n\nPopulation mean \\(\\mu\\) is calculated the same way, but would involve sum over every observation in the population (rarely possible!)\nThe sample mean is a point estimate of the population mean\nNot the exact population mean (unless lucky), but for a representative sample, it’s a pretty good guess\nAs the sample size gets larger, on average \\(\\bar{x}\\) gets closer and closer to \\(\\mu\\)"
+  },
+  {
+    "objectID": "slides/lec-2.html#median",
+    "href": "slides/lec-2.html#median",
+    "title": "Lecture 2: The nature of data",
+    "section": "Median",
+    "text": "Median\n\nSample median: the \\(50^{th}\\) percentile\nMiddle number of observations after being ranked in numerical order\nFor odd number observations, it is the exact middle value; otherwise, it is the arithmetic average of the middle two.\nExample: What is the median of \\(\\{3, 4, 5, 5, 7, 8, 9, 9\\}\\) ?\nMore robust to extreme values or outliers when compared to the mean."
+  },
+  {
+    "objectID": "slides/lec-2.html#mode",
+    "href": "slides/lec-2.html#mode",
+    "title": "Lecture 2: The nature of data",
+    "section": "Mode",
+    "text": "Mode\n\nSample mode: the most frequent value in the dataset\nThere does not only have to be one mode (we can have bimodal or trimodal or other multimodal distributions)\nExample: What is the mode of \\(\\{1, 2, 3, 4, 4, 5, 5, 5, 7, 9\\}\\)?"
+  },
+  {
+    "objectID": "slides/lec-2.html#are-point-estimates-of-location-enough",
+    "href": "slides/lec-2.html#are-point-estimates-of-location-enough",
+    "title": "Lecture 2: The nature of data",
+    "section": "Are point estimates of location enough?",
+    "text": "Are point estimates of location enough?"
+  },
+  {
+    "objectID": "slides/lec-2.html#skewness",
+    "href": "slides/lec-2.html#skewness",
+    "title": "Lecture 2: The nature of data",
+    "section": "Skewness",
+    "text": "Skewness\n\nSkewed distributions are not symmetric; they can be right or left skewed depending on which side the “tail” is on."
+  },
+  {
+    "objectID": "slides/lec-2.html#minimum-maximum-and-range",
+    "href": "slides/lec-2.html#minimum-maximum-and-range",
+    "title": "Lecture 2: The nature of data",
+    "section": "Minimum, maximum, and range",
+    "text": "Minimum, maximum, and range\n\nSample minimum and maximum: the samlest and largest observations in the dataset\nSample range: the difference between the sample maximum and the sample minimum"
+  },
+  {
+    "objectID": "slides/lec-2.html#quantiles",
+    "href": "slides/lec-2.html#quantiles",
+    "title": "Lecture 2: The nature of data",
+    "section": "Quantiles",
+    "text": "Quantiles\n\nCutpoints dividing the data into equal-sized groups (tertiles, quartiles, quintiles, percentiles, etc.)\nFirst quartile (Q1) and third quartile (Q3) cut off the bottom and top 25%, respectively\nInterquartile range (IQR): Q3-Q1; shows the width of the middle 50% of the data\nThe sample minimum, Q1, Q2 (median), Q3, and maximum are sometimes called the five number summary"
+  },
+  {
+    "objectID": "slides/lec-2.html#outliers",
+    "href": "slides/lec-2.html#outliers",
+    "title": "Lecture 2: The nature of data",
+    "section": "Outliers",
+    "text": "Outliers\n\nObservations numerically distant from others (definitions vary)\nStatistical methods robust to outliers (e.g. the median) can be used if outliers are problematic\nShould be noted and handled carefully! (e.g. maternal ages of 11 vs 111 in a dataset)"
+  },
+  {
+    "objectID": "slides/lec-2.html#standard-deviation",
+    "href": "slides/lec-2.html#standard-deviation",
+    "title": "Lecture 2: The nature of data",
+    "section": "Standard deviation",
+    "text": "Standard deviation\n\nSample standard deviation: most common measure of spread, based on deviations around the mean\n\n\\[s = \\sqrt{\\frac{1}{n-1} \\sum_{i=1}^n (x_i - \\bar{x})^2}\\]\n\nPopulation SD \\(\\sigma\\) is calculated the same way, but requires sum over everyone in the population (with \\(\\bar{x}\\) replaced by \\(\\mu\\))\nSame units as original dataset for easier interpretation\nOften used to express confidence (e.g. a margin of error for a poll being around \\(\\pm\\) 2 SD of the mean)\nSquared deviations weight larger deviations more heavily, and so also positive and negative deviations do not cancel out"
+  },
+  {
+    "objectID": "slides/lec-2.html#variance",
+    "href": "slides/lec-2.html#variance",
+    "title": "Lecture 2: The nature of data",
+    "section": "Variance",
+    "text": "Variance\n\nSample variance: approximately the average squared deviation from the mean\n\n\\[s^2 = \\frac{1}{n-1} \\sum_{i=1}^n(x_i - \\bar{x})^2\\]\n\nEstimate of the population variance \\(\\sigma^2\\)\nDivision by \\(n-1\\) instead of \\(n\\) to avoid bias in small samples\n\nDon’t worry about that right now, more details in a subsequent statistics class if interested"
+  },
+  {
+    "objectID": "slides/lec-2.html#chevychevs-bounds",
+    "href": "slides/lec-2.html#chevychevs-bounds",
+    "title": "Lecture 2: The nature of data",
+    "section": "Chevychev’s bounds",
+    "text": "Chevychev’s bounds\n\n\n\nDefault\nLeft\n\n\n\n\nAverage \\(\\pm\\) 2 SDs\nat least \\(1-\\frac{1}{4}\\) = 75%\n\n\nAverage \\(\\pm\\) 3 SDs\nat least \\(1-\\frac{1}{9}\\) = 89%\n\n\nAverage \\(\\pm\\) 4 SDs\nat least \\(1-\\frac{1}{16}\\) = 94%\n\n\nAverage \\(\\pm\\) 5 SDs\nat least \\(1-\\frac{1}{25}\\) = 96%\n\n\n\n\nIf we know the exact distribution (coming soon), we can often calculate better bounds\nHowever, these bounds hold for any distribution (that has a well-defined mean and variance)"
+  },
+  {
+    "objectID": "slides/lec-2.html#why-not-always-use-means-and-sds",
+    "href": "slides/lec-2.html#why-not-always-use-means-and-sds",
+    "title": "Lecture 2: The nature of data",
+    "section": "Why not always use means and SDs?",
+    "text": "Why not always use means and SDs?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThese two distributions have the same mean and standard deviation, but are clearly very different!\n\nExploratory data analysis can help us visually see differences in two datasets that basic statistics (e.g. mean and sd) might not reveal"
+  },
+  {
+    "objectID": "slides/lec-2.html#parameters-and-statistics-1",
+    "href": "slides/lec-2.html#parameters-and-statistics-1",
+    "title": "Lecture 2: The nature of data",
+    "section": "Parameters and statistics",
+    "text": "Parameters and statistics\nParameters\n\nAttribute of the population of interest\nNot computable directly (unless entire population is perfectly measured)\nWritten in Greek letters\n\nA statistic used to estimate a population parameter is an estimator"
+  },
+  {
+    "objectID": "slides/lec-2.html#how-big-are-most-values",
+    "href": "slides/lec-2.html#how-big-are-most-values",
+    "title": "Lecture 2: The nature of data",
+    "section": "How big are most values?",
+    "text": "How big are most values?\n\nFor a distribution of any shape, most of the data are within “average \\(\\pm\\) \\(k\\) SDs”\n\n\n\n\n\n\n\nChebyshev’s inequality\n\n\n\nChebyshev’s inequality tells us the proportion of values in the range “average \\(\\pm\\) \\(k\\) SDs” is at least \\(1-\\frac{1}{k^2}\\)"
   }
 ]
