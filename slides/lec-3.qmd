@@ -1,0 +1,208 @@
+---
+title: "Lecture 3: Basics of probability"
+subtitle: "BIOS 600 - Fall 2024"
+author: "Dr. Kara McCormack"
+logo: "images/logo_600.png"
+format: 
+  revealjs: 
+    theme: slides.scss
+    multiplex: true
+    transition: fade
+    slide-number: true
+editor: visual
+execute:
+  freeze: auto
+---
+
+## What's the use of probability?
+
+-   Last time: how descriptive statistics are used to **describe** data
+-   Goal: Make **inferences** about a population based on a sample
+    -   Inference: making conclusions about a population based on a sample of data drawn from that population
+-   To do this, we need a solid foundation of probability theory
+
+## Probabilities come up all the time
+
+How do we interpret the following statements?
+
+-   There is a moderate chance of drought in North Carolina during the next year
+-   The surgery has a 50-50 probability of success
+-   The ten-year survival probability of invasivs breast cancer among US women is 83%.
+
+## Interpretations of probability
+
+-   Long-run frequencies vs. degree of belief
+
+## Probability spaces {.smaller}
+
+Mathematical objects that model **random experiments**, real-world processes involving states that occur **randomly**
+
+A probability space consists of three components:
+
+1.  A **sample space**, the set of all possible outcomes
+
+2.  Subsets of the sample space, called **events**, which comprise any number of possible outcomes (including none of them!)
+
+3.  A function that assigns **probabilities** to events
+
+An event **occurs** if the outcome of the random experiment is contained in that event.
+
+## Sample spaces
+
+Sample spaces depend on the random experiment in question
+
+-   Tossing a single fair coin
+-   Tossing two fair coins
+-   Sum of rolling two fair six-sided dice
+-   Survival (years) after cancer diagnosis
+
+## Now you try
+
+::: {.callout-caution appearance="simple"}
+## Now you try
+
+What is the sample space of tossing three fair coins?
+:::
+
+## Events {.smaller}
+
+Subsets of the sample space that comprise possible outcomes. Essentially, these are all the 'plausibly reasonable' events we're interested in calculating probabilities for\*:
+
+-   Tossing a single fair coin
+-   Tossing two fair coins
+-   Sum of rolling two fair six-sided dice
+-   Survival (years) after cancer diagnosis\*
+
+\*Note: there is some complicated math involved in calculating this. Don't worry about it for now!
+
+Examples on the next slide...
+
+## Events {.smaller}
+
+Subsets of the sample space that comprise possible outcomes. Essentially, these are all the 'plausibly reasonable' events we're interested in calculating probabilities for:
+
+-   Tossing a single fair coin
+    -   A head
+-   Tossing two fair coins
+    -   At least one head
+-   Sum of rolling two fair six-sided dice
+    -   An odd number
+-   Survival (years) after cancer diagnosis
+    -   More than 1 year
+
+## Probabilities {.smaller}
+
+A number describing the likelihood of each event's occurrence. This maps events to a number between 0 and 1, inclusive:
+
+-   Tossing a single fair coin
+
+    -   A head [0.5]{style="color: orange"}
+
+-   Tossing two fair coins
+
+    -   At least one head [0.75]{style="color: orange"}
+
+-   Sum of rolling two fair six-sided dice
+
+    -   An odd number [0.5]{style="color: orange"}
+
+-  Survival (years) after cancer diagnosis
+
+    - greater than one year [...difficult]{style="color: orange"}
+
+## How did we come up with those answers?
+
+- For the first three, you would probably intuit your way through using a [discrete probability distribution]{style="color: RosyBrown"} (more onthis in a few lectures)
+
+- For the last one, by making some assumptions on the survival process, we can use similar probability tools to arrive at an answer. (But it's still complicated!)
+
+## Events as (sub)sets
+
+Remember, events are subsets of the entire sample space. Let's take for now the example of tossing a single fair coin and recording the outcome. 
+
+There are only two elements in the outcome space:
+
+- $A$: getting a head
+- $B$: getting a tail
+
+We can define the simple events of just $A$ or $B$ occurring, but are there "other" events we can define?
+
+## Set operations {.smaller}
+
+Sets can be related to each other in different ways. For two sets (or events) $A$ and $B$, the most common relationships are:
+
+- [Intersection]{style="color: RosyBrown"} ($A \cap B$): $A$ and $B$ both occur
+- [Union]{style="color: RosyBrown"} ($A \cup B$): $A$ or $B$ occur (including when both occur)
+- [Complement]{style="color: RosyBrown"} ($A^C$): $A$ does not occur
+- [Difference]{style="color: RosyBrown"} ($A \backslash B$): $A$ occurs, but $B$ does not occur; equivalent to ($A \cap B^C$) (why?)
+
+Two sets $A$ and $B$ are said to be [disjoint]{style="color: RosyBrown"} if $A \cap B = \emptyset$
+
+## Those "other" events
+
+What are the intersection, union, complement, and difference of events $A$ (getting a head) and $B$ (a tail) as applied to our coin-toss example? Are the two events $A$ and $B$ disjoint?
+
+What are the probabilities assigned to those events:
+
+- $P(A \cap B)=$?
+- $P(A \cup B)=$?
+- ...etc.
+
+# How to probabilities "work"?
+
+Komolgorov axioms
+
+1. The probability of any event in the sample space is a non-negative real number (could be zero!)
+
+2. The probability of the entire sample space is 1
+
+3. If $A$ and $B$ are [disjoint]{style="color: RosyBrown"} events ([mutually exclusive]{style="color: RosyBrown"}), then the probability of $A$ or $B$ occurring is the sum of the individual probabilities that they occur
+
+## How to probabilities "work"?
+
+For two events $A$ and $B$ with probabilities $P(A)$ and $P(B)$ of occurring, the Kolmogorov axioms give us two important rules:
+
+- [Complement Rule]{style="color: RosyBrown"}: $(A^C) = 1- P(A)$
+- [Inclusion-Exclusion]{style="color: RosyBrown"}: $P(A \cup B) = P(A) + P(B) - P(A \cap B)$
+
+How do we extend inclusion-exclusion to more than two events?
+
+## DeMorgan's laws
+
+- [Complement of union]{style="color: RosyBrown"}: $(A\cup B)^C = A^C \cap B^C$
+- [Complement of intersection]{style="color: RosyBrown"}: $(A\cap B)^C = A^C \cap B^C$ 
+
+How do we interpret these in plain English?
+
+How do we extend DeMorgan's laws to more than two events?
+
+## Gunter et al. study (2017) {.smaller}
+
+![](images/lec-3/coffee.png)
+
+What was the probability that a randomly selected person in the trial..
+
+::: columns
+::: {.column width="50%"}
+
+ - ... did not drink coffee?
+ - ... died during the study or did not drink coffee?
+ - ...did not die during the study and was a high coffee drinker?
+:::
+
+::: {.column width="50%"}
+
+| Coffee drinking | Died? Yes |Died? No | Total | 
+|-------------|:-----:|:------:|:------:|
+| None     | 1039   |   5438 | 6477 |
+| Med-Low     | 4440  |   29712 |  29809 |
+| High       | 3601    |     24934 |  28535 |
+| Total       | 9080    |   60084 |  64821 |
+:::
+
+:::
+
+## Recap
+
+
+
