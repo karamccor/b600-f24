@@ -14,7 +14,6 @@ Due Friday, Aug 23 at 5pm.
 
 ![](images/lab-1/hello-sticker.jpeg){width="300"}
 
-
 ## Overview
 
 -   Today's lab introduces the computing tools we will be using this semester.
@@ -101,6 +100,10 @@ Every homework assignment and lab in this class will be written in Quarto, with 
 
 ```{r}
 download.file("https://www2.stat.duke.edu/courses/Spring21/sta102.001/labs/lab-01-template.Rmd", destfile="C:/Users/kmcco/OneDrive - University of North Carolina at Chapel Hill/Documents/UNC_Teaching/fall2024/bios600-f24/labs/lab-01-template.Rmd")
+
+## UNC
+
+# download.file("https://karamccor.github.io/b600-f24/labs/data/cdc_cleaned.csv/labs/lab-01-template.qmd", destfile="C:/Users/kmcco/OneDrive - University of North Carolina at Chapel Hill/Documents/UNC_Teaching/fall2024/bios600-f24/labs/lab-01-template-test.qmd")
 ```
 
 You should now see the new file `lab-01.qmd` under the Files tab in the bottom-right hand side of your RStudio window. Click on `lab-01.qmd` in this window in order to open it up – it is the template for use in this lab!
@@ -171,5 +174,3 @@ Over65: % of residents over age 65
 ```
 
 Let’s begin with a very simple plot. Run the following code in the console:
-
-
