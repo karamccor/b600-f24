@@ -929,5 +929,187 @@
     "title": "Lecture 2: The nature of data",
     "section": "How big are most values?",
     "text": "How big are most values?\n\nFor a distribution of any shape, most of the data are within “average \\(\\pm\\) \\(k\\) SDs”\n\n\n\n\n\n\n\nChebyshev’s inequality\n\n\n\nChebyshev’s inequality tells us the proportion of values in the range “average \\(\\pm\\) \\(k\\) SDs” is at least \\(1-\\frac{1}{k^2}\\)"
+  },
+  {
+    "objectID": "slides/lec-3.html#whats-the-use-of-probability",
+    "href": "slides/lec-3.html#whats-the-use-of-probability",
+    "title": "Lecture 3: Basics of probability",
+    "section": "What’s the use of probability?",
+    "text": "What’s the use of probability?\n\nLast time: how descriptive statistics are used to describe data\nGoal: Make inferences about a population based on a sample\n\nInference: making conclusions about a population based on a sample of data drawn from that population\n\nTo do this, we need a solid foundation of probability theory"
+  },
+  {
+    "objectID": "slides/lec-3.html#probabilities-come-up-all-the-time",
+    "href": "slides/lec-3.html#probabilities-come-up-all-the-time",
+    "title": "Lecture 3: Basics of probability",
+    "section": "Probabilities come up all the time",
+    "text": "Probabilities come up all the time\nHow do we interpret the following statements?\n\nThere is a moderate chance of drought in North Carolina during the next year\nThe surgery has a 50-50 probability of success\nThe ten-year survival probability of invasivs breast cancer among US women is 83%."
+  },
+  {
+    "objectID": "slides/lec-3.html#interpretations-of-probability",
+    "href": "slides/lec-3.html#interpretations-of-probability",
+    "title": "Lecture 3: Basics of probability",
+    "section": "Interpretations of probability",
+    "text": "Interpretations of probability\n\nLong-run frequencies vs. degree of belief"
+  },
+  {
+    "objectID": "slides/lec-3.html#probability-spaces",
+    "href": "slides/lec-3.html#probability-spaces",
+    "title": "Lecture 3: Basics of probability",
+    "section": "Probability spaces",
+    "text": "Probability spaces\nMathematical objects that model random experiments, real-world processes involving states that occur randomly\nA probability space consists of three components:\n\nA sample space, the set of all possible outcomes\nSubsets of the sample space, called events, which comprise any number of possible outcomes (including none of them!)\nA function that assigns probabilities to events\n\nAn event occurs if the outcome of the random experiment is contained in that event."
+  },
+  {
+    "objectID": "slides/lec-3.html#sample-spaces",
+    "href": "slides/lec-3.html#sample-spaces",
+    "title": "Lecture 3: Basics of probability",
+    "section": "Sample spaces",
+    "text": "Sample spaces\nSample spaces depend on the random experiment in question\n\nTossing a single fair coin\nTossing two fair coins\nSum of rolling two fair six-sided dice\nSurvival (years) after cancer diagnosis"
+  },
+  {
+    "objectID": "slides/lec-3.html#now-you-try",
+    "href": "slides/lec-3.html#now-you-try",
+    "title": "Lecture 3: Basics of probability",
+    "section": "Now you try",
+    "text": "Now you try\n\n\n\n\n\n\nNow you try\n\n\nWhat is the sample space of tossing three fair coins?"
+  },
+  {
+    "objectID": "slides/lec-3.html#events",
+    "href": "slides/lec-3.html#events",
+    "title": "Lecture 3: Basics of probability",
+    "section": "Events",
+    "text": "Events\nSubsets of the sample space that comprise possible outcomes. Essentially, these are all the ‘plausibly reasonable’ events we’re interested in calculating probabilities for*:\n\nTossing a single fair coin\nTossing two fair coins\nSum of rolling two fair six-sided dice\nSurvival (years) after cancer diagnosis*\n\n*Note: there is some complicated math involved in calculating this. Don’t worry about it for now!\nExamples on the next slide…"
+  },
+  {
+    "objectID": "slides/lec-3.html#events-1",
+    "href": "slides/lec-3.html#events-1",
+    "title": "Lecture 3: Basics of probability",
+    "section": "Events",
+    "text": "Events\nSubsets of the sample space that comprise possible outcomes. Essentially, these are all the ‘plausibly reasonable’ events we’re interested in calculating probabilities for:\n\nTossing a single fair coin\n\nA head\n\nTossing two fair coins\n\nAt least one head\n\nSum of rolling two fair six-sided dice\n\nAn odd number\n\nSurvival (years) after cancer diagnosis\n\nMore than 1 year"
+  },
+  {
+    "objectID": "slides/lec-3.html#probabilities",
+    "href": "slides/lec-3.html#probabilities",
+    "title": "Lecture 3: Basics of probability",
+    "section": "Probabilities",
+    "text": "Probabilities\nA number describing the likelihood of each event’s occurrence. This maps events to a number between 0 and 1, inclusive:\n\nTossing a single fair coin\n\nA head 0.5\n\nTossing two fair coins\n\nAt least one head 0.75\n\nSum of rolling two fair six-sided dice\n\nAn odd number 0.5\n\nSurvival (years) after cancer diagnosis\n\ngreater than one year …difficult"
+  },
+  {
+    "objectID": "slides/lec-3.html#test",
+    "href": "slides/lec-3.html#test",
+    "title": "Lecture 2: Basics of probability",
+    "section": "Test",
+    "text": "Test\nQuarto enables you to weave together"
+  },
+  {
+    "objectID": "slides/lec-3.html#how-did-we-come-up-with-those-answers",
+    "href": "slides/lec-3.html#how-did-we-come-up-with-those-answers",
+    "title": "Lecture 3: Basics of probability",
+    "section": "How did we come up with those answers?",
+    "text": "How did we come up with those answers?\n\nFor the first three, you would probably intuit your way through using a discrete probability distribution (more onthis in a few lectures)\nFor the last one, by making some assumptions on the survival process, we can use similar probability tools to arrive at an answer. (But it’s still complicated!)"
+  },
+  {
+    "objectID": "slides/lec-3.html#events-as-subsets",
+    "href": "slides/lec-3.html#events-as-subsets",
+    "title": "Lecture 3: Basics of probability",
+    "section": "Events as (sub)sets",
+    "text": "Events as (sub)sets\nRemember, events are subsets of the entire sample space. Let’s take for now the example of tossing a single fair coin and recording the outcome.\nThere are only two elements in the outcome space:\n\n\\(A\\): getting a head\n\\(B\\): getting a tail\n\nWe can define the simple events of just \\(A\\) or \\(B\\) occurring, but are there “other” events we can define?"
+  },
+  {
+    "objectID": "slides/lec-3.html#set-operations",
+    "href": "slides/lec-3.html#set-operations",
+    "title": "Lecture 3: Basics of probability",
+    "section": "Set operations",
+    "text": "Set operations\nSets can be related to each other in different ways. For two sets (or events) \\(A\\) and \\(B\\), the most common relationships are:\n\nIntersection (\\(A \\cap B\\)): \\(A\\) and \\(B\\) both occur\nUnion (\\(A \\cup B\\)): \\(A\\) or \\(B\\) occur (including when both occur)\nComplement (\\(A^C\\)): \\(A\\) does not occur\nDifference (\\(A \\backslash B\\)): \\(A\\) occurs, but \\(B\\) does not occur; equivalent to (\\(A \\cap B^C\\)) (why?)\n\nTwo sets \\(A\\) and \\(B\\) are said to be disjoint if \\(A \\cap B = \\emptyset\\)"
+  },
+  {
+    "objectID": "slides/lec-3.html#those-other-events",
+    "href": "slides/lec-3.html#those-other-events",
+    "title": "Lecture 3: Basics of probability",
+    "section": "Those “other” events",
+    "text": "Those “other” events\nWhat are the intersection, union, complement, and difference of events \\(A\\) (getting a head) and \\(B\\) (a tail) as applied to our coin-toss example? Are the two events \\(A\\) and \\(B\\) disjoint?\nWhat are the probabilities assigned to those events:\n\n\\(P(A \\cap B)=\\)?\n\\(P(A \\cup B)=\\)?\n…etc."
+  },
+  {
+    "objectID": "slides/lec-3.html#how-to-probabilities-work-1",
+    "href": "slides/lec-3.html#how-to-probabilities-work-1",
+    "title": "Lecture 3: Basics of probability",
+    "section": "How to probabilities “work”?",
+    "text": "How to probabilities “work”?\nFor two events \\(A\\) and \\(B\\) with probabilities \\(P(A)\\) and \\(P(B)\\) of occurring, the Kolmogorov axioms give us two important rules:\n\nComplement Rule: \\((A^C) = 1- P(A)\\)\nInclusion-Exclusion: \\(P(A \\cup B) = P(A) + P(B) - P(A \\cap B)\\)\n\nHow do we extend inclusion-exclusion to more than two events?"
+  },
+  {
+    "objectID": "slides/lec-3.html#demorgans-laws",
+    "href": "slides/lec-3.html#demorgans-laws",
+    "title": "Lecture 3: Basics of probability",
+    "section": "DeMorgan’s laws",
+    "text": "DeMorgan’s laws\n\nComplement of union: \\((A\\cup B)^C = A^C \\cap B^C\\)\nComplement of intersection: \\((A\\cap B)^C = A^C \\cap B^C\\)\n\nHow do we interpret these in plain English?\nHow do we extend DeMorgan’s laws to more than two events?"
+  },
+  {
+    "objectID": "slides/lec-3.html#gunter-et-al.-study-2017",
+    "href": "slides/lec-3.html#gunter-et-al.-study-2017",
+    "title": "Lecture 3: Basics of probability",
+    "section": "Gunter et al. study (2017)",
+    "text": "Gunter et al. study (2017)\n\nWhat was the probability that a randomly selected person in the trial..\n\n\n\n… did not drink coffee?\n… died during the study or did not drink coffee?\n…did not die during the study and was a high coffee drinker?\n\n\n\n\n\nCoffee drinking\nDied? Yes\nDied? No\nTotal\n\n\n\n\nNone\n1039\n5438\n6477\n\n\nMed-Low\n4440\n29712\n29809\n\n\nHigh\n3601\n24934\n28535\n\n\nTotal\n9080\n60084\n64821"
+  },
+  {
+    "objectID": "slides/lec-3.html#recap",
+    "href": "slides/lec-3.html#recap",
+    "title": "Lecture 3: Basics of probability",
+    "section": "Recap",
+    "text": "Recap"
+  },
+  {
+    "objectID": "slides/lec-4.html#supplemental-reading",
+    "href": "slides/lec-4.html#supplemental-reading",
+    "title": "Lecture 4: Conditional Probability and Bayes’ Rule",
+    "section": "Supplemental Reading",
+    "text": "Supplemental Reading\nThese readings are optional. All material in homework and exams will be covered in lecture and lab, and books do not cover everything we do in lecture (even if there is a corresponding section).\nHowever, for those with the very optional textbooks, the following sections correspond to today’s lecture:\n\nPagano and Gareau: Sections 6.2, 6.3\nOpenIntro Statistics: Section 3.2"
+  },
+  {
+    "objectID": "slides/lec-4.html#overview",
+    "href": "slides/lec-4.html#overview",
+    "title": "Lecture 4: Conditional Probability and Bayes’ Rule",
+    "section": "Overview",
+    "text": "Overview\n\nIntroduction to conditional probability\nBayes’ Rule"
+  },
+  {
+    "objectID": "slides/lec-4.html#conditional-probability",
+    "href": "slides/lec-4.html#conditional-probability",
+    "title": "Lecture 4: Conditional Probability and Bayes’ Rule",
+    "section": "Conditional probability",
+    "text": "Conditional probability\nThe probability an event will occur when another event has already occurred. The conditional probability of event \\(A\\) given event \\(B\\) is\n\\[P(A|B) = \\frac{P(A\\cap B)}{P(B)}\\]\nExamples come up all the time in the real world:\n\nGiven that a mammogram comes back positive, what is the probability that a woman has breast cancer?\nGiven that a 68-year old man has suffered four previous heart attacks, what is the probability he dies in the next five years?\nGiven that a patient has a mutation in the CFTR gene, what is the probability their offspring will have cystic fibrosis?"
+  },
+  {
+    "objectID": "slides/lec-4.html#independence-and-the-multiplicative-rule",
+    "href": "slides/lec-4.html#independence-and-the-multiplicative-rule",
+    "title": "Lecture 4: Conditional Probability and Bayes’ Rule",
+    "section": "Independence and the multiplicative rule",
+    "text": "Independence and the multiplicative rule\nWe can rewrite the definition of conditional probability:\n\\[P(A|B) = \\frac{P(A\\cap B)}{P(B)} \\implies  \\underbrace{P(A\\cap B) = P(A | B) \\times P(B)}_{\\text{Multiplicative Rule}}\\]\nWhat does the multiplicative rule mean in plain English?\nEvents \\(A\\) and \\(B\\) are said to be independent when\n\\[P(A \\cap B) = P(A) \\times P(B)\\]\nor equivalently, \\(P(A|B) = P(A)\\) or \\(P(B|A) = P(B)\\)"
+  },
+  {
+    "objectID": "slides/lec-4.html#independent-vs.-disjoint-events",
+    "href": "slides/lec-4.html#independent-vs.-disjoint-events",
+    "title": "Lecture 4: Conditional Probability and Bayes’ Rule",
+    "section": "Independent vs. disjoint events",
+    "text": "Independent vs. disjoint events"
+  },
+  {
+    "objectID": "slides/lec-4.html#the-law-of-total-probability",
+    "href": "slides/lec-4.html#the-law-of-total-probability",
+    "title": "Lecture 4: Conditional Probability and Bayes’ Rule",
+    "section": "The law of total probability",
+    "text": "The law of total probability"
+  },
+  {
+    "objectID": "slides/lec-4.html#bayes-rule",
+    "href": "slides/lec-4.html#bayes-rule",
+    "title": "Lecture 4: Conditional Probability and Bayes’ Rule",
+    "section": "Bayes’ rule",
+    "text": "Bayes’ rule"
+  },
+  {
+    "objectID": "slides/lec-4.html#illustrating-bayes-rule",
+    "href": "slides/lec-4.html#illustrating-bayes-rule",
+    "title": "Lecture 4: Conditional Probability and Bayes’ Rule",
+    "section": "Illustrating Bayes’ rule",
+    "text": "Illustrating Bayes’ rule"
   }
 ]
