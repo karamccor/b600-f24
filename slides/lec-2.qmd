@@ -158,7 +158,8 @@ cdc |>
   count(Region) |>
   ggplot(aes(x = Region, y = n)) +
   geom_bar(stat="identity", fill = "salmon2") +
-  ggtitle("The South has the largest number of states")
+  ggtitle("The South has the \n largest number of states") + 
+  theme(text = element_text(size = 28))
 ```
 :::
 
@@ -179,7 +180,8 @@ cdc |>
 cdc |>
   ggplot(aes(x=HDI, y = Obesity)) +
   geom_boxplot() +
-  ggtitle("Lower HDIs associated with higher obesity %")
+  ggtitle("Lower HDIs associated \n with higher obesity %") +
+  theme(text = element_text(size = 28))
 ```
 :::
 
@@ -202,7 +204,8 @@ cdc |>
   geom_histogram(color = "deeppink4", 
                  fill = "goldenrod2",
                  bins = 20) +
-  ggtitle("Most states have approx. 30% adult obesity")
+  ggtitle("Most states have approx. \n 30% adult obesity") +
+  theme(text = element_text(size = 28))
 ```
 :::
 
@@ -225,7 +228,8 @@ cdc |>
   ggplot(aes(x = State, y = InfantMortalityRate, group_by = State)) +
   geom_line() +
   geom_point() +
-  ggtitle("Infant mortality rate by State")
+  ggtitle("Infant mortality rate \n by State") + 
+  theme(text = element_text(size = 28))
 
 ```
 :::
@@ -250,9 +254,10 @@ cdc |>
   ggplot(aes(x = Exercise, y = Obesity)) +
   geom_point() + 
   facet_grid(. ~ HDI) +
-  ggtitle("Adequate aerobic activity associated with lower obesity") +
-  xlab("Adequate aerobic activity (%)")
-
+  ggtitle("Adequate aerobic activity \n associated with lower obesity") +
+  xlab("Adequate aerobic activity (%)") + 
+  theme(text = element_text(size = 28),
+        axis.text = element_text(size = 16))
 ```
 :::
 
@@ -270,9 +275,228 @@ cdc |>
 -   Tell a story with the plot (use "active titles")
 -   If possible, replace text with visuals
 
+## Reminder: the population vs. a sample {.smaller}
+
+::: columns
+::: {.column width="40%"}
+
+- **Population and research question**: Is the PCV13 vaccine effective against community acquired pneumonia in **adults aged 65 or older**?
+
+- Sample: 84,496 adults 65 years of age or older recruited in a trial between September 2008 and January 2010 and 101 sites throughout the Netherlands. 
+
+:::
+
+::: {.column width="60%"}
+![](images/lec-2/poly.png)
+:::
+:::
+
+## Parameters and statistics 
+
+**Statistics**
+
+- Attribute of a sample
+- Function of the observed values at hand
+- Confusingly, both the function and the values
+  - Example: You take a measurement from a sample of 100 people. The mean measurement of that sample (as a function) is a statistic. The actual realized value of the mean measurement of that sample is also a statistic. 
+- Written in Roman letters
+
+## Parameters and statistics
+
+**Parameters**
+
+- Attribute of the population of interest
+- Not computable directly (unless entire population is perfectly measured)
+- Written in Greek letters
+
+A statistic used to estimate a population parameter is an **estimator**
+
+## Numerical summary statistics {.smaller}
+
+::: columns
+::: {.column width="40%"}
+
+- Population **parameter** of interest: vaccine efficacy among all adults aged 65 or older
+
+- Sample **statistic** collected: proportion of vaccinated adults in the trial who became ill with community-acquired pneumonia
+:::
+
+::: {.column width="60%"}
+![](images/lec-2/poly.png)
+:::
+:::
+
+
+## Mean {.smaller}
+
+- **Sample mean**: the arithmetic average of values in the sample:
+
+$$\bar{x} = \frac{1}{n}(x_1 + \ldots + x_n) = \frac{1}{n} \sum_{i=1}^n x_i$$
+
+- Population mean $\mu$ is calculated the same way, but would involve sum over every observation in the population (rarely possible!)
+
+- The sample mean is a **point estimate** of the population mean
+- Not the exact population mean (unless lucky), but for a representative sample, it's a pretty good guess
+
+- As the sample size gets larger, on average $\bar{x}$ gets closer and closer to $\mu$
+
+## Median
+
+- **Sample median**: the $50^{th}$ **percentile**
+- Middle number of observations after being ranked in numerical order
+- For odd number observations, it is the exact middle value; otherwise, it is the arithmetic average of the middle two. 
+- Example: What is the median of $\{3, 4, 5, 5, 7, 8, 9, 9\}$ ?
+
+- More **robust** to extreme values or outliers when compared to the mean. 
+
+
+## Mode
+
+- **Sample mode**: the most frequent value in the dataset
+- There does not only have to be one mode (we can have bimodal or trimodal or other **multimodal** distributions)
+- Example: What is the mode of $\{1, 2, 3, 4, 4, 5, 5, 5, 7, 9\}$?
+
+## Are point estimates of location enough?
+
+![](images/lec-2/irma.png){width=700}
+
+## Skewness
+
+```{r}
+# Set the seed for reproducibility
+set.seed(123)
+
+# Simulate data from a normal distribution
+normal_data <- rnorm(400, mean = 0, sd = 1)
+
+# Transform the data to make it right-skewed
+right_skewed_data <- exp(normal_data)
+
+# Create a histogram
+hist(right_skewed_data, breaks = 30,
+     col = "darkgoldenrod3", main = " ", 
+     xlab = "Value")
+```
+
+**Skewed** distributions are not symmetric; they can be right or left skewed depending on which side the "tail" is on.
+
+
+## Minimum, maximum, and range
+
+- **Sample minimum** and **maximum**: the samlest and largest observations in the dataset
+
+- **Sample range**: the difference between the sample maximum and the sample minimum
+
+## Quantiles
+
+- Cutpoints dividing the data into equal-sized groups (tertiles, quartiles, quintiles, percentiles, etc.)
+- First quartile (Q1) and third quartile (Q3) cut off the bottom and top 25%, respectively
+
+- **Interquartile range** (IQR): Q3-Q1; shows the width of the middle 50% of the data
+
+- The sample minimum, Q1, Q2 (median), Q3, and maximum are sometimes called the **five number summary**
+
+## Outliers
+
+- Observations numerically distant from others (definitions vary)
+
+- Statistical methods robust to outliers (e.g. the median) can be used if outliers are problematic
+
+- Should be noted and handled carefully! (e.g. maternal ages of 11 vs 111 in a dataset)
+
+## Standard deviation {.smaller}
+
+- **Sample standard deviation**: most common measure of spread, based on deviations around the mean
+
+$$s = \sqrt{\frac{1}{n-1} \sum_{i=1}^n (x_i - \bar{x})^2}$$
+
+- Population SD $\sigma$ is calculated the same way, but requires sum over everyone in the population (with $\bar{x}$ replaced by $\mu$)
+
+- Same units as original dataset for easier interpretation
+
+- Often used to express confidence (e.g. a **margin of error** for a poll being around $\pm$ 2 SD of the mean)
+- Squared deviations weight larger deviations more heavily, and so also positive and negative deviations do not cancel out
+
+
+## Variance {.smaller}
+
+- **Sample variance**: approximately the average squared deviation from the mean
+
+$$s^2 = \frac{1}{n-1} \sum_{i=1}^n(x_i - \bar{x})^2$$
+
+- Estimate of the population variance $\sigma^2$
+- Division by $n-1$ instead of $n$ to avoid bias in small samples
+  - Don't worry about that right now, more details in a subsequent statistics class if interested
+  
+## How big are most values?
+
+- For a distribution of any shape, most of the data are within "average $\pm$ $k$ SDs"
+
+::: {.callout-note appearance="simple"}
+
+## Chebyshev's inequality
+
+- **Chebyshev's inequality** tells us the proportion of values in the range "average $\pm$ $k$ SDs" is at least $1-\frac{1}{k^2}$
+
+:::
+
+
+
+## Chevychev's bounds
+
+| Default   | Left     | 
+|:---------:|:--------:|
+| Average $\pm$ 2 SDs      | at least $1-\frac{1}{4}$ = 75%   |
+| Average $\pm$ 3 SDs      | at least $1-\frac{1}{9}$ = 89%   |
+| Average $\pm$ 4 SDs      | at least $1-\frac{1}{16}$ = 94%   |
+| Average $\pm$ 5 SDs      | at least $1-\frac{1}{25}$ = 96%   |
+
+- If we know the exact distribution (coming soon), we can often calculate better bounds
+
+- However, these bounds hold for *any* distribution (that has a well-defined mean and variance)
+
+## Why not always use means and SDs? {.smaller}
+
+::: columns
+::: {.column width="50%"}
+
+```{r}
+set.seed(123)
+# Calculate the mean and standard deviation of the right-skewed distribution
+mean_skewed <- mean(right_skewed_data)
+sd_skewed <- sd(right_skewed_data)
+
+# Simulate a symmetric normal distribution with the same mean and standard deviation
+symmetric_normal_data <- rnorm(1000, mean = mean_skewed, sd = sd_skewed)
+
+# Create a histogram of the symmetric normal distribution without axes, axis labels, or main title
+hist(right_skewed_data, breaks = 30,
+     col = "darkgoldenrod3", main = " ", 
+     xlab = "Value")
+```
+
+:::
+
+::: {.column width="50%"}
+```{r}
+hist(symmetric_normal_data, breaks = 30, ann = FALSE, col = "darkgoldenrod3")
+```
+
+:::
+
+:::
+
+These two distributions have the same mean and standard deviation, but are clearly very different!
+
+- Exploratory data analysis can help us visually see differences in two datasets that basic statistics (e.g. mean and sd) might not reveal
+
+
 ## Recap
 
 
 -   Exploratory data analysis: initial data analysis that summarizes key aspects of data
 -  Types of data: categorical, numerical
 - Examples of plots: bar charts, box plots, histograms, etc.
+- Population vs. sample
+- Numerical summary statistics: mean, median, mode
+- Quantiles, outliers, standard deviation vs. variance, Chebyshev's inequality
