@@ -1,23 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://karamccor.github.io/b600-f24/project-description.html</loc>
-    <lastmod>2024-07-24T18:23:11.263Z</lastmod>
+    <loc>https://karamccor.github.io/b600-f24/slides/lec2-measure-ch1.html</loc>
+    <lastmod>2024-07-25T14:21:34.602Z</lastmod>
+  </url>
+  <url>
+    <loc>https://karamccor.github.io/b600-f24/slides/lec-1.html</loc>
+    <lastmod>2024-07-25T14:21:29.017Z</lastmod>
+  </url>
+  <url>
+    <loc>https://karamccor.github.io/b600-f24/labs/lab-2.html</loc>
+    <lastmod>2024-07-25T14:21:25.817Z</lastmod>
+  </url>
+  <url>
+    <loc>https://karamccor.github.io/b600-f24/labs/lab-02-template.html</loc>
+    <lastmod>2024-07-25T14:21:20.885Z</lastmod>
+  </url>
+  <url>
+    <loc>https://karamccor.github.io/b600-f24/labs/lab-01-template-km.html</loc>
+    <lastmod>2024-07-25T14:21:19.458Z</lastmod>
   </url>
   <url>
     <loc>https://karamccor.github.io/b600-f24/course-team.html</loc>
-    <lastmod>2024-07-24T16:45:17.996Z</lastmod>
+    <lastmod>2024-07-25T14:21:17.597Z</lastmod>
   </url>
   <url>
     <loc>https://karamccor.github.io/b600-f24/course-overview.html</loc>
-    <lastmod>2024-07-24T16:45:16.933Z</lastmod>
+    <lastmod>2024-07-25T14:21:16.501Z</lastmod>
   </url>
   <url>
     <loc>https://karamccor.github.io/b600-f24/course-support.html</loc>
-    <lastmod>2024-07-24T16:45:17.512Z</lastmod>
+    <lastmod>2024-07-25T14:21:17.084Z</lastmod>
   </url>
   <url>
     <loc>https://karamccor.github.io/b600-f24/index.html</loc>
-    <lastmod>2024-07-24T18:23:09.589Z</lastmod>
+    <lastmod>2024-07-25T14:22:23.147Z</lastmod>
+  </url>
+  <url>
+    <loc>https://karamccor.github.io/b600-f24/labs/lab-01-template.html</loc>
+    <lastmod>2024-07-25T14:21:20.182Z</lastmod>
+  </url>
+  <url>
+    <loc>https://karamccor.github.io/b600-f24/labs/lab-1.html</loc>
+    <lastmod>2024-07-25T14:21:25.153Z</lastmod>
+  </url>
+  <url>
+    <loc>https://karamccor.github.io/b600-f24/project-description.html</loc>
+    <lastmod>2024-07-25T14:22:25.071Z</lastmod>
+  </url>
+  <url>
+    <loc>https://karamccor.github.io/b600-f24/slides/lec-2.html</loc>
+    <lastmod>2024-07-25T14:21:29.668Z</lastmod>
   </url>
 </urlset>

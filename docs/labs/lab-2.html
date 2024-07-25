@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>BIOS 600 - Fall 2024 - Lab 01</title>
+<title>BIOS 600 - Fall 2024 - Lab 02</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -96,9 +96,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }</script>
 
 
-<meta property="og:title" content="BIOS 600 - Fall 2024 - Lab 01">
+<meta property="og:title" content="BIOS 600 - Fall 2024 - Lab 02">
 <meta property="og:description" content="BIOS 600 - Fall 2024">
-<meta property="og:image" content="https://karamccor.github.io/b600-f24/labs/images/lab-1/hello-sticker.jpeg">
 <meta property="og:site-name" content="BIOS 600 - Fall 2024">
 </head>
 
@@ -111,7 +110,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Lab 01</li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Lab 02</li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -197,36 +196,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#welcome" id="toc-welcome" class="nav-link active" data-scroll-target="#welcome">Welcome</a>
-  <ul class="collapse">
-  <li><a href="#meet-the-ta" id="toc-meet-the-ta" class="nav-link" data-scroll-target="#meet-the-ta">Meet the TA</a></li>
-  <li><a href="#overview" id="toc-overview" class="nav-link" data-scroll-target="#overview">Overview</a></li>
-  <li><a href="#installation" id="toc-installation" class="nav-link" data-scroll-target="#installation">Installation</a>
-  <ul class="collapse">
-  <li><a href="#benefits-of-r" id="toc-benefits-of-r" class="nav-link" data-scroll-target="#benefits-of-r">Benefits of R</a></li>
-  </ul></li>
-  <li><a href="#first-steps-in-rstudio" id="toc-first-steps-in-rstudio" class="nav-link" data-scroll-target="#first-steps-in-rstudio">First Steps in RStudio</a></li>
-  <li><a href="#quarto-and-reproducible-research" id="toc-quarto-and-reproducible-research" class="nav-link" data-scroll-target="#quarto-and-reproducible-research">Quarto and reproducible research</a></li>
-  <li><a href="#the-tidyverse" id="toc-the-tidyverse" class="nav-link" data-scroll-target="#the-tidyverse">The tidyverse</a></li>
-  <li><a href="#basic-data-manipulation" id="toc-basic-data-manipulation" class="nav-link" data-scroll-target="#basic-data-manipulation">Basic Data Manipulation</a>
-  <ul class="collapse">
-  <li><a href="#exercise-1" id="toc-exercise-1" class="nav-link" data-scroll-target="#exercise-1">Exercise 1</a></li>
-  </ul></li>
-  <li><a href="#physical-activity-and-adult-obesity" id="toc-physical-activity-and-adult-obesity" class="nav-link" data-scroll-target="#physical-activity-and-adult-obesity">Physical activity and adult obesity</a></li>
-  </ul></li>
-  </ul>
-<div class="toc-actions"><div><i class="bi bi-git"></i></div><div class="action-links"><p><a href="https://karamccor.github.io/b600-f24/edit/main/labs/lab-1.qmd" class="toc-action">Edit this page</a></p><p><a href="https://karamccor.github.io/b600-f24/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Lab 01</h1>
+<h1 class="title">Lab 02</h1>
 <p class="subtitle lead">BIOS 600 - Fall 2024</p>
 </div>
 
@@ -242,175 +219,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </header>
 
-<p>Due Friday, Aug 23 at 5pm.</p>
-<section id="welcome" class="level1">
-<h1>Welcome</h1>
-<section id="meet-the-ta" class="level2">
-<h2 class="anchored" data-anchor-id="meet-the-ta">Meet the TA</h2>
-<p><img src="images/lab-1/hello-sticker.jpeg" class="img-fluid" width="300"></p>
-</section>
-<section id="overview" class="level2">
-<h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<ul>
-<li><p>Today’s lab introduces the computing tools we will be using this semester.</p></li>
-<li><p>We will begin by installing R and RStudio, and familiarizing ourselves with its basic functionality.</p></li>
-<li><p>We will also introduce Quarto as a tool to create high-quality reproducible reports - don’t worry, a fillable template is provided.</p></li>
-</ul>
-<p><strong>This is an individual lab. Your TAs will guide you through the first portion of the lab (until the “On your own” section).</strong></p>
-</section>
-<section id="installation" class="level2">
-<h2 class="anchored" data-anchor-id="installation">Installation</h2>
-<p>R is a statistical programming language used for computation, data analysis, and graphics generation. It is widely used by statisticians, data scientists, and applied researchers in many fields.</p>
-<section id="benefits-of-r" class="level3">
-<h3 class="anchored" data-anchor-id="benefits-of-r">Benefits of R</h3>
-<ul>
-<li><p>flexible and freely available to the public, who have in turn written many user-contributed <strong>packages</strong> which provide additional functionality.</p></li>
-<li><p>RStudio is a convenient interface for R that adds convenient features, such as exporting output in nice formats.</p></li>
-<li><p>In this class, we’ll be doing all of our computation in RStudio.</p></li>
-</ul>
-<p>Let’s begin by installing R and RStudio. First, we need to install R, which can be <a href="https://cran.r-project.org/">downloaded here</a> (see screenshot below).</p>
-<p><img src="images/lab-1/r1.png" class="img-fluid"></p>
-<p>Next, install RStudio Desktop, which can be <a href="https://posit.co/download/rstudio-desktop/">downloaded here</a> (see screenshot below).</p>
-<p><img src="images/lab-1/r2.png" class="img-fluid"></p>
-</section>
-</section>
-<section id="first-steps-in-rstudio" class="level2">
-<h2 class="anchored" data-anchor-id="first-steps-in-rstudio">First Steps in RStudio</h2>
-<p>With R and RStudio installed, we’ll begin by exploring RStudio: the interface, reading in data, and basic commands. Upon opening RStudio, you should see something similar to the window below:</p>
-<p><img src="images/lab-1/r3.png" class="img-fluid"></p>
-<p>The <strong>console</strong> is the panel on the left side, and is where users can type commands and see immediate output. Let’s try it out! Type the following code into the console:</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dv">3</span> <span class="sc">+</span> <span class="dv">5</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p>You should get output that looks like</p>
-<div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 8</code></pre>
-</div>
-</div>
-<p>(For now, ignore the <code>[1]</code>). By typing in <code>3+5</code>, we got the expected answer, <code>8</code>. We can see that R can be used as a calculator directly in the console. Try some other commands that use R as a calculator. For instance, <code>3*25</code>, <code>exp(2)</code>, or <code>(10+5^2)/sqrt(40)</code>. Of course, R is not simply a calculator; other commands may also be entered here.</p>
+<p>Due Friday, Aug 30 at 5pm.</p>
+<p>For today’s lab, we’ll be working through a data visualization with the CDC data.</p>
 <p>To illustrate, let’s load a dataset. Enter the following command into the console (you can directly copy/paste it, but make sure everything is exactly as below):</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># temporary</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>cdc <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"https://www2.stat.duke.edu/courses/Spring21/sta102.001/labs/data/cdc_cleaned.csv"</span>)</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co"># what it should eventually be once I get the website up</span></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="co"># cdc &lt;- read.csv("https://karamccor.github.io/b600-f24/labs/data/cdc_cleaned.csv")</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># temporary</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>cdc <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"https://www2.stat.duke.edu/courses/Spring21/sta102.001/labs/data/cdc_cleaned.csv"</span>)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># what it should eventually be once I get the website up</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co"># cdc &lt;- read.csv("https://karamccor.github.io/b600-f24/labs/data/cdc_cleaned.csv")</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>We’ve just loaded a dataset named <code>cdc</code>. These data come primarily from the Sortable Risk Factors and Health Indicators dataset from the CDC, which omprises demographic and health indices compiled from various federal sources. This dataset is now part of our <strong>environment</strong>, which is displayed on the top half and right side of the RStudio window.</p>
-<ul>
-<li><p>The environment contains all objects in the current working space. These objects could be variables, lists of variables, or even entire datasets.</p></li>
-<li><p>In the same location as the environment tab, the **history tab displays all commands used during the current session (don’t worry about the connections tab for now).</p></li>
-<li><p>Finally, the bottom half of the right-hand panel shows information regarding files on your hard drive, installed packages, output such as plots, and help files or other documents.</p></li>
-</ul>
-<p>Coming back to the dataset we loaded in, we can see that it is named <code>cdc</code>. We can take a look at this dataset in a spreadsheet-like window by clicking on <code>cdc</code> in the Environment tab to the right, or by running the following code in the console:</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">View</span>(cdc)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p>Note that other objects may be added to the environment, either from external data sources from the internet as in today’s example, datasets downloaded to your computer, or even as created as manipulations of existing datasets.</p>
-</section>
-<section id="quarto-and-reproducible-research" class="level2">
-<h2 class="anchored" data-anchor-id="quarto-and-reproducible-research">Quarto and reproducible research</h2>
-<p>Quarto is a system that may be used to create easy-to-write, attractive reports, presentations, or webpsages that also serve as reproducible records of the data analysis. These reports have the desirable property of being able to not only display written narratives and figures, but also include any R code and the outputs from these code snippets.</p>
-<p>One of the biggest strengths of Quarto is that everything is in one place, and that other users should be able to reproduce your results exactly, if they have your Quarto document and datasets - the analysis is run from the beginning each time you render the document. As well, formatting is easy! Luckily, RStudio already comes with Quarto support, so there is nothing additional to install.</p>
-<p>Every homework assignment and lab in this class will be written in Quarto, with a template provided for you to use. This lab’s template can be downloaded by typing in the following code:</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">download.file</span>(<span class="st">"https://www2.stat.duke.edu/courses/Spring21/sta102.001/labs/lab-01-template.Rmd"</span>, <span class="at">destfile=</span><span class="st">"C:/Users/kmcco/OneDrive - University of North Carolina at Chapel Hill/Documents/UNC_Teaching/fall2024/bios600-f24/labs/lab-01-template.Rmd"</span>)</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="do">## UNC</span></span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="co"># download.file("https://karamccor.github.io/b600-f24/labs/data/cdc_cleaned.csv/labs/lab-01-template.qmd", destfile="C:/Users/kmcco/OneDrive - University of North Carolina at Chapel Hill/Documents/UNC_Teaching/fall2024/bios600-f24/labs/lab-01-template-test.qmd")</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p>You should now see the new file <code>lab-01.qmd</code> under the Files tab in the bottom-right hand side of your RStudio window. Click on <code>lab-01.qmd</code> in this window in order to open it up – it is the template for use in this lab!</p>
-<p>First, put your name in the space at the top where it says “YOUR NAME GOES HERE”.</p>
-<p>Fill in answers in the spaces provided: text narrative should be typed directly in the document and any included R code should be typed inside “chunks,” or sections defined by three backticks (the little mark on the same key as the tilde). See the template for more instructions, or ask your TA.</p>
-<p>An important thing to note is that the workspace of the Quarto document is separate from the console – this means that you must load any packages inside of R chunks if you want to use functions contained in them. In the template for this lab, this has been done already, but in the future you may have to do it yourself.</p>
-<p>In order to turn this template into a shareable document, <strong>Render</strong> the quarto template into an HTML document by pressing the Render button at the top of the document (it is a large blue arrow facing the right). You should see the template rendered as an .html file!</p>
-</section>
-<section id="the-tidyverse" class="level2">
-<h2 class="anchored" data-anchor-id="the-tidyverse">The tidyverse</h2>
-<ul>
-<li><p>As mentioned previously, one of the biggest strengths of R is its large userbase who have contributed user-written functions to R via packages. R packages are “add-ons” to the basic functions available in R (think of them as apps on a phone).</p></li>
-<li><p>The <code>tidyverse</code> is a collection of packages designed around a common grammar and data structure. Some packages in the tidyverse that we will be using throughout this semester will be <code>ggplot2</code>, used for creating graphics and figures, and <code>dplyr</code> and <code>tidyr</code>, used for data manipulation and wrangling.</p></li>
-</ul>
-<p>First, install the <code>tidyverse</code> package by running the following code in your R Studio console:</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"tidyverse"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p>After installing the <code>tidyverse</code> package, you never have to install it again – all that is needed to use functions from the tidyverse is to load the package once per R session using the following code:</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
-✔ dplyr     1.1.4     ✔ readr     2.1.5
-✔ forcats   1.0.0     ✔ stringr   1.5.1
-✔ ggplot2   3.5.1     ✔ tibble    3.2.1
-✔ lubridate 1.9.3     ✔ tidyr     1.3.1
-✔ purrr     1.0.2     
-── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
-✖ dplyr::filter() masks stats::filter()
-✖ dplyr::lag()    masks stats::lag()
-ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors</code></pre>
-</div>
-</div>
-<p>Remember that the console and the Quarto document have different workspaces. If you load the tidyverse package in your console, it won’t be loaded into the workspace for the Quarto document. In the lab template, code for loading the tidyverse has already been provided. However, note that you must have the package installed first.</p>
-</section>
-<section id="basic-data-manipulation" class="level2">
-<h2 class="anchored" data-anchor-id="basic-data-manipulation">Basic Data Manipulation</h2>
-<section id="exercise-1" class="level3">
-<h3 class="anchored" data-anchor-id="exercise-1">Exercise 1</h3>
-<p>First, let’s take a <code>glimpse</code> of the dataset by running the following code in the console:</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">glimpse</span>(cdc)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>Rows: 50
-Columns: 16
-$ State               &lt;chr&gt; "Alabama", "Alaska", "Arizona", "Arkansas", "Calif…
-$ Region              &lt;chr&gt; "South", "West", "West", "South", "West", "West", …
-$ HDI                 &lt;chr&gt; "Bottom ten", "Middle", "Middle", "Bottom ten", "M…
-$ InfantMortalityRate &lt;dbl&gt; 8.7, 6.7, 6.1, 7.5, 4.3, 4.8, 4.8, 6.7, 6.1, 7.5, …
-$ CVDeathRate         &lt;dbl&gt; 229.7, 154.1, 138.8, 223.2, 145.6, 128.4, 147.8, 1…
-$ DrugDeathRate       &lt;dbl&gt; 15.7, 16.0, 19.0, 13.8, 11.3, 15.4, 22.1, 22.0, 16…
-$ MotorDeathRate      &lt;dbl&gt; 17.5, 8.8, 13.1, 17.8, 8.1, 10.0, 7.4, 13.3, 14.5,…
-$ CancerDeathRate     &lt;dbl&gt; 175.6, 159.8, 141.3, 185.4, 142.8, 134.4, 146.2, 1…
-$ Obesity             &lt;dbl&gt; 35.7, 31.4, 29.0, 35.7, 25.0, 22.3, 26.0, 30.7, 27…
-$ Smoking             &lt;dbl&gt; 21.5, 19.0, 14.7, 23.6, 11.0, 15.6, 13.4, 17.7, 15…
-$ Exercise            &lt;dbl&gt; 45.4, 55.3, 51.9, 41.2, 56.3, 60.4, 50.9, 49.7, 50…
-$ Seatbelt            &lt;dbl&gt; 95.7, 88.4, 87.2, 74.4, 97.1, 82.4, 85.1, 91.9, 88…
-$ FluVaccination      &lt;dbl&gt; 43.9, 39.1, 41.8, 46.2, 48.0, 49.9, 52.7, 51.2, 43…
-$ ChildVaccination    &lt;dbl&gt; 70.6, 66.3, 72.3, 66.6, 75.0, 75.4, 80.6, 79.3, 66…
-$ Under18             &lt;dbl&gt; 22.8, 25.3, 24.1, 23.8, 23.6, 23.3, 21.6, 21.8, 20…
-$ Over65              &lt;dbl&gt; 15.3, 9.4, 15.9, 15.7, 12.9, 12.7, 15.5, 16.4, 19.…</code></pre>
-</div>
-</div>
-<p>Each row is an <em>observation</em> and each column is a <em>variable</em>. How many rows and columns does the cdc dataset have? What does each row (observation) represent?</p>
-</section>
-</section>
-<section id="physical-activity-and-adult-obesity" class="level2">
-<h2 class="anchored" data-anchor-id="physical-activity-and-adult-obesity">Physical activity and adult obesity</h2>
-<p>Today we will be making some basic visualizations using the <code>ggplot</code> package in the tidyverse.</p>
-<p>In this section we’ll work through a visualization example using the cdc dataset. The variables in this dataset are as follows:</p>
-<pre><code>State, the name of the state
-Region, the US Census region that each state belongs to
-HDI, the Human Development Index of each state in 2017, categorized into whether they are among the top ten, the bottom ten, or the middle
-InfantMortalityRate: infant mortality rate per 100,000
-CVDeathRate: death rate per 100,000 due to cardiovasulcar causes
-DrugDeathRate: death rate per 100,000 due to drug-related causes (ODs, etc.)
-MotorDeathRate: death rate per 100,000 due to motor vehicle-related causes
-CancerDeathRate: death rate per 100,000 due to cancer
-Obesity: % of adults who are obese
-Smoking: % of adults who smoked at least one cigarette in the past month
-Exercise: % of adults who participated in at least 2.5 hours of aerobic activity per week
-Seatbelt: % of adults to regularly wear their seat belt
-FluVaccination: % of adults who received a flu vaccine
-ChildVaccination: % of children who aged 19-35 months who have received the DTaP, polio, MMR, Hib, hepatitis B, varicella and PCV vaccines
-Under18: % of residents under age 18
-Over65: % of residents over age 65</code></pre>
-<p>Let’s begin with a very simple plot. Run the following code in the console:</p>
 
 
-</section>
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -769,7 +589,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>   
     <div class="nav-footer-center">
       &nbsp;
-    </div>
+    <div class="toc-actions"><div><i class="bi bi-git"></i></div><div class="action-links"><p><a href="https://karamccor.github.io/b600-f24/edit/main/labs/lab-2.qmd" class="toc-action">Edit this page</a></p><p><a href="https://karamccor.github.io/b600-f24/issues/new" class="toc-action">Report an issue</a></p></div></div></div>
     <div class="nav-footer-right">This page is built with ❤️ and <a href="https://quarto.org/">Quarto</a>.</div>
   </div>
 </footer>
