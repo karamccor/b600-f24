@@ -62,4 +62,25 @@ or equivalently, $P(A|B) = P(A)$ or $P(B|A) = P(B)$
 
 ## Illustrating Bayes' rule
 
+## Conditional probability reminder
+
+## Illustrating Bayes' rule
+
+## Illustrating Bayes' rule
+
+## Illustrating Bayes' rule
+
+## Illustrating Bayes' rule
+
+## Gunter et al. (2017) study
+
+## Conditional probabilities and independence
+
+## The law of total probability in action
+
+## Bayes' rule
+
+## Bayes' rule
+
+## The law of total probability in action
 
