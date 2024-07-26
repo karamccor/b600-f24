@@ -1089,56 +1089,56 @@
     "href": "slides/lec-4.html#independent-vs.-disjoint-events",
     "title": "Lecture 4: Conditional Probability and Bayes’ Rule",
     "section": "Independent vs. disjoint events",
-    "text": "Independent vs. disjoint events"
+    "text": "Independent vs. disjoint events\n\nSince for two independent events \\(P(A|B) = P(A)\\) or \\(P(B|A) = P(B)\\), knowing that one event has occurred tells us nothing more about the probability of the other occurring.\nFor two disjoint events \\(A\\) and \\(B\\), knowing that one has occured tells us that the other definitely has not occurred: \\(P(A \\cap B) = 0\\)."
   },
   {
     "objectID": "slides/lec-4.html#the-law-of-total-probability",
     "href": "slides/lec-4.html#the-law-of-total-probability",
     "title": "Lecture 4: Conditional Probability and Bayes’ Rule",
     "section": "The law of total probability",
-    "text": "The law of total probability"
+    "text": "The law of total probability\n\nSuppose we partition \\(B\\) into mutually disjoint events \\(B_1, B_2, \\ldots B_k\\) that comprise the entire sample space. Then the law of total probability states that the probability of event \\(A\\) is \\[\\begin{align}\nP(A) &= P(A \\cap B_1) + P(A \\cap B_2) + \\cdots + P(A \\cap B_k) \\\\\n&= P(A|B_1) P(B_1) + P(A|B_2)P(B_2) + \\cdots + P(A | B_k)P(B_k)\n\\end{align}\\]\n\nHow did we get the last equality?"
   },
   {
     "objectID": "slides/lec-4.html#bayes-rule",
     "href": "slides/lec-4.html#bayes-rule",
     "title": "Lecture 4: Conditional Probability and Bayes’ Rule",
     "section": "Bayes’ rule",
-    "text": "Bayes’ rule"
+    "text": "Bayes’ rule\n\n\n\nWe can use Bayes’ rule to “reverse” the order of conditioning.\nBy definition:\n\n\\[P(A | B) = \\frac{P(A \\cap B)}{P(B)} = \\frac{P(B | A) P(A)}{P(B)}\\]"
   },
   {
     "objectID": "slides/lec-4.html#illustrating-bayes-rule",
     "href": "slides/lec-4.html#illustrating-bayes-rule",
     "title": "Lecture 4: Conditional Probability and Bayes’ Rule",
     "section": "Illustrating Bayes’ rule",
-    "text": "Illustrating Bayes’ rule"
+    "text": "Illustrating Bayes’ rule\nNote: \\(A\\) is hypothesis and \\(B\\) is data:\n\\[P(A | B) =  \\frac{P(B | A) P(A)}{P(B)} = P(B | A ) \\times \\frac{P(A)}{P(B)}\\]\nTo illustrate:\n\\[\n\\left(\n\\begin{align}\n& \\text{Probability of} \\\\\n& \\text{cancer given} \\\\\n& \\text{a positive} \\\\\n& \\text{mammogram}\n\\end{align}\n\\right) =\n\\]"
   },
   {
     "objectID": "slides/lec-4.html#conditional-probability-reminder",
     "href": "slides/lec-4.html#conditional-probability-reminder",
     "title": "Lecture 4: Conditional Probability and Bayes’ Rule",
     "section": "Conditional probability reminder",
-    "text": "Conditional probability reminder"
+    "text": "Conditional probability reminder\nExample 1: President of the United States\nBayes’ rule is the inverse probability theorem, \\(P(A | B)\\) vs. \\(P(B | A)\\)\nImportant: These are not the same! Define the events:\n\n\\(A\\): person is the President of the United States\n\\(B\\): person is male-identifying\n\n\\[\\implies P(B | A) = 1, \\quad P(A | B) \\approx 0\\]\n\n\n\n\n\n\nExercise\n\n\nHow would you say these statements in plain English?"
   },
   {
     "objectID": "slides/lec-4.html#illustrating-bayes-rule-1",
     "href": "slides/lec-4.html#illustrating-bayes-rule-1",
     "title": "Lecture 4: Conditional Probability and Bayes’ Rule",
     "section": "Illustrating Bayes’ rule",
-    "text": "Illustrating Bayes’ rule"
+    "text": "Illustrating Bayes’ rule\n[Insert parentheses thing here]\n\nThe probability of having breast cancer: this represents our prior knowledge about the background disease rate of breast cancer among women in their forties at the time they get a mammogram, 40/10,000 (prevalence)"
   },
   {
     "objectID": "slides/lec-4.html#illustrating-bayes-rule-2",
     "href": "slides/lec-4.html#illustrating-bayes-rule-2",
     "title": "Lecture 4: Conditional Probability and Bayes’ Rule",
     "section": "Illustrating Bayes’ rule",
-    "text": "Illustrating Bayes’ rule"
+    "text": "Illustrating Bayes’ rule\n[Insert parentheses thing here]\n\nThe probability of a breas cancer patient getting a positive mammogram: according to NCI, 32/40 (sensitivity)."
   },
   {
     "objectID": "slides/lec-4.html#illustrating-bayes-rule-3",
     "href": "slides/lec-4.html#illustrating-bayes-rule-3",
     "title": "Lecture 4: Conditional Probability and Bayes’ Rule",
     "section": "Illustrating Bayes’ rule",
-    "text": "Illustrating Bayes’ rule"
+    "text": "Illustrating Bayes’ rule\n[Insert parentheses thing here]\n\nThe probability of getting a positive mammogram: the total number of women who get positive results include women with cancer and women who are falsely informed, \\(1,028/10,000\\) (function of prevalence, sensitivity, and specificity)"
   },
   {
     "objectID": "slides/lec-4.html#illustrating-bayes-rule-4",
@@ -1173,7 +1173,7 @@
     "href": "slides/lec-4.html#bayes-rule-1",
     "title": "Lecture 4: Conditional Probability and Bayes’ Rule",
     "section": "Bayes’ rule",
-    "text": "Bayes’ rule"
+    "text": "Bayes’ rule\n\nUsing the definition of conditional probability, the law of total probability, and the multiplicative rule, we have\n\n\\[\\begin{align}\nP(A | B) = \\frac{P(A \\cap B)}{P(B)} &= \\frac{P(B | A) P(A)}{P(B)} \\\\\n&= \\frac{P(B | A) P(A) }{P(B | A) P(A) + P(B | A^C) P(A^C)}\n\\end{align}\\]"
   },
   {
     "objectID": "slides/lec-4.html#bayes-rule-2",
@@ -1188,5 +1188,19 @@
     "title": "Lecture 4: Conditional Probability and Bayes’ Rule",
     "section": "The law of total probability in action",
     "text": "The law of total probability in action"
+  },
+  {
+    "objectID": "slides/lec-4.html#bayes-rule-3",
+    "href": "slides/lec-4.html#bayes-rule-3",
+    "title": "Lecture 4: Conditional Probability and Bayes’ Rule",
+    "section": "Bayes’ rule",
+    "text": "Bayes’ rule"
+  },
+  {
+    "objectID": "slides/lec-4.html#conditional-probability-reminder-1",
+    "href": "slides/lec-4.html#conditional-probability-reminder-1",
+    "title": "Lecture 4: Conditional Probability and Bayes’ Rule",
+    "section": "Conditional probability reminder",
+    "text": "Conditional probability reminder\nExample 2: Calculating the probability of selecting 2 aces from an ordinary deck of cards\n\nWe’re going to select 2 cards and we need an ace both times.\nGetting an ace on the first card is 4 out of 52.\nSince one ace is then gone from the deck, the deck now contains 51 cards, 3 of which are aces.\nSo it’s 3 out of 51 for an ace on the second card.\nThe answer is therefore \\(4/52\\) times \\(3/51\\)."
   }
 ]
