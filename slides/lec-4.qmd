@@ -56,21 +56,129 @@ or equivalently, $P(A|B) = P(A)$ or $P(B|A) = P(B)$
 
 ## Independent vs. disjoint events
 
+- Since for two independent events $P(A|B) = P(A)$ or $P(B|A) = P(B)$, knowing that one event has occurred tells us nothing more about the probability of the other occurring. 
+
+- For two disjoint events $A$ and $B$, knowing that one has occured tells us that the other definitely has not occurred: $P(A \cap B) = 0$. 
+
 ## The law of total probability
+
+- Suppose we partition $B$ into mutually disjoint events $B_1, B_2, \ldots B_k$ that comprise the entire sample space. Then the [law of total probability]{style="color: RosyBrown"} states that the probability of event $A$ is 
+$$\begin{align}
+P(A) &= P(A \cap B_1) + P(A \cap B_2) + \cdots + P(A \cap B_k) \\
+ &= P(A|B_1) P(B_1) + P(A|B_2)P(B_2) + \cdots + P(A | B_k)P(B_k)
+\end{align}$$
+
+How did we get the last equality?
 
 ## Bayes' rule
 
+::: columns
+::: {.column width="70%"}
+
+- We can use [Bayes' rule]{style="color: RosyBrown"} to "reverse" the order of conditioning. 
+
+- By definition:
+
+$$P(A | B) = \frac{P(A \cap B)}{P(B)} = \frac{P(B | A) P(A)}{P(B)}$$
+:::
+
+::: {.column width="30%"}
+
+![](images/lec-4/bayes.png)
+:::
+
+:::
+
+## Bayes' rule
+
+- Using the definition of conditional probability, the law of total probability, and the multiplicative rule, we have
+
+$$\begin{align}
+P(A | B) = \frac{P(A \cap B)}{P(B)} &= \frac{P(B | A) P(A)}{P(B)} \\
+ &= \frac{P(B | A) P(A) }{P(B | A) P(A) + P(B | A^C) P(A^C)}
+\end{align}$$
+
 ## Illustrating Bayes' rule
 
-## Conditional probability reminder
+Note: $A$ is hypothesis and $B$ is data:
+
+$$P(A | B) =  \frac{P(B | A) P(A)}{P(B)} = P(B | A ) \times \frac{P(A)}{P(B)}$$
+
+To illustrate:
+
+$$
+\left( 
+\begin{align}
+& \text{Probability of} \\
+& \text{cancer given} \\
+& \text{a positive} \\
+& \text{mammogram}
+\end{align}
+\right) = 
+$$
+
+
+## Conditional probability reminder {.smaller}
+
+[Example 1: President of the United States]{style="color: LightSlateGrey"}
+
+Bayes' rule is the inverse probability theorem, $P(A | B)$ vs. $P(B | A)$
+
+*Important*: These are not the same! Define the events:
+
+- $A$: person is the President of the United States
+- $B$: person is male-identifying
+
+$$\implies P(B | A) = 1, \quad P(A | B) \approx 0$$
+
+
+:::{.callout-caution}
+
+## Exercise
+
+How would you say these statements in plain English?
+
+:::
+
+## Conditional probability reminder {.smaller}
+
+[Example 2: Calculating the probability of selecting 2 aces from an ordinary deck of cards]{style="color: LightSlateGrey"}
+
+- We're going to select 2 cards and we need an ace both times. 
+
+- Getting an ace on the first card is 4 out of 52. 
+
+- Since one ace is then gone from the deck, the deck now contains 51 cards, 3 of which are aces. 
+
+- So it's 3 out of 51 for an ace on the second card. 
+
+- The answer is therefore $4/52$ times $3/51$. 
+
+
+
+## Illustrating Bayes' rule {.smaller}
+
+[Insert parentheses thing here]
+
+1. The probability of having breast cancer: this represents our prior knowledge about the background disease rate of breast cancer among women in their forties at the time they get a mammogram, 40/10,000 (prevalence)
 
 ## Illustrating Bayes' rule
 
-## Illustrating Bayes' rule
+[Insert parentheses thing here]
+
+2. The probability of a breas cancer patient getting a positive mammogram: according to NCI, 32/40 (sensitivity). 
+
 
 ## Illustrating Bayes' rule
 
+[Insert parentheses thing here]
+
+3. The probability of getting a positive mammogram: the total number of women who get positive results include women with cancer and women who are falsely informed, $1,028/10,000$ (function of prevalence, sensitivity, and specificity)
+
+
 ## Illustrating Bayes' rule
+
+
 
 ## Gunter et al. (2017) study
 
