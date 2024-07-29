@@ -1061,7 +1061,7 @@
     "href": "slides/lec-4.html#supplemental-reading",
     "title": "Lecture 4: Conditional Probability and Bayes’ Rule",
     "section": "Supplemental Reading",
-    "text": "Supplemental Reading\nThese readings are optional. All material in homework and exams will be covered in lecture and lab, and books do not cover everything we do in lecture (even if there is a corresponding section).\nHowever, for those with the very optional textbooks, the following sections correspond to today’s lecture:\n\nPagano and Gareau: Sections 6.2, 6.3\nOpenIntro Statistics: Section 3.2"
+    "text": "Supplemental Reading\nThese readings are optional. All material in homework and exams will be covered in lecture and lab, and books do not cover everything we do in lecture (even if there is a corresponding section).\nHowever, for those with the very optional textbooks, the following sections correspond to today’s lecture:\n\nPagano and Gavreau: Sections 6.2, 6.3\nOpenIntro Statistics: Section 3.2"
   },
   {
     "objectID": "slides/lec-4.html#overview",
@@ -1110,7 +1110,7 @@
     "href": "slides/lec-4.html#illustrating-bayes-rule",
     "title": "Lecture 4: Conditional Probability and Bayes’ Rule",
     "section": "Illustrating Bayes’ rule",
-    "text": "Illustrating Bayes’ rule\nNote: \\(A\\) is hypothesis and \\(B\\) is data:\n\\[P(A | B) =  \\frac{P(B | A) P(A)}{P(B)} = P(B | A ) \\times \\frac{P(A)}{P(B)}\\]\nTo illustrate:\n\\[\n\\left(\n\\begin{align}\n& \\text{Probability of} \\\\\n& \\text{cancer given} \\\\\n& \\text{a positive} \\\\\n& \\text{mammogram}\n\\end{align}\n\\right) =\n\\]"
+    "text": "Illustrating Bayes’ rule\nNote: \\(A\\) is hypothesis and \\(B\\) is data:\n\\[P(A | B) =  \\frac{P(B | A) P(A)}{P(B)} = P(B | A ) \\times \\frac{P(A)}{P(B)}\\]\nTo illustrate:\n\\(\\left( \\begin{align} & \\text{Probability of} \\\\ & \\text{cancer given} \\\\ & \\text{a positive} \\\\ & \\text{mammogram} \\end{align} \\right) =\\) \\(\\left( \\begin{align} & \\text{Probability of} \\\\ & \\text{a positive mam-} \\\\ & \\text{mogram among} \\\\ & \\text{cancer patients} \\end{align} \\right) = \\frac{\\begin{align} & \\text{(Probability of} \\\\ &\\text{having breast cancer)} \\end{align}}{\\begin{align} & \\text{(Probability of a} \\\\ &\\text{positive mammogram)} \\end{align}}\\)"
   },
   {
     "objectID": "slides/lec-4.html#conditional-probability-reminder",
@@ -1124,49 +1124,49 @@
     "href": "slides/lec-4.html#illustrating-bayes-rule-1",
     "title": "Lecture 4: Conditional Probability and Bayes’ Rule",
     "section": "Illustrating Bayes’ rule",
-    "text": "Illustrating Bayes’ rule\n[Insert parentheses thing here]\n\nThe probability of having breast cancer: this represents our prior knowledge about the background disease rate of breast cancer among women in their forties at the time they get a mammogram, 40/10,000 (prevalence)"
+    "text": "Illustrating Bayes’ rule\n\\(\\left( \\begin{align} & \\text{Probability of} \\\\ & \\text{cancer given} \\\\ & \\text{a positive} \\\\ & \\text{mammogram} \\end{align} \\right)=\\) \\(\\left( \\begin{align} & \\text{Probability of} \\\\ & \\text{a positive mam-} \\\\ & \\text{mogram among} \\\\ & \\text{cancer patients} \\end{align} \\right) \\times \\frac{\\begin{align} & \\text{(Probability of} \\\\ &\\text{having breast cancer)} \\end{align}}{\\begin{align} & \\text{(Probability of a} \\\\ &\\text{positive mammogram)} \\end{align}}\\)\n\nThe probability of having breast cancer: this represents our prior knowledge about the background disease rate of breast cancer among women in their forties at the time they get a mammogram, 40/10,000 (prevalence)"
   },
   {
     "objectID": "slides/lec-4.html#illustrating-bayes-rule-2",
     "href": "slides/lec-4.html#illustrating-bayes-rule-2",
     "title": "Lecture 4: Conditional Probability and Bayes’ Rule",
     "section": "Illustrating Bayes’ rule",
-    "text": "Illustrating Bayes’ rule\n[Insert parentheses thing here]\n\nThe probability of a breas cancer patient getting a positive mammogram: according to NCI, 32/40 (sensitivity)."
+    "text": "Illustrating Bayes’ rule\n\\(\\left( \\begin{align} & \\text{Probability of} \\\\ & \\text{cancer given} \\\\ & \\text{a positive} \\\\ & \\text{mammogram} \\end{align} \\right) =\\) \\(\\left( \\begin{align} & \\text{Probability of} \\\\ & \\text{a positive mam-} \\\\ & \\text{mogram among} \\\\ & \\text{cancer patients} \\end{align} \\right) \\times \\frac{\\begin{align} & \\text{(Probability of} \\\\ &\\text{having breast cancer)} \\end{align}}{\\begin{align} & \\text{(Probability of a} \\\\ &\\text{positive mammogram)} \\end{align}}\\)\n\nThe probability of a breast cancer patient getting a positive mammogram: according to NCI, 32/40 (sensitivity)."
   },
   {
     "objectID": "slides/lec-4.html#illustrating-bayes-rule-3",
     "href": "slides/lec-4.html#illustrating-bayes-rule-3",
     "title": "Lecture 4: Conditional Probability and Bayes’ Rule",
     "section": "Illustrating Bayes’ rule",
-    "text": "Illustrating Bayes’ rule\n[Insert parentheses thing here]\n\nThe probability of getting a positive mammogram: the total number of women who get positive results include women with cancer and women who are falsely informed, \\(1,028/10,000\\) (function of prevalence, sensitivity, and specificity)"
+    "text": "Illustrating Bayes’ rule\n\\(\\left( \\begin{align} & \\text{Probability of} \\\\ & \\text{cancer given} \\\\ & \\text{a positive} \\\\ & \\text{mammogram} \\end{align} \\right) =\\) \\(\\left( \\begin{align} & \\text{Probability of} \\\\ & \\text{a positive mam-} \\\\ & \\text{mogram among} \\\\ & \\text{cancer patients} \\end{align} \\right) \\times \\frac{\\begin{align} & \\text{(Probability of} \\\\ &\\text{having breast cancer)} \\end{align}}{\\begin{align} & \\text{(Probability of a} \\\\ &\\text{positive mammogram)} \\end{align}}\\)\n\nThe probability of getting a positive mammogram: the total number of women who get positive results include women with cancer and women who are falsely informed, 1,028/10,000 (function of prevalence, sensitivity, and specificity)."
   },
   {
     "objectID": "slides/lec-4.html#illustrating-bayes-rule-4",
     "href": "slides/lec-4.html#illustrating-bayes-rule-4",
     "title": "Lecture 4: Conditional Probability and Bayes’ Rule",
     "section": "Illustrating Bayes’ rule",
-    "text": "Illustrating Bayes’ rule"
+    "text": "Illustrating Bayes’ rule\n\\(\\left( \\begin{align} & \\text{Probability of} \\\\ & \\text{cancer given} \\\\ & \\text{a positive} \\\\ & \\text{mammogram} \\end{align} \\right) = \\left( \\frac{32}{40}\\right) \\times \\frac{\\frac{40}{10,000}}{\\frac{1,028}{10,000}} = \\frac{32}{1,028} = 0.03\\)\n\nThe probability that a woman who tests positive has breast cancer is only 3%. She has 95% chance to be disease free."
   },
   {
     "objectID": "slides/lec-4.html#gunter-et-al.-2017-study",
     "href": "slides/lec-4.html#gunter-et-al.-2017-study",
     "title": "Lecture 4: Conditional Probability and Bayes’ Rule",
     "section": "Gunter et al. (2017) study",
-    "text": "Gunter et al. (2017) study"
+    "text": "Gunter et al. (2017) study\n\n\n\n\nCoffee drinking\nDied? Yes\nDied? No\nTotal\n\n\n\n\nNone\n1039\n5438\n6477\n\n\nMed-Low\n4440\n29712\n29809\n\n\nHigh\n3601\n24934\n28535\n\n\nTotal\n9080\n60084\n64821\n\n\n\nDefine the events \\(A\\) = died and \\(B\\) = non-coffee drinker\n\nMarginal probability \\(P(A)\\)\nJoint probability \\(P(A \\cap B)\\)\nConditional probability \\(P(A | B)\\)"
   },
   {
     "objectID": "slides/lec-4.html#conditional-probabilities-and-independence",
     "href": "slides/lec-4.html#conditional-probabilities-and-independence",
     "title": "Lecture 4: Conditional Probability and Bayes’ Rule",
     "section": "Conditional probabilities and independence",
-    "text": "Conditional probabilities and independence"
+    "text": "Conditional probabilities and independence\nWhat was the probability a randomly selected peson in the study…\n\n\n\nCoffee drinking\nDied? Yes\nDied? No\nTotal\n\n\n\n\nNone\n1039\n5438\n6477\n\n\nMed-Low\n4440\n29712\n29809\n\n\nHigh\n3601\n24934\n28535\n\n\nTotal\n9080\n60084\n64821\n\n\n\n\n…died?\n…died, given they were a non-coffee drinker?\n\nIn this study, were dying and coffee drinking independent events?"
   },
   {
     "objectID": "slides/lec-4.html#the-law-of-total-probability-in-action",
     "href": "slides/lec-4.html#the-law-of-total-probability-in-action",
     "title": "Lecture 4: Conditional Probability and Bayes’ Rule",
     "section": "The law of total probability in action",
-    "text": "The law of total probability in action"
+    "text": "The law of total probability in action\n\n\n\nCoffee drinking\nDied? Yes\nDied? No\nTotal\n\n\n\n\nNone\n1039\n5438\n6477\n\n\nMed-Low\n4440\n29712\n29809\n\n\nHigh\n3601\n24934\n28535\n\n\nTotal\n9080\n60084\n64821\n\n\n\nWhat was the probability a randomly selected person died?"
   },
   {
     "objectID": "slides/lec-4.html#bayes-rule-1",
@@ -1180,21 +1180,21 @@
     "href": "slides/lec-4.html#bayes-rule-2",
     "title": "Lecture 4: Conditional Probability and Bayes’ Rule",
     "section": "Bayes’ rule",
-    "text": "Bayes’ rule"
+    "text": "Bayes’ rule\nWhat is the probability that a random person…\n\n\n\nCoffee drinking\nDied? Yes\nDied? No\nTotal\n\n\n\n\nNone\n1039\n5438\n6477\n\n\nMed-Low\n4440\n29712\n29809\n\n\nHigh\n3601\n24934\n28535\n\n\nTotal\n9080\n60084\n64821\n\n\n\n\n…was a high coffee drinker, given that they died?\n…died, given that they were a high coffee drinker?\n\nThese are \\(P(High | Died)\\) and \\(P(Died | High)\\).\nAre these two probabilities the same?"
   },
   {
     "objectID": "slides/lec-4.html#the-law-of-total-probability-in-action-1",
     "href": "slides/lec-4.html#the-law-of-total-probability-in-action-1",
     "title": "Lecture 4: Conditional Probability and Bayes’ Rule",
     "section": "The law of total probability in action",
-    "text": "The law of total probability in action"
+    "text": "The law of total probability in action\n\nIn an introductory statistics course, 50% of students were first years, 40% were sophomores, and 20% were upperclassmen.\n80% of the first years didn’t give enough sleep, 40% of the sophomores didn’t get enough sleep, and 10% of the upperclassmen didn’t get enough sleep.\nWhat is the probability that a randomly selected student in this class didn’t get enough sleep? (OK to simply give the mathematical expression)."
   },
   {
     "objectID": "slides/lec-4.html#bayes-rule-3",
     "href": "slides/lec-4.html#bayes-rule-3",
     "title": "Lecture 4: Conditional Probability and Bayes’ Rule",
     "section": "Bayes’ rule",
-    "text": "Bayes’ rule"
+    "text": "Bayes’ rule\nWhat is the probability that a random person in the coffee study…\n\n\n\nCoffee drinking\nDied? Yes\nDied? No\nTotal\n\n\n\n\nNone\n1039\n5438\n6477\n\n\nMed-Low\n4440\n29712\n29809\n\n\nHigh\n3601\n24934\n28535\n\n\nTotal\n9080\n60084\n64821\n\n\n\n\n…was a high coffee drinker, given that he died?\n…died, given that he was a high coffee drinker?\n\nLet’s verify our results using Bayes’ rule."
   },
   {
     "objectID": "slides/lec-4.html#conditional-probability-reminder-1",
@@ -1202,5 +1202,12 @@
     "title": "Lecture 4: Conditional Probability and Bayes’ Rule",
     "section": "Conditional probability reminder",
     "text": "Conditional probability reminder\nExample 2: Calculating the probability of selecting 2 aces from an ordinary deck of cards\n\nWe’re going to select 2 cards and we need an ace both times.\nGetting an ace on the first card is 4 out of 52.\nSince one ace is then gone from the deck, the deck now contains 51 cards, 3 of which are aces.\nSo it’s 3 out of 51 for an ace on the second card.\nThe answer is therefore \\(4/52\\) times \\(3/51\\)."
+  },
+  {
+    "objectID": "slides/lec-4.html#test",
+    "href": "slides/lec-4.html#test",
+    "title": "Lecture 4: Conditional Probability and Bayes’ Rule",
+    "section": "test",
+    "text": "test"
   }
 ]

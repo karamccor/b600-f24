@@ -345,8 +345,8 @@ Kara McCormack
 <p>These readings are optional. All material in homework and exams will be covered in lecture and lab, and books do not cover everything we do in lecture (even if there is a corresponding section).</p>
 <p>However, for those with the very optional textbooks, the following sections correspond to today’s lecture:</p>
 <ul>
-<li>Pagano and Gareau: Sections 6.2, 6.3</li>
-<li>OpenIntro Statistics: Section 3.2</li>
+<li>Pagano and Gavreau: Sections 6.2, 6.3</li>
+<li><a href="https://www.openintro.org/go/?id=os4_for_screen_readers&amp;referrer=/book/os/index.php">OpenIntro Statistics</a>: Section 3.2</li>
 </ul>
 </section>
 <section id="overview" class="slide level2">
@@ -417,21 +417,12 @@ P(A | B) = \frac{P(A \cap B)}{P(B)} &amp;= \frac{P(B | A) P(A)}{P(B)} \\
 &amp;= \frac{P(B | A) P(A) }{P(B | A) P(A) + P(B | A^C) P(A^C)}
 \end{align}\]</span></p>
 </section>
-<section id="illustrating-bayes-rule" class="slide level2">
+<section id="illustrating-bayes-rule" class="slide level2 smaller">
 <h2>Illustrating Bayes’ rule</h2>
 <p>Note: <span class="math inline">\(A\)</span> is hypothesis and <span class="math inline">\(B\)</span> is data:</p>
 <p><span class="math display">\[P(A | B) =  \frac{P(B | A) P(A)}{P(B)} = P(B | A ) \times \frac{P(A)}{P(B)}\]</span></p>
 <p>To illustrate:</p>
-<p><span class="math display">\[
-\left(
-\begin{align}
-&amp; \text{Probability of} \\
-&amp; \text{cancer given} \\
-&amp; \text{a positive} \\
-&amp; \text{mammogram}
-\end{align}
-\right) =
-\]</span></p>
+<p><span class="math inline">\(\left( \begin{align} &amp; \text{Probability of} \\ &amp; \text{cancer given} \\ &amp; \text{a positive} \\ &amp; \text{mammogram} \end{align} \right) =\)</span> <span class="math inline">\(\left( \begin{align} &amp; \text{Probability of} \\ &amp; \text{a positive mam-} \\ &amp; \text{mogram among} \\ &amp; \text{cancer patients} \end{align} \right) = \frac{\begin{align} &amp; \text{(Probability of} \\ &amp;\text{having breast cancer)} \end{align}}{\begin{align} &amp; \text{(Probability of a} \\ &amp;\text{positive mammogram)} \end{align}}\)</span></p>
 </section>
 <section id="conditional-probability-reminder" class="slide level2 smaller">
 <h2>Conditional probability reminder</h2>
@@ -470,45 +461,261 @@ P(A | B) = \frac{P(A \cap B)}{P(B)} &amp;= \frac{P(B | A) P(A)}{P(B)} \\
 </section>
 <section id="illustrating-bayes-rule-1" class="slide level2 smaller">
 <h2>Illustrating Bayes’ rule</h2>
-<p>[Insert parentheses thing here]</p>
+<p><span class="math inline">\(\left( \begin{align} &amp; \text{Probability of} \\ &amp; \text{cancer given} \\ &amp; \text{a positive} \\ &amp; \text{mammogram} \end{align} \right)=\)</span> <span class="math inline">\(\left( \begin{align} &amp; \text{Probability of} \\ &amp; \text{a positive mam-} \\ &amp; \text{mogram among} \\ &amp; \text{cancer patients} \end{align} \right) \times \frac{\begin{align} &amp; \text{(Probability of} \\ &amp;\text{having breast cancer)} \end{align}}{\begin{align} &amp; \text{(Probability of a} \\ &amp;\text{positive mammogram)} \end{align}}\)</span></p>
 <ol type="1">
 <li>The probability of having breast cancer: this represents our prior knowledge about the background disease rate of breast cancer among women in their forties at the time they get a mammogram, 40/10,000 (prevalence)</li>
 </ol>
 </section>
-<section id="illustrating-bayes-rule-2" class="slide level2">
+<section id="illustrating-bayes-rule-2" class="slide level2 smaller">
 <h2>Illustrating Bayes’ rule</h2>
-<p>[Insert parentheses thing here]</p>
+<p><span class="math inline">\(\left( \begin{align} &amp; \text{Probability of} \\ &amp; \text{cancer given} \\ &amp; \text{a positive} \\ &amp; \text{mammogram} \end{align} \right) =\)</span> <span class="math inline">\(\left( \begin{align} &amp; \text{Probability of} \\ &amp; \text{a positive mam-} \\ &amp; \text{mogram among} \\ &amp; \text{cancer patients} \end{align} \right) \times \frac{\begin{align} &amp; \text{(Probability of} \\ &amp;\text{having breast cancer)} \end{align}}{\begin{align} &amp; \text{(Probability of a} \\ &amp;\text{positive mammogram)} \end{align}}\)</span></p>
 <ol start="2" type="1">
-<li>The probability of a breas cancer patient getting a positive mammogram: according to NCI, 32/40 (sensitivity).</li>
+<li>The probability of a breast cancer patient getting a positive mammogram: according to NCI, 32/40 (sensitivity).</li>
 </ol>
 </section>
-<section id="illustrating-bayes-rule-3" class="slide level2">
+<section id="illustrating-bayes-rule-3" class="slide level2 smaller">
 <h2>Illustrating Bayes’ rule</h2>
-<p>[Insert parentheses thing here]</p>
+<p><span class="math inline">\(\left( \begin{align} &amp; \text{Probability of} \\ &amp; \text{cancer given} \\ &amp; \text{a positive} \\ &amp; \text{mammogram} \end{align} \right) =\)</span> <span class="math inline">\(\left( \begin{align} &amp; \text{Probability of} \\ &amp; \text{a positive mam-} \\ &amp; \text{mogram among} \\ &amp; \text{cancer patients} \end{align} \right) \times \frac{\begin{align} &amp; \text{(Probability of} \\ &amp;\text{having breast cancer)} \end{align}}{\begin{align} &amp; \text{(Probability of a} \\ &amp;\text{positive mammogram)} \end{align}}\)</span></p>
 <ol start="3" type="1">
-<li>The probability of getting a positive mammogram: the total number of women who get positive results include women with cancer and women who are falsely informed, <span class="math inline">\(1,028/10,000\)</span> (function of prevalence, sensitivity, and specificity)</li>
+<li>The probability of getting a positive mammogram: the total number of women who get positive results include women with cancer and women who are falsely informed, 1,028/10,000 (function of prevalence, sensitivity, and specificity).</li>
 </ol>
 </section>
 <section id="illustrating-bayes-rule-4" class="slide level2">
 <h2>Illustrating Bayes’ rule</h2>
+<p><span class="math inline">\(\left( \begin{align} &amp; \text{Probability of} \\ &amp; \text{cancer given} \\ &amp; \text{a positive} \\ &amp; \text{mammogram} \end{align} \right) = \left( \frac{32}{40}\right) \times \frac{\frac{40}{10,000}}{\frac{1,028}{10,000}} = \frac{32}{1,028} = 0.03\)</span></p>
+<ul>
+<li>The probability that a woman who tests positive has breast cancer is only 3%. She has 95% chance to be disease free.</li>
+</ul>
 </section>
-<section id="gunter-et-al.-2017-study" class="slide level2">
+<section id="gunter-et-al.-2017-study" class="slide level2 smaller">
 <h2>Gunter et al.&nbsp;(2017) study</h2>
+
+<img data-src="images/lec-4/coffee.png" class="r-stretch"><table>
+<thead>
+<tr class="header">
+<th>Coffee drinking</th>
+<th style="text-align: center;">Died? Yes</th>
+<th style="text-align: center;">Died? No</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>None</td>
+<td style="text-align: center;">1039</td>
+<td style="text-align: center;">5438</td>
+<td style="text-align: center;">6477</td>
+</tr>
+<tr class="even">
+<td>Med-Low</td>
+<td style="text-align: center;">4440</td>
+<td style="text-align: center;">29712</td>
+<td style="text-align: center;">29809</td>
+</tr>
+<tr class="odd">
+<td>High</td>
+<td style="text-align: center;">3601</td>
+<td style="text-align: center;">24934</td>
+<td style="text-align: center;">28535</td>
+</tr>
+<tr class="even">
+<td><strong>Total</strong></td>
+<td style="text-align: center;">9080</td>
+<td style="text-align: center;">60084</td>
+<td style="text-align: center;">64821</td>
+</tr>
+</tbody>
+</table>
+<p>Define the events <span class="math inline">\(A\)</span> = died and <span class="math inline">\(B\)</span> = non-coffee drinker</p>
+<ul>
+<li><span style="color: RosyBrown">Marginal probability</span> <span class="math inline">\(P(A)\)</span></li>
+<li><span style="color: RosyBrown">Joint probability</span> <span class="math inline">\(P(A \cap B)\)</span></li>
+<li><span style="color: RosyBrown">Conditional probability</span> <span class="math inline">\(P(A | B)\)</span></li>
+</ul>
 </section>
-<section id="conditional-probabilities-and-independence" class="slide level2">
+<section id="conditional-probabilities-and-independence" class="slide level2 smaller">
 <h2>Conditional probabilities and independence</h2>
+<p>What was the probability a randomly selected peson in the study…</p>
+<table>
+<thead>
+<tr class="header">
+<th>Coffee drinking</th>
+<th style="text-align: center;">Died? Yes</th>
+<th style="text-align: center;">Died? No</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>None</td>
+<td style="text-align: center;">1039</td>
+<td style="text-align: center;">5438</td>
+<td style="text-align: center;">6477</td>
+</tr>
+<tr class="even">
+<td>Med-Low</td>
+<td style="text-align: center;">4440</td>
+<td style="text-align: center;">29712</td>
+<td style="text-align: center;">29809</td>
+</tr>
+<tr class="odd">
+<td>High</td>
+<td style="text-align: center;">3601</td>
+<td style="text-align: center;">24934</td>
+<td style="text-align: center;">28535</td>
+</tr>
+<tr class="even">
+<td><strong>Total</strong></td>
+<td style="text-align: center;">9080</td>
+<td style="text-align: center;">60084</td>
+<td style="text-align: center;">64821</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>…died?</li>
+<li>…died, given they were a non-coffee drinker?</li>
+</ul>
+<p>In this study, were dying and coffee drinking independent events?</p>
 </section>
-<section id="the-law-of-total-probability-in-action" class="slide level2">
+<section id="the-law-of-total-probability-in-action" class="slide level2 smaller">
 <h2>The law of total probability in action</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Coffee drinking</th>
+<th style="text-align: center;">Died? Yes</th>
+<th style="text-align: center;">Died? No</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>None</td>
+<td style="text-align: center;">1039</td>
+<td style="text-align: center;">5438</td>
+<td style="text-align: center;">6477</td>
+</tr>
+<tr class="even">
+<td>Med-Low</td>
+<td style="text-align: center;">4440</td>
+<td style="text-align: center;">29712</td>
+<td style="text-align: center;">29809</td>
+</tr>
+<tr class="odd">
+<td>High</td>
+<td style="text-align: center;">3601</td>
+<td style="text-align: center;">24934</td>
+<td style="text-align: center;">28535</td>
+</tr>
+<tr class="even">
+<td><strong>Total</strong></td>
+<td style="text-align: center;">9080</td>
+<td style="text-align: center;">60084</td>
+<td style="text-align: center;">64821</td>
+</tr>
+</tbody>
+</table>
+<p>What was the probability a randomly selected person died?</p>
 </section>
-<section id="bayes-rule-2" class="slide level2">
+<section id="bayes-rule-2" class="slide level2 smaller">
 <h2>Bayes’ rule</h2>
+<p>What is the probability that a random person…</p>
+<table>
+<thead>
+<tr class="header">
+<th>Coffee drinking</th>
+<th style="text-align: center;">Died? Yes</th>
+<th style="text-align: center;">Died? No</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>None</td>
+<td style="text-align: center;">1039</td>
+<td style="text-align: center;">5438</td>
+<td style="text-align: center;">6477</td>
+</tr>
+<tr class="even">
+<td>Med-Low</td>
+<td style="text-align: center;">4440</td>
+<td style="text-align: center;">29712</td>
+<td style="text-align: center;">29809</td>
+</tr>
+<tr class="odd">
+<td>High</td>
+<td style="text-align: center;">3601</td>
+<td style="text-align: center;">24934</td>
+<td style="text-align: center;">28535</td>
+</tr>
+<tr class="even">
+<td><strong>Total</strong></td>
+<td style="text-align: center;">9080</td>
+<td style="text-align: center;">60084</td>
+<td style="text-align: center;">64821</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><p>…was a high coffee drinker, given that they died?</p></li>
+<li><p>…died, given that they were a high coffee drinker?</p></li>
+</ul>
+<p>These are <span class="math inline">\(P(High | Died)\)</span> and <span class="math inline">\(P(Died | High)\)</span>.</p>
+<p>Are these two probabilities the same?</p>
 </section>
-<section id="bayes-rule-3" class="slide level2">
+<section id="bayes-rule-3" class="slide level2 smaller">
 <h2>Bayes’ rule</h2>
+<p>What is the probability that a random person in the coffee study…</p>
+<table>
+<thead>
+<tr class="header">
+<th>Coffee drinking</th>
+<th style="text-align: center;">Died? Yes</th>
+<th style="text-align: center;">Died? No</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>None</td>
+<td style="text-align: center;">1039</td>
+<td style="text-align: center;">5438</td>
+<td style="text-align: center;">6477</td>
+</tr>
+<tr class="even">
+<td>Med-Low</td>
+<td style="text-align: center;">4440</td>
+<td style="text-align: center;">29712</td>
+<td style="text-align: center;">29809</td>
+</tr>
+<tr class="odd">
+<td>High</td>
+<td style="text-align: center;">3601</td>
+<td style="text-align: center;">24934</td>
+<td style="text-align: center;">28535</td>
+</tr>
+<tr class="even">
+<td><strong>Total</strong></td>
+<td style="text-align: center;">9080</td>
+<td style="text-align: center;">60084</td>
+<td style="text-align: center;">64821</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>…was a high coffee drinker, given that he died?</li>
+<li>…died, given that he was a high coffee drinker?</li>
+</ul>
+<p>Let’s verify our results using Bayes’ rule.</p>
 </section>
 <section id="the-law-of-total-probability-in-action-1" class="slide level2">
 <h2>The law of total probability in action</h2>
+<ul>
+<li><p>In an introductory statistics course, 50% of students were first years, 40% were sophomores, and 20% were upperclassmen.</p></li>
+<li><p>80% of the first years didn’t give enough sleep, 40% of the sophomores didn’t get enough sleep, and 10% of the upperclassmen didn’t get enough sleep.</p></li>
+<li><p>What is the probability that a randomly selected student in this class didn’t get enough sleep? (OK to simply give the mathematical expression).</p></li>
+</ul>
 
 
 <img src="images/logo_600.png" class="slide-logo r-stretch"><div class="footer footer-default">

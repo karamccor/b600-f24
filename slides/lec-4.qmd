@@ -20,8 +20,8 @@ These readings are optional. All material in homework and exams will be covered 
 
 However, for those with the very optional textbooks, the following sections correspond to today's lecture:
 
-- Pagano and Gareau: Sections 6.2, 6.3
-- OpenIntro Statistics: Section 3.2
+- Pagano and Gavreau: Sections 6.2, 6.3
+- [OpenIntro Statistics](https://www.openintro.org/go/?id=os4_for_screen_readers&referrer=/book/os/index.php): Section 3.2
 
 ## Overview
 
@@ -98,7 +98,7 @@ P(A | B) = \frac{P(A \cap B)}{P(B)} &= \frac{P(B | A) P(A)}{P(B)} \\
  &= \frac{P(B | A) P(A) }{P(B | A) P(A) + P(B | A^C) P(A^C)}
 \end{align}$$
 
-## Illustrating Bayes' rule
+## Illustrating Bayes' rule {.smaller}
 
 Note: $A$ is hypothesis and $B$ is data:
 
@@ -106,17 +106,22 @@ $$P(A | B) =  \frac{P(B | A) P(A)}{P(B)} = P(B | A ) \times \frac{P(A)}{P(B)}$$
 
 To illustrate:
 
-$$
-\left( 
+$\left( 
 \begin{align}
 & \text{Probability of} \\
 & \text{cancer given} \\
 & \text{a positive} \\
 & \text{mammogram}
 \end{align}
-\right) = 
-$$
-
+\right) =$
+$\left( 
+\begin{align}
+& \text{Probability of} \\
+& \text{a positive mam-} \\
+& \text{mogram among} \\
+& \text{cancer patients}
+\end{align}
+\right) = \frac{\begin{align} & \text{(Probability of} \\  &\text{having breast cancer)} \end{align}}{\begin{align} & \text{(Probability of a} \\ &\text{positive mammogram)} \end{align}}$
 
 ## Conditional probability reminder {.smaller}
 
@@ -158,37 +163,173 @@ How would you say these statements in plain English?
 
 ## Illustrating Bayes' rule {.smaller}
 
-[Insert parentheses thing here]
+$\left( 
+\begin{align}
+& \text{Probability of} \\
+& \text{cancer given} \\
+& \text{a positive} \\
+& \text{mammogram}
+\end{align}
+\right)=$
+$\left( 
+\begin{align}
+& \text{Probability of} \\
+& \text{a positive mam-} \\
+& \text{mogram among} \\
+& \text{cancer patients}
+\end{align}
+\right) \times \frac{\begin{align} & \text{(Probability of} \\  &\text{having breast cancer)} \end{align}}{\begin{align} & \text{(Probability of a} \\ &\text{positive mammogram)} \end{align}}$
 
 1. The probability of having breast cancer: this represents our prior knowledge about the background disease rate of breast cancer among women in their forties at the time they get a mammogram, 40/10,000 (prevalence)
 
+
+
+## Illustrating Bayes' rule {.smaller}
+
+$\left( 
+\begin{align}
+& \text{Probability of} \\
+& \text{cancer given} \\
+& \text{a positive} \\
+& \text{mammogram}
+\end{align}
+\right) =$
+$\left( 
+\begin{align}
+& \text{Probability of} \\
+& \text{a positive mam-} \\
+& \text{mogram among} \\
+& \text{cancer patients}
+\end{align}
+\right) \times \frac{\begin{align} & \text{(Probability of} \\  &\text{having breast cancer)} \end{align}}{\begin{align} & \text{(Probability of a} \\ &\text{positive mammogram)} \end{align}}$
+
+2. The probability of a breast cancer patient getting a positive mammogram: according to NCI, 32/40 (sensitivity). 
+
+
+## Illustrating Bayes' rule {.smaller}
+
+$\left( 
+\begin{align}
+& \text{Probability of} \\
+& \text{cancer given} \\
+& \text{a positive} \\
+& \text{mammogram}
+\end{align}
+\right) =$
+$\left( 
+\begin{align}
+& \text{Probability of} \\
+& \text{a positive mam-} \\
+& \text{mogram among} \\
+& \text{cancer patients}
+\end{align}
+\right) \times \frac{\begin{align} & \text{(Probability of} \\  &\text{having breast cancer)} \end{align}}{\begin{align} & \text{(Probability of a} \\ &\text{positive mammogram)} \end{align}}$
+
+3. The probability of getting a positive mammogram: the total number of women who get positive results include women with cancer and women who are falsely informed, 1,028/10,000 (function of prevalence, sensitivity, and specificity). 
+
+
 ## Illustrating Bayes' rule
 
-[Insert parentheses thing here]
+$\left( 
+\begin{align}
+& \text{Probability of} \\
+& \text{cancer given} \\
+& \text{a positive} \\
+& \text{mammogram}
+\end{align}
+\right) = \left( \frac{32}{40}\right) \times 
+\frac{\frac{40}{10,000}}{\frac{1,028}{10,000}} = \frac{32}{1,028} = 0.03$
 
-2. The probability of a breas cancer patient getting a positive mammogram: according to NCI, 32/40 (sensitivity). 
-
-
-## Illustrating Bayes' rule
-
-[Insert parentheses thing here]
-
-3. The probability of getting a positive mammogram: the total number of women who get positive results include women with cancer and women who are falsely informed, $1,028/10,000$ (function of prevalence, sensitivity, and specificity)
-
-
-## Illustrating Bayes' rule
+- The probability that a woman who tests positive has breast cancer is only 3%. She has 95% chance to be disease free. 
 
 
+## Gunter et al. (2017) study {.smaller}
 
-## Gunter et al. (2017) study
+![](images/lec-4/coffee.png)
 
-## Conditional probabilities and independence
+| Coffee drinking | Died? Yes |Died? No | Total | 
+|-----------------|:---------:|:-------:|:-----:|
+| None            | 1039      |   5438  | 6477  |
+| Med-Low         | 4440      |   29712 | 29809 |
+| High            | 3601      |  24934  | 28535 |
+| **Total**       | 9080      |   60084 | 64821 |
+
+Define the events $A$ = died and $B$ = non-coffee drinker
+
+- [Marginal probability]{style="color: RosyBrown"} $P(A)$
+- [Joint probability]{style="color: RosyBrown"} $P(A \cap B)$
+- [Conditional probability]{style="color: RosyBrown"} $P(A | B)$
+
+
+## Conditional probabilities and independence {.smaller}
+
+What was the probability a randomly selected peson in the study...
+
+| Coffee drinking | Died? Yes |Died? No | Total | 
+|-----------------|:---------:|:-------:|:-----:|
+| None            | 1039      |   5438  | 6477  |
+| Med-Low         | 4440      |   29712 | 29809 |
+| High            | 3601      |  24934  | 28535 |
+| **Total**       | 9080      |   60084 | 64821 |
+
+- ...died?
+- ...died, given they were a non-coffee drinker?
+
+In this study, were dying and coffee drinking independent events?
+
+## The law of total probability in action {.smaller}
+
+| Coffee drinking | Died? Yes |Died? No | Total | 
+|-----------------|:---------:|:-------:|:-----:|
+| None            | 1039      |   5438  | 6477  |
+| Med-Low         | 4440      |   29712 | 29809 |
+| High            | 3601      |  24934  | 28535 |
+| **Total**       | 9080      |   60084 | 64821 |
+
+What was the probability a randomly selected person died?
+
+## Bayes' rule {.smaller}
+
+What is the probability that a random person...
+
+| Coffee drinking | Died? Yes |Died? No | Total | 
+|-----------------|:---------:|:-------:|:-----:|
+| None            | 1039      |   5438  | 6477  |
+| Med-Low         | 4440      |   29712 | 29809 |
+| High            | 3601      |  24934  | 28535 |
+| **Total**       | 9080      |   60084 | 64821 |
+
+- ...was a high coffee drinker, given that they died?
+
+- ...died, given that they were a high coffee drinker?
+
+These are $P(High | Died)$ and $P(Died | High)$. 
+
+Are these two probabilities the same?
+
+
+
+## Bayes' rule {.smaller}
+
+What is the probability that a random person in the coffee study...
+
+| Coffee drinking | Died? Yes |Died? No | Total | 
+|-----------------|:---------:|:-------:|:-----:|
+| None            | 1039      |   5438  | 6477  |
+| Med-Low         | 4440      |   29712 | 29809 |
+| High            | 3601      |  24934  | 28535 |
+| **Total**       | 9080      |   60084 | 64821 |
+
+- ...was a high coffee drinker, given that he died?
+- ...died, given that he was a high coffee drinker?
+
+Let's verify our results using Bayes' rule.
 
 ## The law of total probability in action
 
-## Bayes' rule
+- In an introductory statistics course, 50% of students were first years, 40% were sophomores, and 20% were upperclassmen. 
 
-## Bayes' rule
+- 80% of the first years didn't give enough sleep, 40% of the sophomores didn't get enough sleep, and 10% of the upperclassmen didn't get enough sleep. 
 
-## The law of total probability in action
+- What is the probability that a randomly selected student in this class didn't get enough sleep? (OK to simply give the mathematical expression). 
 
