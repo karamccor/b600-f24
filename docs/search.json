@@ -1307,5 +1307,271 @@
     "title": "Lecture 5: Diagnostic Testing",
     "section": "From Haenssle et al. (2018)",
     "text": "From Haenssle et al. (2018)"
+  },
+  {
+    "objectID": "slides/lec-6.html#supplemental-reading",
+    "href": "slides/lec-6.html#supplemental-reading",
+    "title": "Lecture 6: Discrete distributions",
+    "section": "Supplemental reading",
+    "text": "Supplemental reading\nThese readings are optional. All material in homework and exams will be covered in lecture and lab, and books do not cover everything we do in lecture (even if there is a corresponding section).\nHowever, for those with the very optional textbooks, the following sections correspond to today’s lecture:\n\nPagano and Gavreau: Section 7.2 and 7.3\nOpenIntro Statistics: 3.4, 4.3, and 4.5"
+  },
+  {
+    "objectID": "slides/lec-6.html#what-is-a-random-variable",
+    "href": "slides/lec-6.html#what-is-a-random-variable",
+    "title": "Lecture 6: Discrete distributions",
+    "section": "What is a random variable?",
+    "text": "What is a random variable?\nA random variable is a quantity whose value depends on the outcome of a random event.\n\nTraditionally, we use capital letters \\(X\\), \\(Y\\), \\(Z\\) to denote random variables.\nThe values that random variables take are in lowercase \\(x\\), \\(y\\), \\(z\\)\nSo, the probability that random variable \\(X\\) has the value \\(x\\) is denoted by \\(P(X = x)\\)\n\nRanodm variables encountered in this class will be either discrete or continuous."
+  },
+  {
+    "objectID": "slides/lec-6.html#discrete-random-variables",
+    "href": "slides/lec-6.html#discrete-random-variables",
+    "title": "Lecture 6: Discrete distributions",
+    "section": "Discrete random variables",
+    "text": "Discrete random variables\nDiscrete random variables are those that can take on a countable number of potential values (could be countably infinite!), each associated with a probability of occurring\nThis list of possible values and probabilities is the probability distribution* for the discrete random variable in question.\n\nProbability distributions let us investigate how likely events may be\nFor discrete random variables, you may also see the term probability mass function, which is the same thing."
+  },
+  {
+    "objectID": "slides/lec-6.html#probability-distribution-of-births-in-the-us",
+    "href": "slides/lec-6.html#probability-distribution-of-births-in-the-us",
+    "title": "Lecture 6: Discrete distributions",
+    "section": "Probability distribution of births in the US",
+    "text": "Probability distribution of births in the US\n\n\n\nLet \\(X\\) be the random variable for birth status in the US. Its probability distribution may be given by\n\n\n\n\nEvent\nProbability\n\n\n\n\nX = pre\n0.10\n\n\nX = early\n0.27\n\n\nX = full\n0.57\n\n\nX = late/post\n0.06"
+  },
+  {
+    "objectID": "slides/lec-6.html#probability-distribution-of-births-in-the-us-1",
+    "href": "slides/lec-6.html#probability-distribution-of-births-in-the-us-1",
+    "title": "Lecture 6: Discrete distributions",
+    "section": "Probability distribution of births in the US",
+    "text": "Probability distribution of births in the US\n\n\n\n\n\nEvent\nProbability\n\n\n\n\nX = pre\n0.10\n\n\nX = early\n0.27\n\n\nX = full\n0.57\n\n\nX = late/post\n0.06\n\n\n\n\nThere are three rules for discrete probability distributions:\n\nOutcomes must be disjoint\nThe probability of each outcome must be \\(\\geq\\) 0 and \\(\\leq\\) 1\nThe sum of the outcome probabilities must add up to 1."
+  },
+  {
+    "objectID": "slides/lec-6.html#bernoulli-random-variables",
+    "href": "slides/lec-6.html#bernoulli-random-variables",
+    "title": "Lecture 6: Discrete distributions",
+    "section": "Bernoulli random variables",
+    "text": "Bernoulli random variables\n\n\nSome “types” of random variables come up very often. Consider a dichotomous (two-level) random variable \\(X\\):\n\nDead or alive\nCurrent smoker or not\n\nThis is known as a Bernoulli random variable, and has a probability of “success” denoted by \\(p\\)"
+  },
+  {
+    "objectID": "slides/lec-6.html#bernoulli-random-variables-1",
+    "href": "slides/lec-6.html#bernoulli-random-variables-1",
+    "title": "Lecture 6: Discrete distributions",
+    "section": "Bernoulli random variables",
+    "text": "Bernoulli random variables\nWith the notation that event \\(X=1\\) is a “success” and \\(X=0\\) is a “failure”, \\(P(X=1)=p\\) and \\(P(X=0) = 1-p\\)\n\nFair coin flip: Let the event X=1 denote heads.\n\n\n\n\nEvent\nP(Event)\n\n\n\n\n\\(X=1\\)\n0.5\n\n\n\\(X=0\\)\n0.5\n\n\n\n\n2018 US births: Let the event \\(X=1\\) denote preterm birth.\n\n\n\n\nEvent\nP(Event)\n\n\n\n\n\\(X=1\\)\n0.1\n\n\n\\(X=0\\)\n0.9\n\n\n\nA “success” is not necessarily positive - if we are interested in the probability of dying, a “success” would be death"
+  },
+  {
+    "objectID": "slides/lec-6.html#extending-the-bernoulli-distribution",
+    "href": "slides/lec-6.html#extending-the-bernoulli-distribution",
+    "title": "Lecture 6: Discrete distributions",
+    "section": "Extending the Bernoulli distribution",
+    "text": "Extending the Bernoulli distribution\nSuppose we randomly select two independent US births in 2018, and \\(Z\\) is a new random variable that represents the number of preterm births among them.\n\\(Z\\) can be 0, 1, or 2:\n\n\n\n\n\n\n\n\n\n1st Birth \\(X\\)\n2nd Birth \\(X\\)\n# Preterm Births \\(Z\\)\nProbability of Outcome\n\n\n\n\n0\n0\n0\n\n\n\n1\n0\n1\n\n\n\n0\n1\n1\n\n\n\n1\n1\n2"
+  },
+  {
+    "objectID": "slides/lec-6.html#extending-the-bernoulli-distribution-1",
+    "href": "slides/lec-6.html#extending-the-bernoulli-distribution-1",
+    "title": "Lecture 6: Discrete distributions",
+    "section": "Extending the Bernoulli distribution",
+    "text": "Extending the Bernoulli distribution\nLet \\(X_1\\) be 1 if the first birth is preterm, and \\(X_2\\) be 1 if the second birth is preterm, and 0 otherwise.\nBecause these two births are independent, then\n\\[\\begin{align}\nP(\\textrm{both preterm}) &= P(X_1 = 1 \\cap X_2 = 1) \\\\\n&= P(X_1 = 1) P(X_2 = 1 | X_1 = 1) \\\\\n&= P(X_1 = 1) P(X_2 = 1) \\\\\n&= p * p = 0.1 \\times 0.1 = 0.01\n\\end{align}\\]"
+  },
+  {
+    "objectID": "slides/lec-6.html#extending-the-bernoulli-distribution-2",
+    "href": "slides/lec-6.html#extending-the-bernoulli-distribution-2",
+    "title": "Lecture 6: Discrete distributions",
+    "section": "Extending the Bernoulli distribution",
+    "text": "Extending the Bernoulli distribution\nBack to the table, row 1 is given by\n\\(P(X_1 = 0 \\cap X_2 = 0) = P(X_1 = 0) P(X_2 = 0) = (1-p)(1-p)\\)\n\n\n\n\n\n\n\n\n\n1st Birth \\(X\\)\n2nd Birth \\(X\\)\n# Preterm Births \\(Z\\)\nProbability of Outcome\n\n\n\n\n0\n0\n0\n(1-p)(1-p)=0.81\n\n\n1\n0\n1\n\n\n\n0\n1\n1\n\n\n\n1\n1\n2"
+  },
+  {
+    "objectID": "slides/lec-6.html#extending-the-bernoulli-distribution-3",
+    "href": "slides/lec-6.html#extending-the-bernoulli-distribution-3",
+    "title": "Lecture 6: Discrete distributions",
+    "section": "Extending the Bernoulli distribution",
+    "text": "Extending the Bernoulli distribution\nRow 2 is given by\n\\(P(X_1 = 1 \\cap X_2 = 0) = P(X_1 = 1) P(X_2 = 0) = (p)(1-p)\\)\n\n\n\n\n\n\n\n\n\n1st Birth \\(X\\)\n2nd Birth \\(X\\)\n# Preterm Births \\(Z\\)\nProbability of Outcome\n\n\n\n\n0\n0\n0\n(1-p)(1-p)=0.81\n\n\n1\n0\n1\np(1-p) = 0.09\n\n\n0\n1\n1\n\n\n\n1\n1\n2"
+  },
+  {
+    "objectID": "slides/lec-6.html#extending-the-bernoulli-distribution-4",
+    "href": "slides/lec-6.html#extending-the-bernoulli-distribution-4",
+    "title": "Lecture 6: Discrete distributions",
+    "section": "Extending the Bernoulli distribution",
+    "text": "Extending the Bernoulli distribution\nRow 3 is given by\n\\(P(X_1 = 0 \\cap X_2 = 1) = P(X_1 = 0) P(X_2 = 1) = (1-p)(p)\\)\n\n\n\n\n\n\n\n\n\n1st Birth \\(X\\)\n2nd Birth \\(X\\)\n# Preterm Births \\(Z\\)\nProbability of Outcome\n\n\n\n\n0\n0\n0\n(1-p)(1-p)=0.81\n\n\n1\n0\n1\np(1-p) = 0.09\n\n\n0\n1\n1\n(1-p)p = 0.09\n\n\n1\n1\n2"
+  },
+  {
+    "objectID": "slides/lec-6.html#extending-the-bernoulli-distribution-5",
+    "href": "slides/lec-6.html#extending-the-bernoulli-distribution-5",
+    "title": "Lecture 6: Discrete distributions",
+    "section": "Extending the Bernoulli distribution",
+    "text": "Extending the Bernoulli distribution\nFinally, Row 4 is given by\n\\(P(X_1 = 1 \\cap X_2 = 1) = P(X_1 = 1) P(X_2 = 1) = (p)(p)\\)\n\n\n\n\n\n\n\n\n\n1st Birth \\(X\\)\n2nd Birth \\(X\\)\n# Preterm Births \\(Z\\)\nProbability of Outcome\n\n\n\n\n0\n0\n0\n(1-p)(1-p)=0.81\n\n\n1\n0\n1\np(1-p) = 0.09\n\n\n0\n1\n1\n(1-p)p = 0.09\n\n\n1\n1\n2\np \\(\\times\\) p = 0.01"
+  },
+  {
+    "objectID": "slides/lec-6.html#extending-the-bernoulli-distribution-6",
+    "href": "slides/lec-6.html#extending-the-bernoulli-distribution-6",
+    "title": "Lecture 6: Discrete distributions",
+    "section": "Extending the Bernoulli distribution",
+    "text": "Extending the Bernoulli distribution\nThus, the probability distribution of the number of preterm births out of two independent births is given by\n\n\n\n\n\\(z=0\\)\n\\(z=1\\)\n\\(z=2\\)\n\n\n\n\n\\(P(Z=z)\\)\n0.81\n0.18\n0.01"
+  },
+  {
+    "objectID": "slides/lec-6.html#extending-the-bernoulli-distribution-7",
+    "href": "slides/lec-6.html#extending-the-bernoulli-distribution-7",
+    "title": "Lecture 6: Discrete distributions",
+    "section": "Extending the Bernoulli distribution",
+    "text": "Extending the Bernoulli distribution\nNow let \\(Z\\) be the random variable corresponding to the number of preterm births among 3 independently sampled births\n\n\n\n\n\n\n\n\n\n\nFirst Birth \\(X_1\\)\nSecond Birth \\(X_2\\)\nThird Birth \\(X_3\\)\nNumber of Preterm Births \\(Z\\)\nProbability\n\n\n\n\n0\n0\n0\n0\n\n\n\n1\n0\n0\n1\n\n\n\n0\n1\n0\n1\n\n\n\n0\n0\n1\n1\n\n\n\n1\n1\n0\n2\n\n\n\n1\n0\n1\n2\n\n\n\n0\n1\n1\n2\n\n\n\n1\n1\n1\n3"
+  },
+  {
+    "objectID": "slides/lec-6.html#extending-the-bernoulli-distribution-8",
+    "href": "slides/lec-6.html#extending-the-bernoulli-distribution-8",
+    "title": "Lecture 6: Discrete distributions",
+    "section": "Extending the Bernoulli distribution",
+    "text": "Extending the Bernoulli distribution\nRow 1 is given by\n\\(P(X_1 = 0 \\cap X_2 = 0 \\cap X_3 = 0) = (1-p)(1-p)(1-p)\\)\n\n\n\n\n\n\n\n\n\n\nFirst Birth \\(X_1\\)\nSecond Birth \\(X_2\\)\nThird Birth \\(X_3\\)\nNumber of Preterm Births \\(Z\\)\nProbability\n\n\n\n\n0\n0\n0\n0\n0.729\n\n\n1\n0\n0\n1\n\n\n\n0\n1\n0\n1\n\n\n\n0\n0\n1\n1\n\n\n\n1\n1\n0\n2\n\n\n\n1\n0\n1\n2\n\n\n\n0\n1\n1\n2\n\n\n\n1\n1\n1\n3"
+  },
+  {
+    "objectID": "slides/lec-6.html#extending-the-bernoulli-distribution-9",
+    "href": "slides/lec-6.html#extending-the-bernoulli-distribution-9",
+    "title": "Lecture 6: Discrete distributions",
+    "section": "Extending the Bernoulli distribution",
+    "text": "Extending the Bernoulli distribution\nRow 2 is given by\n\\(P(X_1 = 1 \\cap X_2 = 0 \\cap X_3 = 0) = p(1-p)(1-p)\\)\n\n\n\n\n\n\n\n\n\n\nFirst Birth \\(X_1\\)\nSecond Birth \\(X_2\\)\nThird Birth \\(X_3\\)\nNumber of Preterm Births \\(Z\\)\nProbability\n\n\n\n\n0\n0\n0\n0\n0.729\n\n\n1\n0\n0\n1\n0.081\n\n\n0\n1\n0\n1\n\n\n\n0\n0\n1\n1\n\n\n\n1\n1\n0\n2\n\n\n\n1\n0\n1\n2\n\n\n\n0\n1\n1\n2\n\n\n\n1\n1\n1\n3"
+  },
+  {
+    "objectID": "slides/lec-6.html#extending-the-bernoulli-distribution-10",
+    "href": "slides/lec-6.html#extending-the-bernoulli-distribution-10",
+    "title": "Lecture 6: Discrete distributions",
+    "section": "Extending the Bernoulli distribution",
+    "text": "Extending the Bernoulli distribution\n…et cetera\n\n\n\n\n\n\n\n\n\n\nFirst Birth \\(X_1\\)\nSecond Birth \\(X_2\\)\nThird Birth \\(X_3\\)\nNumber of Preterm Births \\(Z\\)\nProbability\n\n\n\n\n0\n0\n0\n0\n0.729\n\n\n1\n0\n0\n1\n0.081\n\n\n0\n1\n0\n1\n0.081\n\n\n0\n0\n1\n1\n0.081\n\n\n1\n1\n0\n2\n0.009\n\n\n1\n0\n1\n2\n0.009\n\n\n0\n1\n1\n2\n0.009\n\n\n1\n1\n1\n3\n0.001"
+  },
+  {
+    "objectID": "slides/lec-6.html#extending-the-bernoulli-distribution-11",
+    "href": "slides/lec-6.html#extending-the-bernoulli-distribution-11",
+    "title": "Lecture 6: Discrete distributions",
+    "section": "Extending the Bernoulli distribution",
+    "text": "Extending the Bernoulli distribution\nIf we randomly sample 3 births, what is the chance 2 are preterm?\n0.009 + 0.009 + 0.009 = 0.027 (why?)\n\n\n\n\n\n\n\n\n\n\nFirst Birth \\(X_1\\)\nSecond Birth \\(X_2\\)\nThird Birth \\(X_3\\)\nNumber of Preterm Births \\(Z\\)\nProbability\n\n\n\n\n0\n0\n0\n0\n0.729\n\n\n1\n0\n0\n1\n0.081\n\n\n0\n1\n0\n1\n0.081\n\n\n0\n0\n1\n1\n0.081\n\n\n1\n1\n0\n2\n0.009\n\n\n1\n0\n1\n2\n0.009\n\n\n0\n1\n1\n2\n0.009\n\n\n1\n1\n1\n3\n0.001"
+  },
+  {
+    "objectID": "slides/lec-6.html#extending-the-bernoulli-distribution-12",
+    "href": "slides/lec-6.html#extending-the-bernoulli-distribution-12",
+    "title": "Lecture 6: Discrete distributions",
+    "section": "Extending the Bernoulli distribution",
+    "text": "Extending the Bernoulli distribution\nThus, the probability distribution of the number of preterm births out of three independent births is given by\n\n\n\n\n\\(z=0\\)\n\\(z=1\\)\n\\(z=2\\)\n\\(z=3\\)\n\n\n\n\n\\(P(Z=z)\\)\n0.729\n0.243\n0.027\n0.001\n\n\n\n\n\n\n\n\n\nVerify\n\n\nAre these disjoint events, with probabilities in [0,1], that all sum to 1?)"
+  },
+  {
+    "objectID": "slides/lec-6.html#the-binomial-distribution",
+    "href": "slides/lec-6.html#the-binomial-distribution",
+    "title": "Lecture 6: Discrete distributions",
+    "section": "The binomial distribution",
+    "text": "The binomial distribution\nThe binomial distribution gives the probability of \\(k\\) “successes” from a sequence of \\(n\\) independent Bernoulli trials. There are three assumptions:\n\nThere is a fixed number of trials \\(n\\), each of which is a Bernoulli random variable.\nThe outcomes of the \\(n\\) trials are independent.\nThe probability of success, \\(p\\), is the same of each of these trials."
+  },
+  {
+    "objectID": "slides/lec-6.html#the-binomial-distribution-1",
+    "href": "slides/lec-6.html#the-binomial-distribution-1",
+    "title": "Lecture 6: Discrete distributions",
+    "section": "The binomial distribution",
+    "text": "The binomial distribution\nIf \\(X\\) has a binomial distribution, then\n\\[P(X=k) = {n \\choose k}p^k (1-p)^{n-k}\\]\nWhat do these components mean?\n\n\n\n\n\n\nNote\n\n\nThis expression will always be provided to you if needed."
+  },
+  {
+    "objectID": "slides/lec-6.html#the-binomial-distribution-2",
+    "href": "slides/lec-6.html#the-binomial-distribution-2",
+    "title": "Lecture 6: Discrete distributions",
+    "section": "The binomial distribution",
+    "text": "The binomial distribution\nIf we randomly sample 3 births, what is the chance 2 are preterm?\n\nThere is a fixed number of trials, each of which is a Bernoulli random variable\nThe outcomes of the trials are independent\nThe probability of success is the same for each of these trials\n\nThus, \\(Z \\sim Binom(3, 0.1)\\).\n\\[\\begin{align}\nP(Z=2) &= {3 \\choose 2} 0.1^2 (1-0.1)^{3-2} \\\\\n&= \\frac{3!}{2!(3-2)!} \\times 0.1^2 \\times 0.9 ^1 = 0.027\n\\end{align}\\]"
+  },
+  {
+    "objectID": "slides/lec-6.html#the-poisson-distribution",
+    "href": "slides/lec-6.html#the-poisson-distribution",
+    "title": "Lecture 6: Discrete distributions",
+    "section": "The Poisson distribution",
+    "text": "The Poisson distribution\n\n\n\nDiscrete distribution taking on possible values 0, 1, 2, \\(\\ldots\\), \\(\\infty\\)\nOften used to model counts or rare events\nMuch like the binomial distribution, requires a few assumptions"
+  },
+  {
+    "objectID": "slides/lec-6.html#the-poisson-distribution-1",
+    "href": "slides/lec-6.html#the-poisson-distribution-1",
+    "title": "Lecture 6: Discrete distributions",
+    "section": "The Poisson distribution",
+    "text": "The Poisson distribution\nThe Poisson distribution gives the probability that \\(k\\) events occur in a given “interval”. There are four assumptions:\n\nWithin any interval, \\(k\\) may take on values 0, 1, 2, 3, \\(\\ldots\\), \\(\\infty\\)\nEach event occurs independently, both within the same interval, and between intervals\nThe average rate at which events occur in an interval, \\(\\lambda\\), is constant\nTwo events cannot occur simultaneously\n\nWhat is an “interval”?"
+  },
+  {
+    "objectID": "slides/lec-6.html#the-poisson-distribution-2",
+    "href": "slides/lec-6.html#the-poisson-distribution-2",
+    "title": "Lecture 6: Discrete distributions",
+    "section": "The Poisson distribution",
+    "text": "The Poisson distribution\nIf \\(X\\) has a Poisson distribution, then\n\\[P(X=k) = \\frac{\\lambda^k e^{-\\lambda}}{k!}\\]\nWhat do these components mean?\n\n\n\n\n\n\nNote\n\n\nThis expression will always be provided to you if needed."
+  },
+  {
+    "objectID": "slides/lec-6.html#the-poisson-distribution-3",
+    "href": "slides/lec-6.html#the-poisson-distribution-3",
+    "title": "Lecture 6: Discrete distributions",
+    "section": "The Poisson distribution",
+    "text": "The Poisson distribution\nSuppose on average, there are 1.5 deaths due to Alzheimer’s Disease in a town each year. For a one-year period in this town, what is the chance that two or more people die from Alzheimer’s?\n\nWithin any interval, the number of AD deaths can range from 0 to \\(\\infty\\) (technically not true, but close enough)\nOne individual dying of Alzheimer’s does not affect the chance of another person dying of Alzheimer’s\nThe AD death rate is constant in this town\nTwo AD deaths cannot occur at the same time (we can always subdivide time intervals such that only one person experiences this event in a given sub-interval)"
+  },
+  {
+    "objectID": "slides/lec-6.html#the-poisson-distribution-4",
+    "href": "slides/lec-6.html#the-poisson-distribution-4",
+    "title": "Lecture 6: Discrete distributions",
+    "section": "The Poisson distribution",
+    "text": "The Poisson distribution\nThus \\(Z \\sim Pois(1.5)\\), and \\(P(Z=0)\\), \\(P(Z=1)\\), and \\(P(Z\\geq 2)\\) are disjoint events. So, $P(Z ) = 1- (P(Z = 0) + P(Z = 1)), where\n\\[\\begin{align}\nP(Z=0) &= \\frac{1.5^0 \\times e^{-1.5}}{0!}\\approx 0.223 \\\\\nP(Z=1) &= \\frac{1.5^1 \\times e^{-1.5}}{1!}\\approx 0.335\n\\end{align}\\]\nAnd so \\(P(Z \\geq 2) \\approx 1-0.223-0.335 = 0.442\\)."
+  },
+  {
+    "objectID": "slides/lec-6.html#what-about-other-interval-lengths",
+    "href": "slides/lec-6.html#what-about-other-interval-lengths",
+    "title": "Lecture 6: Discrete distributions",
+    "section": "What about other interval lengths?",
+    "text": "What about other interval lengths?\nSuppose we have a count random variable that follows a Poisson distributioni\n\nSince each event is independnt of others and the rate \\(\\lambda\\) is constant, the probability that an event occurs within an interval is proportional to the length of that interval.\nE.g., we would expect twice the number of events to occur in an interval of twice the length; we would expect 1/9 times the number of events to occur in an interval 9 times as small; and so on."
+  },
+  {
+    "objectID": "slides/lec-6.html#what-about-other-interval-lengths-1",
+    "href": "slides/lec-6.html#what-about-other-interval-lengths-1",
+    "title": "Lecture 6: Discrete distributions",
+    "section": "What about other interval lengths?",
+    "text": "What about other interval lengths?\nSuppose on average, there are 1.5 deaths due to Alzheimer’s disease in a town each year\n\nWhat is the average one-month rate of deaths due to Alzheimer’s disease in this town?\nFor any given one-month period in this town, what is the probability that exactly one person dies from Alzheimer’s? (Just the expression is fine)\n\nFor \\(X \\sim Pois(\\lambda)\\),\n\\[P(X=k) = \\frac{\\lambda^k e^{-\\lambda}}{k!}\\]"
+  },
+  {
+    "objectID": "slides/lec-6.html#expectation-and-variance",
+    "href": "slides/lec-6.html#expectation-and-variance",
+    "title": "Lecture 6: Discrete distributions",
+    "section": "Expectation and variance",
+    "text": "Expectation and variance\nNow that we’ve defined random variables and explored a few distributions, we might be interested in some other aspects of their distributions.\nSuppose we are interested in the probability distribution corresponding to the number of preterm births in a random sample of five independent US births.\n\nHow many preterm births should we expect?\nHow “spread out” would this distribution be?"
+  },
+  {
+    "objectID": "slides/lec-6.html#expected-value",
+    "href": "slides/lec-6.html#expected-value",
+    "title": "Lecture 6: Discrete distributions",
+    "section": "Expected value",
+    "text": "Expected value\nThe expected value of a discrete random variable \\(X\\) is a weighted average of the possible outcomes:\n\\[E(X) = \\sum_{\\textrm{all} x} x \\cdot P(X = x)\\]\nThis is a property of the distribution of \\(X\\), not of the random variable itself."
+  },
+  {
+    "objectID": "slides/lec-6.html#properties-of-expected-values",
+    "href": "slides/lec-6.html#properties-of-expected-values",
+    "title": "Lecture 6: Discrete distributions",
+    "section": "Properties of expected values",
+    "text": "Properties of expected values\nLet \\(X\\) and \\(Y\\) be random variables and \\(c\\) be a numeric constant. Then:\n\n\\(E(c) = c\\)\n\\(E(X + c) = E(X) + c\\)\n\\(E(cX) = c \\cdot E(X)\\)\n\\(E(X + Y) = E(X) + E(Y)\\)\n\\(E(X - Y) = E(X) - E(Y)\\)\nIf \\(X\\) and \\(Y\\) are independent, \\(E(XY) = E(X)E(Y)\\)"
+  },
+  {
+    "objectID": "slides/lec-6.html#expected-value-of-a-function-of-x",
+    "href": "slides/lec-6.html#expected-value-of-a-function-of-x",
+    "title": "Lecture 6: Discrete distributions",
+    "section": "Expected value of a function of \\(X\\)",
+    "text": "Expected value of a function of \\(X\\)\nWe can also find the expected value of a function of the random variable:\n\\[E(f(X)) = \\sum_{x} f(x) \\cdot P(X=x)\\]\nIt is an average of the values, weighted by their probability of occurrence."
+  },
+  {
+    "objectID": "slides/lec-6.html#variance",
+    "href": "slides/lec-6.html#variance",
+    "title": "Lecture 6: Discrete distributions",
+    "section": "Variance",
+    "text": "Variance\nThe variance of \\(X\\) tells us how close values tend to be to its expectation:\n\\[Var(X) = E((X - E(X))^2)\\]\nBy the last slide, for \\(f(X) = (X - E(X))^2\\):\n\\[Var(X) = \\sum_{\\textrm{all} x} (x - E(X))^2 \\cdot P(X = x)\\]\nThus, the variance is the expected squared deviation of a random variable from its expectation."
+  },
+  {
+    "objectID": "slides/lec-6.html#properties-of-variances",
+    "href": "slides/lec-6.html#properties-of-variances",
+    "title": "Lecture 6: Discrete distributions",
+    "section": "Properties of variances",
+    "text": "Properties of variances\nLet \\(X\\) and \\(Y\\) be random variables and \\(c\\) be a numeric constant. Then:\n\n\\(Var(c) = 0\\)\n\\(Var(X + c) = Var(X)\\)\n\\(Var(cX) = c^2 \\cdot Var(x)\\)\nIf \\(X\\) and \\(Y\\) are independent, \\(Var(X + Y) = Var(X) + Var (Y)\\)\nIf \\(X\\) and \\(Y\\) are independent, \\(Var(X - Y) = Var(X) + Var (Y)\\)\n\n(why?)"
+  },
+  {
+    "objectID": "slides/lec-6.html#properties-of-bernoulli-and-binomial-random-variables",
+    "href": "slides/lec-6.html#properties-of-bernoulli-and-binomial-random-variables",
+    "title": "Lecture 6: Discrete distributions",
+    "section": "Properties of Bernoulli and binomial random variables",
+    "text": "Properties of Bernoulli and binomial random variables\nFor \\(Z \\sim Bern(p)\\), \\(E(Z) = p\\) and \\(Var(Z) = p(1-p)\\)\nFor \\(Z \\sim Binom(n, p)\\), \\(E(Z) = np\\) and \\(Var(Z) = np(1-p)\\)\nFor \\(Z \\sim Pois(\\lambda)\\), \\(E(Z) = Var(Z) = \\lambda\\)"
+  },
+  {
+    "objectID": "slides/lec-6.html#extending-the-bernoulli-distribution-13",
+    "href": "slides/lec-6.html#extending-the-bernoulli-distribution-13",
+    "title": "Lecture 6: Discrete distributions",
+    "section": "Extending the Bernoulli distribution",
+    "text": "Extending the Bernoulli distribution\n\nIf we randomly sample 4 births, what is the probability distribution for the number of preterm births?\nTo build a similar table would start to become egregious.\nLuckily, there is a formula for this probability distribution! 🥳"
   }
 ]
