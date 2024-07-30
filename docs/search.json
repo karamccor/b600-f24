@@ -1573,5 +1573,103 @@
     "title": "Lecture 6: Discrete distributions",
     "section": "Extending the Bernoulli distribution",
     "text": "Extending the Bernoulli distribution\n\nIf we randomly sample 4 births, what is the probability distribution for the number of preterm births?\nTo build a similar table would start to become egregious.\nLuckily, there is a formula for this probability distribution! 🥳"
+  },
+  {
+    "objectID": "slides/lec-7.html#supplemental-reading",
+    "href": "slides/lec-7.html#supplemental-reading",
+    "title": "Lecture 7: Continuous distributions",
+    "section": "Supplemental Reading",
+    "text": "Supplemental Reading\nThese readings are optional. All material in homework and exams will be covered in lecture and lab, and books do not cover everything we do in lecture (even if there is a corresponding section).\nHowever, for those with the very optional textbooks, the following sections correspond to today’s lecture:\n\nPagano and Gavreau: Section 7.4\nOpenIntro Statistics: 3.5, 4.1"
+  },
+  {
+    "objectID": "slides/lec-7.html#review-discrete-probability-distributions",
+    "href": "slides/lec-7.html#review-discrete-probability-distributions",
+    "title": "Lecture 7: Continuous distributions",
+    "section": "Review: Discrete probability distributions",
+    "text": "Review: Discrete probability distributions\n\n\nThere are three rules for discrete probability distributions:\n\nOutcomes must be disjoint\nThe probability of each outcome must be \\(\\geq\\) 0 and \\(\\leq\\) 1\nThe sum of the outcome probabilities must add up to 1\n\n\n\n\n\nEvent\nProbability\n\n\n\n\nX = pre\n0.10\n\n\nX = early\n0.27\n\n\nX = full\n0.57\n\n\nX = late/post\n0.06"
+  },
+  {
+    "objectID": "slides/lec-7.html#review-expectation-and-variance",
+    "href": "slides/lec-7.html#review-expectation-and-variance",
+    "title": "Lecture 7: Continuous distributions",
+    "section": "Review: Expectation and variance",
+    "text": "Review: Expectation and variance\n\nThe expectation is the average value (weighted by the probability of each value occurring)\nThe variance describes the expected spread of values around the population expectation (thus, variance is in fact an expectation itself!)"
+  },
+  {
+    "objectID": "slides/lec-7.html#can-we-be-more-precise",
+    "href": "slides/lec-7.html#can-we-be-more-precise",
+    "title": "Lecture 7: Continuous distributions",
+    "section": "Can we be more precise?",
+    "text": "Can we be more precise?\nLetting \\(X\\) be the random variable that corresponds to how long a baby’s gestation was, we could imagein subdividing further and further:\n\n\n\n\n\nEvent\nProbability\n\n\n\n\n\\(X\\) &lt; 20 wk.\n\\(P(X &lt; 20)\\)\n\n\n\\(X\\) = 20 to 21 wk.\netc.\n\n\n\\(X\\) = 21 to 22 wk.\netc.\n\n\n\\(X\\) = 22 to 23 wk.\netc.\n\n\n\\(\\vdots\\)\n\\(\\vdots\\)\n\n\n\n\n\n\n\nEvent\nProbability\n\n\n\n\n\\(X\\) &lt; 20 wk.\n\\(P(X &lt; 20)\\)\n\n\n\\(X\\) = 20 to 20.1 wk.\netc.\n\n\n\\(X\\) = 20.1 to 20.2 wk.\netc.\n\n\n\\(X\\) = 20.2 to 20.3 wk.\netc.\n\n\n\\(\\vdots\\)\n\\(\\vdots\\)"
+  },
+  {
+    "objectID": "slides/lec-7.html#can-we-be-more-precise-1",
+    "href": "slides/lec-7.html#can-we-be-more-precise-1",
+    "title": "Lecture 7: Continuous distributions",
+    "section": "Can we be more precise?",
+    "text": "Can we be more precise?\n\nNow let gestational age \\(X\\) be a continuous random variable, which can take on any value, say from 0 to \\(\\infty\\).\nHow might we define a continuous probability distribution that corresponds to \\(X\\)?"
+  },
+  {
+    "objectID": "slides/lec-7.html#continuous-probability-distributions",
+    "href": "slides/lec-7.html#continuous-probability-distributions",
+    "title": "Lecture 7: Continuous distributions",
+    "section": "continuous probability distributions",
+    "text": "continuous probability distributions\n\nThe probability that a continuous variable equals any specific value is 0\nNo use tabulating - there is an uncountably infinite number of possible values they can be, all with \\(P(X = x) = 0\\)\nThe distribution is given by a probability density function, helps us describe probabilities for ranges of values."
+  },
+  {
+    "objectID": "slides/lec-7.html#density-functions",
+    "href": "slides/lec-7.html#density-functions",
+    "title": "Lecture 7: Continuous distributions",
+    "section": "Density functions",
+    "text": "Density functions\nProbability density functions may be given graphically, satisfying the following two rules:\n\nThe density must be non-negative everywhere \\((f(x) \\geq 0\\) for all \\(x\\) from \\(-\\infty\\) to \\(\\infty\\))\nThe total area under the density must be 1"
+  },
+  {
+    "objectID": "slides/lec-7.html#density-functions-1",
+    "href": "slides/lec-7.html#density-functions-1",
+    "title": "Lecture 7: Continuous distributions",
+    "section": "Density functions",
+    "text": "Density functions\nWe can define events for continuous distributions and assign probabilities to them using density functions:\n\nSuppose \\(X\\) follows some density function \\(f(x)\\)\nWe are interested in the event “\\(X\\) lies between \\(a\\) and \\(b\\)”\nWe calculate the following probability:\n\n\\[P(a &lt; X &lt; b) = \\int_a^b f(x) dx\\]\n\n\n\n\n\n\nNote\n\n\nComputers do this for us these days; no need to worry about the expression above)"
+  },
+  {
+    "objectID": "slides/lec-7.html#what-would-this-look-like-graphically",
+    "href": "slides/lec-7.html#what-would-this-look-like-graphically",
+    "title": "Lecture 7: Continuous distributions",
+    "section": "What would this look like graphically?",
+    "text": "What would this look like graphically?"
+  },
+  {
+    "objectID": "slides/lec-7.html#the-normal-gaussian-distribution",
+    "href": "slides/lec-7.html#the-normal-gaussian-distribution",
+    "title": "Lecture 7: Continuous distributions",
+    "section": "The normal (Gaussian) distribution",
+    "text": "The normal (Gaussian) distribution\n\n\nFor the normal distribution,\n\\[f(x) = \\frac{1}{\\sqrt{2\\pi \\sigma^2}} \\textrm{exp}\\Bigl\\{-\\frac{1}{2} \\frac{(x - \\mu)^2}{\\sigma^2}\\Bigr\\}\\]\nwhere \\(\\mu\\) is the mean and \\(\\sigma^2\\) is the variance.\n\nWe often write \\(N(\\mu, \\sigma^2)\\)."
+  },
+  {
+    "objectID": "slides/lec-7.html#section",
+    "href": "slides/lec-7.html#section",
+    "title": "Lecture 7: Continuous distributions",
+    "section": "68-95-99.7",
+    "text": "68-95-99.7"
+  },
+  {
+    "objectID": "slides/lec-7.html#standardization",
+    "href": "slides/lec-7.html#standardization",
+    "title": "Lecture 7: Continuous distributions",
+    "section": "Standardization",
+    "text": "Standardization\n\nThe normal distribution is a family of distributions of a specific form. There are an infinite amount of possible distributions, since \\(\\mu\\) can be any real number and \\(\\sigma^2\\) can be any positive number.\nIt would be very cumbersome to have to individually think about a \\(N(0, 20)\\) vs. \\(N(2.5, 2)\\) vs. \\(N(694, 1549)\\) vs. …. distribution, depending on the situation.\nIn practice, we could calculate a standard score that gives the number of standard deviations away from the mean an observation from a particular population is.\n\n\n\n\n\n\n\nQuestion\n\n\nWhy would we want to standardize?"
+  },
+  {
+    "objectID": "slides/lec-7.html#z-scores",
+    "href": "slides/lec-7.html#z-scores",
+    "title": "Lecture 7: Continuous distributions",
+    "section": "z-scores",
+    "text": "z-scores\n\nA z-score tells us how many population standard deviations an observation is away from the population mean.\nThey provide ways to compare results across many different measurement scales, since z-scores are unitless\n\n\\[z=\\frac{x-\\mu}{\\sigma}\\]\n(note the use of population parameters \\(\\mu\\) and \\(\\sigma\\))\n\nSo, a z-score of 1.2 is 1.2 standard deviations above a mean; a z-score of 0.8 is 0.8 standard deviations below the mean."
+  },
+  {
+    "objectID": "slides/lec-7.html#osteoporosis",
+    "href": "slides/lec-7.html#osteoporosis",
+    "title": "Lecture 7: Continuous distributions",
+    "section": "Osteoporosis",
+    "text": "Osteoporosis\n\n\n\n\n\nAccording to NHANES, the mean bone minearl density for a 65 year old white woman is 809 mg/cm\\(^2\\), with a standard deviation of 140 mg/cm\\(^2\\).\nSuppose you are a 65 year old white woman whose bone density is 698 mg/cm\\(^2\\). Should you be very concerned about osteoporosis?"
   }
 ]
