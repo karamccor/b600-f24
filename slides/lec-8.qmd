@@ -1,0 +1,102 @@
+---
+title: "Lecture 8: The central limit theorem"
+subtitle: "BIOS 600 - Fall 2024"
+author: "Kara McCormack"
+logo: "images/logo_600.png"
+format: 
+  revealjs: 
+    theme: slides.scss
+    multiplex: true
+    transition: fade
+    slide-number: true
+editor: visual
+execute:
+  freeze: auto
+from: markdown+emoji
+---
+
+## Supplemental reading
+
+These readings are optional. All material in homework and exams will be covered in lecture and lab, and books do not cover everything we do in lecture (even if there is a corresponding section). 
+
+However, for those with the very optional textbooks, the following sections correspond to today's lecture:
+
+- Pagano and Gavreau: Sections 8.1-8.4
+- [OpenIntro Statistics](https://www.openintro.org/go/?id=os4_for_screen_readers&referrer=/book/os/index.php): Section 5.1
+
+## A roadmap ahead
+
+- In just a few more lectures, we'll have learned enough tools to perform a pretty wide range of analyses and answer associated questions.
+
+- In the latter half of this course, we'll emphasize specific scientific questions of interest, statistical methods for testing such questions, and translating those results to real-world conclusions.
+
+## A roadmap for today
+
+- Today's topic may be a bit theoretical, but it's fundamental to making sound statistical inferences and conclusions.
+
+- The basic idea is called the [central limit theorem]{style="color: RosyBrown"}, which states that for **any** distriution with a well-defined mean and variance, the distribution of the means computed from samples of size *n* will be approximately Gaussian.
+
+## What is statistical inference?
+
+- Statistical inference is the act of generalizing from a [sample]{style="color: RosyBrown"} in order to make conclusions regarding a [population]{style="color: RosyBrown"} while quantifying the degree of certainty we have. 
+
+- We are interested in population [parameters]{style="color: RosyBrown"}, which we do not observe.
+
+- Instead, we must calculate [statistics]{style="color: RosyBrown"} from our sample in order to learn about the parameters. 
+
+## Parameters vs statistics
+
+![](images/lec-8/waldo.png)
+
+
+## The sampling distribution of the mean {.smaller}
+
+Suppose we're interested in the resting heart rate of students in BIOS 600, and are able to do the following:
+
+1. Take a random sample of size *n* from this population
+
+  - Calculate the mean resting heart rate *in this sample*, $\bar x_1$
+  
+2. Put the sample back, take a second random sample of size *n*
+
+  - Calculate the mean resting heart rate from this new sample, $\bar x_2$
+
+3. Put the sample back, take a third random sample of size *n*
+
+  - Calculate the mean resting heart rate from this sample, too...
+
+... and so on
+
+## The sampling distribution of the mean
+
+After repeating this many times, we have a dataset that has the sample averages from the population: $\{\bar x_1, \bar x_2, \ldots \}$
+
+- Can we say anything about the distribution of these sample means?
+
+## The central limit theorem {.smaller}
+
+The [central limit theorem]{style="color: RosyBrown"} states that for a population with mean $\mu$ and standard deviation $\sigma$, these three properties hold for the distribution of sample averages $\bar X$:
+
+1. The mean of the sampling distribution is identical to the population mean $\mu$
+
+2. The standard deviation of the distribution of the sample averages is $\sigma \ \sqrt{n}$, or the [standard error]{style="color: RosyBrown"} (SE) of the mean
+
+3. For *n* large enough (in the limit, as $n \rightarrow \infty$), the shape of the sampling distribution of means is approximately normal
+
+## What if the original population distribution is not normal?
+
+- The central limit theore tells us that **sample averages** are normally distributed, if we have enough data. 
+
+- This is rue **even if** our original variables are not normally distributed.
+
+[Interactive central limit theorem demonstration](https://onlinestatbook.com/stat_sim/sampling_dist/)
+
+## Another experiment
+
+Define variable $X$ to be 1 if a student taking a summer stat intro course at UNC has brown eyes, and 0 if a student does not have brown eyes. 
+
+- What is the distribution of $X$?
+
+- If we take a random sample, the average is an estimate of the true proportion of brown-eyed students in our population of interest
+
+- If we take repeated random samples from our population and calculate the proportion in each sample with brown eyes, what values might we expect? Will we get the same values every time?
