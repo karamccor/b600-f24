@@ -405,7 +405,7 @@ Kara McCormack
 <li>Can we say anything about the distribution of these sample means?</li>
 </ul>
 </section>
-<section id="the-central-limit-theorem" class="slide level2 smaller">
+<section id="the-central-limit-theorem" class="slide level2">
 <h2>The central limit theorem</h2>
 <p>The <span style="color: RosyBrown">central limit theorem</span> states that for a population with mean <span class="math inline">\(\mu\)</span> and standard deviation <span class="math inline">\(\sigma\)</span>, these three properties hold for the distribution of sample averages <span class="math inline">\(\bar X\)</span>:</p>
 <ol type="1">
@@ -418,7 +418,7 @@ Kara McCormack
 <h2>What if the original population distribution is not normal?</h2>
 <ul>
 <li><p>The central limit theore tells us that <strong>sample averages</strong> are normally distributed, if we have enough data.</p></li>
-<li><p>This is rue <strong>even if</strong> our original variables are not normally distributed.</p></li>
+<li><p>This is true <strong>even if</strong> our original variables are not normally distributed.</p></li>
 </ul>
 <p><a href="https://onlinestatbook.com/stat_sim/sampling_dist/">Interactive central limit theorem demonstration</a></p>
 </section>
@@ -429,6 +429,60 @@ Kara McCormack
 <li><p>What is the distribution of <span class="math inline">\(X\)</span>?</p></li>
 <li><p>If we take a random sample, the average is an estimate of the true proportion of brown-eyed students in our population of interest</p></li>
 <li><p>If we take repeated random samples from our population and calculate the proportion in each sample with brown eyes, what values might we expect? Will we get the same values every time?</p></li>
+</ul>
+</section>
+<section id="lets-try-it-out" class="slide level2">
+<h2>Let’s try it out</h2>
+<ul>
+<li><p>How did the variability of the sampling distribution depend on the size of our random sample?</p></li>
+<li><p>How might our results change if we used a biased sampling scheme?</p></li>
+<li><p>What if our population of interest was instead all US adults?</p></li>
+</ul>
+</section>
+<section id="back-to-eye-color" class="slide level2">
+<h2>Back to eye color</h2>
+<ul>
+<li><p>Going back to our example, the central limit theorem tells us that the distribution of sample averages should have mean <span class="math inline">\(E(X)\)</span> and standard deviation <span class="math inline">\(SD(X)/\sqrt{n}\)</span></p></li>
+<li><p>In our case, what are these values? Was this the case?</p></li>
+</ul>
+</section>
+<section id="iq-tests" class="slide level2">
+<h2>IQ tests</h2>
+<ul>
+<li><p>IQ tests are designed to have a probability distribution with <span class="math inline">\(\mu\)</span> = 100 and <span class="math inline">\(\sigma\)</span> = 15.</p></li>
+<li><p>Suppose we draw samples of size <span class="math inline">\(n\)</span> = 20 from this population.</p></li>
+<li><p>From the central limit theorem, the distribution of the sample averages will be approximately normal with mean 100 and standard deviation <span class="math inline">\(15/\sqrt{20}\)</span></p></li>
+</ul>
+</section>
+<section id="iq-tests-1" class="slide level2">
+<h2>IQ tests</h2>
+<ul>
+<li><p>If the population distribution is normal to begin with, then the distribution of the sample averages will also be exactly normal.</p></li>
+<li><p>If the population distribution is not normal, then the rule of thumb is that we need at least $n = $ 30 for the central limit theorem to kick in for approximate normality.</p></li>
+</ul>
+</section>
+<section id="example" class="slide level2">
+<h2>Example</h2>
+<ul>
+<li><p>Suppose I give a random sample of $n = $ 30 BIOS 600 students an IQ test*, and the sample average score is 120.</p></li>
+<li><p>Does this mean that BIOS 600 students are smarter than average?</p></li>
+<li><p>I know there are many problems with IQ and IQ testing…bear with me here!</p></li>
+</ul>
+</section>
+<section id="example-1" class="slide level2">
+<h2>Example</h2>
+<ul>
+<li><p>The central limit theorem tells us that the distriution of means of samples of size 30 from this population is also normal, with mean $= $ 100 and <span class="math inline">\(SE = \sigma/ \sqrt{n} = 15/ \sqrt{30} \approx 2.7\)</span>.</p></li>
+<li><p><span class="math inline">\(Z = \frac{\bar{X} - \mu}{SE}\)</span> is a standard normal random varaible, and here <span class="math inline">\(Z \approx 7.3\)</span>.</p></li>
+<li><p>The probability of a z-score greater than this is extremely small.</p></li>
+<li><p>What does this mean?</p></li>
+</ul>
+</section>
+<section id="some-other-questions" class="slide level2">
+<h2>Some other questions</h2>
+<ul>
+<li><p>What are the upper and lower limits that enclose 95% of the means for samples of size <span class="math inline">\(n\)</span> drawn from the population?</p></li>
+<li><p>How large would our random samples need to be for 95% of their averages to lie within $! 10 of the population mean <span class="math inline">\(\mu\)</span>?</p></li>
 </ul>
 
 

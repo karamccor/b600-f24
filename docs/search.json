@@ -1754,7 +1754,7 @@
     "href": "slides/lec-8.html#what-if-the-original-population-distribution-is-not-normal",
     "title": "Lecture 8: The central limit theorem",
     "section": "What if the original population distribution is not normal?",
-    "text": "What if the original population distribution is not normal?\n\nThe central limit theore tells us that sample averages are normally distributed, if we have enough data.\nThis is rue even if our original variables are not normally distributed.\n\nInteractive central limit theorem demonstration"
+    "text": "What if the original population distribution is not normal?\n\nThe central limit theore tells us that sample averages are normally distributed, if we have enough data.\nThis is true even if our original variables are not normally distributed.\n\nInteractive central limit theorem demonstration"
   },
   {
     "objectID": "slides/lec-8.html#another-experiment",
@@ -1762,5 +1762,54 @@
     "title": "Lecture 8: The central limit theorem",
     "section": "Another experiment",
     "text": "Another experiment\nDefine variable \\(X\\) to be 1 if a student taking a summer stat intro course at UNC has brown eyes, and 0 if a student does not have brown eyes.\n\nWhat is the distribution of \\(X\\)?\nIf we take a random sample, the average is an estimate of the true proportion of brown-eyed students in our population of interest\nIf we take repeated random samples from our population and calculate the proportion in each sample with brown eyes, what values might we expect? Will we get the same values every time?"
+  },
+  {
+    "objectID": "slides/lec-8.html#lets-try-it-out",
+    "href": "slides/lec-8.html#lets-try-it-out",
+    "title": "Lecture 8: The central limit theorem",
+    "section": "Let’s try it out",
+    "text": "Let’s try it out\n\nHow did the variability of the sampling distribution depend on the size of our random sample?\nHow might our results change if we used a biased sampling scheme?\nWhat if our population of interest was instead all US adults?"
+  },
+  {
+    "objectID": "slides/lec-8.html#back-to-eye-color",
+    "href": "slides/lec-8.html#back-to-eye-color",
+    "title": "Lecture 8: The central limit theorem",
+    "section": "Back to eye color",
+    "text": "Back to eye color\n\nGoing back to our example, the central limit theorem tells us that the distribution of sample averages should have mean \\(E(X)\\) and standard deviation \\(SD(X)/\\sqrt{n}\\)\nIn our case, what are these values? Was this the case?"
+  },
+  {
+    "objectID": "slides/lec-8.html#iq-tests",
+    "href": "slides/lec-8.html#iq-tests",
+    "title": "Lecture 8: The central limit theorem",
+    "section": "IQ tests",
+    "text": "IQ tests\n\nIQ tests are designed to have a probability distribution with \\(\\mu\\) = 100 and \\(\\sigma\\) = 15.\nSuppose we draw samples of size \\(n\\) = 20 from this population.\nFrom the central limit theorem, the distribution of the sample averages will be approximately normal with mean 100 and standard deviation \\(15/\\sqrt{20}\\)"
+  },
+  {
+    "objectID": "slides/lec-8.html#iq-tests-1",
+    "href": "slides/lec-8.html#iq-tests-1",
+    "title": "Lecture 8: The central limit theorem",
+    "section": "IQ tests",
+    "text": "IQ tests\n\nIf the population distribution is normal to begin with, then the distribution of the sample averages will also be exactly normal.\nIf the population distribution is not normal, then the rule of thumb is that we need at least $n = $ 30 for the central limit theorem to kick in for approximate normality."
+  },
+  {
+    "objectID": "slides/lec-8.html#example",
+    "href": "slides/lec-8.html#example",
+    "title": "Lecture 8: The central limit theorem",
+    "section": "Example",
+    "text": "Example\n\nSuppose I give a random sample of $n = $ 30 BIOS 600 students an IQ test*, and the sample average score is 120.\nDoes this mean that BIOS 600 students are smarter than average?\nI know there are many problems with IQ and IQ testing…bear with me here!"
+  },
+  {
+    "objectID": "slides/lec-8.html#example-1",
+    "href": "slides/lec-8.html#example-1",
+    "title": "Lecture 8: The central limit theorem",
+    "section": "Example",
+    "text": "Example\n\nThe central limit theorem tells us that the distriution of means of samples of size 30 from this population is also normal, with mean $= $ 100 and \\(SE = \\sigma/ \\sqrt{n} = 15/ \\sqrt{30} \\approx 2.7\\).\n\\(Z = \\frac{\\bar{X} - \\mu}{SE}\\) is a standard normal random varaible, and here \\(Z \\approx 7.3\\).\nThe probability of a z-score greater than this is extremely small.\nWhat does this mean?"
+  },
+  {
+    "objectID": "slides/lec-8.html#some-other-questions",
+    "href": "slides/lec-8.html#some-other-questions",
+    "title": "Lecture 8: The central limit theorem",
+    "section": "Some other questions",
+    "text": "Some other questions\n\nWhat are the upper and lower limits that enclose 95% of the means for samples of size \\(n\\) drawn from the population?\nHow large would our random samples need to be for 95% of their averages to lie within $! 10 of the population mean \\(\\mu\\)?"
   }
 ]
