@@ -1811,5 +1811,166 @@
     "title": "Lecture 8: The central limit theorem",
     "section": "Some other questions",
     "text": "Some other questions\n\nWhat are the upper and lower limits that enclose 95% of the means for samples of size \\(n\\) drawn from the population?\nHow large would our random samples need to be for 95% of their averages to lie within $! 10 of the population mean \\(\\mu\\)?"
+  },
+  {
+    "objectID": "slides/lec-9.html#optional-readings",
+    "href": "slides/lec-9.html#optional-readings",
+    "title": "Lecture 9: Confidence Intervals",
+    "section": "Optional readings",
+    "text": "Optional readings\n\nP & G: Chapter 9\nOpenIntro: No corresponding section."
+  },
+  {
+    "objectID": "slides/lec-9.html#the-opioid-crisis",
+    "href": "slides/lec-9.html#the-opioid-crisis",
+    "title": "Lecture 9: Confidence Intervals",
+    "section": "The opioid crisis",
+    "text": "The opioid crisis\n\n\n\n\n\nWest Virginia has the highest age-adjusted rate of drug overdose deaths involving opioids."
+  },
+  {
+    "objectID": "slides/lec-9.html#statistical-inference",
+    "href": "slides/lec-9.html#statistical-inference",
+    "title": "Lecture 9: Confidence Intervals",
+    "section": "Statistical inference",
+    "text": "Statistical inference\n\nPoint estimation: estimating an unknown parameter using a single number calculated from the sample\n\nWe estimate the one-year death rate due to opioid-related overdoses in WV to be 49.6 per 100,000\n\nInterval estimation: estimating an unknown parameter using a range of values that is likely to contain the true parameter\n\nWe estimate that the one-year death rate due to opioid-related overdoses in WV is between 45 and 55 per 100,000\n\nHypothesis testing: evaluating whether our observed sample data provides evidence against some population claim\n\nWe evaluate the hypothesis that the opioid overdose death rate is the same in WV and NC. In a random sample of death certificates from the two states, the rate was considerably higher in WV, providing evidence against the hypothesis"
+  },
+  {
+    "objectID": "slides/lec-9.html#why-should-we-care-about-confidence-interval-estimation",
+    "href": "slides/lec-9.html#why-should-we-care-about-confidence-interval-estimation",
+    "title": "Lecture 9: Confidence Intervals",
+    "section": "Why should we care about confidence interval estimation?",
+    "text": "Why should we care about confidence interval estimation?\n\nRandlall Munroe, xkcd"
+  },
+  {
+    "objectID": "slides/lec-9.html#what-is-a-confidence-interval-anyway",
+    "href": "slides/lec-9.html#what-is-a-confidence-interval-anyway",
+    "title": "Lecture 9: Confidence Intervals",
+    "section": "What is a confidence interval, anyway?",
+    "text": "What is a confidence interval, anyway?\n\nA confidence interval gives a range of values that is intended to cover the parameter of interest to a certain degree of “confidence”\nConfidence interval = point estimate \\(\\pm\\) margin of error"
+  },
+  {
+    "objectID": "slides/lec-9.html#how-do-you-interpret-a-confidence-interval",
+    "href": "slides/lec-9.html#how-do-you-interpret-a-confidence-interval",
+    "title": "Lecture 9: Confidence Intervals",
+    "section": "How do you interpret a confidence interval?",
+    "text": "How do you interpret a confidence interval?\n\n\nResearchers conducted a clinical trial of a drug intended for severe asthma patients. Their primary endpoint was evaluating whether the mean rate of asthma exacerbation over 48 weeks was different between placebo and treatment arms.\nAbove is the 95% confidence interval for the mean rate among the placebo patients.\nHow do you interpret this interval? (more on this very soon!)"
+  },
+  {
+    "objectID": "slides/lec-9.html#brief-caveat",
+    "href": "slides/lec-9.html#brief-caveat",
+    "title": "Lecture 9: Confidence Intervals",
+    "section": "Brief caveat",
+    "text": "Brief caveat\n\nFor now, let’s assume that we know \\(\\sigma\\) (this rarely ever happens)"
+  },
+  {
+    "objectID": "slides/lec-9.html#two-sided-confidence-intervals",
+    "href": "slides/lec-9.html#two-sided-confidence-intervals",
+    "title": "Lecture 9: Confidence Intervals",
+    "section": "Two-sided confidence intervals",
+    "text": "Two-sided confidence intervals\n\nGiven a random variable \\(X\\) with mean \\(\\mu\\) and standard deviation \\(\\sigma\\), the CLT tells us that\n\n\\[Z = \\frac{\\bar X - \\mu}{\\sigma / \\sqrt{n}}\\],\nwhere \\(Z\\) has a standard normal distribution if \\(X\\) is normal, and \\(Z\\) is approximately normal if \\(X\\) is not normal, but \\(n\\) is large enough.\n\nRecall: rule of thumb \\(n &gt; 30\\)."
+  },
+  {
+    "objectID": "slides/lec-9.html#deriving-the-two-sided-interval",
+    "href": "slides/lec-9.html#deriving-the-two-sided-interval",
+    "title": "Lecture 9: Confidence Intervals",
+    "section": "Deriving the two-sided interval",
+    "text": "Deriving the two-sided interval\n\nFor a standard normal random variable, 95% of the observations lie between -1.96 and 1.96 for \\(Z \\sim N(0,1)\\), so\n\n\\[0.95 = P(-1.96 \\leq Z \\leq 1.96)\\]\n\nSo, a 95% CI is given by\n\n\\[(\\bar X - 1.96 \\frac{\\sigma}{\\sqrt n}, \\bar X + 1.96 \\frac{\\sigma}{\\sqrt n})\\]\n\n\n\n\n\n\nQuestion\n\n\nHow did we get this?"
+  },
+  {
+    "objectID": "slides/lec-9.html#generic-form-of-confidence-intervals",
+    "href": "slides/lec-9.html#generic-form-of-confidence-intervals",
+    "title": "Lecture 9: Confidence Intervals",
+    "section": "Generic form of confidence intervals",
+    "text": "Generic form of confidence intervals\n\\[(\\bar X - 1.96 \\frac{\\sigma}{\\sqrt n}, \\bar X + 1.96 \\frac{\\sigma}{\\sqrt n})\\]\nPoint estimate \\(\\pm\\) confidence multiplier \\(\\times\\) standard error\n\nThe confidence multiplier \\(\\times\\) standard error is known as the margin of error"
+  },
+  {
+    "objectID": "slides/lec-9.html#ci-interpretation",
+    "href": "slides/lec-9.html#ci-interpretation",
+    "title": "Lecture 9: Confidence Intervals",
+    "section": "CI interpretation",
+    "text": "CI interpretation\n\\[(\\bar X - 1.96 \\frac{\\sigma}{\\sqrt n}, \\bar X + 1.96 \\frac{\\sigma}{\\sqrt n})\\]\n\nSuppose we select \\(M\\) different random samples from the population of size \\(n\\), and use them to calculate \\(M\\) different 95% CIs in the same way as above.\nApproximately 95% of these intervals would cover the true \\(\\mu\\) and 5% do not\nInteractive activity"
+  },
+  {
+    "objectID": "slides/lec-9.html#ci-interpretation-1",
+    "href": "slides/lec-9.html#ci-interpretation-1",
+    "title": "Lecture 9: Confidence Intervals",
+    "section": "CI interpretation",
+    "text": "CI interpretation\n\\[(\\bar X - 1.96 \\frac{\\sigma}{\\sqrt n}, \\bar X + 1.96 \\frac{\\sigma}{\\sqrt n})\\]\n\n“There is a 95% chance that \\(\\mu\\) lies in the interval”\nThis is incorrect!"
+  },
+  {
+    "objectID": "slides/lec-9.html#ci-interpretation-2",
+    "href": "slides/lec-9.html#ci-interpretation-2",
+    "title": "Lecture 9: Confidence Intervals",
+    "section": "CI interpretation",
+    "text": "CI interpretation\n\\[(\\bar X - 1.96 \\frac{\\sigma}{\\sqrt n}, \\bar X + 1.96 \\frac{\\sigma}{\\sqrt n})\\]\n\nImportant: we do not know whether any particular interval is in the 95% of them that cover the mean or the 5% that don’t\nSince \\(\\mu\\) is a parameter, it’s either in our confidence interval or not"
+  },
+  {
+    "objectID": "slides/lec-9.html#other-coverage-probabilities",
+    "href": "slides/lec-9.html#other-coverage-probabilities",
+    "title": "Lecture 9: Confidence Intervals",
+    "section": "Other coverage probabilities",
+    "text": "Other coverage probabilities\n\\[(\\bar X - 1.96 \\frac{\\sigma}{\\sqrt n}, \\bar X + 1.96 \\frac{\\sigma}{\\sqrt n})\\]\n\\[\\textrm{Point estimate} \\pm \\underbrace{\\textrm{confidence multiplier} \\times \\textrm{standard error}}_{\\text{Margin of error}}\\]\n\nAlthough 95% CIs are the most common, we can easily generate intervals with other coverage probabilities by adjusting the confidence multiplier"
+  },
+  {
+    "objectID": "slides/lec-9.html#other-coverage-probabilities-1",
+    "href": "slides/lec-9.html#other-coverage-probabilities-1",
+    "title": "Lecture 9: Confidence Intervals",
+    "section": "Other coverage probabilities",
+    "text": "Other coverage probabilities\n\nThe confidence multiplier, \\(z^*_{1-\\alpha/2}\\), is the z-score that cuts off the upper 100% \\(\\times \\alpha/2\\) of the distribution (the \\(1-\\alpha/2\\) percentile)\nFor \\(\\alpha\\) = 0.05, we have a \\(1-\\alpha/2 = 0.975\\), and so \\(z^*\\) is the 97.5\\(^\\text{th}\\) quantile of the standard normal distribution (calculated using software packages)\nCompromising on confidence level to obtain narrower CIs is… highly frowned upon"
+  },
+  {
+    "objectID": "slides/lec-9.html#when-can-we-use-this-ci",
+    "href": "slides/lec-9.html#when-can-we-use-this-ci",
+    "title": "Lecture 9: Confidence Intervals",
+    "section": "When can we use this CI?",
+    "text": "When can we use this CI?\n\\[(\\bar X - z^* \\frac{\\sigma}{\\sqrt n}, \\bar X + z^* \\frac{\\sigma}{\\sqrt n})\\]\nRemember, this is only ok to use when \\(\\sigma\\) is known, and:\n\n\\(X\\) is normal\n\\(X\\) is non-normal, but \\(n\\) is sufficiently large"
+  },
+  {
+    "objectID": "slides/lec-9.html#what-can-we-do-if-sigma-isnt-known",
+    "href": "slides/lec-9.html#what-can-we-do-if-sigma-isnt-known",
+    "title": "Lecture 9: Confidence Intervals",
+    "section": "What can we do if \\(\\sigma\\) isn’t known?",
+    "text": "What can we do if \\(\\sigma\\) isn’t known?"
+  },
+  {
+    "objectID": "slides/lec-9.html#what-can-we-do-if-sigma-isnt-known-1",
+    "href": "slides/lec-9.html#what-can-we-do-if-sigma-isnt-known-1",
+    "title": "Lecture 9: Confidence Intervals",
+    "section": "What can we do if \\(\\sigma\\) isn’t known?",
+    "text": "What can we do if \\(\\sigma\\) isn’t known?\n\n\n\n\n\nAs a Guiness brewery employee, William Sealy Gossett published a paper on the \\(t\\) distribution, which became known as Student’s \\(t\\) (the brewery didn’t allow him to use his own name)\nA. Student. The probable error of a mean (1908)"
+  },
+  {
+    "objectID": "slides/lec-9.html#students-t-distribution",
+    "href": "slides/lec-9.html#students-t-distribution",
+    "title": "Lecture 9: Confidence Intervals",
+    "section": "Student’s \\(t\\) distribution",
+    "text": "Student’s \\(t\\) distribution\n\n\n\nGosset used his new distribution to determine how large a sample should be for testing beer\nThe \\(t\\) distribution is appropriate for constructing a confidence interval for the mean when \\(\\sigma\\) is unknown"
+  },
+  {
+    "objectID": "slides/lec-9.html#students-t-distribution-1",
+    "href": "slides/lec-9.html#students-t-distribution-1",
+    "title": "Lecture 9: Confidence Intervals",
+    "section": "Student’s \\(t\\) distribution",
+    "text": "Student’s \\(t\\) distribution\n\n\n\nThe \\(t\\) distribution looks like the normal distribution except it has fatter fails, leading to wider CIs\nThis is due to the uncertainty involved in estimating \\(\\sigma\\) by using \\(s\\)\nAs the sample size increases, \\(s\\) is a better and better estimate of \\(\\sigma\\), and so the \\(t\\) distribution looks more and more like the normal distribution"
+  },
+  {
+    "objectID": "slides/lec-9.html#degrees-of-freedom",
+    "href": "slides/lec-9.html#degrees-of-freedom",
+    "title": "Lecture 9: Confidence Intervals",
+    "section": "Degrees of freedom",
+    "text": "Degrees of freedom\n\nThe degrees of freedom of a \\(t\\) distribution tells us how much information is “available” for estimating \\(\\sigma\\) using \\(s\\). The random variable\n\n\\[t = \\frac{\\bar X - \\mu}{s/ \\sqrt{n}}\\]\nhas a \\(t\\) distribution with \\(n-1\\) degrees of freedom (\\(df\\)), which we denote by \\(t_{n-1}\\) (we lose one \\(df\\) by estimating the sample mean using \\(\\bar X\\)).\n\nThe \\(t\\) distribution only has one parameter (\\(df\\))\nHow does this compare to the standard normal distribution?"
+  },
+  {
+    "objectID": "slides/lec-9.html#two-sided-interval-with-unknown-sigma",
+    "href": "slides/lec-9.html#two-sided-interval-with-unknown-sigma",
+    "title": "Lecture 9: Confidence Intervals",
+    "section": "Two-sided interval with unknown \\(\\sigma\\)",
+    "text": "Two-sided interval with unknown \\(\\sigma\\)\n\\[(\\bar X - t^*_{n-1; 1-\\alpha/2} \\frac{\\sigma}{\\sqrt n}, \\bar X + t^*_{n-1; 1-\\alpha/2} \\frac{\\sigma}{\\sqrt n})\\]"
+  },
+  {
+    "objectID": "slides/lec-9.html#what-bout-one-sided-intervals",
+    "href": "slides/lec-9.html#what-bout-one-sided-intervals",
+    "title": "Lecture 9: Confidence Intervals",
+    "section": "What bout one-sided intervals?",
+    "text": "What bout one-sided intervals?\n\nThe symmetric two-sided confidence intervals we have dealt with so far give the shortest intervals with the desired coverage probability (for symmetric distributions)\nOccasionally, we may only want an upper limit or a lower limit for the population mean, for instance in a non-inferiority clinical trial for a generic drug (we don’t expect the generic drug to work better, but we do expect it to be “not worse”)\nHow might we construct these types of intervals?"
   }
 ]

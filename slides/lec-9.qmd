@@ -1,0 +1,314 @@
+---
+title: "Lecture 9: Confidence Intervals"
+subtitle: "BIOS 600 - Fall 2024"
+author: "Kara McCormack"
+logo: "images/logo_600.png"
+format: 
+  revealjs: 
+    theme: slides.scss
+    multiplex: true
+    transition: fade
+    slide-number: true
+editor: visual
+execute:
+  freeze: auto
+from: markdown+emoji
+---
+
+
+## Optional readings
+
+- P & G: Chapter 9
+
+- OpenIntro: No corresponding section.
+
+## The opioid crisis
+
+::: columns
+::: {.column width="50%"}
+![](images/lec-9/wv.png){width=800}
+:::
+
+::: {.column width="50%"}
+
+- West Virginia has the highest age-adjusted rate of drug overdose deaths involving opioids. 
+:::
+
+:::
+
+## Statistical inference {.smaller}
+
+- [Point estimation]{style="color: RosyBrown"}: estimating an unknown parameter using a single number calculated from the sample
+  - We estimate the one-year death rate due to opioid-related overdoses in WV to be 49.6 per 100,000
+
+- [Interval estimation]{style="color: RosyBrown"}: estimating an unknown parameter using a range of values that is likely to contain the true parameter
+
+  - We estimate that the one-year death rate due to opioid-related overdoses in WV is between 45 and 55 per 100,000
+
+- [Hypothesis testing]{style="color: RosyBrown"}: evaluating whether our observed sample data provides evidence against some population claim
+  - We evaluate the hypothesis that the opioid overdose death rate is the same in WV and NC. In a random sample of death certificates from the two states, the rate was considerably higher in WV, providing evidence against the hypothesis
+  
+
+## Why should we care about confidence interval estimation?
+
+![](images/lec-9/xkcd.png)
+
+Randlall Munroe, xkcd
+
+## What is a confidence interval, anyway?
+
+- A [confidence interval]{style="color: RosyBrown"} gives a range of values that is intended to cover the parameter of interest to a certain degree of "confidence"
+
+- Confidence interval = [point estimate]{style="color: RosyBrown"} $\pm$ [margin of error]{style="color: RosyBrown"}
+
+## How do you interpret a confidence interval? {.smaller}
+
+![](images/lec-9/asthma.png){width=600}
+
+- Researchers conducted a clinical trial of a drug intended for severe asthma patients. Their primary endpoint was evaluating whether the mean rate of asthma exacerbation over 48 weeks was different between placebo and treatment arms. 
+- Above is the 95% confidence interval for the mean rate among the placebo patients.
+
+- How do you interpret this interval? (more on this very soon!)
+
+## Brief caveat
+
+- For now, let's assume that we know $\sigma$ (this rarely ever happens)
+
+## Two-sided confidence intervals
+
+- Given a random variable $X$ with mean $\mu$ and standard deviation $\sigma$, the CLT tells us that 
+
+$$Z = \frac{\bar X - \mu}{\sigma / \sqrt{n}}$$,
+
+where $Z$ has a standard normal distribution if $X$ is normal, and $Z$ is approximately normal if $X$ is not normal, but $n$ is large enough.
+
+- Recall: rule of thumb $n > 30$.
+
+## Deriving the two-sided interval
+
+- For a standard normal random variable, 95% of the observations lie between -1.96 and 1.96 for $Z \sim N(0,1)$, so
+
+$$0.95 = P(-1.96 \leq Z \leq 1.96)$$
+
+- So, a 95% CI is given by
+
+$$(\bar X - 1.96 \frac{\sigma}{\sqrt n}, \bar X + 1.96 \frac{\sigma}{\sqrt n})$$
+
+::: {.callout-caution appearance="simple"}
+
+## Question
+
+How did we get this?
+
+:::
+
+## Generic form of confidence intervals
+
+$$(\bar X - 1.96 \frac{\sigma}{\sqrt n}, \bar X + 1.96 \frac{\sigma}{\sqrt n})$$
+
+Point estimate $\pm$ [confidence multiplier]{style="color: RosyBrown"} $\times$ standard error
+
+- The confidence multiplier $\times$ standard error is known as the [margin of error]{style="color: RosyBrown"}
+
+## CI interpretation
+
+$$(\bar X - 1.96 \frac{\sigma}{\sqrt n}, \bar X + 1.96 \frac{\sigma}{\sqrt n})$$
+
+- Suppose we select $M$ different random samples from the population of size $n$, and use them to calculate $M$ different 95% CIs in the same way as above. 
+
+- Approximately 95% of these intervals would cover the true $\mu$ and 5% do not
+
+- [Interactive activity](https://digitalfirst.bfwpub.com/stats_applet/stats_applet_4_ci.html)
+
+## CI interpretation
+
+$$(\bar X - 1.96 \frac{\sigma}{\sqrt n}, \bar X + 1.96 \frac{\sigma}{\sqrt n})$$
+
+- ~~"There is a 95% chance that $\mu$ lies in the interval"~~
+
+- This is incorrect!
+
+## CI interpretation
+
+$$(\bar X - 1.96 \frac{\sigma}{\sqrt n}, \bar X + 1.96 \frac{\sigma}{\sqrt n})$$
+
+- **Important**: we do not know whether any particular interval is in the 95% of them that cover the mean or the 5% that don't
+
+- Since $\mu$ is a parameter, it's either in our confidence interval or not
+
+## Other coverage probabilities
+
+$$(\bar X - 1.96 \frac{\sigma}{\sqrt n}, \bar X + 1.96 \frac{\sigma}{\sqrt n})$$
+
+$$\textrm{Point estimate} \pm \underbrace{\textrm{confidence multiplier} \times \textrm{standard error}}_{\text{Margin of error}}$$
+
+- Although 95% CIs are the most common, we can easily generate intervals with other coverage probabilities by adjusting the confidence multiplier
+
+## Other coverage probabilities
+
+- The [confidence multiplier]{style="color: RosyBrown"}, $z^*_{1-\alpha/2}$, is the z-score that cuts off the upper 100% $\times \alpha/2$ of the distribution (the $1-\alpha/2$ percentile)
+
+- For $\alpha$ = 0.05, we have a $1-\alpha/2 = 0.975$, and so $z^*$ is the 97.5$^\text{th}$ quantile of the standard normal distribution (calculated using software packages)
+
+- Compromising on confidence level to obtain narrower CIs is... highly frowned upon
+
+## When can we use this CI?
+
+$$(\bar X - z^* \frac{\sigma}{\sqrt n}, \bar X + z^* \frac{\sigma}{\sqrt n})$$
+
+Remember, this is only ok to use when $\sigma$ is known, and:
+
+- $X$ is normal
+- $X$ is non-normal, but $n$ is sufficiently large
+
+## What can we do if $\sigma$ isn't known?
+
+![](images/lec-9/beer.png){width=500}
+
+## What can we do if $\sigma$ isn't known?
+
+
+::: columns
+::: {.column width="50%"}
+![](images/lec-9/will.jpg)
+:::
+
+::: {.column width="50%"}
+
+- As a Guiness brewery employee, William Sealy Gossett published a paper on the $t$ distribution, which became known as Student's $t$ (the brewery didn't allow him to use his own name)
+
+- A. Student. *The probable error of a mean* (1908)
+:::
+
+:::
+
+## Student's $t$ distribution {.smaller}
+
+::: columns
+::: {.column width="40%"}
+- Gosset used his new distribution to determine how large a sample should be for testing beer
+
+- The $t$ distribution is appropriate for constructing a confidence interval for the mean when $\sigma$ is unknown
+:::
+
+::: {.column width="60%"}
+```{r}
+#| fig-height: 9
+
+# Set up the x-axis values
+x <- seq(-4, 4, length = 1000)
+
+# Compute the densities for the t-distributions
+y_t1 <- dt(x, df = 1)
+y_t3 <- dt(x, df = 3)
+y_t10 <- dt(x, df = 10)
+y_t30 <- dt(x, df = 30)
+
+# Compute the density for the standard normal distribution
+y_norm <- dnorm(x, mean = 0, sd = 1)
+
+# Plot the density for t-distribution with 1 degree of freedom
+plot(x, y_t1, type = "l", col = "red", lwd = 2, ylim = c(0, 0.4),
+     main = "Comparison of t-Distributions",
+     xlab = "x value", ylab = "Density")
+
+# Add the density for t-distribution with 3 degrees of freedom
+lines(x, y_t3, col = "blue", lwd = 2)
+
+# Add the density for t-distribution with 10 degrees of freedom
+lines(x, y_t10, col = "green", lwd = 2)
+
+# Add the density for t-distribution with 30 degrees of freedom
+lines(x, y_t30, col = "yellow", lwd = 2)
+
+# Add the density for the standard normal distribution
+lines(x, y_norm, col = "black", lwd = 2, lty = 2)
+
+# Add a legend
+legend("topright", legend = c("t df=1", "t df=3", "t df=10", "t df=30", "Normal (0,1)"),
+       col = c("red", "blue", "green", "yellow", "black"), lwd = 2, lty = c(1, 1, 1, 1, 2))
+
+```
+
+:::
+
+:::
+
+
+## Student's $t$ distribution {.smaller}
+
+::: columns
+::: {.column width="40%"}
+- The $t$ distribution looks like the normal distribution except it has fatter fails, leading to wider CIs
+
+- This is due to the uncertainty involved in estimating $\sigma$ by using $s$
+
+- As the sample size increases, $s$ is a better and better estimate of $\sigma$, and so the $t$ distribution looks more and more like the normal distribution
+:::
+
+::: {.column width="60%"}
+```{r}
+#| fig-height: 9
+
+# Set up the x-axis values
+x <- seq(-4, 4, length = 1000)
+
+# Compute the densities for the t-distributions
+y_t1 <- dt(x, df = 1)
+y_t3 <- dt(x, df = 3)
+y_t10 <- dt(x, df = 10)
+y_t30 <- dt(x, df = 30)
+
+# Compute the density for the standard normal distribution
+y_norm <- dnorm(x, mean = 0, sd = 1)
+
+# Plot the density for t-distribution with 1 degree of freedom
+plot(x, y_t1, type = "l", col = "red", lwd = 2, ylim = c(0, 0.4),
+     main = "Comparison of t-Distributions",
+     xlab = "x value", ylab = "Density")
+
+# Add the density for t-distribution with 3 degrees of freedom
+lines(x, y_t3, col = "blue", lwd = 2)
+
+# Add the density for t-distribution with 10 degrees of freedom
+lines(x, y_t10, col = "green", lwd = 2)
+
+# Add the density for t-distribution with 30 degrees of freedom
+lines(x, y_t30, col = "yellow", lwd = 2)
+
+# Add the density for the standard normal distribution
+lines(x, y_norm, col = "black", lwd = 2, lty = 2)
+
+# Add a legend
+legend("topright", legend = c("t df=1", "t df=3", "t df=10", "t df=30", "Normal (0,1)"),
+       col = c("red", "blue", "green", "yellow", "black"), lwd = 2, lty = c(1, 1, 1, 1, 2))
+
+```
+
+:::
+
+:::
+
+## Degrees of freedom
+
+- The [degrees of freedom]{style="color: RosyBrown"} of a $t$ distribution tells us how much information is "available" for estimating $\sigma$ using $s$. The random variable
+
+$$t = \frac{\bar X - \mu}{s/ \sqrt{n}}$$
+
+has a $t$ distribution with $n-1$ degrees of freedom ($df$), which we denote by $t_{n-1}$ (we lose one $df$ by estimating the sample mean using $\bar X$). 
+
+- The $t$ distribution only has one parameter ($df$)
+
+- How does this compare to the standard normal distribution?
+
+## Two-sided interval with unknown $\sigma$
+
+$$(\bar X - t^*_{n-1; 1-\alpha/2} \frac{\sigma}{\sqrt n}, \bar X + t^*_{n-1; 1-\alpha/2} \frac{\sigma}{\sqrt n})$$
+
+## What bout one-sided intervals? {.smaller}
+
+- The symmetric two-sided confidence intervals we have dealt with so far give the shortest intervals with the desired coverage probability (for symmetric distributions)
+
+- Occasionally, we may only want an upper limit or a lower limit for the population mean, for instance in a non-inferiority clinical trial for a generic drug (we don't expect the generic drug to work better, but we do expect it to be "not worse")
+
+- How might we construct these types of intervals?
