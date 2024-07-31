@@ -1972,5 +1972,334 @@
     "title": "Lecture 9: Confidence Intervals",
     "section": "What bout one-sided intervals?",
     "text": "What bout one-sided intervals?\n\nThe symmetric two-sided confidence intervals we have dealt with so far give the shortest intervals with the desired coverage probability (for symmetric distributions)\nOccasionally, we may only want an upper limit or a lower limit for the population mean, for instance in a non-inferiority clinical trial for a generic drug (we don’t expect the generic drug to work better, but we do expect it to be “not worse”)\nHow might we construct these types of intervals?"
+  },
+  {
+    "objectID": "slides/lec-10.html#very-optional-readings",
+    "href": "slides/lec-10.html#very-optional-readings",
+    "title": "Lecture 10: Hypothesis Testing",
+    "section": "Very optional readings",
+    "text": "Very optional readings\n\nP & G: 10.1 - 10.4\nOI: 5.3"
+  },
+  {
+    "objectID": "slides/lec-10.html#the-opioid-crisis",
+    "href": "slides/lec-10.html#the-opioid-crisis",
+    "title": "Lecture 10: Hypothesis Testing",
+    "section": "The opioid crisis",
+    "text": "The opioid crisis\n\n\n\n\n\nWest Virginia has the highest age-adjusted rate of drug overdose deaths involving opioids."
+  },
+  {
+    "objectID": "slides/lec-10.html#statistical-inference",
+    "href": "slides/lec-10.html#statistical-inference",
+    "title": "Lecture 10: Hypothesis Testing",
+    "section": "Statistical inference",
+    "text": "Statistical inference\n\nPoint estimation: estimating an unknown parameter using a single number calculated from the sample\n\nWe estimate the one-year death rate due to opioid-related overdoses in WV to be 49.6 per 100,000\n\nInterval estimation: estimating an unknown parameter using a range of values that is likely to contain the true parameter\n\nWe estimate that the one-year death rate due to opioid-related overdoses in WV is between 45 and 55 per 100,000\n\nHypothesis testing: evaluating whether our observed sample data provides evidence against some population claim\n\nWe evaluate the hypothesis that the opioid overdose death rate is the same in WV and NC. In a random sample of death certificates from the two states, the rate was considerably higher in WV, providing evidence against the hypothesis"
+  },
+  {
+    "objectID": "slides/lec-10.html#why-should-we-care-about-hypothesis-testing",
+    "href": "slides/lec-10.html#why-should-we-care-about-hypothesis-testing",
+    "title": "Lecture 10: Hypothesis Testing",
+    "section": "Why should we care about hypothesis testing?",
+    "text": "Why should we care about hypothesis testing?"
+  },
+  {
+    "objectID": "slides/lec-10.html#how-can-we-answer-research-questions-using-statistics",
+    "href": "slides/lec-10.html#how-can-we-answer-research-questions-using-statistics",
+    "title": "Lecture 10: Hypothesis Testing",
+    "section": "How can we answer research questions using statistics?",
+    "text": "How can we answer research questions using statistics?\n\nStatistical hypothesis testing is the procedure that assesses evidence provided by the data in favor of or against some claim about the population (often about a population parameter or potential associations)."
+  },
+  {
+    "objectID": "slides/lec-10.html#the-hypothesis-testing-framework",
+    "href": "slides/lec-10.html#the-hypothesis-testing-framework",
+    "title": "Lecture 10: Hypothesis Testing",
+    "section": "The hypothesis testing framework",
+    "text": "The hypothesis testing framework\n\nStart with two hypotheses about the population: the null hypothesis and the alternative hypothesis\nChoose a sample, collect data, and analyze the data\nFigure out how likely it is to see data like what we got/observed, IF the null hypothesis were true\nIf our data would have been extremely unlikely if the null claim were true, then we reject it and deem the alternative claim worthy of further study. Otherwise, we cannot reject the null claim"
+  },
+  {
+    "objectID": "slides/lec-10.html#ultra-low-dose-contraception",
+    "href": "slides/lec-10.html#ultra-low-dose-contraception",
+    "title": "Lecture 10: Hypothesis Testing",
+    "section": "Ultra-low dose contraception",
+    "text": "Ultra-low dose contraception\n\n\n\n\n\nOral contraceptive pills work well, but must have a precise dose of estrogen.\nIf a pill has too high a dose, then people may risk side effects such as headaches, nausea, and rare but potentially fatal blood clots\nIf a pill has too low a dose, pregnancy may occur"
+  },
+  {
+    "objectID": "slides/lec-10.html#ultra-low-dose-contraception-1",
+    "href": "slides/lec-10.html#ultra-low-dose-contraception-1",
+    "title": "Lecture 10: Hypothesis Testing",
+    "section": "Ultra-low dose contraception",
+    "text": "Ultra-low dose contraception\n\nA certain contraceptive pill is supposed to contain precisely 0.020 \\(\\mu g\\) of estrogen. During QC, 50 randomly selected pills are tested, with a sample mean dose 0.017 \\(\\mu g\\) and sample SD 0.0008 \\(\\mu g\\).\n\n\n\n\n\n\n\nQuestion\n\n\nDo you think this is cause for concern? Why or why not?"
+  },
+  {
+    "objectID": "slides/lec-10.html#two-competing-hypotheses",
+    "href": "slides/lec-10.html#two-competing-hypotheses",
+    "title": "Lecture 10: Hypothesis Testing",
+    "section": "Two competing hypotheses",
+    "text": "Two competing hypotheses"
+  },
+  {
+    "objectID": "slides/lec-10.html#defining-the-null-and-alternative-hypotheses",
+    "href": "slides/lec-10.html#defining-the-null-and-alternative-hypotheses",
+    "title": "Lecture 10: Hypothesis Testing",
+    "section": "Defining the null and alternative hypotheses",
+    "text": "Defining the null and alternative hypotheses"
+  },
+  {
+    "objectID": "slides/lec-10.html#collecting-and-summarizing-the-data",
+    "href": "slides/lec-10.html#collecting-and-summarizing-the-data",
+    "title": "Lecture 10: Hypothesis Testing",
+    "section": "Collecting and summarizing the data",
+    "text": "Collecting and summarizing the data"
+  },
+  {
+    "objectID": "slides/lec-10.html#assessing-the-evidence-observed",
+    "href": "slides/lec-10.html#assessing-the-evidence-observed",
+    "title": "Lecture 10: Hypothesis Testing",
+    "section": "Assessing the evidence observed",
+    "text": "Assessing the evidence observed"
+  },
+  {
+    "objectID": "slides/lec-10.html#some-philosophical-details",
+    "href": "slides/lec-10.html#some-philosophical-details",
+    "title": "Lecture 10: Hypothesis Testing",
+    "section": "Some philosophical details",
+    "text": "Some philosophical details"
+  },
+  {
+    "objectID": "slides/lec-10.html#making-a-conclusion",
+    "href": "slides/lec-10.html#making-a-conclusion",
+    "title": "Lecture 10: Hypothesis Testing",
+    "section": "Making a conclusion",
+    "text": "Making a conclusion"
+  },
+  {
+    "objectID": "slides/lec-10.html#what-do-we-actually-conclude-when-p-alpha",
+    "href": "slides/lec-10.html#what-do-we-actually-conclude-when-p-alpha",
+    "title": "Lecture 10: Hypothesis Testing",
+    "section": "What do we actually conclude when \\(p > \\alpha\\)?",
+    "text": "What do we actually conclude when \\(p &gt; \\alpha\\)?"
+  },
+  {
+    "objectID": "slides/lec-10.html#remember-to-use-common-sense",
+    "href": "slides/lec-10.html#remember-to-use-common-sense",
+    "title": "Lecture 10: Hypothesis Testing",
+    "section": "Remember to use common sense",
+    "text": "Remember to use common sense"
+  },
+  {
+    "objectID": "slides/lec-10.html#back-to-the-oral-contraceptives-example",
+    "href": "slides/lec-10.html#back-to-the-oral-contraceptives-example",
+    "title": "Lecture 10: Hypothesis Testing",
+    "section": "Back to the oral contraceptives example",
+    "text": "Back to the oral contraceptives example"
+  },
+  {
+    "objectID": "slides/lec-10.html#what-could-go-wrong",
+    "href": "slides/lec-10.html#what-could-go-wrong",
+    "title": "Lecture 10: Hypothesis Testing",
+    "section": "What could go wrong?",
+    "text": "What could go wrong?"
+  },
+  {
+    "objectID": "slides/lec-10.html#type-i-vs.-type-ii-errors",
+    "href": "slides/lec-10.html#type-i-vs.-type-ii-errors",
+    "title": "Lecture 10: Hypothesis Testing",
+    "section": "Type I vs. Type II errors",
+    "text": "Type I vs. Type II errors"
+  },
+  {
+    "objectID": "slides/lec-10.html#review-steps-in-hypothesis-testing-about-the-mean",
+    "href": "slides/lec-10.html#review-steps-in-hypothesis-testing-about-the-mean",
+    "title": "Lecture 10: Hypothesis Testing",
+    "section": "Review: steps in hypothesis testing about the mean",
+    "text": "Review: steps in hypothesis testing about the mean"
+  },
+  {
+    "objectID": "slides/lec-10.html#different-sets-of-hypotheses",
+    "href": "slides/lec-10.html#different-sets-of-hypotheses",
+    "title": "Lecture 10: Hypothesis Testing",
+    "section": "Different sets of hypotheses",
+    "text": "Different sets of hypotheses"
+  },
+  {
+    "objectID": "slides/lec-10.html#two-sided-tests-of-hypotheses",
+    "href": "slides/lec-10.html#two-sided-tests-of-hypotheses",
+    "title": "Lecture 10: Hypothesis Testing",
+    "section": "Two-sided tests of hypotheses",
+    "text": "Two-sided tests of hypotheses"
+  },
+  {
+    "objectID": "slides/lec-10.html#breaking-down-the-test-statistic",
+    "href": "slides/lec-10.html#breaking-down-the-test-statistic",
+    "title": "Lecture 10: Hypothesis Testing",
+    "section": "Breaking down the test statistic",
+    "text": "Breaking down the test statistic"
+  },
+  {
+    "objectID": "slides/lec-10.html#getting-the-p-value",
+    "href": "slides/lec-10.html#getting-the-p-value",
+    "title": "Lecture 10: Hypothesis Testing",
+    "section": "Getting the p-value",
+    "text": "Getting the p-value"
+  },
+  {
+    "objectID": "labs/lab-01.html",
+    "href": "labs/lab-01.html",
+    "title": "BIOS 600 - Fall 2024",
+    "section": "",
+    "text": "# You may need to install the tidyverse packages, which you can do by running\n# the following line of code in the Console:\n\n# install.packages(\"tidyverse\")\n\nlibrary(tidyverse)\n\ncdc &lt;- read.csv(\"https://www2.stat.duke.edu/courses/Spring21/sta102.001/labs/data/cdc_cleaned.csv\")\n\n\nExercise 1\nWrite your answer to Exercise 1 here.\n\n\nExercise 2\n\n# Use this R chunk to create your visualization for Exercise 2.\n\n\n\nExercise 3\n\n# Use this R chunk to create your visualization for Exercise 3.\n\nDescribe the distribution in Exercise 3 here. Make sure you include spaces between the R chunks, narrative paragraphs, and headers.\n\n\nExercise 4\n\n# Use this R chunk to create your visualization for Exercise 4.\n\nUse this space to write your answer to Exercise 4.\n\n\nExercise 5\n\n# ...and so on.\n\nNarrative for Exercise 5 goes here.\n\n\nExercise 6\nRemember to render your lab into an .html file and then save it as a .pdf in a web browser.\nImportant: You must turn in a .pdf file corresponding to the Quarto template to Canvas in order to receive credit for the labs and homework assignments."
+  },
+  {
+    "objectID": "hw/hw-01.html",
+    "href": "hw/hw-01.html",
+    "title": "HW 01",
+    "section": "",
+    "text": "BIOS 600 Fall 2024 (McCormack)\nDue: Friday, August 30, 2024 at 11:59pm\nYou must turn in a knitted file to Canvas from an RMarkdown file in order to receive credit. More details will be provided at the end of this document, and we will also review the process during class. As a reminder, homework may be turned in up to 3 days late, with a 5% penalty deducted for each 24-hour period late.\nThe RMarkdown template for this assignment may be found by running the following code in your Console.\n# download.file(\"https://karamccor.github.io/b600-f24/hw/hw-01-template.Rmd\", destfile=\"hw-01.Rmd\")\nAhmed et al. (JAMA Neurology, 2016) conducted a study examining disturbances in eating behaviors among patients with dementia. Patients without dementia, with Alzheimer disease (AD), with semantic dementia, and with behavioral-variant frontal temporal dementia (bvFTD) were offered a breakfast buffet and left alone for 30 minutes to eat. After completion, the total caloric intake of each patient was measured. Boxplots summarizing the distributions of calories consumed across the patient types are displayed below."
+  },
+  {
+    "objectID": "hw/hw-01.html#exercise-1",
+    "href": "hw/hw-01.html#exercise-1",
+    "title": "HW 01",
+    "section": "Exercise 1",
+    "text": "Exercise 1\n(5 points) Was this an observational study or an experimental study? Explain."
+  },
+  {
+    "objectID": "hw/hw-01.html#exercise-2",
+    "href": "hw/hw-01.html#exercise-2",
+    "title": "HW 01",
+    "section": "Exercise 2",
+    "text": "Exercise 2\n(5 points)\nDescribe what it means for this specific study to be reproducible and replicable."
+  },
+  {
+    "objectID": "hw/hw-01.html#exercise-3",
+    "href": "hw/hw-01.html#exercise-3",
+    "title": "HW 01",
+    "section": "Exercise 3",
+    "text": "Exercise 3\n(5 points)\nWhat type of data are the following variables in the study? Be specific, e.g., “categorical ordinal” or “numeric discrete”, etc.\n\nType of dementia (AD/SD/bvFTD/None)\nTotal caloric intake\n% of calories from sugar\nDisease duration\nFrontal Rating Scale (mild/moderate/severe)"
+  },
+  {
+    "objectID": "hw/hw-01.html#exercise-4",
+    "href": "hw/hw-01.html#exercise-4",
+    "title": "HW 01",
+    "section": "Exercise 4",
+    "text": "Exercise 4\n(5 points)\nDo you expect the distribution of caloric intake among bvFTD patients to be left-skewed, right-skewed, or symmetric? Why?"
+  },
+  {
+    "objectID": "hw/hw-01.html#exercise-5",
+    "href": "hw/hw-01.html#exercise-5",
+    "title": "HW 01",
+    "section": "Exercise 5",
+    "text": "Exercise 5\n(5 points)\nDescribe an appropriate visualization that summarizes the % of calories from sugar at the breakfast buffet to the Frontal Rating Scale of the study participants."
+  },
+  {
+    "objectID": "hw/hw-01.html#exercise-6",
+    "href": "hw/hw-01.html#exercise-6",
+    "title": "HW 01",
+    "section": "Exercise 6",
+    "text": "Exercise 6\n(5 points) Describe an appropriate visualization that summarizes the total caloric intake at the breakfast buffet, disease duration in years, and type of dementia among these study participants."
+  },
+  {
+    "objectID": "hw/hw-01.html#exercise-7",
+    "href": "hw/hw-01.html#exercise-7",
+    "title": "HW 01",
+    "section": "Exercise 7",
+    "text": "Exercise 7\n(5 points) The authors state that they uncovered “elevated total caloric intake…in patients with bvFTD, supporting its diagnostic value for this disease….” Is this is a reasonable statement to make from the data visualization? Explain why or why not."
+  },
+  {
+    "objectID": "hw/hw-01.html#exercise-8",
+    "href": "hw/hw-01.html#exercise-8",
+    "title": "HW 01",
+    "section": "Exercise 8",
+    "text": "Exercise 8\n(5 points) Suppose the authors wanted to “tell a story” with the title to their visualization. Suggest a more effective title than the one presented.\nZhu et al. (The Lancet, 2020) conducted the first randomized trial of a recombinant adenovirus COVID-19 vaccine in healthy adults, with the aim of determining an appropriate dose for a larger efficacy study. They had three treatment arms: placebo, low dose (5 × 1010 virus particles), and high dose (1 × 1011 virus particles). The following table depicts the baseline characteristics of their study population:\n\nCalculate the following probabilities. It’s ok to express answers as unsimplified fractions). If the probabilities cannot be determined, please state so and what additional information is needed to calculate the quantity of interest.\nWhat is the probability that a randomly selected patient in the trial …"
+  },
+  {
+    "objectID": "hw/hw-01-template.html",
+    "href": "hw/hw-01-template.html",
+    "title": "HW 01",
+    "section": "",
+    "text": "Exercise 1\nWrite your answer to Exercise 1 here. Watch out for line spacing. Make sure that there is a blank line around each exercise header as demonstrated in the template. Don’t forget to change your name in the document metadata at the top of this template!\n\n\nExercise 2\nWrite your answer to Exercise 2 here.\n\n\nExercise 3\nWrite your answer to Exercise 3 here.\n\n\nExercise 4\nWrite your answer to Exercise 4 here.\n\n\nExercise 5\nWrite your answer to Exercise 5 here.\n\n\nExercise 6\nWrite your answer to Exercise 6 here.\n\n\nExercise 7\nWrite your answer to Exercise 7 here.\n\n\nExercise 8\nWrite your answer to Exercise 8 here.\n\n\nExercise 9\nWrite your answer to Exercise 9 here.\n\n\nExercise 10\nWrite your answer to Exercise 10 here.\n\n\nExercise 11\nWrite your answer to Exercise 11 here.\n\n\nExercise 12\nWrite your answer to Exercise 12 here.\n\n\nExercise 13\nWrite your answer to Exercise 13 here.\n\n\nExercise 14\nWrite your answer to Exercise 14 here.\n\n\nExercise 15\nWrite your answer to Exercise 15 here.\n\n\nExercise 16\nWrite your answer to Exercise 16 here.\n\n\nExercise 17\nWrite your answer to Exercise 17 here.\n\n\nExercise 18\nWrite your answer to Exercise 18 here.\n\n\nExercise 19\nWrite your answer to Exercise 19 here.\n\n\nExercise 20\nWrite your answer to Exercise 20 here."
+  },
+  {
+    "objectID": "hw/hw-01.html#exercise-9",
+    "href": "hw/hw-01.html#exercise-9",
+    "title": "HW 01",
+    "section": "Exercise 9",
+    "text": "Exercise 9\n(5 points) … was assigned to placebo?"
+  },
+  {
+    "objectID": "hw/hw-01.html#exercise-10",
+    "href": "hw/hw-01.html#exercise-10",
+    "title": "HW 01",
+    "section": "Exercise 10",
+    "text": "Exercise 10\n(5 points) … was assigned to placebo or was male?"
+  },
+  {
+    "objectID": "hw/hw-01.html#exercise-11",
+    "href": "hw/hw-01.html#exercise-11",
+    "title": "HW 01",
+    "section": "Exercise 11",
+    "text": "Exercise 11\n(5 points) … was assigned to placebo and was male?"
+  },
+  {
+    "objectID": "hw/hw-01.html#exercise-12",
+    "href": "hw/hw-01.html#exercise-12",
+    "title": "HW 01",
+    "section": "Exercise 12",
+    "text": "Exercise 12\n(5 points) … was not assigned to high dose vaccine and had no underlying diseases?"
+  },
+  {
+    "objectID": "hw/hw-01.html#exercise-13",
+    "href": "hw/hw-01.html#exercise-13",
+    "title": "HW 01",
+    "section": "Exercise 13",
+    "text": "Exercise 13\n(5 points) … was female or had underlying diseases?"
+  },
+  {
+    "objectID": "hw/hw-01.html#exercise-14",
+    "href": "hw/hw-01.html#exercise-14",
+    "title": "HW 01",
+    "section": "Exercise 14",
+    "text": "Exercise 14\n(5 points) … was female or was not assigned to either vaccine dose?"
+  },
+  {
+    "objectID": "hw/hw-01.html#exercise-15",
+    "href": "hw/hw-01.html#exercise-15",
+    "title": "HW 01",
+    "section": "Exercise 15",
+    "text": "Exercise 15\n(5 points) … was aged 18 - 44, given that they were assigned to high dose vaccine?"
+  },
+  {
+    "objectID": "hw/hw-01.html#exercise-16",
+    "href": "hw/hw-01.html#exercise-16",
+    "title": "HW 01",
+    "section": "Exercise 16",
+    "text": "Exercise 16\n(5 points) … was not assigned placebo, given that they were aged 45-54?\nWang et al. (JAMA Opthamology, 2017) examined the association of socioeconomic factors with prevalence of visual impairment and blindness. The following scatterplot depicts the relationship between Human Development Index (HDI) and the age-standardized prevalence of moderate to severe visual impairment (MSVI). The countries highlighted in orange are the 5 countries with the largest number of blind people."
+  },
+  {
+    "objectID": "hw/hw-01.html#exercise-17",
+    "href": "hw/hw-01.html#exercise-17",
+    "title": "HW 01",
+    "section": "Exercise 17",
+    "text": "Exercise 17\n(5 points) In general, are higher or lower HDIs associated with higher prevalence of MSVI?"
+  },
+  {
+    "objectID": "hw/hw-01.html#exercise-18",
+    "href": "hw/hw-01.html#exercise-18",
+    "title": "HW 01",
+    "section": "Exercise 18",
+    "text": "Exercise 18\n(5 points) Among China, India, Pakistan, Nigeria, and Indonesia, which has the lowest HDI?"
+  },
+  {
+    "objectID": "hw/hw-01.html#exercise-19",
+    "href": "hw/hw-01.html#exercise-19",
+    "title": "HW 01",
+    "section": "Exercise 19",
+    "text": "Exercise 19\n(5 points) Does India have higher or lower prevalence of MSVI than might be expected given its HDI?"
+  },
+  {
+    "objectID": "hw/hw-01.html#exercise-20",
+    "href": "hw/hw-01.html#exercise-20",
+    "title": "HW 01",
+    "section": "Exercise 20",
+    "text": "Exercise 20\n(5 points) In their conclusion, the authors state “Burden of visual impairment and socioeconomic indicators were closely associated and may help to identify countries requiring greater attention to these issues.” Do you think this is a reasonable statement to make from the scatterplot? Why or why not?\nSubmission: You can knit the template into an .html file that can be opened by any web browser by clicking on the Knit in the bar above the scripting area, as demonstrated in class. To export this document as a .pdf, open the .html file in your web browser of choice and then print to or save as a .pdf document. (There is a way to directly knit to a .pdf file, but it’s quite a bit more involved…).\nTurn in this .pdf document into Canvas in the appropriate assignment area. Ensure that your questions are neatly marked in your submission so that your TAs/graders can find them."
   }
 ]

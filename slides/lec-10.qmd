@@ -1,0 +1,127 @@
+---
+title: "Lecture 10: Hypothesis Testing"
+subtitle: "BIOS 600 - Fall 2024"
+author: "Kara McCormack"
+logo: "images/logo_600.png"
+format: 
+  revealjs: 
+    theme: slides.scss
+    multiplex: true
+    transition: fade
+    slide-number: true
+editor: visual
+execute:
+  freeze: auto
+from: markdown+emoji
+---
+
+## Very optional readings
+
+- P & G: 10.1 - 10.4
+
+- OI: 5.3
+
+## The opioid crisis
+
+::: columns
+::: {.column width="50%"}
+![](images/lec-9/wv.png){width=800}
+:::
+
+::: {.column width="50%"}
+
+- West Virginia has the highest age-adjusted rate of drug overdose deaths involving opioids. 
+:::
+
+:::
+
+## Statistical inference {.smaller}
+
+- [Point estimation]{style="color: RosyBrown"}: estimating an unknown parameter using a single number calculated from the sample
+  - We estimate the one-year death rate due to opioid-related overdoses in WV to be 49.6 per 100,000
+
+- [Interval estimation]{style="color: RosyBrown"}: estimating an unknown parameter using a range of values that is likely to contain the true parameter
+
+  - We estimate that the one-year death rate due to opioid-related overdoses in WV is between 45 and 55 per 100,000
+
+- [Hypothesis testing]{style="color: RosyBrown"}: evaluating whether our observed sample data provides evidence against some population claim
+  - We evaluate the hypothesis that the opioid overdose death rate is the same in WV and NC. In a random sample of death certificates from the two states, the rate was considerably higher in WV, providing evidence against the hypothesis
+  
+## Why should we care about hypothesis testing?
+
+![](images/lec-10/pval.png){width=400}
+
+## How can we answer research questions using statistics?
+
+- [Statistical hypothesis testing]{style="color: RosyBrown"} is the procedure that assesses evidence provided by the data in favor of or against some claim about the population (often about a population parameter or potential associations).
+
+## The hypothesis testing framework
+
+1. Start with two hypotheses about the population: the [null hypothesis]{style="color: RosyBrown"} and the [alternative hypothesis]{style="color: RosyBrown"}
+
+2. Choose a sample, collect data, and analyze the data
+
+3. Figure out how likely it is to see data like what we got/observed, IF the null hypothesis were true
+
+4. If our data would have been extremely unlikely if the null claim were true, then we reject it and deem the alternative claim worthy of further study. Otherwise, we cannot reject the null claim
+
+## Ultra-low dose contraception
+
+::: columns
+::: {.column width="50%"}
+![](images/lec-10/pill.png)
+:::
+
+::: {.column width="50%"}
+
+- Oral contraceptive pills work well, but must have a precise dose of estrogen. 
+
+- If a pill has too high a dose, then people may risk side effects such as headaches, nausea, and rare but potentially fatal blood clots
+
+- If a pill has too low a dose, pregnancy may occur
+:::
+:::
+
+## Ultra-low dose contraception
+
+- A certain contraceptive pill is supposed to contain precisely 0.020 $\mu g$ of estrogen. During QC, 50 randomly selected pills are tested, with a sample mean dose 0.017 $\mu g$  and sample SD 0.0008 $\mu g$.
+
+::: {.callout-caution appearance="simple"}
+
+## Question
+
+Do you think this is cause for concern? Why or why not?
+
+:::
+
+## Two competing hypotheses
+
+## Defining the null and alternative hypotheses
+
+## Collecting and summarizing the data
+
+## Assessing the evidence observed
+
+## Some philosophical details
+
+## Making a conclusion
+
+## What do we actually conclude when $p > \alpha$?
+
+## Remember to use common sense
+
+## Back to the oral contraceptives example
+
+## What could go wrong?
+
+## Type I vs. Type II errors
+
+## Review: steps in hypothesis testing about the mean
+
+## Different sets of hypotheses
+
+## Two-sided tests of hypotheses
+
+## Breaking down the test statistic
+
+## Getting the p-value

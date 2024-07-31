@@ -1,0 +1,14 @@
+{
+  "hash": "a96326f82e8d5fe1c66ed2efa2234e4d",
+  "result": {
+    "markdown": "---\ntitle: HW 01\nauthor: YOUR NAME GOES HERE\ndate: \"Due: Friday, August 30, 2024 at 11:59PM\"\noutput:\n  html_document\n---\n\n\n#### Exercise 1\n\nWrite your answer to Exercise 1 here. Watch out for line spacing. Make sure that there is a blank line around each exercise header as demonstrated in the template. Don't forget to change your name in the document metadata at the top of this template!\n\n#### Exercise 2\n\nWrite your answer to Exercise 2 here.\n\n#### Exercise 3\n\nWrite your answer to Exercise 3 here.\n\n#### Exercise 4\n\nWrite your answer to Exercise 4 here.\n\n#### Exercise 5\n\nWrite your answer to Exercise 5 here.\n\n#### Exercise 6\n\nWrite your answer to Exercise 6 here.\n\n#### Exercise 7\n\nWrite your answer to Exercise 7 here.\n\n#### Exercise 8\n\nWrite your answer to Exercise 8 here.\n\n#### Exercise 9\n\nWrite your answer to Exercise 9 here.\n\n#### Exercise 10\n\nWrite your answer to Exercise 10 here.\n\n#### Exercise 11\n\nWrite your answer to Exercise 11 here.\n\n#### Exercise 12\n\nWrite your answer to Exercise 12 here.\n\n#### Exercise 13\n\nWrite your answer to Exercise 13 here.\n\n#### Exercise 14\n\nWrite your answer to Exercise 14 here.\n\n#### Exercise 15\n\nWrite your answer to Exercise 15 here.\n\n#### Exercise 16\n\nWrite your answer to Exercise 16 here.\n\n#### Exercise 17\n\nWrite your answer to Exercise 17 here.\n\n#### Exercise 18\n\nWrite your answer to Exercise 18 here.\n\n#### Exercise 19\n\nWrite your answer to Exercise 19 here.\n\n#### Exercise 20\n\nWrite your answer to Exercise 20 here.\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
