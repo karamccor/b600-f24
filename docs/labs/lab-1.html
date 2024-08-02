@@ -210,14 +210,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#benefits-of-r" id="toc-benefits-of-r" class="nav-link" data-scroll-target="#benefits-of-r">Benefits of R</a></li>
   </ul></li>
   <li><a href="#first-steps-in-rstudio" id="toc-first-steps-in-rstudio" class="nav-link" data-scroll-target="#first-steps-in-rstudio">First Steps in RStudio</a></li>
-  <li><a href="#quarto-and-reproducible-research" id="toc-quarto-and-reproducible-research" class="nav-link" data-scroll-target="#quarto-and-reproducible-research">Quarto and reproducible research</a></li>
+  <li><a href="#r-markdown-and-reproducible-research" id="toc-r-markdown-and-reproducible-research" class="nav-link" data-scroll-target="#r-markdown-and-reproducible-research">R Markdown and reproducible research</a></li>
   <li><a href="#the-tidyverse" id="toc-the-tidyverse" class="nav-link" data-scroll-target="#the-tidyverse">The tidyverse</a></li>
   <li><a href="#basic-data-manipulation" id="toc-basic-data-manipulation" class="nav-link" data-scroll-target="#basic-data-manipulation">Basic Data Manipulation</a>
   <ul class="collapse">
   <li><a href="#exercise-1" id="toc-exercise-1" class="nav-link" data-scroll-target="#exercise-1">Exercise 1</a></li>
   </ul></li>
   <li><a href="#physical-activity-and-adult-obesity" id="toc-physical-activity-and-adult-obesity" class="nav-link" data-scroll-target="#physical-activity-and-adult-obesity">Physical activity and adult obesity</a></li>
+  <li><a href="#exercise-1-1" id="toc-exercise-1-1" class="nav-link" data-scroll-target="#exercise-1-1">Exercise 1</a></li>
   </ul></li>
+  <li><a href="#example-graphs" id="toc-example-graphs" class="nav-link" data-scroll-target="#example-graphs">Example Graphs</a></li>
+  <li><a href="#your-turn" id="toc-your-turn" class="nav-link" data-scroll-target="#your-turn">Your turn!</a>
+  <ul class="collapse">
+  <li><a href="#exercise-2" id="toc-exercise-2" class="nav-link" data-scroll-target="#exercise-2">Exercise 2</a></li>
+  <li><a href="#exercise-3" id="toc-exercise-3" class="nav-link" data-scroll-target="#exercise-3">Exercise 3</a></li>
+  <li><a href="#exercise-4" id="toc-exercise-4" class="nav-link" data-scroll-target="#exercise-4">Exercise 4</a></li>
+  <li><a href="#exercise-5" id="toc-exercise-5" class="nav-link" data-scroll-target="#exercise-5">Exercise 5</a></li>
+  <li><a href="#exercise-6" id="toc-exercise-6" class="nav-link" data-scroll-target="#exercise-6">Exercise 6</a></li>
+  </ul></li>
+  <li><a href="#from-.html-to-.pdf" id="toc-from-.html-to-.pdf" class="nav-link" data-scroll-target="#from-.html-to-.pdf">From .html to .pdf</a></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-git"></i></div><div class="action-links"><p><a href="https://karamccor.github.io/b600-f24/edit/main/labs/lab-1.qmd" class="toc-action">Edit this page</a></p><p><a href="https://karamccor.github.io/b600-f24/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
@@ -242,7 +253,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </header>
 
-<p>Due Friday, Aug 23 at 5pm.</p>
+<p>Due Friday, Aug 23 at 11:59pm.</p>
 <section id="welcome" class="level1">
 <h1>Welcome</h1>
 <section id="meet-the-ta" class="level2">
@@ -254,7 +265,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ul>
 <li><p>Today’s lab introduces the computing tools we will be using this semester.</p></li>
 <li><p>We will begin by installing R and RStudio, and familiarizing ourselves with its basic functionality.</p></li>
-<li><p>We will also introduce Quarto as a tool to create high-quality reproducible reports - don’t worry, a fillable template is provided.</p></li>
+<li><p>We will also introduce R Markdown as a tool to create high-quality reproducible reports - don’t worry, a fillable template is provided.</p></li>
 </ul>
 <p><strong>This is an individual lab. Your TAs will guide you through the first portion of the lab (until the “On your own” section).</strong></p>
 </section>
@@ -293,25 +304,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>cdc <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"https://karamccor.github.io/b600-f24/labs/data/cdc_cleaned.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>We’ve just loaded a dataset named <code>cdc</code>. These data come primarily from the Sortable Risk Factors and Health Indicators dataset from the CDC, which omprises demographic and health indices compiled from various federal sources. This dataset is now part of our <strong>environment</strong>, which is displayed on the top half and right side of the RStudio window.</p>
+<p>We’ve just loaded a dataset named <code>cdc</code>. These data come primarily from the Sortable Risk Factors and Health Indicators dataset from the CDC, which comprises demographic and health indices compiled from various federal sources. This dataset is now part of our <strong>environment</strong>, which is displayed on the top half and right side of the RStudio window.</p>
 <ul>
 <li><p>The environment contains all objects in the current working space. These objects could be variables, lists of variables, or even entire datasets.</p></li>
 <li><p>In the same location as the environment tab, the **history tab displays all commands used during the current session (don’t worry about the connections tab for now).</p></li>
 <li><p>Finally, the bottom half of the right-hand panel shows information regarding files on your hard drive, installed packages, output such as plots, and help files or other documents.</p></li>
 </ul>
-<p>Coming back to the dataset we loaded in, we can see that it is named <code>cdc</code>. We can take a look at this dataset in a spreadsheet-like window by clicking on <code>cdc</code> in the Environment tab to the right, or by running the following code in the console:</p>
+<p>Coming back to the dataset we loaded in, we can see that it is named <code>cdc</code>. We can take a look at this dataset in a spreadsheet-like window by clicking on <code>cdc</code> in the Environment tab to the right, or by running the following code <strong>in the console</strong>:</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">View</span>(cdc)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Note that other objects may be added to the environment, either from external data sources from the internet as in today’s example, datasets downloaded to your computer, or even as created as manipulations of existing datasets.</p>
 </section>
-<section id="quarto-and-reproducible-research" class="level2">
-<h2 class="anchored" data-anchor-id="quarto-and-reproducible-research">Quarto and reproducible research</h2>
-<p>Quarto is a system that may be used to create easy-to-write, attractive reports, presentations, or webpsages that also serve as reproducible records of the data analysis. These reports have the desirable property of being able to not only display written narratives and figures, but also include any R code and the outputs from these code snippets.</p>
-<p>One of the biggest strengths of Quarto is that everything is in one place, and that other users should be able to reproduce your results exactly, if they have your Quarto document and datasets - the analysis is run from the beginning each time you render the document. As well, formatting is easy! Luckily, RStudio already comes with Quarto support, so there is nothing additional to install.</p>
-<p>Every homework assignment and lab in this class will be written in Quarto, with a template provided for you to use. This lab’s template can be downloaded by typing in the following code:</p>
+<section id="r-markdown-and-reproducible-research" class="level2">
+<h2 class="anchored" data-anchor-id="r-markdown-and-reproducible-research">R Markdown and reproducible research</h2>
+<p>R Markdown is a system that may be used to create easy-to-write, attractive reports, presentations, or webpages that also serve as reproducible records of the data analysis. These reports have the desirable property of being able to not only display written narratives and figures, but also include any R code and the outputs from these code snippets.</p>
+<p>One of the biggest strengths of R Markdown is that everything is in one place, and that other users should be able to reproduce your results exactly, if they have your R Markdown document and datasets - the analysis is run from the beginning each time you render the document. As well, formatting is easy! Luckily, RStudio already comes with R Markdown support, so there is nothing additional to install.</p>
+<p>Every homework assignment and lab in this class will be written in R Markdown, with a template provided for you to use. This lab’s template can be downloaded by typing in the following code:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">download.file</span>(<span class="st">"https://karamccor.github.io/b600-f24/labs/lab-01-template.qmd"</span>, <span class="at">destfile=</span><span class="st">"lab-01.qmd"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">download.file</span>(<span class="st">"https://karamccor.github.io/b600-f24/labs/lab-01-template.Rmd"</span>, <span class="at">destfile=</span><span class="st">"lab-01.Rmd"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>You should now see the new file <code>lab-01.qmd</code> under the Files tab in the bottom-right hand side of your RStudio window. Click on <code>lab-01.qmd</code> in this window in order to open it up – it is the template for use in this lab!</p>
 <p>First, put your name in the space at the top where it says “YOUR NAME GOES HERE”.</p>
@@ -345,13 +356,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors</code></pre>
 </div>
 </div>
-<p>Remember that the console and the Quarto document have different workspaces. If you load the tidyverse package in your console, it won’t be loaded into the workspace for the Quarto document. In the lab template, code for loading the tidyverse has already been provided. However, note that you must have the package installed first.</p>
+<p>Remember that the console and the R Markdown document have different workspaces. If you load the tidyverse package in your console, it won’t be loaded into the workspace for the Quarto document. In the lab template, code for loading the tidyverse has already been provided. However, note that you must have the package installed first.</p>
 </section>
 <section id="basic-data-manipulation" class="level2">
 <h2 class="anchored" data-anchor-id="basic-data-manipulation">Basic Data Manipulation</h2>
 <section id="exercise-1" class="level3">
 <h3 class="anchored" data-anchor-id="exercise-1">Exercise 1</h3>
-<p>First, let’s take a <code>glimpse</code> of the dataset by running the following code in the console:</p>
+<p>First, let’s take a <code>glimpse</code> of the dataset by running the following code <strong>in the console</strong>:</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">glimpse</span>(cdc)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -383,26 +394,141 @@ $ Over65              &lt;dbl&gt; 15.3, 9.4, 15.9, 15.7, 12.9, 12.7, 15.5, 16.4,
 <h2 class="anchored" data-anchor-id="physical-activity-and-adult-obesity">Physical activity and adult obesity</h2>
 <p>Today we will be making some basic visualizations using the <code>ggplot</code> package in the tidyverse.</p>
 <p>In this section we’ll work through a visualization example using the cdc dataset. The variables in this dataset are as follows:</p>
-<pre><code>State, the name of the state
-Region, the US Census region that each state belongs to
-HDI, the Human Development Index of each state in 2017, categorized into whether they are among the top ten, the bottom ten, or the middle
-InfantMortalityRate: infant mortality rate per 100,000
-CVDeathRate: death rate per 100,000 due to cardiovasulcar causes
-DrugDeathRate: death rate per 100,000 due to drug-related causes (ODs, etc.)
-MotorDeathRate: death rate per 100,000 due to motor vehicle-related causes
-CancerDeathRate: death rate per 100,000 due to cancer
-Obesity: % of adults who are obese
-Smoking: % of adults who smoked at least one cigarette in the past month
-Exercise: % of adults who participated in at least 2.5 hours of aerobic activity per week
-Seatbelt: % of adults to regularly wear their seat belt
-FluVaccination: % of adults who received a flu vaccine
-ChildVaccination: % of children who aged 19-35 months who have received the DTaP, polio, MMR, Hib, hepatitis B, varicella and PCV vaccines
-Under18: % of residents under age 18
-Over65: % of residents over age 65</code></pre>
-<p>Let’s begin with a very simple plot. Run the following code in the console:</p>
-
-
+<ul>
+<li><p><code>State</code>, the name of the state</p></li>
+<li><p><code>Region</code>, the US Census region that each state belongs to</p></li>
+<li><p><code>HDI</code>, the Human Development Index of each state in 2017, categorized into whether they are among the top ten, the bottom ten, or the middle</p></li>
+<li><p><code>InfantMortalityRate</code>: infant mortality rate per 100,000</p></li>
+<li><p><code>CVDeathRate</code>: death rate per 100,000 due to cardiovasulcar causes</p></li>
+<li><p><code>DrugDeathRate</code>: death rate per 100,000 due to drug-related causes (ODs, etc.)</p></li>
+<li><p><code>MotorDeathRate</code>: death rate per 100,000 due to motor vehicle-related causes</p></li>
+<li><p><code>CancerDeathRate</code>: death rate per 100,000 due to cancer</p></li>
+<li><p><code>Obesity</code>: % of adults who are obese</p></li>
+<li><p><code>Smoking</code>: % of adults who smoked at least one cigarette in the past month</p></li>
+<li><p><code>Exercise</code>: % of adults who participated in at least 2.5 hours of aerobic activity per week</p></li>
+<li><p><code>Seatbelt</code>: % of adults to regularly wear their seat belt</p></li>
+<li><p><code>FluVaccination</code>: % of adults who received a flu vaccine</p></li>
+<li><p><code>ChildVaccination</code>: % of children who aged 19-35 months who have received the DTaP, polio, MMR, Hib, hepatitis B, varicella and PCV vaccines</p></li>
+<li><p><code>Under18</code>: % of residents under age 18</p></li>
+<li><p><code>Over65</code>: % of residents over age 65</p></li>
+</ul>
+<p>Let’s begin with a very simple plot. Run the following code <strong>in the console</strong>:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> cdc, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> Exercise, <span class="at">y =</span> Obesity)) <span class="sc">+</span> </span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>We just created our first plot in R! Let’s break down what each of these components is. <code>ggplot()</code> is the function that tells R to make a plot. We are plotting data from the <code>cdc</code> dataset, with <code>Exercise</code> on the x-axis and <code>Obesity</code> on the y-axis. Adding (<code>+</code>) the <code>geom_point()</code> in a new layer (separated on a new line for clarity) tells R specifically to create a scatterplot.</p>
+<p>Does there appear to be a relationship between the percentage of adults in a state who participate in at least 2.5 hours of aerobic exercise a week and the percentage of adults in that state who are obese? If so, what is this relationship?</p>
+<p>Now run the following code:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> cdc, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> Exercise,<span class="at">y =</span> Obesity,<span class="at">color =</span> HDI, <span class="at">shape =</span> HDI)) <span class="sc">+</span> </span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>How does this code differ from the previous snippet? What changes in the scatterplot does this change correspond to?</p>
+<p>Finally, run the following code, which should result in the plot below. Pay attention to how we’ve added new layers onto our base plot.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> cdc, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> Exercise, <span class="at">y =</span> Obesity, <span class="at">color =</span> HDI, <span class="at">size =</span> CVDeathRate)) <span class="sc">+</span> </span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Aerobic Activity vs. Obesity by State HDI"</span>, </span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>       <span class="at">subtitle =</span> <span class="st">"Faceted by Region"</span>, </span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">"Adequate aerobic activity (%)"</span>, <span class="at">y =</span> <span class="st">"Obesity (%)"</span>) <span class="sc">+</span> </span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_grid</span>(.<span class="sc">~</span>Region) <span class="sc">+</span></span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="lab-1_files/figure-html/unnamed-chunk-11-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>Again, how does this code differ from the previous plot, and what changes in the plot itself correspond to the additional code?</p>
 </section>
+<section id="exercise-1-1" class="level2">
+<h2 class="anchored" data-anchor-id="exercise-1-1">Exercise 1</h2>
+<p>How does the HDI of a state relate to the percentage of residents in each state who get 2.5 hours of aerobic activity and who are obese?</p>
+</section>
+</section>
+<section id="example-graphs" class="level1">
+<h1>Example Graphs</h1>
+<p>This section contains the code used to produce the basic graphs in the course slides. Take a moment to examine the similarities and differences between the code examples provided.</p>
+<ul>
+<li>What is your guess for what each line of code does, given the graphs?</li>
+<li>What is the aesthetic mapping for each plot?</li>
+<li>What geometries are being plotted?</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> cdc, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> Region)) <span class="sc">+</span> </span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">fill =</span> <span class="st">"steelblue"</span>) <span class="sc">+</span> </span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Number of US States by Census Region"</span>, </span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">"Region"</span>, <span class="at">y =</span> <span class="st">"Count"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="lab-1_files/figure-html/unnamed-chunk-12-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> cdc, <span class="fu">aes</span>(<span class="at">x =</span> HDI, <span class="at">y =</span> Obesity)) <span class="sc">+</span> <span class="fu">geom_boxplot</span>()<span class="sc">+</span> </span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Adult Obesity (%) by State HDI"</span>, </span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">"HDI"</span>, <span class="at">y =</span> <span class="st">"Adult Obesity (%)"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="lab-1_files/figure-html/unnamed-chunk-13-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> cdc, <span class="fu">aes</span>(<span class="at">x =</span> Obesity)) <span class="sc">+</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_histogram</span>(<span class="at">color =</span> <span class="st">"darkblue"</span>, <span class="at">fill =</span> <span class="st">"lightblue"</span>, <span class="at">binwidth =</span> <span class="dv">2</span>)<span class="sc">+</span> </span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Distribution of Adult Obesity (%) by State"</span>, </span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">"Adult Obesity (%)"</span>, <span class="at">y =</span> <span class="st">"Count"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="lab-1_files/figure-html/unnamed-chunk-14-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> cdc[<span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>,], <span class="fu">aes</span>(<span class="at">x =</span> State, <span class="at">y =</span> Obesity, <span class="at">group =</span> <span class="dv">1</span>)) <span class="sc">+</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>() <span class="sc">+</span> </span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span> </span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Obesity by State"</span>, </span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">"State"</span>, <span class="at">y =</span> <span class="st">"Adult Obesity (%)"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="lab-1_files/figure-html/unnamed-chunk-15-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> cdc, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> Exercise, <span class="at">y =</span> Obesity, <span class="at">color =</span> HDI)) <span class="sc">+</span> </span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Aerobic Activity vs. Obesity by State HDI"</span>, </span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">"Adequate aerobic activity (%)"</span>, <span class="at">y =</span> <span class="st">"Obesity (%)"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="lab-1_files/figure-html/unnamed-chunk-16-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="your-turn" class="level1">
+<h1>Your turn!</h1>
+<p>In each of the following plots, make sure you have good plot titles and axis labels. Try your best to come up with “active” titles: part of your grade will be based on these considerations!</p>
+<section id="exercise-2" class="level2">
+<h2 class="anchored" data-anchor-id="exercise-2">Exercise 2</h2>
+<p>Modify the code used for the bar graph that counts the number of US States by Census Region such that the bars are colored pink.</p>
+</section>
+<section id="exercise-3" class="level2">
+<h2 class="anchored" data-anchor-id="exercise-3">Exercise 3</h2>
+<p>Create a visualization that explores the distribution of adults who smoke among each state. Describe this distribution.</p>
+</section>
+<section id="exercise-4" class="level2">
+<h2 class="anchored" data-anchor-id="exercise-4">Exercise 4</h2>
+<p>Create a visualization that explores the relationship between flu vaccination rate and childhood vaccination rate. What relationship(s) do you see?</p>
+</section>
+<section id="exercise-5" class="level2">
+<h2 class="anchored" data-anchor-id="exercise-5">Exercise 5</h2>
+<p>Create a visualization that explores the relationship between death rate per 100,000 due to cardiovascular causes and the percentage of obese residents in a state. Color-code your plot based on HDI category. What relationship(s) do you see?</p>
+</section>
+<section id="exercise-6" class="level2">
+<h2 class="anchored" data-anchor-id="exercise-6">Exercise 6</h2>
+<p>Create a meaningful visualization of your choice. Comment on the relationship(s) you see.</p>
+</section>
+</section>
+<section id="from-.html-to-.pdf" class="level1">
+<h1>From .html to .pdf</h1>
+<p>As you’ve seen previously, we can <strong>knit</strong> the template into an .html file that can be opened by any web browser. To export it as a .pdf, open the file in your web browser and then print to or save as a .pdf document. Your TA will show you how if you need help! (There is a way to directly knit to a .pdf file, but it’s quite a bit more involved.)</p>
+<p>Important: You must turn in a .pdf file corresponding to the R Markdown template to Canvas in order to receive credit for the labs and homework assignments.</p>
+
+
 </section>
 
 </main> <!-- /main -->

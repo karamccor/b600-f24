@@ -200,14 +200,14 @@
     "href": "slides/lec-1.html#meet-the-ta",
     "title": "Welcome to BIOS 600!",
     "section": "Meet the TA",
-    "text": "Meet the TA\n\nTBD\nMaster’s Student, Biostatistics department\nWill lead lab sections, 3:50-4:20, Room TBD"
+    "text": "Meet the TA\n\nTBD\nMaster’s Student, Biostatistics department\nWill lead lab sections, 3:50-4:20, McGavran-Greenberg 2306"
   },
   {
     "objectID": "slides/lec-1.html#check-out-ed-discussion",
     "href": "slides/lec-1.html#check-out-ed-discussion",
     "title": "Welcome to BIOS 600!",
     "section": "Check out Ed Discussion",
-    "text": "Check out Ed Discussion\n\nGo to Ed Discussion 💬\nAnswer the discussion question: How are you doing?"
+    "text": "Check out Ed Discussion\n\nThis semester, you can ask questions about the class in our discussion forum, Ed Discussion.\nGo to Ed Discussion 💬\nAnswer the discussion question: How are you doing?"
   },
   {
     "objectID": "slides/lec-1.html#meet-each-other",
@@ -305,7 +305,7 @@
     "href": "slides/lec-1.html#cadence",
     "title": "Welcome to BIOS 600!",
     "section": "Cadence",
-    "text": "Cadence\n\n\nLabs: Start and make large progress on Tuesday in lab section, finish up by Friday 5pm of that week\nHWs: Posted Friday morning, due following Friday 5pm\nExams: Take-home, open-book, timed, more info as semester progresses.\nProject: Towards end of semester, most work done in teams outside of class"
+    "text": "Cadence\n\n\nLabs: Start and make large progress on Tuesday in lab section, finish up by Friday 11:59pm of that week\nHWs: Posted on the website, typically will have a little over a week to complete.\nExams: Take-home, open-book, timed, more info as semester progresses.\nProject: Towards end of semester, most work done in teams outside of class"
   },
   {
     "objectID": "slides/lec-1.html#what-to-expect-in-lab",
@@ -319,7 +319,7 @@
     "href": "slides/lec-1.html#tips",
     "title": "Welcome to BIOS 600!",
     "section": "Tips",
-    "text": "Tips\n\nYou do not have to finish the lab in class, they will always be due the following Friday at 5:00 pm.\nOne work strategy is to get through portions that you think will be most challenging (which initially might be the coding component) during lab when a TA can help you on the spot and leave the narrative writing until later.\nWhen working in teams (later in the semester) do not pressure each other to finish early; use the time wisely to really learn the material and produce a quality report."
+    "text": "Tips\n\nYou do not have to finish the lab in class, they will always be due the following Friday at 11:59 pm.\nOne work strategy is to get through portions that you think will be most challenging (which initially might be the coding component) during lab when a TA can help you on the spot and leave the narrative writing until later.\nWhen working in teams (later in the semester) do not pressure each other to finish early; use the time wisely to really learn the material and produce a quality report."
   },
   {
     "objectID": "slides/lec-1.html#teams",
@@ -410,7 +410,7 @@
     "href": "slides/lec-1.html#this-weeks-tasks",
     "title": "Welcome to BIOS 600!",
     "section": "This week’s tasks",
-    "text": "This week’s tasks\n\nIn lab today (3:50-4:20 Room TBD):\n\nMeet the TA\nDownload RStudio\nComplete the first lab assignment\n\nRead the syllabus! (a .pdf version is available on Canvas)\nComplete the [Getting to know you survey] by Thursday’s class!"
+    "text": "This week’s tasks\n\nIn lab today (3:50-4:20 Room TBD):\n\nMeet the TA\nDownload RStudio\nComplete the lab assignment\n\nRead the syllabus! (a .pdf version is available on Canvas)\nComplete the [Getting to know you survey] by Thursday’s class!"
   },
   {
     "objectID": "labs/lab-2.html",
@@ -529,7 +529,7 @@
     "href": "index.html",
     "title": "BIOS 600: Principles of Statistical Inference",
     "section": "",
-    "text": "This page contains an outline of the topics, content, and assignments for the semester. Note that this schedule will be updated as the semester progresses, with all changes documented here.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWeek\nDate\nTopic\nSlides\nLab\nHW\nExam\nProject\n\n\n\n\n1\nTue, Aug 20\nLecture 1: Welcome! + Course Overview\n🖥️\n\n\n\n\n\n\n\nTue, Aug 20\nLab 1: Meet the toolkit\n\n💻\n\n\n\n\n\n\nThurs, Aug 22\nLecture 2: The nature of data\n\n\n\n\n\n\n\n2\nTues, Aug 27\nLecture 3: Basics of probability\n\n\n\n\n\n\n\n\nTues, Aug 27\nLab 2: Visualizing data with ggplot2\n\n\n\n\n\n\n\n\nThurs, Aug 29\nLecture 4: Conditional probability and Bayes’ rule\n\n\n\n\n\n\n\n3\nTues, Sept 3\nNo Class/Lab: Well-being day\n\n\n\n\n\n\n\n\nThurs, Sept 5\nLecture 5: Diagnostic testing\n\n\n\n\n\n\n\n4\nTues, Sept 10\nLecture 6: Discrete distributions\n\n\n\n\n\n\n\n\nTues, Sept 10\nLab 3: Wranging data with dplyr\n\n\n\n\n\n\n\n\nThurs, Sept 12\nLecture 7: Continuous distributions\n\n\n\n\n\n\n\n5\nTues, Sept 17\nLecture 8: The central limit theorem\n\n\n\n\n\n\n\n\nTues, Sept 17\nLab 4: Probability distributions\n\n\n\n\n\n\n\n\nThurs, Sept 19\nMidterm Review 1: Lectures 1-7\n\n\n\n\n\n\n\n6\nTues, Sept 24\nMidterm Exam 1: Lectures 1-7\n\n\n\n\n\n\n\n\nThurs, Sept 26\nLecture 9: Confidence intervals\n\n\n\n\n\n\n\n7\nTues, Oct 1\nLecture 10: Hypothesis testing\n\n\n\n\n\n\n\n\nTues, Oct 1\nLab 5: Code style\n\n\n\n\n\n\n\n\nThurs, Oct 3\nLecture 11: Comparing two means\n\n\n\n\n\n\n\n8\nTues, Oct 8\nLecture 12: ANOVA\n\n\n\n\n\n\n\n\nTues, Oct 8\nLab 6: Visualizing spatial data\n\n\n\n\n\n\n\n\nThurs, Oct 10\nLecture 13: Proportions and categorical variables\n\n\n\n\n\n\n\n9\nTues, Oct 15\nLecture 14: Non-parametric methods\n\n\n\n\n\n\n\n9\nTues, Oct 15\nLab 7: Functions and automation (due Tuesday 10/22 by 5pm)\n\n\n\n\n\n\n\n\nThurs, Oct 17\nNo Class: Fall Break!\n\n\n\n\n\n\n\n10\nTues, Oct 22\nLec 15: Power and sample size\n\n\n\n\n\n\n\n\nTues, Oct 22\nLab 8: Visualizing text data\n\n\n\n\n\n\n\n\nThurs, Oct 24\nMidterm Review 2: Lectures 8-14\n\n\n\n\n\n\n\n11\nTues, Oct 29\nMidterm Exam 2: Lectures 8-14\n\n\n\n\n\n\n\n\nTues, Oct 29\nNo Lab\n\n\n\n\n\n\n\n\nThurs, Oct 31\nLec 16: Comparing two continuous variables\n\n\n\n\n\n\n\n12\nTues, Nov 5\nLec 17: Introduction to linear regression\n\n\n\n\n\n\n\n\nTues, Nov 5\nLab 9: Cross-validation\n\n\n\n\n\n\n\n\nThurs, Nov 7\nLec 18: Multiple linear regression\n\n\n\n\n\n\n\n13\nTues, Nov 12\nLec 19: Logistic regression\n\n\n\n\n\n\n\n\nThurs, Nov 14\nLec 20: Introduction to survival analysis\n\n\n\n\n\n\n\n14\nTues, Nov 19\nLec 21: Clinical Trials\n\n\n\n\n\n\n\n\nThurs, Nov 21\nMidterm Review 3: Lectures 15-21\n\n\n\n\n\n\n\n15\nTues, Nov 26\nFinal Projects Due by 5pm\n\n\n\n\n\n\n\n\nThurs, Nov 28\nNo Class: Thanksgiving\n\n\n\n\n\n\n\n16\nTues, Dec 3\nClass Wrap-Up & Recap\n\n\n\n\n\n\n\n\nTues, Dec 3\nMidterm Exam 3: Lectures 15-21"
+    "text": "This page contains an outline of the topics, content, and assignments for the semester. Note that this schedule will be updated as the semester progresses, with all changes documented here.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWeek\nDate\nTopic\nSlides\nLab\nHW\nExam\nProject\n\n\n\n\n1\nTue, Aug 20\nLecture 1: Welcome! + Course Overview\n🖥️\n\n\n\n\n\n\n\nTue, Aug 20\nLab 1: Meet the toolkit\n\n💻\n\n\n\n\n\n\nThurs, Aug 22\nLecture 2: The nature of data\n\n\n\n\n\n\n\n2\nTues, Aug 27\nLecture 3: Basics of probability\n\n\n\n\n\n\n\n\nTues, Aug 27\nLab 2: Visualizing data with ggplot2\n\n\n\n\n\n\n\n\nThurs, Aug 29\nLecture 4: Conditional probability and Bayes’ rule\n\n\n\n\n\n\n\n3\nTues, Sept 3\nNo Class/Lab: Well-being day\n\n\n\n\n\n\n\n\nThurs, Sept 5\nLecture 5: Diagnostic testing\n\n\n\n\n\n\n\n4\nTues, Sept 10\nLecture 6: Discrete distributions\n\n\n\n\n\n\n\n\nTues, Sept 10\nLab 3: Wrangling data with dplyr\n\n\n\n\n\n\n\n\nThurs, Sept 12\nLecture 7: Continuous distributions\n\n\n\n\n\n\n\n5\nTues, Sept 17\nLecture 8: The central limit theorem\n\n\n\n\n\n\n\n\nTues, Sept 17\nLab 4: Probability distributions\n\n\n\n\n\n\n\n\nThurs, Sept 19\nMidterm Review 1: Lectures 1-7\n\n\n\n\n\n\n\n6\nTues, Sept 24\nMidterm Exam 1: Lectures 1-7\n\n\n\n\n\n\n\n\nThurs, Sept 26\nLecture 9: Confidence intervals\n\n\n\n\n\n\n\n7\nTues, Oct 1\nLecture 10: Hypothesis testing\n\n\n\n\n\n\n\n\nTues, Oct 1\nLab 5: Code style\n\n\n\n\n\n\n\n\nThurs, Oct 3\nLecture 11: Comparing two means\n\n\n\n\n\n\n\n8\nTues, Oct 8\nLecture 12: ANOVA\n\n\n\n\n\n\n\n\nTues, Oct 8\nLab 6: Visualizing spatial data\n\n\n\n\n\n\n\n\nThurs, Oct 10\nLecture 13: Proportions and categorical variables\n\n\n\n\n\n\n\n9\nTues, Oct 15\nLecture 14: Non-parametric methods\n\n\n\n\n\n\n\n9\nTues, Oct 15\nLab 7: Functions and automation (due Tuesday 10/22 by 5pm)\n\n\n\n\n\n\n\n\nThurs, Oct 17\nNo Class: Fall Break!\n\n\n\n\n\n\n\n10\nTues, Oct 22\nLec 15: Power and sample size\n\n\n\n\n\n\n\n\nTues, Oct 22\nLab 8: Visualizing text data\n\n\n\n\n\n\n\n\nThurs, Oct 24\nMidterm Review 2: Lectures 8-14\n\n\n\n\n\n\n\n11\nTues, Oct 29\nMidterm Exam 2: Lectures 8-14\n\n\n\n\n\n\n\n\nTues, Oct 29\nNo Lab\n\n\n\n\n\n\n\n\nThurs, Oct 31\nLec 16: Comparing two continuous variables\n\n\n\n\n\n\n\n12\nTues, Nov 5\nLec 17: Introduction to linear regression\n\n\n\n\n\n\n\n\nTues, Nov 5\nLab 9: Cross-validation\n\n\n\n\n\n\n\n\nThurs, Nov 7\nLec 18: Multiple linear regression\n\n\n\n\n\n\n\n13\nTues, Nov 12\nLec 19: Logistic regression\n\n\n\n\n\n\n\n\nThurs, Nov 14\nLec 20: Introduction to survival analysis\n\n\n\n\n\n\n\n14\nTues, Nov 19\nLec 21: Clinical Trials\n\n\n\n\n\n\n\n\nThurs, Nov 21\nMidterm Review 3: Lectures 15-21\n\n\n\n\n\n\n\n15\nTues, Nov 26\nFinal Projects Due by 5pm\n\n\n\n\n\n\n\n\nThurs, Nov 28\nNo Class: Thanksgiving\n\n\n\n\n\n\n\n16\nTues, Dec 3\nClass Wrap-Up & Recap\n\n\n\n\n\n\n\n\nTues, Dec 3\nMidterm Exam 3: Lectures 15-21"
   },
   {
     "objectID": "labs/lab-01-template.html",
@@ -543,7 +543,7 @@
     "href": "labs/lab-1.html",
     "title": "Lab 01",
     "section": "",
-    "text": "Due Friday, Aug 23 at 5pm."
+    "text": "Due Friday, Aug 23 at 11:59pm."
   },
   {
     "objectID": "labs/lab-1.html#meet-the-ta",
@@ -557,7 +557,7 @@
     "href": "labs/lab-1.html#overview",
     "title": "Lab 01",
     "section": "Overview",
-    "text": "Overview\n\nToday’s lab introduces the computing tools we will be using this semester.\nWe will begin by installing R and RStudio, and familiarizing ourselves with its basic functionality.\nWe will also introduce Quarto as a tool to create high-quality reproducible reports - don’t worry, a fillable template is provided.\n\nThis is an individual lab. Your TAs will guide you through the first portion of the lab (until the “On your own” section)."
+    "text": "Overview\n\nToday’s lab introduces the computing tools we will be using this semester.\nWe will begin by installing R and RStudio, and familiarizing ourselves with its basic functionality.\nWe will also introduce R Markdown as a tool to create high-quality reproducible reports - don’t worry, a fillable template is provided.\n\nThis is an individual lab. Your TAs will guide you through the first portion of the lab (until the “On your own” section)."
   },
   {
     "objectID": "labs/lab-1.html#installation",
@@ -571,7 +571,7 @@
     "href": "labs/lab-1.html#first-steps-in-rstudio",
     "title": "Lab 01",
     "section": "First Steps in RStudio",
-    "text": "First Steps in RStudio\nWith R and RStudio installed, we’ll begin by exploring RStudio: the interface, reading in data, and basic commands. Upon opening RStudio, you should see something similar to the window below:\n\nThe console is the panel on the left side, and is where users can type commands and see immediate output. Let’s try it out! Type the following code into the console:\n\n3 + 5\n\nYou should get output that looks like\n\n\n[1] 8\n\n\n(For now, ignore the [1]). By typing in 3+5, we got the expected answer, 8. We can see that R can be used as a calculator directly in the console. Try some other commands that use R as a calculator. For instance, 3*25, exp(2), or (10+5^2)/sqrt(40). Of course, R is not simply a calculator; other commands may also be entered here.\nTo illustrate, let’s load a dataset. Enter the following command into the console (you can directly copy/paste it, but make sure everything is exactly as below):\n\ncdc &lt;- read.csv(\"https://karamccor.github.io/b600-f24/labs/data/cdc_cleaned.csv\")\n\nWe’ve just loaded a dataset named cdc. These data come primarily from the Sortable Risk Factors and Health Indicators dataset from the CDC, which omprises demographic and health indices compiled from various federal sources. This dataset is now part of our environment, which is displayed on the top half and right side of the RStudio window.\n\nThe environment contains all objects in the current working space. These objects could be variables, lists of variables, or even entire datasets.\nIn the same location as the environment tab, the **history tab displays all commands used during the current session (don’t worry about the connections tab for now).\nFinally, the bottom half of the right-hand panel shows information regarding files on your hard drive, installed packages, output such as plots, and help files or other documents.\n\nComing back to the dataset we loaded in, we can see that it is named cdc. We can take a look at this dataset in a spreadsheet-like window by clicking on cdc in the Environment tab to the right, or by running the following code in the console:\n\nView(cdc)\n\nNote that other objects may be added to the environment, either from external data sources from the internet as in today’s example, datasets downloaded to your computer, or even as created as manipulations of existing datasets."
+    "text": "First Steps in RStudio\nWith R and RStudio installed, we’ll begin by exploring RStudio: the interface, reading in data, and basic commands. Upon opening RStudio, you should see something similar to the window below:\n\nThe console is the panel on the left side, and is where users can type commands and see immediate output. Let’s try it out! Type the following code into the console:\n\n3 + 5\n\nYou should get output that looks like\n\n\n[1] 8\n\n\n(For now, ignore the [1]). By typing in 3+5, we got the expected answer, 8. We can see that R can be used as a calculator directly in the console. Try some other commands that use R as a calculator. For instance, 3*25, exp(2), or (10+5^2)/sqrt(40). Of course, R is not simply a calculator; other commands may also be entered here.\nTo illustrate, let’s load a dataset. Enter the following command into the console (you can directly copy/paste it, but make sure everything is exactly as below):\n\ncdc &lt;- read.csv(\"https://karamccor.github.io/b600-f24/labs/data/cdc_cleaned.csv\")\n\nWe’ve just loaded a dataset named cdc. These data come primarily from the Sortable Risk Factors and Health Indicators dataset from the CDC, which comprises demographic and health indices compiled from various federal sources. This dataset is now part of our environment, which is displayed on the top half and right side of the RStudio window.\n\nThe environment contains all objects in the current working space. These objects could be variables, lists of variables, or even entire datasets.\nIn the same location as the environment tab, the **history tab displays all commands used during the current session (don’t worry about the connections tab for now).\nFinally, the bottom half of the right-hand panel shows information regarding files on your hard drive, installed packages, output such as plots, and help files or other documents.\n\nComing back to the dataset we loaded in, we can see that it is named cdc. We can take a look at this dataset in a spreadsheet-like window by clicking on cdc in the Environment tab to the right, or by running the following code in the console:\n\nView(cdc)\n\nNote that other objects may be added to the environment, either from external data sources from the internet as in today’s example, datasets downloaded to your computer, or even as created as manipulations of existing datasets."
   },
   {
     "objectID": "labs/lab-1.html#quarto-and-reproducible-research",
@@ -585,7 +585,7 @@
     "href": "labs/lab-1.html#the-tidyverse",
     "title": "Lab 01",
     "section": "The tidyverse",
-    "text": "The tidyverse\n\nAs mentioned previously, one of the biggest strengths of R is its large userbase who have contributed user-written functions to R via packages. R packages are “add-ons” to the basic functions available in R (think of them as apps on a phone).\nThe tidyverse is a collection of packages designed around a common grammar and data structure. Some packages in the tidyverse that we will be using throughout this semester will be ggplot2, used for creating graphics and figures, and dplyr and tidyr, used for data manipulation and wrangling.\n\nFirst, install the tidyverse package by running the following code in your R Studio console:\n\ninstall.packages(\"tidyverse\")\n\nAfter installing the tidyverse package, you never have to install it again – all that is needed to use functions from the tidyverse is to load the package once per R session using the following code:\n\nlibrary(tidyverse)\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.4     ✔ readr     2.1.5\n✔ forcats   1.0.0     ✔ stringr   1.5.1\n✔ ggplot2   3.5.1     ✔ tibble    3.2.1\n✔ lubridate 1.9.3     ✔ tidyr     1.3.1\n✔ purrr     1.0.2     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors\n\n\nRemember that the console and the Quarto document have different workspaces. If you load the tidyverse package in your console, it won’t be loaded into the workspace for the Quarto document. In the lab template, code for loading the tidyverse has already been provided. However, note that you must have the package installed first."
+    "text": "The tidyverse\n\nAs mentioned previously, one of the biggest strengths of R is its large userbase who have contributed user-written functions to R via packages. R packages are “add-ons” to the basic functions available in R (think of them as apps on a phone).\nThe tidyverse is a collection of packages designed around a common grammar and data structure. Some packages in the tidyverse that we will be using throughout this semester will be ggplot2, used for creating graphics and figures, and dplyr and tidyr, used for data manipulation and wrangling.\n\nFirst, install the tidyverse package by running the following code in your R Studio console:\n\ninstall.packages(\"tidyverse\")\n\nAfter installing the tidyverse package, you never have to install it again – all that is needed to use functions from the tidyverse is to load the package once per R session using the following code:\n\nlibrary(tidyverse)\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.4     ✔ readr     2.1.5\n✔ forcats   1.0.0     ✔ stringr   1.5.1\n✔ ggplot2   3.5.1     ✔ tibble    3.2.1\n✔ lubridate 1.9.3     ✔ tidyr     1.3.1\n✔ purrr     1.0.2     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors\n\n\nRemember that the console and the R Markdown document have different workspaces. If you load the tidyverse package in your console, it won’t be loaded into the workspace for the Quarto document. In the lab template, code for loading the tidyverse has already been provided. However, note that you must have the package installed first."
   },
   {
     "objectID": "labs/lab-1.html#basic-data-manipulation",
@@ -599,7 +599,7 @@
     "href": "labs/lab-1.html#physical-activity-and-adult-obesity",
     "title": "Lab 01",
     "section": "Physical activity and adult obesity",
-    "text": "Physical activity and adult obesity\nToday we will be making some basic visualizations using the ggplot package in the tidyverse.\nIn this section we’ll work through a visualization example using the cdc dataset. The variables in this dataset are as follows:\nState, the name of the state\nRegion, the US Census region that each state belongs to\nHDI, the Human Development Index of each state in 2017, categorized into whether they are among the top ten, the bottom ten, or the middle\nInfantMortalityRate: infant mortality rate per 100,000\nCVDeathRate: death rate per 100,000 due to cardiovasulcar causes\nDrugDeathRate: death rate per 100,000 due to drug-related causes (ODs, etc.)\nMotorDeathRate: death rate per 100,000 due to motor vehicle-related causes\nCancerDeathRate: death rate per 100,000 due to cancer\nObesity: % of adults who are obese\nSmoking: % of adults who smoked at least one cigarette in the past month\nExercise: % of adults who participated in at least 2.5 hours of aerobic activity per week\nSeatbelt: % of adults to regularly wear their seat belt\nFluVaccination: % of adults who received a flu vaccine\nChildVaccination: % of children who aged 19-35 months who have received the DTaP, polio, MMR, Hib, hepatitis B, varicella and PCV vaccines\nUnder18: % of residents under age 18\nOver65: % of residents over age 65\nLet’s begin with a very simple plot. Run the following code in the console:"
+    "text": "Physical activity and adult obesity\nToday we will be making some basic visualizations using the ggplot package in the tidyverse.\nIn this section we’ll work through a visualization example using the cdc dataset. The variables in this dataset are as follows:\n\nState, the name of the state\nRegion, the US Census region that each state belongs to\nHDI, the Human Development Index of each state in 2017, categorized into whether they are among the top ten, the bottom ten, or the middle\nInfantMortalityRate: infant mortality rate per 100,000\nCVDeathRate: death rate per 100,000 due to cardiovasulcar causes\nDrugDeathRate: death rate per 100,000 due to drug-related causes (ODs, etc.)\nMotorDeathRate: death rate per 100,000 due to motor vehicle-related causes\nCancerDeathRate: death rate per 100,000 due to cancer\nObesity: % of adults who are obese\nSmoking: % of adults who smoked at least one cigarette in the past month\nExercise: % of adults who participated in at least 2.5 hours of aerobic activity per week\nSeatbelt: % of adults to regularly wear their seat belt\nFluVaccination: % of adults who received a flu vaccine\nChildVaccination: % of children who aged 19-35 months who have received the DTaP, polio, MMR, Hib, hepatitis B, varicella and PCV vaccines\nUnder18: % of residents under age 18\nOver65: % of residents over age 65\n\nLet’s begin with a very simple plot. Run the following code in the console:\n\nggplot(data = cdc, mapping = aes(x = Exercise, y = Obesity)) + \n  geom_point()\n\nWe just created our first plot in R! Let’s break down what each of these components is. ggplot() is the function that tells R to make a plot. We are plotting data from the cdc dataset, with Exercise on the x-axis and Obesity on the y-axis. Adding (+) the geom_point() in a new layer (separated on a new line for clarity) tells R specifically to create a scatterplot.\nDoes there appear to be a relationship between the percentage of adults in a state who participate in at least 2.5 hours of aerobic exercise a week and the percentage of adults in that state who are obese? If so, what is this relationship?\nNow run the following code:\n\nggplot(data = cdc, mapping = aes(x = Exercise,y = Obesity,color = HDI, shape = HDI)) + \n  geom_point()\n\nHow does this code differ from the previous snippet? What changes in the scatterplot does this change correspond to?\nFinally, run the following code, which should result in the plot below. Pay attention to how we’ve added new layers onto our base plot.\n\nggplot(data = cdc, mapping = aes(x = Exercise, y = Obesity, color = HDI, size = CVDeathRate)) + \n  geom_point() +\n  labs(title = \"Aerobic Activity vs. Obesity by State HDI\", \n       subtitle = \"Faceted by Region\", \n       x = \"Adequate aerobic activity (%)\", y = \"Obesity (%)\") + \n  facet_grid(.~Region) +\n  theme_bw()\n\n\n\n\nAgain, how does this code differ from the previous plot, and what changes in the plot itself correspond to the additional code?"
   },
   {
     "objectID": "project-description.html",
@@ -2301,5 +2301,96 @@
     "title": "HW 01",
     "section": "Exercise 20",
     "text": "Exercise 20\n(5 points) In their conclusion, the authors state “Burden of visual impairment and socioeconomic indicators were closely associated and may help to identify countries requiring greater attention to these issues.” Do you think this is a reasonable statement to make from the scatterplot? Why or why not?\nSubmission: You can knit the template into an .html file that can be opened by any web browser by clicking on the Knit in the bar above the scripting area, as demonstrated in class. To export this document as a .pdf, open the .html file in your web browser of choice and then print to or save as a .pdf document. (There is a way to directly knit to a .pdf file, but it’s quite a bit more involved…).\nTurn in this .pdf document into Canvas in the appropriate assignment area. Ensure that your questions are neatly marked in your submission so that your TAs/graders can find them."
+  },
+  {
+    "objectID": "docs/hw/hw-01-template.html",
+    "href": "docs/hw/hw-01-template.html",
+    "title": "HW 01",
+    "section": "",
+    "text": "Exercise 1\nWrite your answer to Exercise 1 here. Watch out for line spacing. Make sure that there is a blank line around each exercise header as demonstrated in the template. Don’t forget to change your name in the document metadata at the top of this template!\n\n\nExercise 2\nWrite your answer to Exercise 2 here.\n\n\nExercise 3\nWrite your answer to Exercise 3 here.\n\n\nExercise 4\nWrite your answer to Exercise 4 here.\n\n\nExercise 5\nWrite your answer to Exercise 5 here.\n\n\nExercise 6\nWrite your answer to Exercise 6 here.\n\n\nExercise 7\nWrite your answer to Exercise 7 here.\n\n\nExercise 8\nWrite your answer to Exercise 8 here.\n\n\nExercise 9\nWrite your answer to Exercise 9 here.\n\n\nExercise 10\nWrite your answer to Exercise 10 here.\n\n\nExercise 11\nWrite your answer to Exercise 11 here.\n\n\nExercise 12\nWrite your answer to Exercise 12 here.\n\n\nExercise 13\nWrite your answer to Exercise 13 here.\n\n\nExercise 14\nWrite your answer to Exercise 14 here.\n\n\nExercise 15\nWrite your answer to Exercise 15 here.\n\n\nExercise 16\nWrite your answer to Exercise 16 here.\n\n\nExercise 17\nWrite your answer to Exercise 17 here.\n\n\nExercise 18\nWrite your answer to Exercise 18 here.\n\n\nExercise 19\nWrite your answer to Exercise 19 here.\n\n\nExercise 20\nWrite your answer to Exercise 20 here."
+  },
+  {
+    "objectID": "labs/lab-1.html#exercise-1-1",
+    "href": "labs/lab-1.html#exercise-1-1",
+    "title": "Lab 01",
+    "section": "Exercise 1",
+    "text": "Exercise 1\nHow does the HDI of a state relate to the percentage of residents in each state who get 2.5 hours of aerobic activity and who are obese?"
+  },
+  {
+    "objectID": "labs/lab-1.html#exercise-2",
+    "href": "labs/lab-1.html#exercise-2",
+    "title": "Lab 01",
+    "section": "Exercise 2",
+    "text": "Exercise 2\nModify the code used for the bar graph that counts the number of US States by Census Region such that the bars are colored pink."
+  },
+  {
+    "objectID": "labs/lab-1.html#exercise-3",
+    "href": "labs/lab-1.html#exercise-3",
+    "title": "Lab 01",
+    "section": "Exercise 3",
+    "text": "Exercise 3\nCreate a visualization that explores the distribution of adults who smoke among each state. Describe this distribution."
+  },
+  {
+    "objectID": "labs/lab-1.html#exercise-4",
+    "href": "labs/lab-1.html#exercise-4",
+    "title": "Lab 01",
+    "section": "Exercise 4",
+    "text": "Exercise 4\nCreate a visualization that explores the relationship between flu vaccination rate and childhood vaccination rate. What relationship(s) do you see?"
+  },
+  {
+    "objectID": "labs/lab-1.html#exercise-5",
+    "href": "labs/lab-1.html#exercise-5",
+    "title": "Lab 01",
+    "section": "Exercise 5",
+    "text": "Exercise 5\nCreate a visualization that explores the relationship between death rate per 100,000 due to cardiovascular causes and the percentage of obese residents in a state. Color-code your plot based on HDI category. What relationship(s) do you see?"
+  },
+  {
+    "objectID": "labs/lab-1.html#exercise-6",
+    "href": "labs/lab-1.html#exercise-6",
+    "title": "Lab 01",
+    "section": "Exercise 6",
+    "text": "Exercise 6\nCreate a meaningful visualization of your choice. Comment on the relationship(s) you see."
+  },
+  {
+    "objectID": "labs/lab-1.html#r-markdown-and-reproducible-research",
+    "href": "labs/lab-1.html#r-markdown-and-reproducible-research",
+    "title": "Lab 01",
+    "section": "R Markdown and reproducible research",
+    "text": "R Markdown and reproducible research\nR Markdown is a system that may be used to create easy-to-write, attractive reports, presentations, or webpages that also serve as reproducible records of the data analysis. These reports have the desirable property of being able to not only display written narratives and figures, but also include any R code and the outputs from these code snippets.\nOne of the biggest strengths of R Markdown is that everything is in one place, and that other users should be able to reproduce your results exactly, if they have your R Markdown document and datasets - the analysis is run from the beginning each time you render the document. As well, formatting is easy! Luckily, RStudio already comes with R Markdown support, so there is nothing additional to install.\nEvery homework assignment and lab in this class will be written in R Markdown, with a template provided for you to use. This lab’s template can be downloaded by typing in the following code:\n\ndownload.file(\"https://karamccor.github.io/b600-f24/labs/lab-01-template.Rmd\", destfile=\"lab-01.Rmd\")\n\nYou should now see the new file lab-01.qmd under the Files tab in the bottom-right hand side of your RStudio window. Click on lab-01.qmd in this window in order to open it up – it is the template for use in this lab!\nFirst, put your name in the space at the top where it says “YOUR NAME GOES HERE”.\nFill in answers in the spaces provided: text narrative should be typed directly in the document and any included R code should be typed inside “chunks,” or sections defined by three backticks (the little mark on the same key as the tilde). See the template for more instructions, or ask your TA.\nAn important thing to note is that the workspace of the Quarto document is separate from the console – this means that you must load any packages inside of R chunks if you want to use functions contained in them. In the template for this lab, this has been done already, but in the future you may have to do it yourself.\nIn order to turn this template into a shareable document, Render the quarto template into an HTML document by pressing the Render button at the top of the document (it is a large blue arrow facing the right). You should see the template rendered as an .html file!"
+  },
+  {
+    "objectID": "slides/lec-1.html#identifying-the-population-and-question-of-interest",
+    "href": "slides/lec-1.html#identifying-the-population-and-question-of-interest",
+    "title": "Welcome to BIOS 600!",
+    "section": "Identifying the population and question of interest",
+    "text": "Identifying the population and question of interest\nThe population is the group we’d like to learn something about:\n\nWhat is the prevalence of diabetes among US adults, and has it changed over time?\nIs there a relationship between tumor type and five-year mortality in breast cancer patients?\nDoes the average amount of caffeine vary by vendor in 12 oz cups of coffee at UNC coffee shops?\n\nIf we had data from every unit in the population, we could just calculate what we wanted and be done!"
+  },
+  {
+    "objectID": "slides/lec-1.html#sampling-from-the-population",
+    "href": "slides/lec-1.html#sampling-from-the-population",
+    "title": "Welcome to BIOS 600!",
+    "section": "Sampling from the population",
+    "text": "Sampling from the population\nUnfortunately, we (usually) have to settle with a sample from the population.\n\nIdeally, the sample is representative, allowing us to use probability and statistical inference to make conclusions that are generalizable to the broader population of interest."
+  },
+  {
+    "objectID": "slides/lec-1.html#sampling-methods",
+    "href": "slides/lec-1.html#sampling-methods",
+    "title": "Welcome to BIOS 600!",
+    "section": "Sampling methods",
+    "text": "Sampling methods\nProbability sampling (e.g., simple random sampling, stratified, cluster, or multi-stage sampling)\n\nAll units have a known chance of being selected\nMore likely to be generalizable\nCan be more expensive and time-consuming\n\nNon-probability sampling (e.g. quota, convenience, or snowball sampling)\n\nSome units unable to be selected, with no way of knowing size or effect of sampling errors\nLess generalizable to population of interest\nMore convenient and less costly"
+  },
+  {
+    "objectID": "slides/lec-1.html#study-design",
+    "href": "slides/lec-1.html#study-design",
+    "title": "Welcome to BIOS 600!",
+    "section": "Study design",
+    "text": "Study design\nExperimental studies (e.g. RCTs)\n\nResearchers directly control exposures or treatments\nAbility to make causal statements\nLess real-world applicability and generalizability\n\nObservational studies (e.g. surveys)\n\nResearchers do not assign exposures or treatments\nReal-world setting with lower burden on participants\nInability to prove causality"
+  },
+  {
+    "objectID": "slides/lec-1.html#what-can-go-wrong",
+    "href": "slides/lec-1.html#what-can-go-wrong",
+    "title": "Welcome to BIOS 600!",
+    "section": "What can go wrong?",
+    "text": "What can go wrong?\nSelection bias, reporting bias, non-response bias, attrition bias, confounding, detection bias, lack of blinding, straight-up falsified data (this happens), …\n and so much more"
   }
 ]

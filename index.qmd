@@ -18,7 +18,7 @@ This page contains an outline of the topics, content, and assignments for the se
 |   3  | Tues, Sept 3 | No Class/Lab: Well-being day    |     |    |  |   |   |     |
 |      | Thurs, Sept 5 | Lecture 5: Diagnostic testing    |     |    |  |   |   |     |
 |   4  | Tues, Sept 10 | Lecture 6: Discrete distributions   |     |    |  |   |   |     |
-|      | Tues, Sept 10 | Lab 3: Wranging data with dplyr   |     |    |  |   |   |     |
+|      | Tues, Sept 10 | Lab 3: Wrangling data with dplyr   |     |    |  |   |   |     |
 |      | Thurs, Sept 12 | Lecture 7: Continuous distributions  |     |    |  |   |   |     |
 |   5  | Tues, Sept 17 | Lecture 8: The central limit theorem |     |    |  |   |   |     |
 |      | Tues, Sept 17 | Lab 4: Probability distributions |     |    |  |   |   |     |
