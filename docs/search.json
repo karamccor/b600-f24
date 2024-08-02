@@ -191,224 +191,224 @@
   {
     "objectID": "slides/lec-1.html#meet-the-professor",
     "href": "slides/lec-1.html#meet-the-professor",
-    "title": "Welcome to BIOS 600!",
+    "title": "What is statistical inference (in a biostatistics context)?",
     "section": "Meet the professor",
     "text": "Meet the professor\n\n\n\n\n\nDr. Kara McCormack (she/her)\n\n\n\n\nTeaching Assistant Professor, Department of Biostatistics\nPhD in Biostatistics from Duke University, 2023\nOriginally from Austin, TX\nInterests: gardening, yoga, cats, and all kinds of art!"
   },
   {
     "objectID": "slides/lec-1.html#meet-the-ta",
     "href": "slides/lec-1.html#meet-the-ta",
-    "title": "Welcome to BIOS 600!",
+    "title": "What is statistical inference (in a biostatistics context)?",
     "section": "Meet the TA",
     "text": "Meet the TA\n\nTBD\nMaster’s Student, Biostatistics department\nWill lead lab sections, 3:50-4:20, McGavran-Greenberg 2306"
   },
   {
     "objectID": "slides/lec-1.html#check-out-ed-discussion",
     "href": "slides/lec-1.html#check-out-ed-discussion",
-    "title": "Welcome to BIOS 600!",
+    "title": "What is statistical inference (in a biostatistics context)?",
     "section": "Check out Ed Discussion",
     "text": "Check out Ed Discussion\n\nThis semester, you can ask questions about the class in our discussion forum, Ed Discussion.\nGo to Ed Discussion 💬\nAnswer the discussion question: How are you doing?"
   },
   {
     "objectID": "slides/lec-1.html#meet-each-other",
     "href": "slides/lec-1.html#meet-each-other",
-    "title": "Welcome to BIOS 600!",
+    "title": "What is statistical inference (in a biostatistics context)?",
     "section": "Meet each other",
     "text": "Meet each other\nIn small groups, share\n\nWhere you’re from\nYour year/program\nWhat you hope to get out of this course\nFind something that everyone in your group has in common, that isn’t necessarily common to the rest of the class."
   },
   {
     "objectID": "slides/lec-1.html#what-is-biostatistics",
     "href": "slides/lec-1.html#what-is-biostatistics",
-    "title": "Welcome to BIOS 600!",
+    "title": "What is statistical inference (in a biostatistics context)?",
     "section": "What is biostatistics?",
     "text": "What is biostatistics?\nA process that converts data into useful information, whereby practitioners\n\nform a question of interest\ncollect and summarize data\nand interpret the results"
   },
   {
     "objectID": "slides/lec-1.html#what-is-biostatistics-good-for",
     "href": "slides/lec-1.html#what-is-biostatistics-good-for",
-    "title": "Welcome to BIOS 600!",
+    "title": "What is statistical inference (in a biostatistics context)?",
     "section": "What is biostatistics good for?",
     "text": "What is biostatistics good for?"
   },
   {
     "objectID": "slides/lec-1.html#what-is-biostatistics-good-for-1",
     "href": "slides/lec-1.html#what-is-biostatistics-good-for-1",
-    "title": "Welcome to BIOS 600!",
+    "title": "What is statistical inference (in a biostatistics context)?",
     "section": "What is biostatistics good for?",
     "text": "What is biostatistics good for?"
   },
   {
     "objectID": "slides/lec-1.html#what-is-biostatistics-good-for-2",
     "href": "slides/lec-1.html#what-is-biostatistics-good-for-2",
-    "title": "Welcome to BIOS 600!",
+    "title": "What is statistical inference (in a biostatistics context)?",
     "section": "What is biostatistics good for?",
     "text": "What is biostatistics good for?"
   },
   {
     "objectID": "slides/lec-1.html#course-faq",
     "href": "slides/lec-1.html#course-faq",
-    "title": "Welcome to BIOS 600!",
+    "title": "What is statistical inference (in a biostatistics context)?",
     "section": "Course FAQ",
     "text": "Course FAQ\n\n\nWhat background is assumed for the course? A basic understanding of algebra and arithmetic. No previous coursework in probability and statistics is required.\nWill we be doing computing? Yes. We will use R. You’re welcome to check your work in another language (e.g. SAS), but homework/labs will be turned in using R.\nWill we learn the mathematical theory of biostatistics? Yes and No. The course is primarily focused on application; however, we will discuss some of the mathematics of biostatistics."
   },
   {
     "objectID": "slides/lec-1.html#some-of-what-youll-learn",
     "href": "slides/lec-1.html#some-of-what-youll-learn",
-    "title": "Welcome to BIOS 600!",
+    "title": "What is statistical inference (in a biostatistics context)?",
     "section": "Some of what you’ll learn",
     "text": "Some of what you’ll learn\n\nApply descriptive techniques commonly used to summarize public health data.\nLearn methods to analyze real-world data to answer research questions in a biomedical setting.\nUse Quarto to write reproducible reports.\nCommunicate results from statistical analyses to a general audience."
   },
   {
     "objectID": "slides/lec-1.html#reproducibility-and-replicability",
     "href": "slides/lec-1.html#reproducibility-and-replicability",
-    "title": "Welcome to BIOS 600!",
+    "title": "What is statistical inference (in a biostatistics context)?",
     "section": "Reproducibility and replicability",
     "text": "Reproducibility and replicability\n\nReproducibility: being able to take original data and code to reproduce all numerical findings.\nReplicability: being able to independently repeat an entire study without use of the original data (generally with the same methods)\n\nBest practices from the American Statistical Association:\n\nEnd-to-end scripting of research\nUse of version control and documentation (we will not use this in our class)\nPublication of code along with data"
   },
   {
     "objectID": "slides/lec-1.html#the-current-replication-crisis",
     "href": "slides/lec-1.html#the-current-replication-crisis",
-    "title": "Welcome to BIOS 600!",
+    "title": "What is statistical inference (in a biostatistics context)?",
     "section": "The current replication crisis",
     "text": "The current replication crisis"
   },
   {
     "objectID": "slides/lec-1.html#homepage",
     "href": "slides/lec-1.html#homepage",
-    "title": "Welcome to BIOS 600!",
+    "title": "What is statistical inference (in a biostatistics context)?",
     "section": "Homepage",
     "text": "Homepage\nhttps://karamccor.github.io/b600-f24/\n\nAll course materials\nThis link is posted on Canvas. Bookmark it!\nLinks to Canvas, discussion board, course info, etc.\nLet’s take a tour!"
   },
   {
     "objectID": "slides/lec-1.html#course-toolkit",
     "href": "slides/lec-1.html#course-toolkit",
-    "title": "Welcome to BIOS 600!",
+    "title": "What is statistical inference (in a biostatistics context)?",
     "section": "Course toolkit",
     "text": "Course toolkit\nAll linked from the course website:\n\nRStudio\n\nNote: The TA will guide you through downloading RStudio later today in the first lab.\n\nDiscussion forum: Ed Discussions\nAssignment submission and feedback: Canvas"
   },
   {
     "objectID": "slides/lec-1.html#what-have-i-gotten-myself-into",
     "href": "slides/lec-1.html#what-have-i-gotten-myself-into",
-    "title": "Welcome to BIOS 600!",
+    "title": "What is statistical inference (in a biostatistics context)?",
     "section": "What have I gotten myself into?",
     "text": "What have I gotten myself into?\n\nBIOS 600 is an introduction to “principles of statistical inference” in biostatistics that:\n\nprovides a tour of basic statistical methods commonly encountered in public health and biomedical research,\nemphasizes understanding of methods, using them to arrive at data-driven decisions, and effective communication of such results.\nUtilizes modern software such as RStudio to reproducibly examine and manipulate data to make sound scientific conclusions"
   },
   {
     "objectID": "slides/lec-1.html#activities-participate-practice-perform",
     "href": "slides/lec-1.html#activities-participate-practice-perform",
-    "title": "Welcome to BIOS 600!",
+    "title": "What is statistical inference (in a biostatistics context)?",
     "section": "Activities: Participate, Practice, Perform",
     "text": "Activities: Participate, Practice, Perform\n\nParticipate: Attend and actively participate in lectures and labs, office hours\nPractice: Practice applying statistical concepts and computing with lab exercises\nPerform: Put together what you’ve learned to analyze real-world data\n\nHomework assignments (individual, then team)\nThree timed take-home exams, open book: short answer section on Canvas, and coding section that you’ll do on your own.\nTerm project presented during the final exam period"
   },
   {
     "objectID": "slides/lec-1.html#cadence",
     "href": "slides/lec-1.html#cadence",
-    "title": "Welcome to BIOS 600!",
+    "title": "What is statistical inference (in a biostatistics context)?",
     "section": "Cadence",
     "text": "Cadence\n\n\nLabs: Start and make large progress on Tuesday in lab section, finish up by Friday 11:59pm of that week\nHWs: Posted on the website, typically will have a little over a week to complete.\nExams: Take-home, open-book, timed, more info as semester progresses.\nProject: Towards end of semester, most work done in teams outside of class"
   },
   {
     "objectID": "slides/lec-1.html#what-to-expect-in-lab",
     "href": "slides/lec-1.html#what-to-expect-in-lab",
-    "title": "Welcome to BIOS 600!",
+    "title": "What is statistical inference (in a biostatistics context)?",
     "section": "What to expect in lab",
     "text": "What to expect in lab\n\nLab will be Tuesdays from 3:30-4:50, MCG 2306, led by TA\nIntroduction to the lab assignment (~ 5 - 10 minutes)\nWork on the lab assignment (individual at first, but will switch to teams in a few weeks.)\nLab instructions posted on the course website."
   },
   {
     "objectID": "slides/lec-1.html#tips",
     "href": "slides/lec-1.html#tips",
-    "title": "Welcome to BIOS 600!",
+    "title": "What is statistical inference (in a biostatistics context)?",
     "section": "Tips",
     "text": "Tips\n\nYou do not have to finish the lab in class, they will always be due the following Friday at 11:59 pm.\nOne work strategy is to get through portions that you think will be most challenging (which initially might be the coding component) during lab when a TA can help you on the spot and leave the narrative writing until later.\nWhen working in teams (later in the semester) do not pressure each other to finish early; use the time wisely to really learn the material and produce a quality report."
   },
   {
     "objectID": "slides/lec-1.html#teams",
     "href": "slides/lec-1.html#teams",
-    "title": "Welcome to BIOS 600!",
+    "title": "What is statistical inference (in a biostatistics context)?",
     "section": "Teams",
     "text": "Teams\n\nTeam assignment\n\nAssigned by me\nFinal project\nPeer evaluation during teamwork and after completion\n\nExpectations and roles\n\nEveryone is expected to contribute equal effort\nEveryone is expected to understand all code turned in"
   },
   {
     "objectID": "slides/lec-1.html#grading",
     "href": "slides/lec-1.html#grading",
-    "title": "Welcome to BIOS 600!",
+    "title": "What is statistical inference (in a biostatistics context)?",
     "section": "Grading",
     "text": "Grading\n\n\n\nCategory\nPercentage\n\n\n\n\nHomework\n30%\n\n\nProject\n20%\n\n\nLab\n15%\n\n\nExam 01\n10%\n\n\nExam 02\n10%\n\n\nExam 03\n10%\n\n\n\nSee the course syllabus (.pdf available on Canvas) for how the final letter grade will be determined."
   },
   {
     "objectID": "slides/lec-1.html#support",
     "href": "slides/lec-1.html#support",
-    "title": "Welcome to BIOS 600!",
+    "title": "What is statistical inference (in a biostatistics context)?",
     "section": "Support",
     "text": "Support\n\nAttend office hours\nAsk and answer questions on the discussion forum, Ed Discussions\nReserve email for questions on personal matters and/or grades\nRead the course support page"
   },
   {
     "objectID": "slides/lec-1.html#announcements",
     "href": "slides/lec-1.html#announcements",
-    "title": "Welcome to BIOS 600!",
+    "title": "What is statistical inference (in a biostatistics context)?",
     "section": "Announcements",
     "text": "Announcements\n\nPosted on Canvas (Announcements tool) and sent via email, be sure to check both regularly\nI’ll assume that you’ve read an announcement by the next “business” day"
   },
   {
     "objectID": "slides/lec-1.html#diversity-inclusion",
     "href": "slides/lec-1.html#diversity-inclusion",
-    "title": "Welcome to BIOS 600!",
+    "title": "What is statistical inference (in a biostatistics context)?",
     "section": "Diversity + inclusion",
     "text": "Diversity + inclusion\nIt is my intent that students from all diverse backgrounds and perspectives be well-served by this course, that students’ learning needs be addressed both in and out of class, and that the diversity that the students bring to this class be viewed as a resource, strength and benefit.\n\n\nIf you have a name that differs from those that appear in your official UNC records, please let me know!\nPlease let me know your preferred pronouns. You’ll also be able to note this in the Getting to know you survey.\nIf you feel like your performance in the class is being impacted by your experiences outside of class, please don’t hesitate to come and talk with me. I want to be a resource for you. If you prefer to speak with someone outside of the course, your advisers and deans are excellent resources.\nI (like many people) am still in the process of learning about diverse perspectives and identities. If something was said in class (by anyone) that made you feel uncomfortable, please talk to me about it."
   },
   {
     "objectID": "slides/lec-1.html#accessibility",
     "href": "slides/lec-1.html#accessibility",
-    "title": "Welcome to BIOS 600!",
+    "title": "What is statistical inference (in a biostatistics context)?",
     "section": "Accessibility",
     "text": "Accessibility\n\nThe Student Disability Accomodations is available to ensure that students are able to engage with their courses and related assignments.\nI am committed to making all course materials accessible and I’m always learning how to do this better. If any course component is not accessible to you in any way, please don’t hesitate to let me know."
   },
   {
     "objectID": "slides/lec-1.html#late-work-waivers-regrades-policy",
     "href": "slides/lec-1.html#late-work-waivers-regrades-policy",
-    "title": "Welcome to BIOS 600!",
+    "title": "What is statistical inference (in a biostatistics context)?",
     "section": "Late work, waivers, regrades policy",
     "text": "Late work, waivers, regrades policy\n\nWe have policies!\nRead about them on the course syllabus (a .pdf version is available on Canvas.) Refer back to these policies when you need it."
   },
   {
     "objectID": "slides/lec-1.html#collaboration-policy",
     "href": "slides/lec-1.html#collaboration-policy",
-    "title": "Welcome to BIOS 600!",
+    "title": "What is statistical inference (in a biostatistics context)?",
     "section": "Collaboration policy",
     "text": "Collaboration policy\n\nOnly work that is clearly assigned as team work should be completed collaboratively.\nHomeworks must be completed individually. You may not directly share answers / code with others, however you are welcome to discuss the problems in general and ask for advice.\nExams must be completed individually. You may not discuss any aspect of the exam with peers. If you have questions, post as private questions on the course forum, only the teaching team will see and answer."
   },
   {
     "objectID": "slides/lec-1.html#sharing-reusing-code-policy",
     "href": "slides/lec-1.html#sharing-reusing-code-policy",
-    "title": "Welcome to BIOS 600!",
+    "title": "What is statistical inference (in a biostatistics context)?",
     "section": "Sharing / reusing code policy",
     "text": "Sharing / reusing code policy\n\nWe are aware that a huge volume of code is available on the web, and many tasks may have solutions posted\nUnless explicitly stated otherwise, this course’s policy is that you may make use of any online resources (e.g. RStudio Community, StackOverflow, etc.) but you must explicitly cite where you obtained any code you directly use or use as inspiration in your solution(s).\nAny recycled code that is discovered and is not explicitly cited will be treated as plagiarism, regardless of source."
   },
   {
     "objectID": "slides/lec-1.html#most-importantly",
     "href": "slides/lec-1.html#most-importantly",
-    "title": "Welcome to BIOS 600!",
+    "title": "What is statistical inference (in a biostatistics context)?",
     "section": "Most importantly!",
     "text": "Most importantly!\nAsk if you’re not sure if something violates a policy!"
   },
   {
     "objectID": "slides/lec-1.html#three-tips-for-success",
     "href": "slides/lec-1.html#three-tips-for-success",
-    "title": "Welcome to BIOS 600!",
+    "title": "What is statistical inference (in a biostatistics context)?",
     "section": "Three tips for success",
     "text": "Three tips for success\n\nAsk questions.\nDo the homework and labs.\nDon’t procrastinate and don’t let a week pass by with lingering questions."
   },
   {
     "objectID": "slides/lec-1.html#cultivating-a-supportive-learning-environment",
     "href": "slides/lec-1.html#cultivating-a-supportive-learning-environment",
-    "title": "Welcome to BIOS 600!",
+    "title": "What is statistical inference (in a biostatistics context)?",
     "section": "Cultivating a supportive learning environment",
     "text": "Cultivating a supportive learning environment\nI want to make sure that you learn everything you were hoping to learn from this class. If this requires flexibility, please don’t hesitate to ask.\n\n\nYou never owe me personal information about your health (mental or physical) but you’re always welcome to talk to me. If I can’t help, I likely know someone who can.\nI want you to learn lots of things from this class, but I primarily want you to stay healthy, balanced, and grounded."
   },
   {
     "objectID": "slides/lec-1.html#this-weeks-tasks",
     "href": "slides/lec-1.html#this-weeks-tasks",
-    "title": "Welcome to BIOS 600!",
+    "title": "What is statistical inference (in a biostatistics context)?",
     "section": "This week’s tasks",
     "text": "This week’s tasks\n\nIn lab today (3:50-4:20 Room TBD):\n\nMeet the TA\nDownload RStudio\nComplete the lab assignment\n\nRead the syllabus! (a .pdf version is available on Canvas)\nComplete the [Getting to know you survey] by Thursday’s class!"
   },
@@ -2361,36 +2361,218 @@
   {
     "objectID": "slides/lec-1.html#identifying-the-population-and-question-of-interest",
     "href": "slides/lec-1.html#identifying-the-population-and-question-of-interest",
-    "title": "Welcome to BIOS 600!",
+    "title": "What is statistical inference (in a biostatistics context)?",
     "section": "Identifying the population and question of interest",
     "text": "Identifying the population and question of interest\nThe population is the group we’d like to learn something about:\n\nWhat is the prevalence of diabetes among US adults, and has it changed over time?\nIs there a relationship between tumor type and five-year mortality in breast cancer patients?\nDoes the average amount of caffeine vary by vendor in 12 oz cups of coffee at UNC coffee shops?\n\nIf we had data from every unit in the population, we could just calculate what we wanted and be done!"
   },
   {
     "objectID": "slides/lec-1.html#sampling-from-the-population",
     "href": "slides/lec-1.html#sampling-from-the-population",
-    "title": "Welcome to BIOS 600!",
+    "title": "What is statistical inference (in a biostatistics context)?",
     "section": "Sampling from the population",
     "text": "Sampling from the population\nUnfortunately, we (usually) have to settle with a sample from the population.\n\nIdeally, the sample is representative, allowing us to use probability and statistical inference to make conclusions that are generalizable to the broader population of interest."
   },
   {
     "objectID": "slides/lec-1.html#sampling-methods",
     "href": "slides/lec-1.html#sampling-methods",
-    "title": "Welcome to BIOS 600!",
+    "title": "What is statistical inference (in a biostatistics context)?",
     "section": "Sampling methods",
     "text": "Sampling methods\nProbability sampling (e.g., simple random sampling, stratified, cluster, or multi-stage sampling)\n\nAll units have a known chance of being selected\nMore likely to be generalizable\nCan be more expensive and time-consuming\n\nNon-probability sampling (e.g. quota, convenience, or snowball sampling)\n\nSome units unable to be selected, with no way of knowing size or effect of sampling errors\nLess generalizable to population of interest\nMore convenient and less costly"
   },
   {
     "objectID": "slides/lec-1.html#study-design",
     "href": "slides/lec-1.html#study-design",
-    "title": "Welcome to BIOS 600!",
+    "title": "What is statistical inference (in a biostatistics context)?",
     "section": "Study design",
     "text": "Study design\nExperimental studies (e.g. RCTs)\n\nResearchers directly control exposures or treatments\nAbility to make causal statements\nLess real-world applicability and generalizability\n\nObservational studies (e.g. surveys)\n\nResearchers do not assign exposures or treatments\nReal-world setting with lower burden on participants\nInability to prove causality"
   },
   {
     "objectID": "slides/lec-1.html#what-can-go-wrong",
     "href": "slides/lec-1.html#what-can-go-wrong",
-    "title": "Welcome to BIOS 600!",
+    "title": "What is statistical inference (in a biostatistics context)?",
     "section": "What can go wrong?",
     "text": "What can go wrong?\nSelection bias, reporting bias, non-response bias, attrition bias, confounding, detection bias, lack of blinding, straight-up falsified data (this happens), …\n and so much more"
+  },
+  {
+    "objectID": "slides/lec-0-welcome.html#meet-the-professor",
+    "href": "slides/lec-0-welcome.html#meet-the-professor",
+    "title": "Lec 0: Welcome + Course overview!",
+    "section": "Meet the professor",
+    "text": "Meet the professor\n\n\n\n\n\nDr. Kara McCormack (she/her)\n\n\n\n\nTeaching Assistant Professor, Department of Biostatistics\nPhD in Biostatistics from Duke University, 2023\nOriginally from Austin, TX\nInterests: gardening, yoga, cats, and all kinds of art!"
+  },
+  {
+    "objectID": "slides/lec-0-welcome.html#meet-the-ta",
+    "href": "slides/lec-0-welcome.html#meet-the-ta",
+    "title": "Lec 0: Welcome + Course overview!",
+    "section": "Meet the TA",
+    "text": "Meet the TA\n\nTBD\nMaster’s Student, Biostatistics department\nWill lead lab sections, 3:50-4:20, McGavran-Greenberg 2306"
+  },
+  {
+    "objectID": "slides/lec-0-welcome.html#check-out-ed-discussion",
+    "href": "slides/lec-0-welcome.html#check-out-ed-discussion",
+    "title": "Lec 0: Welcome + Course overview!",
+    "section": "Check out Ed Discussion",
+    "text": "Check out Ed Discussion\n\nThis semester, you can ask questions about the class in our discussion forum, Ed Discussion.\nGo to Ed Discussion 💬\nAnswer the discussion question: How are you doing?"
+  },
+  {
+    "objectID": "slides/lec-0-welcome.html#meet-each-other",
+    "href": "slides/lec-0-welcome.html#meet-each-other",
+    "title": "Lec 0: Welcome + Course overview!",
+    "section": "Meet each other",
+    "text": "Meet each other\nIn small groups, share\n\nWhere you’re from\nYour year/program\nWhat you hope to get out of this course\nFind something that everyone in your group has in common, that isn’t necessarily common to the rest of the class."
+  },
+  {
+    "objectID": "slides/lec-0-welcome.html#homepage",
+    "href": "slides/lec-0-welcome.html#homepage",
+    "title": "Lec 0: Welcome + Course overview!",
+    "section": "Homepage",
+    "text": "Homepage\nhttps://karamccor.github.io/b600-f24/\n\nAll course materials\nThis link is posted on Canvas. Bookmark it!\nLinks to Canvas, discussion board, course info, etc.\nLet’s take a tour!"
+  },
+  {
+    "objectID": "slides/lec-0-welcome.html#course-toolkit",
+    "href": "slides/lec-0-welcome.html#course-toolkit",
+    "title": "Lec 0: Welcome + Course overview!",
+    "section": "Course toolkit",
+    "text": "Course toolkit\nAll linked from the course website:\n\nRStudio\n\nNote: The TA will guide you through downloading RStudio later today in the first lab.\n\nDiscussion forum: Ed Discussions\nAssignment submission and feedback: Canvas"
+  },
+  {
+    "objectID": "slides/lec-0-welcome.html#what-have-i-gotten-myself-into",
+    "href": "slides/lec-0-welcome.html#what-have-i-gotten-myself-into",
+    "title": "Lec 0: Welcome + Course overview!",
+    "section": "What have I gotten myself into?",
+    "text": "What have I gotten myself into?\n\nBIOS 600 is an introduction to “principles of statistical inference” in biostatistics that:\n\nprovides a tour of basic statistical methods commonly encountered in public health and biomedical research,\nemphasizes understanding of methods, using them to arrive at data-driven decisions, and effective communication of such results.\nUtilizes modern software such as RStudio to reproducibly examine and manipulate data to make sound scientific conclusions"
+  },
+  {
+    "objectID": "slides/lec-0-welcome.html#activities-participate-practice-perform",
+    "href": "slides/lec-0-welcome.html#activities-participate-practice-perform",
+    "title": "Lec 0: Welcome + Course overview!",
+    "section": "Activities: Participate, Practice, Perform",
+    "text": "Activities: Participate, Practice, Perform\n\nParticipate: Attend and actively participate in lectures and labs, office hours\nPractice: Practice applying statistical concepts and computing with lab exercises\nPerform: Put together what you’ve learned to analyze real-world data\n\nHomework assignments (individual, then team)\nThree timed take-home exams, open book: short answer section on Canvas, and coding section that you’ll do on your own.\nTerm project presented during the final exam period"
+  },
+  {
+    "objectID": "slides/lec-0-welcome.html#cadence",
+    "href": "slides/lec-0-welcome.html#cadence",
+    "title": "Lec 0: Welcome + Course overview!",
+    "section": "Cadence",
+    "text": "Cadence\n\n\nLabs: Start and make large progress on Tuesday in lab section, finish up by Friday 11:59pm of that week\nHWs: Posted approx every 1-2 weeks, typically will have a little over a week to complete.\nExams: Take-home, open-book, timed, more info as semester progresses.\nProject: Towards end of semester, most work done in teams outside of class"
+  },
+  {
+    "objectID": "slides/lec-0-welcome.html#what-to-expect-in-lab",
+    "href": "slides/lec-0-welcome.html#what-to-expect-in-lab",
+    "title": "Lec 0: Welcome + Course overview!",
+    "section": "What to expect in lab",
+    "text": "What to expect in lab\n\nLab will be Tuesdays from 3:30-4:50, MCG 2306, led by TA\nIntroduction to the lab assignment (~ 5 - 10 minutes)\nWork on the lab assignment (individual at first, but will switch to teams in a few weeks.)\nLab instructions posted on the course website."
+  },
+  {
+    "objectID": "slides/lec-0-welcome.html#tips",
+    "href": "slides/lec-0-welcome.html#tips",
+    "title": "Lec 0: Welcome + Course overview!",
+    "section": "Tips",
+    "text": "Tips\n\nYou do not have to finish the lab in class, they will always be due the following Friday at 11:59 pm.\nOne work strategy is to get through portions that you think will be most challenging (which initially might be the coding component) during lab when a TA can help you on the spot and leave the narrative writing until later.\nWhen working in teams (later in the semester) do not pressure each other to finish early; use the time wisely to really learn the material and produce a quality report."
+  },
+  {
+    "objectID": "slides/lec-0-welcome.html#teams",
+    "href": "slides/lec-0-welcome.html#teams",
+    "title": "Lec 0: Welcome + Course overview!",
+    "section": "Teams",
+    "text": "Teams\n\nTeam assignment\n\nAssigned by me\nFinal project\nPeer evaluation during teamwork and after completion\n\nExpectations and roles\n\nEveryone is expected to contribute equal effort\nEveryone is expected to understand all code turned in"
+  },
+  {
+    "objectID": "slides/lec-0-welcome.html#grading",
+    "href": "slides/lec-0-welcome.html#grading",
+    "title": "Lec 0: Welcome + Course overview!",
+    "section": "Grading",
+    "text": "Grading\n\n\n\nCategory\nPercentage\n\n\n\n\nHomework\n30%\n\n\nProject\n20%\n\n\nLab\n15%\n\n\nExam 01\n10%\n\n\nExam 02\n10%\n\n\nExam 03\n10%\n\n\n\nSee the course syllabus (.pdf available on Canvas) for how the final letter grade will be determined."
+  },
+  {
+    "objectID": "slides/lec-0-welcome.html#support",
+    "href": "slides/lec-0-welcome.html#support",
+    "title": "Lec 0: Welcome + Course overview!",
+    "section": "Support",
+    "text": "Support\n\nAttend office hours\nAsk and answer questions on the discussion forum, Ed Discussions\nReserve email for questions on personal matters and/or grades\nRead the course support page"
+  },
+  {
+    "objectID": "slides/lec-0-welcome.html#announcements",
+    "href": "slides/lec-0-welcome.html#announcements",
+    "title": "Lec 0: Welcome + Course overview!",
+    "section": "Announcements",
+    "text": "Announcements\n\nPosted on Canvas (Announcements tool) and sent via email, be sure to check both regularly\nI’ll assume that you’ve read an announcement by the next “business” day"
+  },
+  {
+    "objectID": "slides/lec-0-welcome.html#diversity-inclusion",
+    "href": "slides/lec-0-welcome.html#diversity-inclusion",
+    "title": "Lec 0: Welcome + Course overview!",
+    "section": "Diversity + inclusion",
+    "text": "Diversity + inclusion\nIt is my intent that students from all diverse backgrounds and perspectives be well-served by this course, that students’ learning needs be addressed both in and out of class, and that the diversity that the students bring to this class be viewed as a resource, strength and benefit.\n\n\nIf you have a name that differs from those that appear in your official UNC records, please let me know!\nPlease let me know your preferred pronouns. You’ll also be able to note this in the Getting to know you survey.\nIf you feel like your performance in the class is being impacted by your experiences outside of class, please don’t hesitate to come and talk with me. I want to be a resource for you. If you prefer to speak with someone outside of the course, your advisers and deans are excellent resources.\nI (like many people) am still in the process of learning about diverse perspectives and identities. If something was said in class (by anyone) that made you feel uncomfortable, please talk to me about it."
+  },
+  {
+    "objectID": "slides/lec-0-welcome.html#accessibility",
+    "href": "slides/lec-0-welcome.html#accessibility",
+    "title": "Lec 0: Welcome + Course overview!",
+    "section": "Accessibility",
+    "text": "Accessibility\n\nThe Student Disability Accomodations is available to ensure that students are able to engage with their courses and related assignments.\nI am committed to making all course materials accessible and I’m always learning how to do this better. If any course component is not accessible to you in any way, please don’t hesitate to let me know."
+  },
+  {
+    "objectID": "slides/lec-0-welcome.html#late-work-waivers-regrades-policy",
+    "href": "slides/lec-0-welcome.html#late-work-waivers-regrades-policy",
+    "title": "Lec 0: Welcome + Course overview!",
+    "section": "Late work, waivers, regrades policy",
+    "text": "Late work, waivers, regrades policy\n\nWe have policies!\nRead about them on the course syllabus (a .pdf version is available on Canvas.) Refer back to these policies when you need it."
+  },
+  {
+    "objectID": "slides/lec-0-welcome.html#collaboration-policy",
+    "href": "slides/lec-0-welcome.html#collaboration-policy",
+    "title": "Lec 0: Welcome + Course overview!",
+    "section": "Collaboration policy",
+    "text": "Collaboration policy\n\nOnly work that is clearly assigned as team work should be completed collaboratively.\nHomeworks must be completed individually. You may not directly share answers / code with others, however you are welcome to discuss the problems in general and ask for advice.\nExams must be completed individually. You may not discuss any aspect of the exam with peers. If you have questions, post as private questions on the course forum, only the teaching team will see and answer."
+  },
+  {
+    "objectID": "slides/lec-0-welcome.html#sharing-reusing-code-policy",
+    "href": "slides/lec-0-welcome.html#sharing-reusing-code-policy",
+    "title": "Lec 0: Welcome + Course overview!",
+    "section": "Sharing / reusing code policy",
+    "text": "Sharing / reusing code policy\n\nWe are aware that a huge volume of code is available on the web, and many tasks may have solutions posted\nUnless explicitly stated otherwise, this course’s policy is that you may make use of any online resources (e.g. RStudio Community, StackOverflow, etc.) but you must explicitly cite where you obtained any code you directly use or use as inspiration in your solution(s).\nAny recycled code that is discovered and is not explicitly cited will be treated as plagiarism, regardless of source."
+  },
+  {
+    "objectID": "slides/lec-0-welcome.html#most-importantly",
+    "href": "slides/lec-0-welcome.html#most-importantly",
+    "title": "Lec 0: Welcome + Course overview!",
+    "section": "Most importantly!",
+    "text": "Most importantly!\nAsk if you’re not sure if something violates a policy!"
+  },
+  {
+    "objectID": "slides/lec-0-welcome.html#three-tips-for-success",
+    "href": "slides/lec-0-welcome.html#three-tips-for-success",
+    "title": "Lec 0: Welcome + Course overview!",
+    "section": "Three tips for success",
+    "text": "Three tips for success\n\nAsk questions.\nDo the homework and labs.\nDon’t procrastinate and don’t let a week pass by with lingering questions."
+  },
+  {
+    "objectID": "slides/lec-0-welcome.html#cultivating-a-supportive-learning-environment",
+    "href": "slides/lec-0-welcome.html#cultivating-a-supportive-learning-environment",
+    "title": "Lec 0: Welcome + Course overview!",
+    "section": "Cultivating a supportive learning environment",
+    "text": "Cultivating a supportive learning environment\nI want to make sure that you learn everything you were hoping to learn from this class. If this requires flexibility, please don’t hesitate to ask.\n\n\nYou never owe me personal information about your health (mental or physical) but you’re always welcome to talk to me. If I can’t help, I likely know someone who can.\nI want you to learn lots of things from this class, but I primarily want you to stay healthy, balanced, and grounded."
+  },
+  {
+    "objectID": "slides/lec-0-welcome.html#this-weeks-tasks",
+    "href": "slides/lec-0-welcome.html#this-weeks-tasks",
+    "title": "Lec 0: Welcome + Course overview!",
+    "section": "This week’s tasks",
+    "text": "This week’s tasks\n\nIn lab today (3:50-4:20 Room TBD):\n\nMeet the TA\nDownload RStudio\nComplete the lab assignment\n\nRead the syllabus! (a .pdf version is available on Canvas)\nComplete the [Getting to know you survey] by Thursday’s class!"
+  },
+  {
+    "objectID": "slides/lec-0-welcome.html#questions",
+    "href": "slides/lec-0-welcome.html#questions",
+    "title": "Lec 0: Welcome + Course overview!",
+    "section": "Questions",
+    "text": "Questions\nWhat questions do you have?"
+  },
+  {
+    "objectID": "slides/lec-0-welcome.html#textbooks",
+    "href": "slides/lec-0-welcome.html#textbooks",
+    "title": "Lec 0: Welcome + Course overview!",
+    "section": "Textbooks",
+    "text": "Textbooks\n\nThere are no required textbooks in this class.\nThere will occasionally be optional readings corresponding to the lectures. But the readings may not cover everything we do in lectures.\nThe optional resources:\n\nPrinciples of Biostatistics, Pagano and Gavreau, CRC Press, 2nd Ed. (2018)\nOpenIntro Statistics, Diez, Barr, Çetinkaya-Rundel, CreateSpace, 4th Ed. (2019)\nR for Data Science, Wickham and Grolemund, O’Reilly Media, 1st Ed. (2017)"
   }
 ]
