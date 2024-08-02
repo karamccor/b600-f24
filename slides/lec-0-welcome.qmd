@@ -1,0 +1,237 @@
+---
+title: "Lec 0: Welcome + Course overview!"
+subtitle: "BIOS 600 - Fall 2024"
+author: "Dr. Kara McCormack"
+logo: "images/logo_600.png"
+format: 
+  revealjs: 
+    theme: slides.scss
+    multiplex: true
+    transition: fade
+    slide-number: true
+editor: visual
+execute:
+  freeze: auto
+---
+
+# Welcome
+
+## Meet the professor
+
+::: columns
+::: {.column width="50%"}
+![Dr. Kara McCormack (she/her)](images/lec-1/me.png){fig-alt="Headshot of Dr. Kara McCormack" fig-align="center" width="200"}
+:::
+
+::: {.column width="50%"}
+-   Teaching Assistant Professor, Department of Biostatistics
+-   PhD in Biostatistics from Duke University, 2023
+-   Originally from Austin, TX
+-   Interests: gardening, yoga, cats, and all kinds of art!
+:::
+:::
+
+## Meet the TA
+
+-   TBD
+-   Master's Student, Biostatistics department
+-   Will lead lab sections, 3:50-4:20, McGavran-Greenberg 2306
+
+## Check out Ed Discussion
+
+-   This semester, you can ask questions about the class in our discussion forum, Ed Discussion.
+-   Go to [Ed Discussion 💬](https://edstem.org/us/join/Xjcr2d)
+-   Answer the discussion question: How are you doing?
+
+## Meet each other
+
+In small groups, share
+
+-   Where you're from
+-   Your year/program
+-   What you hope to get out of this course
+-   Find something that everyone in your group has in common, that isn't necessarily common to the rest of the class.
+
+# Course overview
+
+## Homepage
+
+<https://karamccor.github.io/b600-f24/>
+
+-   All course materials
+-   This link is posted on Canvas. Bookmark it!
+-   Links to Canvas, discussion board, course info, etc.
+-   Let's take a tour!
+
+## Course toolkit
+
+All linked from the course website:
+
+-   RStudio
+    -   Note: The TA will guide you through downloading RStudio later today in the first lab.
+-   Discussion forum: [Ed Discussions](https://edstem.org/us/join/Xjcr2d)
+-   Assignment submission and feedback: Canvas
+
+## What have I gotten myself into?
+
+-   BIOS 600 is an introduction to "principles of statistical inference" in biostatistics that:
+    -   provides a tour of basic statistical methods commonly encountered in public health and biomedical research,
+    -   emphasizes understanding of methods, using them to arrive at data-driven decisions, and effective communication of such results.
+    -   Utilizes modern software such as RStudio to reproducibly examine and manipulate data to make sound scientific conclusions
+
+## Activities: Participate, Practice, Perform {.smaller}
+
+-   **Participate:** Attend and actively participate in lectures and labs, office hours
+-   **Practice:** Practice applying statistical concepts and computing with lab exercises
+-   **Perform:** Put together what you've learned to analyze real-world data
+    -   Homework assignments (individual, then team)
+    -   Three timed take-home exams, open book: short answer section on Canvas, and coding section that you'll do on your own.
+    -   Term project presented during the final exam period
+
+## Cadence
+
+::: incremental
+-   **Labs:** Start and make large progress on Tuesday in lab section, finish up by Friday 11:59pm of that week
+-   **HWs:** Posted approx every 1-2 weeks, typically will have a little over a week to complete.
+-   **Exams:** Take-home, open-book, timed, more info as semester progresses.
+-   **Project:** Towards end of semester, most work done in teams outside of class
+:::
+
+## What to expect in lab
+
+-   Lab will be Tuesdays from 3:30-4:50, MCG 2306, led by TA
+
+-   Introduction to the lab assignment (\~ 5 - 10 minutes)
+
+-   Work on the lab assignment (individual at first, but will switch to teams in a few weeks.)
+
+-   Lab instructions posted on the [course website](https://karamccor.github.io/b600-f24/ "BIOS 600 Course website").
+
+## Tips
+
+-   You do not have to finish the lab in class, they will always be due the following **Friday at 11:59 pm**.
+
+-   One work strategy is to get through portions that you think will be most challenging (which initially might be the coding component) during lab when a TA can help you on the spot and leave the narrative writing until later.
+
+-   When working in teams (later in the semester) do not pressure each other to finish early; use the time wisely to really learn the material and produce a quality report.
+
+## Teams
+
+-   Team assignment
+    -   Assigned by me
+    -   Final project
+    -   Peer evaluation during teamwork and after completion
+-   Expectations and roles
+    -   Everyone is expected to contribute equal *effort*
+    -   Everyone is expected to understand *all* code turned in
+
+## Grading {.smaller}
+
+| Category | Percentage |
+|----------|------------|
+| Homework | 30%        |
+| Project  | 20%        |
+| Lab      | 15%        |
+| Exam 01  | 10%        |
+| Exam 02  | 10%        |
+| Exam 03  | 10%        |
+
+See the course syllabus (.pdf available on Canvas) for how the final letter grade will be determined.
+
+## Textbooks
+
+- There are no required textbooks in this class. 
+
+- There will occasionally be optional readings corresponding to the lectures. But the readings may not cover everything we do in lectures. 
+
+- The optional resources:
+
+  - Principles of Biostatistics, Pagano and Gavreau, CRC Press, 2nd Ed. (2018)
+  - OpenIntro  Statistics, Diez, Barr, Çetinkaya-Rundel, CreateSpace, 4th Ed. (2019) 
+  - R for Data Science, Wickham and Grolemund, O’Reilly Media, 1st Ed. (2017)
+
+## Support
+
+-   Attend office hours
+-   Ask and answer questions on the discussion forum, Ed Discussions
+-   Reserve email for questions on personal matters and/or grades
+-   Read the [course support](https://karamccor.github.io/b600-f24/course-support.html) page
+
+## Announcements
+
+-   Posted on Canvas (Announcements tool) and sent via email, be sure to check both regularly
+-   I'll assume that you've read an announcement by the next "business" day
+
+## Diversity + inclusion {.smaller}
+
+It is my intent that students from all diverse backgrounds and perspectives be well-served by this course, that students' learning needs be addressed both in and out of class, and that the diversity that the students bring to this class be viewed as a resource, strength and benefit.
+
+::: incremental
+-   If you have a name that differs from those that appear in your official UNC records, please let me know!
+-   Please let me know your preferred pronouns. You'll also be able to note this in the Getting to know you survey.
+-   If you feel like your performance in the class is being impacted by your experiences outside of class, please don't hesitate to come and talk with me. I want to be a resource for you. If you prefer to speak with someone outside of the course, your advisers and deans are excellent resources.
+-   I (like many people) am still in the process of learning about diverse perspectives and identities. If something was said in class (by anyone) that made you feel uncomfortable, please talk to me about it.
+:::
+
+## Accessibility
+
+-   The [Student Disability Accomodations](https://eoc.unc.edu/accommodations/students/) is available to ensure that students are able to engage with their courses and related assignments.
+
+-   I am committed to making all course materials accessible and I'm always learning how to do this better. If any course component is not accessible to you in any way, please don't hesitate to let me know.
+
+# Course policies
+
+## Late work, waivers, regrades policy
+
+-   We have policies!
+-   Read about them on the course syllabus (a .pdf version is available on Canvas.) Refer back to these policies when you need it.
+
+## Collaboration policy
+
+-   Only work that is clearly assigned as team work should be completed collaboratively.
+
+-   Homeworks must be completed **individually**. You may **not** directly share answers / code with others, however you are welcome to discuss the problems in general and ask for advice.
+
+-   Exams must be completed **individually**. You may **not** discuss any aspect of the exam with peers. If you have questions, post as private questions on the course forum, only the teaching team will see and answer.
+
+## Sharing / reusing code policy
+
+-   We are aware that a huge volume of code is available on the web, and many tasks may have solutions posted
+
+-   Unless explicitly stated otherwise, this course's policy is that you may make use of any online resources (e.g. RStudio Community, StackOverflow, etc.) but you must explicitly cite where you obtained any code you directly use or use as inspiration in your solution(s).
+
+-   Any recycled code that is discovered and is not explicitly cited will be treated as plagiarism, regardless of source.
+
+## Most importantly!
+
+Ask if you're not sure if something violates a policy!
+
+# Making BIOS 600 a success
+
+## Three tips for success
+
+1.  Ask questions.
+2.  Do the homework and labs.
+3.  Don't procrastinate and don't let a week pass by with lingering questions.
+
+## Cultivating a supportive learning environment
+
+I want to make sure that you learn everything you were hoping to learn from this class. If this requires flexibility, please don't hesitate to ask.
+
+::: incremental
+-   You never owe me personal information about your health (mental or physical) but you're always welcome to talk to me. If I can't help, I likely know someone who can.
+-   I want you to learn lots of things from this class, but I primarily want you to stay healthy, balanced, and grounded.
+:::
+
+## This week's tasks
+
+-   In lab today (3:50-4:20 Room TBD):
+    -   Meet the TA
+    -   Download RStudio
+    -   Complete the lab assignment
+-   Read the syllabus! (a .pdf version is available on Canvas)
+-   Complete the \[Getting to know you survey\] by Thursday's class!
+
+## Questions
+
+What questions do you have?

@@ -11,7 +11,7 @@
   <meta name="generator" content="quarto-1.3.450">
 
   <meta name="author" content="Dr.&nbsp;Kara McCormack">
-  <title>BIOS 600 - Fall 2024 - What is statistical inference (in a biostatistics context)?</title>
+  <title>BIOS 600 - Fall 2024 - Lec 0: Welcome + Course overview!</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -319,7 +319,7 @@
       margin-right: 0; 
     }
   </style>
-<meta property="og:title" content="BIOS 600 - Fall 2024 - What is statistical inference (in a biostatistics context)?">
+<meta property="og:title" content="BIOS 600 - Fall 2024 - Lec 0: Welcome + Course overview!">
 <meta property="og:description" content="BIOS 600 - Fall 2024">
 <meta property="og:site-name" content="BIOS 600 - Fall 2024">
 </head>
@@ -328,7 +328,7 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">What is statistical inference (in a biostatistics context)?</h1>
+  <h1 class="title">Lec 0: Welcome + Course overview!</h1>
   <p class="subtitle">BIOS 600 - Fall 2024</p>
 
 <div class="quarto-title-authors">
@@ -392,134 +392,6 @@ Dr.&nbsp;Kara McCormack
 </ul>
 </section></section>
 <section>
-<section id="biostatistics" class="title-slide slide level1 center">
-<h1>Biostatistics</h1>
-
-</section>
-<section id="what-is-biostatistics" class="slide level2">
-<h2>What is biostatistics?</h2>
-<p>A process that converts data into useful information, whereby practitioners</p>
-<ol type="1">
-<li>form a question of interest</li>
-<li>collect and summarize data</li>
-<li>and interpret the results</li>
-</ol>
-</section>
-<section id="identifying-the-population-and-question-of-interest" class="slide level2">
-<h2>Identifying the population and question of interest</h2>
-<p>The <span style="color: RosyBrown">population</span> is the group we’d like to learn something about:</p>
-<ul>
-<li><p>What is the prevalence of diabetes among <span style="color: RosyBrown">US adults</span>, and has it changed over time?</p></li>
-<li><p>Is there a relationship between tumor type and five-year mortality in <span style="color: RosyBrown">breast cancer patients</span>?</p></li>
-<li><p>Does the average amount of caffeine vary by vendor in <span style="color: RosyBrown">12 oz cups of coffee at UNC coffee shops</span>?</p></li>
-</ul>
-<p>If we had data from every unit in the population, we could just calculate what we wanted and be done!</p>
-</section>
-<section id="sampling-from-the-population" class="slide level2">
-<h2>Sampling from the population</h2>
-<p>Unfortunately, we (usually) have to settle with a <span style="color: RosyBrown">sample</span> from the population.</p>
-<ul>
-<li>Ideally, the sample is <span style="color: RosyBrown">representative</span>, allowing us to use <span style="color: RosyBrown">probability and statistical inference</span> to make conclusions that are <span style="color: RosyBrown">generalizable</span> to the broader population of interest.</li>
-</ul>
-</section>
-<section id="sampling-methods" class="slide level2">
-<h2>Sampling methods</h2>
-<p><span style="color: RosyBrown">Probability sampling</span> (e.g., simple random sampling, stratified, cluster, or multi-stage sampling)</p>
-<ul>
-<li>All units have a known chance of being selected</li>
-<li>More likely to be generalizable</li>
-<li>Can be more expensive and time-consuming</li>
-</ul>
-<p><span style="color: RosyBrown">Non-probability sampling</span> (e.g.&nbsp;quota, convenience, or snowball sampling)</p>
-<ul>
-<li><p>Some units unable to be selected, with no way of knowing size or effect of sampling errors</p></li>
-<li><p>Less generalizable to population of interest</p></li>
-<li><p>More convenient and less costly</p></li>
-</ul>
-</section>
-<section id="study-design" class="slide level2">
-<h2>Study design</h2>
-<p><span style="color: RosyBrown">Experimental</span> studies (e.g.&nbsp;RCTs)</p>
-<ul>
-<li><p>Researchers directly control exposures or treatments</p></li>
-<li><p>Ability to make causal statements</p></li>
-<li><p>Less real-world applicability and generalizability</p></li>
-</ul>
-<p><span style="color: RosyBrown">Observational</span> studies (e.g.&nbsp;surveys)</p>
-<ul>
-<li><p>Researchers do not assign exposures or treatments</p></li>
-<li><p>Real-world setting with lower burden on participants</p></li>
-<li><p>Inability to prove causality</p></li>
-</ul>
-</section>
-<section id="what-can-go-wrong" class="slide level2">
-<h2>What can go wrong?</h2>
-<p>Selection bias, reporting bias, non-response bias, attrition bias, confounding, detection bias, lack of blinding, straight-up falsified data (this happens), …</p>
-<p><img data-src="images/lec-1/bias.png"> <a href="https://catalogofbias.org/biases/">and so much more</a></p>
-</section>
-<section id="what-is-biostatistics-good-for" class="slide level2">
-<h2>What is biostatistics good for?</h2>
-
-<img data-src="images/lec-1/hurricane.png" width="300" class="r-stretch"></section>
-<section id="what-is-biostatistics-good-for-1" class="slide level2">
-<h2>What is biostatistics good for?</h2>
-
-<img data-src="images/lec-1/hospital.png" width="300" class="r-stretch"></section>
-<section id="what-is-biostatistics-good-for-2" class="slide level2">
-<h2>What is biostatistics good for?</h2>
-
-<img data-src="images/lec-1/incarceration.png" width="300" class="r-stretch"></section>
-<section id="course-faq" class="slide level2">
-<h2>Course FAQ</h2>
-<div>
-<ul>
-<li class="fragment"><strong>What background is assumed for the course?</strong> A basic understanding of algebra and arithmetic. No previous coursework in probability and statistics is required.</li>
-<li class="fragment"><strong>Will we be doing computing?</strong> Yes. We will use R. You’re welcome to check your work in another language (e.g.&nbsp;SAS), but homework/labs will be turned in using R.</li>
-<li class="fragment"><strong>Will we learn the mathematical theory of biostatistics?</strong> Yes and No.&nbsp;The course is primarily focused on application; however, we will discuss some of the mathematics of biostatistics.</li>
-</ul>
-</div>
-</section>
-<section id="some-of-what-youll-learn" class="slide level2">
-<h2>Some of what you’ll learn</h2>
-<ul>
-<li>Apply descriptive techniques commonly used to summarize public health data.</li>
-<li>Learn methods to analyze real-world data to answer research questions in a biomedical setting.</li>
-<li>Use <a href="https://quarto.org/">Quarto</a> to write reproducible reports.</li>
-<li>Communicate results from statistical analyses to a general audience.</li>
-</ul>
-</section>
-<section id="reproducibility-and-replicability" class="slide level2 smaller">
-<h2>Reproducibility and replicability</h2>
-<ul>
-<li><p><strong>Reproducibility</strong>: being able to take original data and code to reproduce all numerical findings.</p></li>
-<li><p><strong>Replicability</strong>: being able to independently repeat an entire study without use of the original data (generally with the same methods)</p></li>
-</ul>
-<p>Best practices from the American Statistical Association:</p>
-<ul>
-<li>End-to-end scripting of research</li>
-<li>Use of version control and documentation (we will not use this in our class)</li>
-<li>Publication of code along with data</li>
-</ul>
-</section>
-<section id="the-current-replication-crisis" class="slide level2">
-<h2>The current replication crisis</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/lec-1/drip.png" alt="Former Harvard stem cell researcher up to 18 retractions" width="500"></p>
-</figure>
-</div>
-</div><div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/lec-1/duke.png" alt="Duke agrees to pay $112 million to settle false claims related to scientific misconduct" width="500"></p>
-</figure>
-</div>
-</div>
-</div>
-</section></section>
-<section>
 <section id="course-overview" class="title-slide slide level1 center">
 <h1>Course overview</h1>
 
@@ -575,7 +447,7 @@ Dr.&nbsp;Kara McCormack
 <div>
 <ul>
 <li class="fragment"><strong>Labs:</strong> Start and make large progress on Tuesday in lab section, finish up by Friday 11:59pm of that week</li>
-<li class="fragment"><strong>HWs:</strong> Posted on the website, typically will have a little over a week to complete.</li>
+<li class="fragment"><strong>HWs:</strong> Posted approx every 1-2 weeks, typically will have a little over a week to complete.</li>
 <li class="fragment"><strong>Exams:</strong> Take-home, open-book, timed, more info as semester progresses.</li>
 <li class="fragment"><strong>Project:</strong> Towards end of semester, most work done in teams outside of class</li>
 </ul>
@@ -651,6 +523,19 @@ Dr.&nbsp;Kara McCormack
 </tbody>
 </table>
 <p>See the course syllabus (.pdf available on Canvas) for how the final letter grade will be determined.</p>
+</section>
+<section id="textbooks" class="slide level2">
+<h2>Textbooks</h2>
+<ul>
+<li><p>There are no required textbooks in this class.</p></li>
+<li><p>There will occasionally be optional readings corresponding to the lectures. But the readings may not cover everything we do in lectures.</p></li>
+<li><p>The optional resources:</p>
+<ul>
+<li>Principles of Biostatistics, Pagano and Gavreau, CRC Press, 2nd Ed. (2018)</li>
+<li>OpenIntro Statistics, Diez, Barr, Çetinkaya-Rundel, CreateSpace, 4th Ed. (2019)</li>
+<li>R for Data Science, Wickham and Grolemund, O’Reilly Media, 1st Ed. (2017)</li>
+</ul></li>
+</ul>
 </section>
 <section id="support" class="slide level2">
 <h2>Support</h2>
@@ -754,6 +639,10 @@ Dr.&nbsp;Kara McCormack
 <li>Read the syllabus! (a .pdf version is available on Canvas)</li>
 <li>Complete the [Getting to know you survey] by Thursday’s class!</li>
 </ul>
+</section>
+<section id="questions" class="slide level2">
+<h2>Questions</h2>
+<p>What questions do you have?</p>
 
 
 <img src="images/logo_600.png" class="slide-logo r-stretch"><div class="footer footer-default">
@@ -794,7 +683,7 @@ Dr.&nbsp;Kara McCormack
 'autoAnimateDuration': 1,
 'autoAnimateUnmatched': true,
 'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
-'multiplex': {"secret":"17218462551279756093","id":"8bee9dd5a6770d12","url":"https://reveal-multiplex.glitch.me/"},
+'multiplex': {"secret":"17226314958244904338","id":"c6629d0e76d81dc1","url":"https://reveal-multiplex.glitch.me/"},
 'smaller': false,
  
         // Display controls in the bottom right corner
@@ -974,44 +863,6 @@ Dr.&nbsp;Kara McCormack
         ]
       });
     </script>
-    
-    <script>
-      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
-      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
-      // slide changes (different for each slide format).
-      (function () {
-        // dispatch for htmlwidgets
-        function fireSlideEnter() {
-          const event = window.document.createEvent("Event");
-          event.initEvent("slideenter", true, true);
-          window.document.dispatchEvent(event);
-        }
-
-        function fireSlideChanged(previousSlide, currentSlide) {
-          fireSlideEnter();
-
-          // dispatch for shiny
-          if (window.jQuery) {
-            if (previousSlide) {
-              window.jQuery(previousSlide).trigger("hidden");
-            }
-            if (currentSlide) {
-              window.jQuery(currentSlide).trigger("shown");
-            }
-          }
-        }
-
-        // hookup for slidy
-        if (window.w3c_slidy) {
-          window.w3c_slidy.add_observer(function (slide_num) {
-            // slide_num starts at position 1
-            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
-          });
-        }
-
-      })();
-    </script>
-
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {
