@@ -18,9 +18,8 @@ execute:
 library(countdown)
 ```
 
-# Biostatistics
 
-## What is biostatistics?
+## What is statistical inference (in a biostatistics context)?
 
 A process that converts data into useful information, whereby practitioners
 
@@ -30,7 +29,7 @@ A process that converts data into useful information, whereby practitioners
 
 ## Identifying the population and question of interest
 
-The [population]{style="color: RosyBrown"} is the group we'd like to learn something about:
+The \textcolor{red}{population} ${\color<2>[rgb]{1,0,1}{text1}}$ is the group we'd like to learn something about:
 
 -   What is the prevalence of diabetes among [US adults]{style="color: RosyBrown"}, and has it changed over time?
 

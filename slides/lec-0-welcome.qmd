@@ -13,7 +13,6 @@ execute:
   freeze: auto
 ---
 
-
 ## Welcome! Meet the professor
 
 ::: columns
@@ -52,18 +51,15 @@ In small groups, share
 
 ## Course overview: Canvas
 
-
 -   All course materials by day: syllabus, discussion forum link, class slides, lab materials, assignments
 -   Let's take a tour!
 
 ## Course toolkit
 
-
 -   RStudio
     -   Note: The TA will guide you through downloading RStudio later today in the first lab.
 -   Assignment submission and feedback: Canvas
 -   Discussion forum: [Ed Discussion](https://edstem.org/us/join/Xjcr2d)
-
 
 ## What have I gotten myself into?
 
@@ -76,10 +72,10 @@ In small groups, share
 
 -   **Participate:** Attend and actively participate in lectures and labs, office hours
 -   **Practice:** Practice applying statistical concepts and computing with lab exercises
-    - Review course topics with occasional Review Exercises (REs), typically a few questions administered via Canvas.
+    -   Review course topics with occasional Review Exercises (REs), typically a few questions administered via Canvas.
 -   **Perform:** Put together what you've learned to analyze real-world data
     -   Homework assignments (individual)
-    -   Three take-home exams, open book: short answer section on Canvas, and coding section that you'll do on your own. 
+    -   Three take-home exams, open book: short answer section on Canvas, and coding section that you'll do on your own.
     -   Team project during the final exam period.
 
 ## Cadence
@@ -95,10 +91,11 @@ In small groups, share
 
 -   Lab will be Tuesdays from 3:30-4:50, MCG 2306, led by TA
 
--   TA will walk you through a portion of the lab assignment 
+-   TA will walk you through a portion of the lab assignment
 
--   Work on the lab assignment, "On your own" section. 
-  - (individual at first, but will switch to teams in a few weeks.)
+-   Work on the lab assignment, "On your own" section.
+
+-   (individual at first, but will switch to teams in a few weeks.)
 
 -   Lab instructions posted on Canvas.
 
@@ -112,10 +109,10 @@ In small groups, share
 
 ## Teams
 
--   Team assignment:  Assigned by me, labs later in the semester, final project
-- Peer evaluation during teamwork and after completion
-- Everyone is expected to contribute equal *effort*
-  -   Everyone is expected to understand *all* code turned in
+-   Team assignment: Assigned by me, labs later in the semester, final project
+-   Peer evaluation during teamwork and after completion
+-   Everyone is expected to contribute equal *effort*
+    -   Everyone is expected to understand *all* code turned in
 
 ## Grading {.smaller}
 
@@ -130,20 +127,19 @@ In small groups, share
 | REs      | 5%         |
 | Teamwork | 5%         |
 
-
 See the course syllabus (.pdf available on Canvas) for how the final letter grade will be determined.
 
 ## Textbooks
 
-- There are no required textbooks in this class. 
+-   There are no required textbooks in this class.
 
-- There will occasionally be optional readings corresponding to the lectures. But the readings may not cover everything we do in lectures. 
+-   There will occasionally be optional readings corresponding to the lectures. But the readings may not cover everything we do in lectures.
 
-- The optional resources:
+-   The optional resources:
 
-  - Principles of Biostatistics, Pagano and Gavreau, CRC Press, 2nd Ed. (2018)
-  - [OpenIntro  Statistics](https://www.openintro.org/book/os/), Diez, Barr, Çetinkaya-Rundel, CreateSpace, 4th Ed. (2019)
-  - [R for Data Science](https://r4ds.had.co.nz/), Wickham and Grolemund, O’Reilly Media, 1st Ed. (2017)
+    -   Principles of Biostatistics, Pagano and Gavreau, CRC Press, 2nd Ed. (2018)
+    -   [OpenIntro Statistics](https://www.openintro.org/book/os/), Diez, Barr, Çetinkaya-Rundel, CreateSpace, 4th Ed. (2019)
+    -   [R for Data Science](https://r4ds.had.co.nz/), Wickham and Grolemund, O’Reilly Media, 1st Ed. (2017)
 
 ## Support
 
@@ -164,14 +160,13 @@ It is my intent that students from all diverse backgrounds and perspectives be w
 ::: incremental
 -   If you have a name that differs from those that appear in your official UNC records, please let me know!
 -   Please let me know your preferred pronouns. You'll also be able to note this in the Getting to know you survey.
--   If you feel like your performance in the class is being impacted by your experiences outside of class, please don't hesitate to come and talk with me. I want to be a resource for you. 
-- If you prefer to speak with someone outside of the course, your advisers and deans are excellent resources.
+-   If you feel like your performance in the class is being impacted by your experiences outside of class, please don't hesitate to come and talk with me. I want to be a resource for you.
+-   If you prefer to speak with someone outside of the course, your advisers and deans are excellent resources.
 :::
 
 ## Diversity + Inclusion
 
 I (like many people) am still in the process of learning about diverse perspectives and identities. If something was said in class (by anyone) that made you feel uncomfortable, please talk to me about it.
-
 
 ## Accessibility
 
@@ -183,7 +178,7 @@ I (like many people) am still in the process of learning about diverse perspecti
 
 -   We have policies!
 -   Read about them on the course syllabus. Refer back to these policies when you need it.
--   HW & Labs: Deadlines are there to help you stay on track. However, I know that life happens! You have a 24-hour grace period to turn in any HW/Lab without penalty. No HW/Labs will be accepted after the 24-hour grace period, except in extenuating circumstances. 
+-   HW & Labs: Deadlines are there to help you stay on track. However, I know that life happens! You have a 24-hour grace period to turn in any HW/Lab without penalty. No HW/Labs will be accepted after the 24-hour grace period, except in extenuating circumstances.
 -   No late work will be accepted for exams and the project.
 
 ## Collaboration policy
@@ -202,19 +197,17 @@ I (like many people) am still in the process of learning about diverse perspecti
 
 -   Any recycled code that is discovered and is not explicitly cited will be treated as plagiarism, regardless of source.
 
-::: {.callout-tip}
+::: callout-tip
 ## Most importantly...
 
 Ask if you're not sure if something violates a policy!
-
 :::
-
 
 ## Three tips for success
 
 I am here to help you succeed! :-)
 
-1.  Ask questions. 
+1.  Ask questions.
 2.  Do the homework and labs.
 3.  Don't procrastinate and don't let a week pass by with lingering questions.
 

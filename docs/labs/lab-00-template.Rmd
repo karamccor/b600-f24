@@ -6,7 +6,6 @@ output:
   html_document
 ---
 
-
 ```{r}
 # Load in the data
 data(mtcars)
@@ -15,11 +14,9 @@ data(mtcars)
 head(mtcars, 6)
 ```
 
-
 ## Exercise 1
 
 Write your answer to Exercise 1 here.
-
 
 ## Turning this in
 
