@@ -105,15 +105,16 @@ Fill in answers in the spaces provided: text narrative should be typed directly 
 
 ## At the end, here's how you'll turn this in:
 
-- "Knit" the .Rmd file to an html file, by clicking on the blue knit button at the top of this window. (Demo) 
+-   "Knit" the .Rmd file to an html file, by clicking on the blue knit button at the top of this window. (Demo)
 
-- Open the .html document in any browser, and print to pdf. You'll turn in the .pdf file to Canvas under Assignments. 
+-   Open the .html document in any browser, and print to pdf. You'll turn in the .pdf file to Canvas under Assignments.
 
 ## Back to the lab
 
 For this lab, we will take a look at a built-in R dataset called `mtcars`. The data was extracted from the 1974 Motor Trend US magazine, and comprises fuel consumption and 10 aspects of automobile design and performance for 32 automobiles (1973–74 models).
 
-You'll see the following code in a "code chunk" in your template. To run the entire chunk, click the green arrow towards the top right of the code chunk. 
+You'll see the following code in a "code chunk" in your template. To run the entire chunk, click the green arrow towards the top right of the code chunk.
+
 ```{r}
 # Load in the data
 data(mtcars)
