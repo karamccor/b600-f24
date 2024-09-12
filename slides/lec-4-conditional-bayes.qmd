@@ -1,0 +1,216 @@
+---
+title: "Lecture 4: Conditional Probability and Bayes' Rule"
+subtitle: "BIOS 600 - Fall 2024"
+logo: "images/logo_600.png"
+format: 
+  revealjs: 
+    theme: slides.scss
+    multiplex: true
+    transition: fade
+    slide-number: true
+editor: visual
+execute:
+  freeze: auto
+---
+
+## Supplemental Reading
+
+These readings are optional. All material in homework and exams will be covered in lecture and lab, and books do not cover everything we do in lecture (even if there is a corresponding section).
+
+However, for those with the very optional textbooks, the following sections correspond to today's lecture:
+
+-   Pagano and Gavreau: Sections 6.2, 6.3
+-   [OpenIntro Statistics](https://www.openintro.org/go/?id=os4_for_screen_readers&referrer=/book/os/index.php): Section 3.2
+
+## Overview
+
+-   Introduction to conditional probability
+-   Bayes' Rule
+
+## Conditional probability
+
+The probability an event will occur when another event has already occurred. The **conditional probability** of event $A$ given event $B$ is
+
+::: {.callout-caution appearance="minimal"}
+$$P(A|B) = \frac{P(A\cap B)}{P(B)}$$
+:::
+
+Examples come up all the time in the real world:
+
+-   Given that a mammogram comes back positive, what is the probability that a woman has breast cancer?
+-   Given that a 68-year old man has suffered four previous heart attacks, what is the probability he dies in the next five years?
+-   Given that a patient has a mutation in the CFTR gene, what is the probability their offspring will have cystic fibrosis?
+
+## Independence and the multiplicative rule {.smaller}
+
+We can rewrite the definition of conditional probability:
+
+$$P(A|B) = \frac{P(A\cap B)}{P(B)} \implies  \underbrace{P(A\cap B) = P(A | B) \times P(B)}_{\text{Multiplicative Rule}}$$
+
+::: callout-tip
+## Question
+
+What does the multiplicative rule mean in plain English?
+:::
+
+## The multiplicative rule
+
+Events $A$ and $B$ are said to be **independent** when
+
+::: {.callout-caution appearance="minimal"}
+$$
+P(A \cap B) = P(A) \times P(B)
+$$
+:::
+
+or equivalently, $P(A|B) = P(A)$ or $P(B|A) = P(B)$
+
+## Independent vs. disjoint events
+
+::: callout-tip
+## Question
+
+If two events are disjoint, then are they independent?
+:::
+
+-   Since for two independent events $P(A|B) = P(A)$ or $P(B|A) = P(B)$, knowing that one event has occurred tells us nothing more about the probability of the other occurring.
+
+-   For two disjoint events $A$ and $B$, knowing that one has occured tells us that the other definitely has not occurred: $P(A \cap B) = 0$.
+
+## Conditional probabilities and independence {.smaller}
+
+| Coffee drinking | Died? Yes | Died? No | Total |
+|-----------------|:---------:|:--------:|:-----:|
+| None            |   1039    |   5438   | 6477  |
+| Med-Low         |   4440    |  29712   | 29809 |
+| High            |   3601    |  24934   | 28535 |
+| **Total**       |   9080    |  60084   | 64821 |
+
+What was the probability a randomly selected person in the study...
+
+-   ...died?
+-   ...died, given they were a non-coffee drinker?
+
+::: callout-caution
+## Question
+
+In this study, were dying and coffee drinking independent events?
+:::
+
+## The law of total probability
+
+-   Suppose we partition $B$ into mutually disjoint events $B_1, B_2, \ldots B_k$ that comprise the entire sample space.
+-   Then the **law of total probability** states that the probability of event $A$ is
+
+::: {.callout-caution appearance="minimal"}
+$$
+\begin{align}
+    P(A) &= P(A \cap B_1) + P(A \cap B_2) + \cdots + P(A \cap B_k) \\
+     &= P(A|B_1) P(B_1) + P(A|B_2)P(B_2) + \cdots + P(A | B_k)P(B_k)
+    \end{align}
+$$
+:::
+
+## The law of total probability in action {.smaller}
+
+| Coffee drinking | Died? Yes | Died? No | Total |
+|-----------------|:---------:|:--------:|:-----:|
+| None            |   1039    |   5438   | 6477  |
+| Med-Low         |   4440    |  29712   | 29809 |
+| High            |   3601    |  24934   | 28535 |
+| **Total**       |   9080    |  60084   | 64821 |
+
+What was the probability a randomly selected person died? Let's find this using the law of total probability.
+
+## The law of total probability in action
+
+-   In an introductory statistics course, 50% of students were first years, 40% were sophomores, and 20% were upperclassmen.
+
+-   80% of the first years didn't give enough sleep, 40% of the sophomores didn't get enough sleep, and 10% of the upperclassmen didn't get enough sleep.
+
+-   What is the probability that a randomly selected student in this class didn't get enough sleep? Are sufficient sleep status and year independent?
+
+## Bayes' rule {.smaller}
+
+What is the probability that a random person...
+
+| Coffee drinking | Died? Yes | Died? No | Total |
+|-----------------|:---------:|:--------:|:-----:|
+| None            |   1039    |   5438   | 6477  |
+| Med-Low         |   4440    |  29712   | 29809 |
+| High            |   3601    |  24934   | 28535 |
+| **Total**       |   9080    |  60084   | 64821 |
+
+-   ...was a high coffee drinker, given that they died?
+
+-   ...died, given that they were a high coffee drinker?
+
+Are these two probabilities the same?
+
+## Bayes' rule
+
+::: columns
+::: {.column width="70%"}
+-   We can use **Bayes' rule** to "reverse" the order of conditioning.
+
+-   By definition:
+
+$$P(A | B) = \frac{P(A \cap B)}{P(B)} = \frac{P(B | A) P(A)}{P(B)}$$
+:::
+
+::: {.column width="30%"}
+![](images/lec-4/bayes.png)
+:::
+:::
+
+## Bayes' rule
+
+-   Using the definition of conditional probability, the law of total probability, and the multiplicative rule, we have
+
+$$\begin{align}
+P(A | B) = \frac{P(A \cap B)}{P(B)} &= \frac{P(B | A) P(A)}{P(B)} \\
+ &= \frac{P(B | A) P(A) }{P(B | A) P(A) + P(B | A^C) P(A^C)}
+\end{align}$$
+
+## What is $A$ is partitioned into mutually disjoint events?
+
+If instead $A$ is partitioned into $k$ mutually disjoint events that together comprise the entire sample space, Bayes' rule gives:
+
+$$\begin{align}
+P(A | B) &= \frac{P(B | A) P(A)}{P(B)} \\
+ &= \frac{P(B | A) P(A) }{P(B | A_1) P(A_1) + P(B | A_2) P(A_2) + \cdots P(B | A^k) P(A^k)}
+\end{align}$$
+
+## Bayes' rule {.smaller}
+
+What is the probability that a random person in the coffee study...
+
+| Coffee drinking | Died? Yes | Died? No | Total |
+|-----------------|:---------:|:--------:|:-----:|
+| None            |   1039    |   5438   | 6477  |
+| Med-Low         |   4440    |  29712   | 29809 |
+| High            |   3601    |  24934   | 28535 |
+| **Total**       |   9080    |  60084   | 64821 |
+
+-   ...was a high coffee drinker, given that he died?
+-   ...died, given that he was a high coffee drinker?
+
+Let's verify our results using Bayes' rule.
+
+## Why do we need Bayes' rule?
+
+-   If we have the row and column totals, we can directly calculate these conditional probabilities from a table.
+
+-   So, why would we even need Bayes' rule?
+
+-   There are many cases where you would not have row/column totals.
+
+### Example: Medical diagnosis with missing data
+
+-   Imagine a scenario where a rare disease is being studied.
+
+-   You may have detailed information about patients who tested positive for the disease (including their symptoms and demographics), but you might lack comprehensive data on the entire population's symptom distribution or total number of people tested.
+
+-   In this case, you wouldn’t have the full row or column totals, making it necessary to use Bayes' Theorem to infer probabilities based on the available conditional probabilities and the prevalence of the disease.
+
+-   This is common in situations where data is incomplete, either due to privacy concerns, lack of resources, or when dealing with emerging diseases.
