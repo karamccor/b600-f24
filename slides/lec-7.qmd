@@ -1,7 +1,6 @@
 ---
 title: "Lecture 7: Continuous distributions"
 subtitle: "BIOS 600 - Fall 2024"
-author: "Kara McCormack"
 logo: "images/logo_600.png"
 format: 
   revealjs: 
@@ -17,98 +16,95 @@ from: markdown+emoji
 
 ## Supplemental Reading
 
-These readings are optional. All material in homework and exams will be covered in lecture and lab, and books do not cover everything we do in lecture (even if there is a corresponding section). 
+These readings are optional. All material in homework and exams will be covered in lecture and lab, and books do not cover everything we do in lecture (even if there is a corresponding section).
 
 However, for those with the very optional textbooks, the following sections correspond to today's lecture:
 
-- Pagano and Gavreau: Section 7.4
-- [OpenIntro Statistics](https://www.openintro.org/go/?id=os4_for_screen_readers&referrer=/book/os/index.php): 3.5, 4.1
+-   Pagano and Gavreau: Section 7.4
+-   [OpenIntro Statistics](https://www.openintro.org/go/?id=os4_for_screen_readers&referrer=/book/os/index.php): 3.5, 4.1
 
 ## Review: Discrete probability distributions {.smaller}
 
 ::: columns
 ::: {.column width="50%"}
-
 There are three rules for discrete probability distributions:
 
-- Outcomes must be disjoint
-- The probability of each outcome must be $\geq$ 0 and $\leq$ 1
-- The sum of the outcome probabilities must add up to 1 
+:white_check_mark: Outcomes must be disjoint
 
-:::
-:::{.column width="50%"}
+:white_check_mark: The probability of each outcome must be $\geq$ 0 and $\leq$ 1
 
-| Event            | Probability  |
-|------------------|--------------|
-| *X = pre*        | 0.10         |
-| *X = early*      | 0.27         |
-| *X = full*       | 0.57         |
-| *X = late/post*  | 0.06         |
-
+:white_check_mark:The sum of the outcome probabilities must add up to 1
 
 :::
 
+
+::: {.column width="50%"}
+| Event           | Probability |
+|-----------------|-------------|
+| *X = pre*       | 0.10        |
+| *X = early*     | 0.27        |
+| *X = full*      | 0.57        |
+| *X = late/post* | 0.06        |
+:::
 :::
 
 ## Review: Expectation and variance
 
-- The expectation is the average value (weighted by the probability of each value occurring)
+-   The expectation is the average value (weighted by the probability of each value occurring)
 
-- The variance describes the expected spread of values around the population expectation (thus, variance is in fact an expectation itself!)
+-   The variance describes the expected spread of values around the population expectation (thus, variance is in fact an expectation itself!)
+
+::: {.callout-tip appearance=simple}
+In small groups, complete today's participation exercise in Canvas. 
+:::
 
 ## Can we be more precise? {.smaller}
 
-Letting $X$ be the random variable that corresponds to how long a baby's gestation was, we could imagein subdividing further and further:
+Letting $X$ be the random variable that corresponds to how long a baby's gestation was, we could imagine subdividing further and further:
 
 ::: columns
 ::: {.column width="50%"}
-
-| Event            | Probability  |
-|------------------|--------------|
-| $X$ < 20 wk.        | $P(X < 20)$        |
-| $X$ = 20 to 21 wk.      | etc.         |
-| $X$ = 21 to 22 wk.      | etc.         |
-| $X$ = 22 to 23 wk.      | etc.         |
-| $\vdots$    | $\vdots$         |
-
-:::
-:::{.column width="50%"}
-
-| Event            | Probability  |
-|------------------|--------------|
-| $X$ < 20 wk.        | $P(X < 20)$        |
-| $X$ = 20 to 20.1 wk.      | etc.         |
-| $X$ = 20.1 to 20.2 wk.      | etc.         |
-| $X$ = 20.2 to 20.3 wk.      | etc.         |
-| $\vdots$    | $\vdots$         |
-
+| Event              | Probability |
+|--------------------|-------------|
+| $X$ \< 20 wk.      | $P(X < 20)$ |
+| $X$ = 20 to 21 wk. | etc.        |
+| $X$ = 21 to 22 wk. | etc.        |
+| $X$ = 22 to 23 wk. | etc.        |
+| $\vdots$           | $\vdots$    |
 :::
 
+::: {.column width="50%"}
+| Event                  | Probability |
+|------------------------|-------------|
+| $X$ \< 20 wk.          | $P(X < 20)$ |
+| $X$ = 20 to 20.1 wk.   | etc.        |
+| $X$ = 20.1 to 20.2 wk. | etc.        |
+| $X$ = 20.2 to 20.3 wk. | etc.        |
+| $\vdots$               | $\vdots$    |
+:::
 :::
 
 ## Can we be more precise?
 
-- Now let gestational age $X$ be a [continuous]{style="color: RosyBrown"} random variable, which can take on *any* value, say from 0 to $\infty$. 
+-   Now let gestational age $X$ be a **continuous** random variable, which can take on *any* value, say from 0 to $\infty$.
 
-- How might we define a continuous probability distribution that corresponds to $X$?
+-   How might we define a continuous probability distribution that corresponds to $X$?
 
-## continuous probability distributions
+## Continuous probability distributions
 
-- The probability that a continuous variable equals any specific value is 0
+-   The probability that a continuous variable equals any specific value is 0
 
-- No use tabulating - there is an *uncountably* infinite number of possible values they can be, all with $P(X = x) = 0$
+-   No use tabulating - there is an *uncountably* infinite number of possible values they can be, all with $P(X = x) = 0$
 
-- The distribution is given by a [probability density function]{style="color: RosyBrown"}, helps us describe probabilities for *ranges* of values. 
+-   The distribution is given by a **probability density function**, helps us describe probabilities for *ranges* of values.
 
 ## Density functions {.smaller}
 
 Probability density functions may be given graphically, satisfying the following two rules:
 
-- The density must be non-negative everywhere $(f(x) \geq 0$ for all $x$ from $-\infty$ to $\infty$)
+-   The density must be non-negative everywhere $(f(x) \geq 0$ for all $x$ from $-\infty$ to $\infty$)
 
-- The total area under the density must be 1
-
-
+-   The total area under the density must be 1
 
 ```{r}
 #| fig-height: 3
@@ -146,23 +142,23 @@ par(mfrow = c(1, 1))
 
 ```
 
-
 ## Density functions {.smaller}
 
 We can define events for continuous distributions and assign probabilities to them using density functions:
 
-- Suppose $X$ follows some density function $f(x)$
-- We are interested in the event "$X$ lies between $a$ and $b$"
+-   Suppose $X$ follows some density function $f(x)$
 
-- We calculate the following probability:
+-   We are interested in the event "$X$ lies between $a$ and $b$"
+
+-   We calculate the following probability:
 
 $$P(a < X < b) = \int_a^b f(x) dx$$
 
 ::: {.callout-caution appearance="simple"}
-
 ## Note
 
-Computers do this for us these days; no need to worry about the expression above)
+Computers do this for us these days :raised_hands: ; no need to worry about the expression above) 
+
 :::
 
 ## What would this look like graphically?
@@ -187,27 +183,26 @@ polygon(c(0.5, x_shade, 1.5), c(0, y_shade, 0), col = "darkgoldenrod3", border =
 
 ```
 
-
 ## The normal (Gaussian) distribution
-
 
 ::: columns
 ::: {.column width="70%"}
+For the **normal distribution**,
 
-For the [normal distribution]{style="color: RosyBrown"}, 
+::: {.poll}
 
 $$f(x) = \frac{1}{\sqrt{2\pi \sigma^2}} \textrm{exp}\Bigl\{-\frac{1}{2} \frac{(x - \mu)^2}{\sigma^2}\Bigr\}$$
 
+:::
+
 where $\mu$ is the mean and $\sigma^2$ is the variance.
 
-- We often write $N(\mu, \sigma^2)$.
-
+-   We often write $N(\mu, \sigma^2)$.
 :::
-:::{.column width="30%"}
 
+::: {.column width="30%"}
 ![](images/lec-7/gauss.jpg)
 :::
-
 :::
 
 ## 68-95-99.7
@@ -216,47 +211,53 @@ where $\mu$ is the mean and $\sigma^2$ is the variance.
 
 ## Standardization
 
-- The normal distribution is a family of distributions of a specific form. There are an infinite amount of possible distributions, since $\mu$ can be any real number and $\sigma^2$ can be any positive number. 
+-   The normal distribution is a family of distributions of a specific form. There are an infinite amount of possible distributions, since $\mu$ can be any real number and $\sigma^2$ can be any positive number.
 
-- It would be very cumbersome to have to individually think about a $N(0, 20)$ vs. $N(2.5, 2)$ vs. $N(694, 1549)$ vs. .... distribution, depending on the situation. 
+-   It would be very cumbersome to have to individually think about a $N(0, 20)$ vs. $N(2.5, 2)$ vs. $N(694, 1549)$ vs. .... distribution, depending on the situation.
 
-- In practice, we could calculate a [standard score]{style="color: RosyBrown"}  that gives the number of standard deviations away from the mean an observation from a particular population is. 
-
-
+-   In practice, we could calculate a **standard score** that gives the number of standard deviations away from the mean an observation from a particular population is.
 
 ::: {.callout-caution appearance="simple"}
-
 ## Question
 
 Why would we want to standardize?
-
 :::
 
 ## z-scores {.smaller}
 
-- A [z-score]{style="color: RosyBrown"} tells us how many population standard deviations an observation is away from the population mean.
+-   A **z-score** tells us how many population standard deviations an observation is away from the population mean.
 
-- They provide ways to compare results across many different measurement scales, since z-scores are *unitless*
+-   They provide ways to compare results across many different measurement scales, since z-scores are *unitless*
+
+::: {.poll}
 
 $$z=\frac{x-\mu}{\sigma}$$
 
+:::
+
 (note the use of population parameters $\mu$ and $\sigma$)
 
-- So, a z-score of 1.2 is 1.2 standard deviations above a mean; a z-score of 0.8 is 0.8 standard deviations below the mean.
-
+-   So, a z-score of 1.2 is 1.2 standard deviations above a mean; a z-score of 0.8 is 0.8 standard deviations below the mean.
 
 ## Osteoporosis {.smaller}
 
 ::: columns
 ::: {.column width="50%"}
-
 ![](images/lec-7/osteo.png)
+:::
+
+::: {.column width="50%"}
+-   According to NHANES, the mean bone mineral density for a 65 year old white woman is 809 mg/cm$^2$, with a standard deviation of 140 mg/cm$^2$.
+
+-   Suppose you are a 65 year old white woman whose bone density is 698 mg/cm$^2$. 
 
 :::
-:::{.column width="50%"}
 
-- According to NHANES, the mean bone minearl density for a 65 year old white woman is 809 mg/cm$^2$, with a standard deviation of 140 mg/cm$^2$. 
+:::
 
-- Suppose you are a 65 year old white woman whose bone density is 698 mg/cm$^2$. Should you be very concerned about osteoporosis?
+::: {.callout-tip appearance=simple}
+
+Should you be very concerned about osteoporosis?
+
 :::
-:::
+
